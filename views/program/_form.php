@@ -21,7 +21,7 @@ use app\models\Department;
         ['prompt'=>'select ']
     )
     ?>
-    <?php $model->status =1; ?>
+    <?php $model->status = 1; ?>
 
 
     <div class="form-group">
