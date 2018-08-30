@@ -5,6 +5,8 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Program;
 use app\models\Student;
+use app\models\AcademicYear;
+
 /* @var $this yii\web\View */
 /* @var $model app\models\ProgramStudent */
 /* @var $form yii\widgets\ActiveForm */
@@ -24,7 +26,10 @@ use app\models\Student;
         ['prompt'=>'select ']
     ) ?>
 
-    
+    <?= $form->field($model, 'academic_year')->dropDownList(
+        ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
+        ['prompt'=>'select ']
+    ) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

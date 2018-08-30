@@ -18,7 +18,7 @@ class SearchProgramStudent extends ProgramStudent
     public function rules()
     {
         return [
-            [['program_student_id', 'program_id', 'student_id'], 'integer'],
+            [['program_student_id', 'program_id', 'student_id', 'academic_year'], 'integer'],
             [['created_at', 'updated_at', 'status'], 'safe'],
         ];
     }
@@ -64,6 +64,7 @@ class SearchProgramStudent extends ProgramStudent
             'student_id' => $this->student_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'academic_year' => $this->academic_year,
         ]);
 
         $query->andFilterWhere(['like', 'status', $this->status]);

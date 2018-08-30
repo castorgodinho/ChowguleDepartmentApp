@@ -1,116 +1,84 @@
 <?php
-namespace app\controllers;
+
+namespace app\models;
+
 use Yii;
-use app\models\Program;
-use app\models\SearchProgram;
-use yii\web\Controller;
-use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
+
 /**
- * ProgramController implements the CRUD actions for Program model.
+ * This is the model class for table "program".
+ *
+ * @property int $program_id
+ * @property string $name
+ * @property int $department_id
+ * @property string $created_at
+ * @property string $updated_at
+ * @property int $status
+ *
+ * @property Paper[] $papers
+ * @property Department $department
+ * @property ProgramStudent[] $programStudents
  */
-class ProgramController extends Controller
+class Program extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
-    public function behaviors()
+    public static function tableName()
+    {
+        return 'program';
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
     {
         return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
+            [['name', 'department_id'], 'required'],
+            [['department_id'], 'integer'],
+            [['created_at', 'updated_at'], 'safe'],
+            [['name'], 'string', 'max' => 50],
+            [['status'], 'string', 'max' => 1],
+            [['department_id'], 'exist', 'skipOnError' => true, 'targetClass' => Department::className(), 'targetAttribute' => ['department_id' => 'department_id']],
         ];
     }
+
     /**
-     * Lists all Program models.
-     * @return mixed
+     * @inheritdoc
      */
-    public function actionIndex()
+    public function attributeLabels()
     {
-        $searchModel = new SearchProgram();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+        return [
+            'program_id' => 'Program',
+            'name' => 'Name',
+            'department_id' => 'Department Name',
+            'created_at' => 'Created At',
+            'updated_at' => 'Updated At',
+            'status' => 'Status',
+        ];
     }
+
     /**
-     * Displays a single Program model.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
+     * @return \yii\db\ActiveQuery
      */
-    public function actionView($id)
+    public function getPapers()
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        return $this->hasMany(Paper::className(), ['program_id' => 'program_id']);
     }
+
     /**
-     * Creates a new Program model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return mixed
+     * @return \yii\db\ActiveQuery
      */
-    public function actionCreate()
+    public function getDepartment()
     {
-        $model = new Program();
-        if ($model->load(Yii::$app->request->post())) {
-            $model->status='1';
-            $model->save();
-            
-            return $this->redirect(['view', 'id' => $model->program_id]);
-        }
-        
-        return $this->render('create', [
-            'model' => $model,
-        ]);
+        return $this->hasOne(Department::className(), ['department_id' => 'department_id']);
     }
+
     /**
-     * Updates an existing Program model.
-     * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
+     * @return \yii\db\ActiveQuery
      */
-    public function actionUpdate($id)
+    public function getProgramStudents()
     {
-        $model = $this->findModel($id);
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->program_id]);
-        }
-        return $this->render('update', [
-            'model' => $model,
-            
-        ]);
-    }
-    /**
-     * Deletes an existing Program model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    public function actionDelete($id)
-    {
-        $this->findModel($id)->delete();
-        return $this->redirect(['index']);
-    }
-    /**
-     * Finds the Program model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return Program the loaded model
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    protected function findModel($id)
-    {
-        if (($model = Program::findOne($id)) !== null) {
-            return $model;
-        }
-        throw new NotFoundHttpException('The requested page does not exist.');
+        return $this->hasMany(ProgramStudent::className(), ['program_id' => 'program_id']);
     }
 }
