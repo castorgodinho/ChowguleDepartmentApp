@@ -67,8 +67,13 @@ class ProgramController extends Controller
         $model = new Program();
 
         if ($model->load(Yii::$app->request->post())) {
+<<<<<<< HEAD
 		 $model->status ="1"; 
+=======
+            $model->status='1';
+>>>>>>> dbeee8b2a598e3429ee99b18ae50d1f85297b74a
             $model->save();
+            
             return $this->redirect(['view', 'id' => $model->program_id]);
         }
         
@@ -94,6 +99,7 @@ class ProgramController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            
         ]);
     }
 

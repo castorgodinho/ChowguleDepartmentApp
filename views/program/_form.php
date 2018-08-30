@@ -1,10 +1,8 @@
 <?php
-
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 use app\models\Department;
-
 /* @var $this yii\web\View */
 /* @var $model app\models\Program */
 /* @var $form yii\widgets\ActiveForm */
@@ -21,7 +19,7 @@ use app\models\Department;
         ['prompt'=>'select ']
     )
     ?>
-    
+    <?php $model->status = 1; ?>
 
 
     <div class="form-group">
