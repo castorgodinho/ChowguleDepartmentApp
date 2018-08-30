@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Program;
-use app\models\SearchProgram;
+use app\models\PaperType;
+use app\models\searchPapertype;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProgramController implements the CRUD actions for Program model.
+ * PapertypeController implements the CRUD actions for PaperType model.
  */
-class ProgramController extends Controller
+class PapertypeController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class ProgramController extends Controller
     }
 
     /**
-     * Lists all Program models.
+     * Lists all PaperType models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new SearchProgram();
+        $searchModel = new searchPapertype();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class ProgramController extends Controller
     }
 
     /**
-     * Displays a single Program model.
+     * Displays a single PaperType model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,27 +58,25 @@ class ProgramController extends Controller
     }
 
     /**
-     * Creates a new Program model.
+     * Creates a new PaperType model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Program();
+        $model = new PaperType();
 
-        if ($model->load(Yii::$app->request->post())) {
-		 $model->status ="1"; 
-            $model->save();
-            return $this->redirect(['view', 'id' => $model->program_id]);
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->paper_type_id]);
         }
-        
+
         return $this->render('create', [
             'model' => $model,
         ]);
     }
 
     /**
-     * Updates an existing Program model.
+     * Updates an existing PaperType model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -89,7 +87,7 @@ class ProgramController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->program_id]);
+            return $this->redirect(['view', 'id' => $model->paper_type_id]);
         }
 
         return $this->render('update', [
@@ -98,7 +96,7 @@ class ProgramController extends Controller
     }
 
     /**
-     * Deletes an existing Program model.
+     * Deletes an existing PaperType model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -112,15 +110,15 @@ class ProgramController extends Controller
     }
 
     /**
-     * Finds the Program model based on its primary key value.
+     * Finds the PaperType model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Program the loaded model
+     * @return PaperType the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Program::findOne($id)) !== null) {
+        if (($model = PaperType::findOne($id)) !== null) {
             return $model;
         }
 

@@ -52,7 +52,7 @@ class Paper extends \yii\db\ActiveRecord
         return [
             'paper_id' => 'Paper ID',
             'name' => 'Name',
-            'program_id' => 'Program ID',
+            'program_id' => 'Program Name',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'status' => 'Status',

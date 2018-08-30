@@ -54,11 +54,11 @@ class Revision extends \yii\db\ActiveRecord
             'revision_id' => 'Revision ID',
             'syllabus_file' => 'Syllabus File',
             'syllabus_date' => 'Syllabus Date',
-            'paper_id' => 'Paper ID',
+            'paper_id' => 'Paper Name',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'status' => 'Status',
-            'academic_year_id' => 'Academic Year ID',
+            'academic_year_id' => 'Academic Year ',
         ];
     }
 
