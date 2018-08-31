@@ -55,8 +55,8 @@ class Bos extends \yii\db\ActiveRecord
             'program' => 'Program',
             'minutes' => 'Minutes',
             'date' => 'Date',
-            'department_id' => 'Department ID',
-            'academic_year_id' => 'Academic Year ID',
+            'department_id' => 'Department',
+            'academic_year_id' => 'Academic Year',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];
