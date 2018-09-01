@@ -66,7 +66,9 @@ class ProgramStudentController extends Controller
     {
         $model = new ProgramStudent();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $model->status="1";
+            $model->save();
             return $this->redirect(['view', 'id' => $model->program_student_id]);
         }
 
