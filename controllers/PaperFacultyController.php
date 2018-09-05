@@ -3,13 +3,10 @@
 namespace app\controllers;
 
 use Yii;
-<<<<<<< HEAD:controllers/AcademicYearController.php
 use app\models\AcademicYear;
 use app\models\SearchAcademicYear;
-=======
 use app\models\PaperFaculty;
 use app\models\SearchPaperFaculty;
->>>>>>> 3a39d20b29e21678f8e1dcbcc810e7e8f6231aea:controllers/PaperFacultyController.php
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -40,11 +37,8 @@ class PaperFacultyController extends Controller
      */
     public function actionIndex()
     {
-<<<<<<< HEAD:controllers/AcademicYearController.php
         $searchModel = new SearchAcademicYear();
-=======
         $searchModel = new SearchPaperFaculty();
->>>>>>> 3a39d20b29e21678f8e1dcbcc810e7e8f6231aea:controllers/PaperFacultyController.php
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
