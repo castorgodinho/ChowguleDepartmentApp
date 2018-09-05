@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'student_organization_id',
             'organization_id',
-            'student_id',
+            'student.name',
             'date_of_joining',
             'position',
             //'created_at',

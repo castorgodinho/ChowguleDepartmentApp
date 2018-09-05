@@ -50,7 +50,7 @@ class Program extends \yii\db\ActiveRecord
     {
         return [
             'program_id' => 'Program',
-            'name' => 'Name',
+            'name' => 'Program',
             'department_id' => 'Department Name',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',

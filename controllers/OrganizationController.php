@@ -35,6 +35,7 @@ class OrganizationController extends Controller
      */
     public function actionIndex()
     {
+        if(!Yii::$app->user->isGuest){
         $searchModel = new SearchOrganization();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -42,6 +43,10 @@ class OrganizationController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+        }else{
+
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**

@@ -5,7 +5,6 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Organization;
 use app\models\Student;
-use nex\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\StudentOrganization */

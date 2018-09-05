@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'program_id',
             'name',
-            //'department_id',
+            'department.name',
             //'created_at',
             //'updated_at',
             //'status',

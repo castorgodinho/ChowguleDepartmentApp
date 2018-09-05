@@ -41,7 +41,7 @@ class SearchProgram extends Program
      */
     public function search($params)
     {
-        $query = Program::find();
+        $query = Program::find()->where(['status'=>1]);
 
         // add conditions that should always apply here
 

@@ -35,6 +35,7 @@ class SubjectExpertController extends Controller
      */
     public function actionIndex()
     {
+        if(!Yii::$app->user->isGuest){
         $searchModel = new SearchSubjectExpert();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -42,6 +43,9 @@ class SubjectExpertController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**

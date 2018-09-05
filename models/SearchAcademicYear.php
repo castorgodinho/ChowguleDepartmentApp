@@ -8,9 +8,9 @@ use yii\data\ActiveDataProvider;
 use app\models\AcademicYear;
 
 /**
- * searchAcademicYear represents the model behind the search form of `app\models\AcademicYear`.
+ * SearchAcademicYear represents the model behind the search form of `app\models\AcademicYear`.
  */
-class searchAcademicYear extends AcademicYear
+class SearchAcademicYear extends AcademicYear
 {
     /**
      * @inheritdoc
