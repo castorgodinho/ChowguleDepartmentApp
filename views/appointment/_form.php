@@ -13,7 +13,7 @@ use app\models\Faculty;
 
     <?php $form = ActiveForm::begin(); ?>
     <?= $form->field($model, 'faculty_id')->dropDownList(
-        ArrayHelper::map(Faculty::find()->all(),'faculty_id','name'),
+        ArrayHelper::map(Faculty::find()->where(['status'=>1])->all(),'faculty_id','name'),
         ['prompt'=>'select ']
     )?>
     <?= $form->field($model, 'date_of_joining')->textInput() ?>
