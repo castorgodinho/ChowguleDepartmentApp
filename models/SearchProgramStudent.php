@@ -18,8 +18,8 @@ class SearchProgramStudent extends ProgramStudent
     public function rules()
     {
         return [
-            [['program_student_id', 'program_id', 'student_id', 'academic_year_id'], 'integer'],
-            [['created_at', 'updated_at', 'status'], 'safe'],
+            [['program_student_id',  'academic_year_id'], 'integer'],
+            [['created_at', 'updated_at', 'status', 'program_id','student_id'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class SearchProgramStudent extends ProgramStudent
      */
     public function search($params)
     {
-        $query = ProgramStudent::find()->where(['status'=>1]);
+        $query = ProgramStudent::find();
 
         // add conditions that should always apply here
 
@@ -56,19 +56,19 @@ class SearchProgramStudent extends ProgramStudent
             // $query->where('0=1');
             return $dataProvider;
         }
-
+        
+        $query->joinWith('program');
+        $query->joinWith('student');
         // grid filtering conditions
         $query->andFilterWhere([
             'program_student_id' => $this->program_student_id,
-            'program_id' => $this->program_id,
-            'student_id' => $this->student_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'academic_year_id' => $this->academic_year_id,
         ]);
 
-        $query->andFilterWhere(['like', 'status', $this->status]);
-
+        $query->andFilterWhere(['like', 'program.name', $this->program_id]);
+        $query->andFilterWhere(['like', 'student.name', $this->student_id]);
         return $dataProvider;
     }
 }

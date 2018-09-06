@@ -26,12 +26,30 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
            // 'program_student_id',
-           'program.name',
-           'student.name',
+           [
+               'label' => 'Program Name',
+               'value' => 'program.name',
+               'attribute' => 'program_id',
+           ],
+           [
+            'label' => 'Student Name',
+            'value' => 'student.name',
+            'attribute' => 'student_id',
+            ],
           // 'created_at',
           // 'updated_at',
           // 'status',
-           'academicYear.year',
+          [
+            'label' => 'Academic Year',
+            'value' => function($dataProvider){
+                if($dataProvider->academicYear->year == "2018"){
+                    return "hi";
+                }else{
+                    return "bye";
+                }
+            }
+            ],
+           
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
