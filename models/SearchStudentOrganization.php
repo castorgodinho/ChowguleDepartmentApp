@@ -18,8 +18,8 @@ class SearchStudentOrganization extends StudentOrganization
     public function rules()
     {
         return [
-            [['student_organization_id', 'organization_id', ], 'integer'],
-            [['date_of_joining', 'position', 'created_at', 'updated_at', 'student_id'], 'safe'],
+            [['student_organization_id' ], 'integer'],
+            [['date_of_joining', 'position', 'created_at', 'updated_at', 'student_id' , 'organization_id'], 'safe'],
         ];
     }
 
@@ -57,10 +57,10 @@ class SearchStudentOrganization extends StudentOrganization
             return $dataProvider;
         }
         $query->joinWith('student');
+        $query->joinWith('organization');
         // grid filtering conditions
         $query->andFilterWhere([
             'student_organization_id' => $this->student_organization_id,
-            'organization_id' => $this->organization_id,
             'date_of_joining' => $this->date_of_joining,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
@@ -68,6 +68,7 @@ class SearchStudentOrganization extends StudentOrganization
 
         $query->andFilterWhere(['like', 'position', $this->position]);
         $query->andFilterWhere(['like', 'student.name', $this->student_id]);
+        $query->andFilterWhere(['like', 'organization.company_name', $this->organization_id]);
         return $dataProvider;
     }
 }

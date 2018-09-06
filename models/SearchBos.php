@@ -67,7 +67,7 @@ class SearchBos extends Bos
         ]);
 
         $query->andFilterWhere(['like', 'program', $this->program])
-            ->andFilterWhere(['like', 'minutes', $this->minutes]);
+             ->andFilterWhere(['like', 'minutes', $this->minutes]);
         $query->andFilterWhere(['like', 'department.name', $this->department_id]);
         $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
 

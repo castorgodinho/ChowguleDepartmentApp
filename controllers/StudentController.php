@@ -56,9 +56,14 @@ class StudentController extends Controller
      */
     public function actionView($id)
     {
+        if(!Yii::$app->user->isGuest){
+
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
+        }else {
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**
@@ -69,6 +74,7 @@ class StudentController extends Controller
     public function actionCreate()
     {
         $model = new Student();
+        if(!Yii::$app->user->isGuest){
 
         if ($model->load(Yii::$app->request->post())) {
             $model->status='1';
@@ -79,6 +85,9 @@ class StudentController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
+        }else {
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**
@@ -91,6 +100,7 @@ class StudentController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        if(!Yii::$app->user->isGuest){
 
         if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
             return $this->redirect(['view', 'id' => $model->student_id]);
@@ -99,6 +109,9 @@ class StudentController extends Controller
         return $this->render('update', [
             'model' => $model,
         ]);
+        }else {
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**
@@ -110,9 +123,14 @@ class StudentController extends Controller
      */
     public function actionDelete($id)
     {
+        if(!Yii::$app->user->isGuest){
+
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+        }else {
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**

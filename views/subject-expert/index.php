@@ -32,7 +32,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => 'department.name',
                 'attribute' => 'department_id',
             ],
-            'academic_year_id',
+            [
+                'label' => 'Academic Year',
+                'value' => 'academicYear.year',
+                'attribute' => 'academic_year_id',
+                ],
             //'created_at',
             //'updated_at',
 
