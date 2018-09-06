@@ -41,13 +41,8 @@ $this->params['breadcrumbs'][] = $this->title;
           // 'status',
           [
             'label' => 'Academic Year',
-            'value' => function($dataProvider){
-                if($dataProvider->academicYear->year == "2018"){
-                    return "hi";
-                }else{
-                    return "bye";
-                }
-            }
+            'value' => 'academicYear.year',
+            'attribute' => 'academic_year_id',
             ],
            
 

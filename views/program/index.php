@@ -27,7 +27,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'program_id',
             'name',
-            'department.name',
+            [
+                'label' => 'Department Name',
+                'value' => 'department.name',
+                'attribute' => 'department_id',
+            ],
             //'created_at',
             //'updated_at',
             //'status',

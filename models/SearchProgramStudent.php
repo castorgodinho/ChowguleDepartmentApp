@@ -18,8 +18,8 @@ class SearchProgramStudent extends ProgramStudent
     public function rules()
     {
         return [
-            [['program_student_id',  'academic_year_id'], 'integer'],
-            [['created_at', 'updated_at', 'status', 'program_id','student_id'], 'safe'],
+            [['program_student_id'], 'integer'],
+            [['created_at', 'updated_at', 'status', 'program_id','student_id', 'academic_year_id'], 'safe'],
         ];
     }
 
@@ -59,16 +59,18 @@ class SearchProgramStudent extends ProgramStudent
         
         $query->joinWith('program');
         $query->joinWith('student');
+        $query->joinWith('academicYear');
         // grid filtering conditions
         $query->andFilterWhere([
             'program_student_id' => $this->program_student_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'academic_year_id' => $this->academic_year_id,
+            
         ]);
 
         $query->andFilterWhere(['like', 'program.name', $this->program_id]);
         $query->andFilterWhere(['like', 'student.name', $this->student_id]);
+        $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
         return $dataProvider;
     }
 }
