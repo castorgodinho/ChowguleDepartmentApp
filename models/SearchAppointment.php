@@ -42,7 +42,6 @@ class SearchAppointment extends Appointment
     public function search($params)
     {
         $query = Appointment::find();
-
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
@@ -67,7 +66,8 @@ class SearchAppointment extends Appointment
             'updated_at' => $this->updated_at,
         ]);
 
-        $query->andFilterWhere(['like', 'status', $this->status]);
+        $query->andFilterWhere(['like', 'status', $this->status])
+              ->andFilterWhere(['like', 'Faculty.name', $this->]);
 
         return $dataProvider;
     }

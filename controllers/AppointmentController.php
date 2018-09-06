@@ -35,13 +35,17 @@ class AppointmentController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new SearchAppointment();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        if(!Yii::$app->user->isGuest){
+            $searchModel = new SearchAppointment();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        }else{
+
+        }
     }
 
     /**
@@ -86,7 +90,7 @@ class AppointmentController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
             return $this->redirect(['view', 'id' => $model->appointment_id]);
         }
 
@@ -104,9 +108,11 @@ class AppointmentController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $model =Appointment::findOne($id);
+        $model->status = 0;
+        $model->save(false);
 
-        return $this->redirect(['index']);
+        return $this->redirect(['index']);;
     }
 
     /**
