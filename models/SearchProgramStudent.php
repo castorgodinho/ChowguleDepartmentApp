@@ -65,6 +65,7 @@ class SearchProgramStudent extends ProgramStudent
             'program_student_id' => $this->program_student_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'program_student.status'=>1,
             
         ]);
 

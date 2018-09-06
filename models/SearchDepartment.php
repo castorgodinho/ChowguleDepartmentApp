@@ -60,6 +60,7 @@ class SearchDepartment extends Department
         // grid filtering conditions
         $query->andFilterWhere([
             'department_id' => $this->department_id,
+            
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name]);
