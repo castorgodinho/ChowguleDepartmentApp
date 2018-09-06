@@ -42,8 +42,6 @@ class SearchAppointment extends Appointment
     public function search($params)
     {
         $query = Appointment::find();
-        $query->joinWith(['faculty']);
-        $query->execute();
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
@@ -69,7 +67,7 @@ class SearchAppointment extends Appointment
         ]);
 
         $query->andFilterWhere(['like', 'status', $this->status])
-              ->andFilterWhere(['like', 'Faculty.name', $this->faculty_id]);
+              ->andFilterWhere(['like', 'Faculty.name', $this->]);
 
         return $dataProvider;
     }

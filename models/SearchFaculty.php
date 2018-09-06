@@ -41,7 +41,7 @@ class SearchFaculty extends Faculty
      */
     public function search($params)
     {
-        $query = Faculty::find()->where(['status'=>1]);
+        $query = Faculty::find();
 
         // add conditions that should always apply here
 
@@ -62,6 +62,7 @@ class SearchFaculty extends Faculty
             'faculty_id' => $this->faculty_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'status'=>1,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
