@@ -49,7 +49,7 @@ class Department extends \yii\db\ActiveRecord
     {
         return [
             'department_id' => 'Department ID',
-            'name' => 'Name',
+            'name' => 'Department',
         ];
     }
 

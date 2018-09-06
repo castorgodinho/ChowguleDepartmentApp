@@ -27,7 +27,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'subject_expert_id',
             'faculty_name',
-            'department_id',
+            [
+                'label' => 'Department Name',
+                'value' => 'department.name',
+                'attribute' => 'department_id',
+            ],
             'academic_year_id',
             //'created_at',
             //'updated_at',

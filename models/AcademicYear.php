@@ -16,6 +16,7 @@ use Yii;
  * @property Examiner[] $examiners
  * @property PaperFaculty[] $paperFaculties
  * @property PaperType[] $paperTypes
+ * @property ProgramStudent[] $programStudents
  * @property Project[] $projects
  * @property Revision[] $revisions
  * @property Seminar[] $seminars
@@ -101,6 +102,14 @@ class AcademicYear extends \yii\db\ActiveRecord
     public function getPaperTypes()
     {
         return $this->hasMany(PaperType::className(), ['academic_year_id' => 'academic_year_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProgramStudents()
+    {
+        return $this->hasMany(ProgramStudent::className(), ['academic_year_id' => 'academic_year_id']);
     }
 
     /**

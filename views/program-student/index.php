@@ -26,12 +26,25 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
            // 'program_student_id',
-            'program_id',
-            'student_id',
-            //'created_at',
-            //'updated_at',
-            //'status',
-            'academic_year',
+           [
+               'label' => 'Program Name',
+               'value' => 'program.name',
+               'attribute' => 'program_id',
+           ],
+           [
+            'label' => 'Student Name',
+            'value' => 'student.name',
+            'attribute' => 'student_id',
+            ],
+          // 'created_at',
+          // 'updated_at',
+          // 'status',
+          [
+            'label' => 'Academic Year',
+            'value' => 'academicYear.year',
+            'attribute' => 'academic_year_id',
+            ],
+           
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

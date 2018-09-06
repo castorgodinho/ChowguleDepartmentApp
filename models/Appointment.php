@@ -50,7 +50,7 @@ class Appointment extends \yii\db\ActiveRecord
             'appointment_id' => 'Appointment ID',
             'date_of_joining' => 'Date Of Joining',
             'date_of_leaving' => 'Date Of Leaving',
-            'faculty_id' => 'Faculty ID',
+            'faculty_id' => 'Faculty',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'status' => 'Status',

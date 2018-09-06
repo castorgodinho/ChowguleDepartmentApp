@@ -41,7 +41,7 @@ class SearchStudent extends Student
      */
     public function search($params)
     {
-        $query = Student::find();
+        $query = Student::find()->where(['status'=>1]);
 
         // add conditions that should always apply here
 

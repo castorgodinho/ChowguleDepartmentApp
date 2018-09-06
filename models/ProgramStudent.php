@@ -13,10 +13,10 @@ use Yii;
  * @property string $created_at
  * @property string $updated_at
  * @property int $status
- * @property int $academic_year
+ * @property int $academic_year_id
  *
- * @property AcademicYear $academicYear
  * @property Program $program
+ * @property AcademicYear $academicYear
  * @property Student $student
  */
 class ProgramStudent extends \yii\db\ActiveRecord
@@ -35,11 +35,11 @@ class ProgramStudent extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['program_id', 'student_id', 'academic_year'], 'integer'],
+            [['program_id', 'student_id', 'academic_year_id'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
             [['status'], 'string', 'max' => 1],
-            [['academic_year'], 'exist', 'skipOnError' => true, 'targetClass' => AcademicYear::className(), 'targetAttribute' => ['academic_year' => 'academic_year_id']],
             [['program_id'], 'exist', 'skipOnError' => true, 'targetClass' => Program::className(), 'targetAttribute' => ['program_id' => 'program_id']],
+            [['academic_year_id'], 'exist', 'skipOnError' => true, 'targetClass' => AcademicYear::className(), 'targetAttribute' => ['academic_year_id' => 'academic_year_id']],
             [['student_id'], 'exist', 'skipOnError' => true, 'targetClass' => Student::className(), 'targetAttribute' => ['student_id' => 'student_id']],
         ];
     }
@@ -50,22 +50,14 @@ class ProgramStudent extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'program_student_id' => 'Program Student',
-            'program_id' => 'Program',
-            'student_id' => 'Student',
+            'program_student_id' => 'Program Student ID',
+            'program_id' => 'Program ID',
+            'student_id' => 'Student ID',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'status' => 'Status',
-            'academic_year' => 'Academic Year',
+            'academic_year_id' => 'Academic Year',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getAcademicYear()
-    {
-        return $this->hasOne(AcademicYear::className(), ['academic_year_id' => 'academic_year']);
     }
 
     /**
@@ -74,6 +66,14 @@ class ProgramStudent extends \yii\db\ActiveRecord
     public function getProgram()
     {
         return $this->hasOne(Program::className(), ['program_id' => 'program_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getAcademicYear()
+    {
+        return $this->hasOne(AcademicYear::className(), ['academic_year_id' => 'academic_year_id']);
     }
 
     /**

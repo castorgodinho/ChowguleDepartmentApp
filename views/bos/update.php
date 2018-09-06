@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Bos */
 
-$this->title = 'Update Bos: {nameAttribute}';
+$this->title = 'Update Bos';
 $this->params['breadcrumbs'][] = ['label' => 'Bos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->bos_id, 'url' => ['view', 'id' => $model->bos_id]];
 $this->params['breadcrumbs'][] = 'Update';

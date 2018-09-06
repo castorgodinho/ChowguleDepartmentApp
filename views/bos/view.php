@@ -12,18 +12,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bos-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->bos_id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->bos_id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
 
     <?= DetailView::widget([
         'model' => $model,
@@ -32,8 +20,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'program',
             'minutes:ntext',
             'date',
-            'department_id',
-            'academic_year_id',
+            'department.name',
+            'academicYear.year',
             //'created_at',
             //'updated_at',
         ],

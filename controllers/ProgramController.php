@@ -35,6 +35,7 @@ class ProgramController extends Controller
      */
     public function actionIndex()
     {
+        if(!Yii::$app->user->isGuest){
         $searchModel = new SearchProgram();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -42,6 +43,9 @@ class ProgramController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**
@@ -89,7 +93,7 @@ class ProgramController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
             return $this->redirect(['view', 'id' => $model->program_id]);
         }
 
@@ -108,7 +112,9 @@ class ProgramController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $model= program::findone($id);
+        $model->status = 0;
+        $model->save(false);
 
         return $this->redirect(['index']);
     }

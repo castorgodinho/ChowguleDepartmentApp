@@ -26,7 +26,7 @@ use app\models\AcademicYear;
         ['prompt'=>'select ']
     ) ?>
 
-    <?= $form->field($model, 'academic_year')->dropDownList(
+    <?= $form->field($model, 'academic_year_id')->dropDownList(
         ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
         ['prompt'=>'select ']
     ) ?>

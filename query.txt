@@ -1,1 +1,3 @@
-
+ALTER TABLE program_student ADD academic_year int;
+ALTER TABLE `program_student` ADD FOREIGN KEY (`academic_year`) REFERENCES `academic_year`(`academic_year_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `program_student` CHANGE `academic_year` `academic_year_id` INT(11) NULL DEFAULT NULL;

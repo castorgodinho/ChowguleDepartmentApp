@@ -18,8 +18,8 @@ class SearchBos extends Bos
     public function rules()
     {
         return [
-            [['bos_id', 'department_id', 'academic_year_id'], 'integer'],
-            [['program', 'minutes', 'date', 'created_at', 'updated_at'], 'safe'],
+            [['bos_id' ], 'integer'],
+            [['program', 'minutes', 'date', 'created_at', 'updated_at', 'department_id',  'academic_year_id'], 'safe'],
         ];
     }
 
@@ -56,19 +56,20 @@ class SearchBos extends Bos
             // $query->where('0=1');
             return $dataProvider;
         }
-
+        $query->joinWith('department');
+        $query->joinWith('academicYear');
         // grid filtering conditions
         $query->andFilterWhere([
             'bos_id' => $this->bos_id,
             'date' => $this->date,
-            'department_id' => $this->department_id,
-            'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
 
         $query->andFilterWhere(['like', 'program', $this->program])
             ->andFilterWhere(['like', 'minutes', $this->minutes]);
+        $query->andFilterWhere(['like', 'department.name', $this->department_id]);
+        $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
 
         return $dataProvider;
     }
