@@ -77,7 +77,6 @@ class StudentController extends Controller
         if(!Yii::$app->user->isGuest){
 
         if ($model->load(Yii::$app->request->post())) {
-            $model->status='1';
             $model->save();
             return $this->redirect(['view', 'id' => $model->student_id]);
         }
@@ -124,8 +123,9 @@ class StudentController extends Controller
     public function actionDelete($id)
     {
         if(!Yii::$app->user->isGuest){
-
-        $this->findModel($id)->delete();
+            $model =student::findOne($id);
+            $model->status = 0;
+            $model->save(false);
 
         return $this->redirect(['index']);
         }else {
