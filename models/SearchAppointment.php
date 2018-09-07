@@ -18,8 +18,8 @@ class SearchAppointment extends Appointment
     public function rules()
     {
         return [
-            [['appointment_id', 'faculty_id'], 'integer'],
-            [['date_of_joining', 'date_of_leaving', 'created_at', 'updated_at', 'status'], 'safe'],
+            [['appointment_id', ], 'integer'],
+            [['date_of_joining', 'date_of_leaving','faculty_id', 'created_at', 'updated_at', 'status'], 'safe'],
         ];
     }
 
@@ -55,19 +55,21 @@ class SearchAppointment extends Appointment
             // $query->where('0=1');
             return $dataProvider;
         }
+        $query->joinwith('faculty');
 
         // grid filtering conditions
         $query->andFilterWhere([
             'appointment_id' => $this->appointment_id,
             'date_of_joining' => $this->date_of_joining,
             'date_of_leaving' => $this->date_of_leaving,
-            'faculty_id' => $this->faculty_id,
+            //'faculty_id' => $this->faculty_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'appointment.status'=>1,
         ]);
 
-        $query->andFilterWhere(['like', 'status', $this->status])
-              ->andFilterWhere(['like', 'Faculty.name', $this->]);
+        $query->andFilterWhere(['like', 'appointment.status', $this->status])
+              ->andFilterWhere(['like', 'Faculty.name', $this->faculty_id]);
 
         return $dataProvider;
     }

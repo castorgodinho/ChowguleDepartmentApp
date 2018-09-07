@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Appointment */
 
-$this->title = $model->appointment_id;
+$this->title = Faculry.name;
 $this->params['breadcrumbs'][] = ['label' => 'Appointments', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
