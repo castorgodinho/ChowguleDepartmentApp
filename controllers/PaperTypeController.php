@@ -4,15 +4,15 @@ namespace app\controllers;
 
 use Yii;
 use app\models\PaperType;
-use app\models\searchPapertype;
+use app\models\SearchPaperType;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * PapertypeController implements the CRUD actions for PaperType model.
+ * PaperTypeController implements the CRUD actions for PaperType model.
  */
-class PapertypeController extends Controller
+class PaperTypeController extends Controller
 {
     /**
      * @inheritdoc
@@ -35,13 +35,18 @@ class PapertypeController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new searchPapertype();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        if(!Yii::$app->user->isGuest){
+            $searchModel = new SearchPaperType();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;
+        }
+        
     }
 
     /**
@@ -86,7 +91,7 @@ class PapertypeController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
             return $this->redirect(['view', 'id' => $model->paper_type_id]);
         }
 

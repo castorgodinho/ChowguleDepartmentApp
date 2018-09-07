@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\searchPapertype */
+/* @var $searchModel app\models\SearchPaperType */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Paper Types';
@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'paper_type_id',
+            'paper_type_id',
             'paper_id',
             'type_id',
             'academic_year_id',

@@ -35,13 +35,18 @@ class PaperController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new searchPaper();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        if(!Yii::$app->user->isGuest){
+            $searchModel = new searchPaper();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;
+        }
+        
     }
 
     /**
@@ -88,7 +93,7 @@ class PaperController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
             return $this->redirect(['view', 'id' => $model->paper_id]);
         }
 
@@ -104,6 +109,7 @@ class PaperController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
+    
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();

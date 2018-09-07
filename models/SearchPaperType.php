@@ -8,9 +8,9 @@ use yii\data\ActiveDataProvider;
 use app\models\PaperType;
 
 /**
- * searchPapertype represents the model behind the search form of `app\models\PaperType`.
+ * SearchPaperType represents the model behind the search form of `app\models\PaperType`.
  */
-class searchPapertype extends PaperType
+class SearchPaperType extends PaperType
 {
     /**
      * @inheritdoc
