@@ -76,7 +76,6 @@ class ProgramController extends Controller
 
         if(!Yii::$app->user->isGuest){
         if ($model->load(Yii::$app->request->post())) {
-		 $model->status ="1"; 
             $model->save();
             
             return $this->redirect(['view', 'id' => $model->program_id]);
