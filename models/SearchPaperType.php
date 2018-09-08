@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Faculty;
+use app\models\PaperType;
 
 /**
- * SearchFaculty represents the model behind the search form of `app\models\Faculty`.
+ * SearchPaperType represents the model behind the search form of `app\models\PaperType`.
  */
-class SearchFaculty extends Faculty
+class SearchPaperType extends PaperType
 {
     /**
      * @inheritdoc
@@ -18,8 +18,7 @@ class SearchFaculty extends Faculty
     public function rules()
     {
         return [
-            [['faculty_id'], 'integer'],
-            [['name', 'email', 'phone_no', 'address', 'employee_id', 'created_at', 'updated_at', 'status'], 'safe'],
+            [['paper_type_id', 'paper_id', 'type_id', 'academic_year_id'], 'integer'],
         ];
     }
 
@@ -41,7 +40,7 @@ class SearchFaculty extends Faculty
      */
     public function search($params)
     {
-        $query = Faculty::find();
+        $query = PaperType::find();
 
         // add conditions that should always apply here
 
@@ -59,18 +58,11 @@ class SearchFaculty extends Faculty
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'faculty_id' => $this->faculty_id,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
-            'status'=>1,
+            'paper_type_id' => $this->paper_type_id,
+            'paper_id' => $this->paper_id,
+            'type_id' => $this->type_id,
+            'academic_year_id' => $this->academic_year_id,
         ]);
-
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'phone_no', $this->phone_no])
-            ->andFilterWhere(['like', 'address', $this->address])
-            ->andFilterWhere(['like', 'employee_id', $this->employee_id])
-            ->andFilterWhere(['like', 'status', $this->status]);
 
         return $dataProvider;
     }

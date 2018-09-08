@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\SearchPaperFaculty */
+/* @var $searchModel app\models\SearchPaperType */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Paper Faculties';
+$this->title = 'Paper Types';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="paper-faculty-index">
+<div class="paper-type-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Record', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Paper Type', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -25,12 +25,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'paper_faculty_id',
+            'paper_type_id',
             'paper_id',
-            'faculty_id',
+            'type_id',
             'academic_year_id',
-            //'created_at',
-            //'updated_at',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

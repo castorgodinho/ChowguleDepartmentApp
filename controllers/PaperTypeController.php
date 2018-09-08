@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Event;
-use app\models\SearchEvent;
+use app\models\PaperType;
+use app\models\SearchPaperType;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * EventController implements the CRUD actions for Event model.
+ * PaperTypeController implements the CRUD actions for PaperType model.
  */
-class EventController extends Controller
+class PaperTypeController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,13 +30,13 @@ class EventController extends Controller
     }
 
     /**
-     * Lists all Event models.
+     * Lists all PaperType models.
      * @return mixed
      */
     public function actionIndex()
     {
         if(!Yii::$app->user->isGuest){
-            $searchModel = new SearchEvent();
+            $searchModel = new SearchPaperType();
             $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
             return $this->render('index', [
@@ -46,49 +46,42 @@ class EventController extends Controller
         }else{
             throw new \yii\web\ForbiddenHttpException;
         }
+        
     }
 
     /**
-     * Displays a single Event model.
+     * Displays a single PaperType model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionView($id)
     {
-        if(!Yii::$app->user->isGuest){
-            return $this->render('view', [
-                'model' => $this->findModel($id),
-            ]);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
-        }
+        return $this->render('view', [
+            'model' => $this->findModel($id),
+        ]);
     }
 
     /**
-     * Creates a new Event model.
+     * Creates a new PaperType model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
-    {   
-        if(!Yii::$app->user->isGuest){
-            $model = new Event();
+    {
+        $model = new PaperType();
 
-            if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->event_id]);
-            }
-
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->paper_type_id]);
         }
+
+        return $this->render('create', [
+            'model' => $model,
+        ]);
     }
 
     /**
-     * Updates an existing Event model.
+     * Updates an existing PaperType model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,23 +89,19 @@ class EventController extends Controller
      */
     public function actionUpdate($id)
     {
-        if(!Yii::$app->user->isGuest){
-            $model = $this->findModel($id);
+        $model = $this->findModel($id);
 
-            if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->event_id]);
-            }
-
-            return $this->render('update', [
-                'model' => $model,
-            ]);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
+        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
+            return $this->redirect(['view', 'id' => $model->paper_type_id]);
         }
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**
-     * Deletes an existing Event model.
+     * Deletes an existing PaperType model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -120,25 +109,21 @@ class EventController extends Controller
      */
     public function actionDelete($id)
     {
-        if(!Yii::$app->user->isGuest){
-            $this->findModel($id)->delete();
+        $this->findModel($id)->delete();
 
-            return $this->redirect(['index']);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
-        }
+        return $this->redirect(['index']);
     }
 
     /**
-     * Finds the Event model based on its primary key value.
+     * Finds the PaperType model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Event the loaded model
+     * @return PaperType the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Event::findOne($id)) !== null) {
+        if (($model = PaperType::findOne($id)) !== null) {
             return $model;
         }
 
