@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\SubjectExpert */
 
-$this->title = $model->subject_expert_id;
+$this->title = $model->faculty_name;
 $this->params['breadcrumbs'][] = ['label' => 'Subject Experts', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'subject_expert_id',
             'faculty_name',
             'department.name',
-            'academic_year_id.year',
+            'academicYear.year',
             //'created_at',
             //'updated_at',
         ],

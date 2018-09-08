@@ -8,7 +8,7 @@ use yii\widgets\DetailView;
 
 $this->title = $model->bos_id;
 $this->params['breadcrumbs'][] = ['label' => 'Bos', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bos-view">
 
