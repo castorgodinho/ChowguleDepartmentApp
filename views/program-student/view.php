@@ -8,7 +8,7 @@ use yii\widgets\DetailView;
 
 $this->title = $model->program_student_id;
 $this->params['breadcrumbs'][] = ['label' => 'Program Students', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="program-student-view">
 

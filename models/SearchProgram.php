@@ -18,8 +18,8 @@ class SearchProgram extends Program
     public function rules()
     {
         return [
-            [['program_id', 'department_id'], 'integer'],
-            [['name', 'created_at', 'updated_at', 'status'], 'safe'],
+            [['program_id', ], 'integer'],
+            [['name', 'created_at', 'updated_at', 'status' ,'department_id'], 'safe'],
         ];
     }
 
@@ -56,17 +56,18 @@ class SearchProgram extends Program
             // $query->where('0=1');
             return $dataProvider;
         }
-
+        $query->joinWith('department');
         // grid filtering conditions
         $query->andFilterWhere([
             'program_id' => $this->program_id,
-            'department_id' => $this->department_id,
+            //'department_id' => $this->department_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'status'=>1,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'status', $this->status]);
+        $query->andFilterWhere(['like', 'name', $this->name]);
+        $query->andFilterWhere(['like', 'department.name', $this->department_id]);
 
         return $dataProvider;
     }
