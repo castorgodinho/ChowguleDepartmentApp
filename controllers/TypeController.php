@@ -35,13 +35,17 @@ class TypeController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new searchType();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        if(!Yii::$app->user->isGuest){
+            $searchModel = new searchType();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**
@@ -50,13 +54,20 @@ class TypeController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
+   
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        if(!Yii::$app->user->isGuest){
+            
+            return $this->render('view', [
+                'model' => $this->findModel($id),
+                
+            ]);
+        }
+        else{
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
-
     /**
      * Creates a new Type model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -65,16 +76,19 @@ class TypeController extends Controller
     public function actionCreate()
     {
         $model = new Type();
+        if(!Yii::$app->user->isGuest){
+            if ($model->load(Yii::$app->request->post())){
+        
+                $model->save() ;
+                return $this->redirect(['view', 'id' => $model->type_id]);
+            }
 
-        if ($model->load(Yii::$app->request->post())){
-	 $model->status ="1" ;
-	 $model->save();
-            return $this->redirect(['view', 'id' => $model->type_id]);
+            return $this->render('create', [
+                'model' => $model,
+            ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;
         }
-
-        return $this->render('create', [
-            'model' => $model,
-        ]);
     }
 
     /**
@@ -87,16 +101,18 @@ class TypeController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        if(!Yii::$app->user->isGuest){
+            if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
+                return $this->redirect(['view', 'id' => $model->type_id]);
+            }
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->type_id]);
+            return $this->render('update', [
+                'model' => $model,
+            ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;   
         }
-
-        return $this->render('update', [
-            'model' => $model,
-        ]);
     }
-
     /**
      * Deletes an existing Type model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
@@ -106,9 +122,14 @@ class TypeController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+        if(!Yii::$app->user->isGuest){
+            $model =Type::findOne($id);
+            $model->status = 0;
+            $model->save(false);
+            return $this->redirect(['index']);
+        }else{
+            throw new \yii\web\ForbiddenHttpException; 
+        }
     }
 
     /**

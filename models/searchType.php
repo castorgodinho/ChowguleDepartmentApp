@@ -60,6 +60,7 @@ class searchType extends Type
         // grid filtering conditions
         $query->andFilterWhere([
             'type_id' => $this->type_id,
+            'status'=>1,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
