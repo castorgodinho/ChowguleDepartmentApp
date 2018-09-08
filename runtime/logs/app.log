@@ -3303,3 +3303,78 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1536259109.202
     'REQUEST_TIME' => 1536259109
 ]
+2018-09-06 20:58:04 [::1][100][d5e15978edd02322fa3a8017c2f07378][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('logout', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#5 {main}
+2018-09-06 20:58:04 [::1][100][d5e15978edd02322fa3a8017c2f07378][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => '2av8puzHuTbEVRowfTZwXne12WQguVuHgjMVcikfH9-S-s38hbPxXvMjK283UAE1PtS7IHLXDMHSZEU6blhA5w=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|a81358d5|538c6c26fa167c167372e04a107cc304|1535523748'
+    'username-localhost-8889' => '\"2|1:0|10:1535524371|23:username-localhost-8889|44:ZGUzYWFhNTE4NWM0NDIyYmI0NmE1ZDgxYzk0NTRmMDY=|e1b59494e91bf56881a66414b37a31f099dc11f8bba1897ccd58a736ee44f3e4\"'
+    'username-localhost-8890' => '\"2|1:0|10:1535524779|23:username-localhost-8890|44:NmVlOGU2MzcwYWExNGI0MTkyMmFmMTNlZWQxNTJiODU=|db3372bded82e2339cd6e100622b588399286a990dba1e8694d214f2895a3a86\"'
+    'username-localhost-8891' => '\"2|1:0|10:1535524814|23:username-localhost-8891|44:MDQzYjk2ZGIxNjQwNDFiY2JhNjg4MmU5Nzc3MGU0YTc=|0bda80a8a3c38050748f46eaf9352a91d053c3ac5c2a988f3e02bd2326bb3fc4\"'
+    'username-localhost-8892' => '\"2|1:0|10:1535533021|23:username-localhost-8892|44:N2Q3MmJkYjBmYjYxNGMxYzk3Mjc5NGY2YTYzOTU0ZTY=|736211f3bf0a8f4471b4c898671cc3920d2e05411fe97e54b311f062fd02d6c5\"'
+    'username-localhost-8888' => '\"2|1:0|10:1535604063|23:username-localhost-8888|44:NmU5MjczYzc2M2ZmNGRhNWEzZWU2OTk3ZTUyMzBhZTY=|dcb36ea774066b8e9eb24ffbc76f6653f5dad24f820c09a00cea766593d3e705\"'
+    'PHPSESSID' => 'd5e15978edd02322fa3a8017c2f07378'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '0c8e49ae235f301b27c7607f2a1572c9e01d98794a0d07a19d090340dbcd83e9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"A0kre6gpwcvZBRmHYcmpN85sXHHD-TNG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5F4vJWOWFVX5F@7dx7pZAAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_xsrf=2|a81358d5|538c6c26fa167c167372e04a107cc304|1535523748; username-localhost-8889=\"2|1:0|10:1535524371|23:username-localhost-8889|44:ZGUzYWFhNTE4NWM0NDIyYmI0NmE1ZDgxYzk0NTRmMDY=|e1b59494e91bf56881a66414b37a31f099dc11f8bba1897ccd58a736ee44f3e4\"; username-localhost-8890=\"2|1:0|10:1535524779|23:username-localhost-8890|44:NmVlOGU2MzcwYWExNGI0MTkyMmFmMTNlZWQxNTJiODU=|db3372bded82e2339cd6e100622b588399286a990dba1e8694d214f2895a3a86\"; username-localhost-8891=\"2|1:0|10:1535524814|23:username-localhost-8891|44:MDQzYjk2ZGIxNjQwNDFiY2JhNjg4MmU5Nzc3MGU0YTc=|0bda80a8a3c38050748f46eaf9352a91d053c3ac5c2a988f3e02bd2326bb3fc4\"; username-localhost-8892=\"2|1:0|10:1535533021|23:username-localhost-8892|44:N2Q3MmJkYjBmYjYxNGMxYzk3Mjc5NGY2YTYzOTU0ZTY=|736211f3bf0a8f4471b4c898671cc3920d2e05411fe97e54b311f062fd02d6c5\"; username-localhost-8888=\"2|1:0|10:1535604063|23:username-localhost-8888|44:NmU5MjczYzc2M2ZmNGRhNWEzZWU2OTk3ZTUyMzBhZTY=|dcb36ea774066b8e9eb24ffbc76f6653f5dad24f820c09a00cea766593d3e705\"; PHPSESSID=d5e15978edd02322fa3a8017c2f07378; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=0c8e49ae235f301b27c7607f2a1572c9e01d98794a0d07a19d090340dbcd83e9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22A0kre6gpwcvZBRmHYcmpN85sXHHD-TNG%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '40360'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536260284.866
+    'REQUEST_TIME' => 1536260284
+]

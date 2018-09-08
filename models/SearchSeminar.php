@@ -18,8 +18,8 @@ class SearchSeminar extends Seminar
     public function rules()
     {
         return [
-            [['seminar_id', 'department_id', 'academic_year_id'], 'integer'],
-            [['speaker_name', 'start_date', 'end_date', 'participant', 'venue', 'inhouse', 'created_at', 'updated_at'], 'safe'],
+            [['seminar_id'], 'integer'],
+            [['speaker_name', 'start_date', 'end_date', 'participant', 'venue', 'inhouse', 'created_at', 'updated_at', 'department_id', 'academic_year_id'], 'safe'],
         ];
     }
 
@@ -57,13 +57,14 @@ class SearchSeminar extends Seminar
             return $dataProvider;
         }
 
+        $query->joinWith('academicYear');
+        $query->joinWith('department');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'seminar_id' => $this->seminar_id,
             'start_date' => $this->start_date,
             'end_date' => $this->end_date,
-            'department_id' => $this->department_id,
-            'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
@@ -72,6 +73,8 @@ class SearchSeminar extends Seminar
             ->andFilterWhere(['like', 'participant', $this->participant])
             ->andFilterWhere(['like', 'venue', $this->venue])
             ->andFilterWhere(['like', 'inhouse', $this->inhouse]);
+        $query->andFilterWhere(['like', 'department.name', $this->department_id]);
+        $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
 
         return $dataProvider;
     }

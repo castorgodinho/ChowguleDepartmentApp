@@ -18,8 +18,8 @@ class SearchEvent extends Event
     public function rules()
     {
         return [
-            [['event_id', 'department_id', 'academic_year_id'], 'integer'],
-            [['name', 'venue', 'inhouse', 'participant', 'start_date', 'end_date', 'created_at', 'updated_at'], 'safe'],
+            [['event_id'], 'integer'],
+            [['name', 'venue', 'inhouse', 'participant', 'start_date', 'end_date', 'created_at', 'updated_at', 'department_id', 'academic_year_id'], 'safe'],
             [['cost'], 'number'],
         ];
     }
@@ -58,14 +58,15 @@ class SearchEvent extends Event
             return $dataProvider;
         }
 
+        $query->joinWith('academicYear');
+        $query->joinWith('department');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'event_id' => $this->event_id,
             'cost' => $this->cost,
             'start_date' => $this->start_date,
             'end_date' => $this->end_date,
-            'department_id' => $this->department_id,
-            'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
@@ -74,6 +75,9 @@ class SearchEvent extends Event
             ->andFilterWhere(['like', 'venue', $this->venue])
             ->andFilterWhere(['like', 'inhouse', $this->inhouse])
             ->andFilterWhere(['like', 'participant', $this->participant]);
+        $query->andFilterWhere(['like', 'department.name', $this->department_id]);
+        $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
+    
 
         return $dataProvider;
     }
