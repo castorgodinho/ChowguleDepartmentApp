@@ -68,3 +68,421 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1536256554.449
     'REQUEST_TIME' => 1536256554
 ]
+2018-09-08 06:09:03 [127.0.0.1][100][72bfa36809efa4c911bf2dd45f553526][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/bvoc in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('bvoc', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/bvoc', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-09-08 06:09:03 [127.0.0.1][100][72bfa36809efa4c911bf2dd45f553526][info][application] $_GET = [
+    'r' => 'site/bvoc'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5NLX1wFhrFMqTVx39L2SgAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '46818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/bvoc'
+    'REQUEST_URI' => '/basic/web/index.php?r=site/bvoc'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536379743.028
+    'REQUEST_TIME' => 1536379743
+]
+2018-09-08 06:09:24 [127.0.0.1][100][72bfa36809efa4c911bf2dd45f553526][error][ParseError] ParseError: syntax error, unexpected '<<' (T_SL), expecting ']' in /opt/lampp/htdocs/basic/models/PaperType.php:35
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Pape...')
+#1 /opt/lampp/htdocs/basic/models/SearchPaperType.php(13): spl_autoload_call('app\\models\\Pape...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(293): include('/opt/lampp/htdo...')
+#3 [internal function]: yii\BaseYii::autoload('app\\models\\Sear...')
+#4 /opt/lampp/htdocs/basic/controllers/PaperTypeController.php(39): spl_autoload_call('app\\models\\Sear...')
+#5 [internal function]: app\controllers\PaperTypeController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper-type', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-09-08 06:09:24 [127.0.0.1][100][72bfa36809efa4c911bf2dd45f553526][info][application] $_GET = [
+    'r' => 'paper-type'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '72bfa36809efa4c911bf2dd45f553526'
+    '_csrf' => 'db5f2be138baf2d7929cc36ad486c8c807b1d6e111c505cfcf0d4af50c860a55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AbYpifEFVLvD9q98ZQSdghg326-EiIVz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5NLdJTNCnhVLUtM@bVHuwAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=72bfa36809efa4c911bf2dd45f553526; _csrf=db5f2be138baf2d7929cc36ad486c8c807b1d6e111c505cfcf0d4af50c860a55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AbYpifEFVLvD9q98ZQSdghg326-EiIVz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '46838'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper-type'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper-type'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536379764.795
+    'REQUEST_TIME' => 1536379764
+]
+2018-09-08 16:07:28 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/bvoc in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('bvoc', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/bvoc', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-09-08 16:07:28 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][info][application] $_GET = [
+    'r' => 'site/bvoc'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PXnwEdReFv@WXE3EyUxQAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/bvoc'
+    'REQUEST_URI' => '/basic/web/index.php?r=site/bvoc'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536415647.94
+    'REQUEST_TIME' => 1536415647
+]
+2018-09-08 16:18:08 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][error][Error] Error: Class 'app\controllers\Faculty' not found in /opt/lampp/htdocs/basic/controllers/PaperController.php:127
+Stack trace:
+#0 [internal function]: app\controllers\PaperController->actionDelete('3')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/delete', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-09-08 16:18:08 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][info][application] $_GET = [
+    'r' => 'paper/delete'
+    'id' => '3'
+]
+
+$_POST = [
+    '_csrf' => 'GtIas53PyGN5_JlMh83tmvN3WiLO2YPMM2p_rgFXpQctjXuC_6aaLjLK8Sjthd7wmkMCF7uL56ECOkrANwHIUg=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '03d1ecbf6a0f3ab24fbd29b4c406ab30'
+    '_csrf' => '754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PaINrPgPfdVqA7-U138gAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Fview&id=3'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=03d1ecbf6a0f3ab24fbd29b4c406ab30; _csrf=754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36476'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=paper%2Fdelete&id=3'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fdelete&id=3'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536416288.928
+    'REQUEST_TIME' => 1536416288
+]
+2018-09-08 16:30:49 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][error][Error] Error: Class 'app\controllers\Faculty' not found in /opt/lampp/htdocs/basic/controllers/PaperController.php:127
+Stack trace:
+#0 [internal function]: app\controllers\PaperController->actionDelete('3')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/delete', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-09-08 16:30:48 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][info][application] $_GET = [
+    'r' => 'paper/delete'
+    'id' => '3'
+]
+
+$_POST = [
+    '_csrf' => '32y0k5Nsi-FqPEfQ-dKjMw5K6ZjiAqRQNCmuBIPzV-XoM9Wi8QXZrCEKL7STmpBZZ36xrZdQwD0FeZtqtaU6sA=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '03d1ecbf6a0f3ab24fbd29b4c406ab30'
+    '_csrf' => '754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PdGEtS1UhxETYxIwH6DAAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=03d1ecbf6a0f3ab24fbd29b4c406ab30; _csrf=754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36574'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=paper%2Fdelete&id=3'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fdelete&id=3'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536417048.951
+    'REQUEST_TIME' => 1536417048
+]
+2018-09-08 16:47:57 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][error][ParseError] ParseError: syntax error, unexpected ';', expecting ']' in /opt/lampp/htdocs/basic/controllers/PaperController.php:64
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(637): class_exists('app\\controllers...')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('paper')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('index')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/index', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-09-08 16:47:57 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][info][application] $_GET = [
+    'r' => 'paper/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '03d1ecbf6a0f3ab24fbd29b4c406ab30'
+    '_csrf' => '754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PhHQEdReFv@WXE3EyU6wAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=03d1ecbf6a0f3ab24fbd29b4c406ab30; _csrf=754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36674'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536418077.7
+    'REQUEST_TIME' => 1536418077
+]

@@ -63,6 +63,7 @@ class searchPaper extends Paper
             'program_id' => $this->program_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'status'=>1,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])

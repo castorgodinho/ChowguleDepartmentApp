@@ -57,9 +57,16 @@ class PaperController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        if(!Yii::$app->user->isGuest){
+            
+            return $this->render('view', [
+                'model' => $this->findModel($id),
+                
+            ]);
+        }
+        else{
+            throw new \yii\web\ForbiddenHttpException;
+        }
     }
 
     /**
@@ -70,16 +77,19 @@ class PaperController extends Controller
     public function actionCreate()
     {
         $model = new Paper();
+        if(!Yii::$app->user->isGuest){
+            if ($model->load(Yii::$app->request->post())){
+        
+                $model->save() ;
+                return $this->redirect(['view', 'id' => $model->paper_id]);
+            }
 
-        if ($model->load(Yii::$app->request->post())){
-	 $model->status ="1";
-	 $model->save() ;
-            return $this->redirect(['view', 'id' => $model->paper_id]);
+            return $this->render('create', [
+                'model' => $model,
+            ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;
         }
-
-        return $this->render('create', [
-            'model' => $model,
-        ]);
     }
 
     /**
@@ -92,14 +102,17 @@ class PaperController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        if(!Yii::$app->user->isGuest){
+            if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
+                return $this->redirect(['view', 'id' => $model->paper_id]);
+            }
 
-        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
-            return $this->redirect(['view', 'id' => $model->paper_id]);
+            return $this->render('update', [
+                'model' => $model,
+            ]);
+        }else{
+            throw new \yii\web\ForbiddenHttpException;   
         }
-
-        return $this->render('update', [
-            'model' => $model,
-        ]);
     }
 
     /**
@@ -112,9 +125,14 @@ class PaperController extends Controller
     
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
+        if(!Yii::$app->user->isGuest){
+            $model =Paper::findOne($id);
+            $model->status = 0;
+            $model->save(false);
+            return $this->redirect(['index']);
+        }else{
+            throw new \yii\web\ForbiddenHttpException; 
+        }
     }
 
     /**
