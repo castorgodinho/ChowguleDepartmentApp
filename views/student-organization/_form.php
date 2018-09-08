@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Organization;
 use app\models\Student;
+use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\StudentOrganization */
@@ -25,7 +26,16 @@ use app\models\Student;
         ['prompt'=>'select ']
     ) ?>
 
-    <?= $form->field($model, 'date_of_joining')->textInput() ?>
+
+    <?= DatePicker::widget([
+        'model' => $model,
+        'attribute' => 'date_of_joining',
+            'clientOptions' => [
+                'autoclose' => false,
+                'format' => 'yyyy-mm-dd'
+            ]
+    ]);?>
+
 
     <?= $form->field($model, 'position')->textInput(['maxlength' => true]) ?>
 
