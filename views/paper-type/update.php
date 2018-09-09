@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\PaperType */
 
-$this->title = 'Update Paper Type: {nameAttribute}';
+$this->title = 'Update Paper Type';
 $this->params['breadcrumbs'][] = ['label' => 'Paper Types', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->paper_type_id, 'url' => ['view', 'id' => $model->paper_type_id]];
 $this->params['breadcrumbs'][] = 'Update';
