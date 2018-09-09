@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\PaperType;
+use app\models\StudentActivity;
 
 /**
- * SearchPaperType represents the model behind the search form of `app\models\PaperType`.
+ * SearchStudentActivity represents the model behind the search form of `app\models\StudentActivity`.
  */
-class SearchPaperType extends PaperType
+class SearchStudentActivity extends StudentActivity
 {
     /**
      * @inheritdoc
@@ -18,8 +18,9 @@ class SearchPaperType extends PaperType
     public function rules()
     {
         return [
-            [['paper_type_id'], 'integer'],
-            [['created_at', 'updated_at', 'status','paper_id',  'type_id', 'academic_year_id'], 'safe'],
+            [['student_activity_id', 'department_id', 'academic_year_id'], 'integer'],
+            [['name', 'start_date', 'end_date', 'faculty_name', 'student_name', 'created_at', 'updated_at'], 'safe'],
+            [['budget'], 'number'],
         ];
     }
 
@@ -41,7 +42,7 @@ class SearchPaperType extends PaperType
      */
     public function search($params)
     {
-        $query = PaperType::find();
+        $query = StudentActivity::find();
 
         // add conditions that should always apply here
 
@@ -57,21 +58,22 @@ class SearchPaperType extends PaperType
             return $dataProvider;
         }
 
-        $query->joinWith('paper');
-        $query->joinWith('type');
-        $query->joinWith('academicYear');
         // grid filtering conditions
         $query->andFilterWhere([
-            'paper_type_id' => $this->paper_type_id,
+            'student_activity_id' => $this->student_activity_id,
+            'budget' => $this->budget,
+            'start_date' => $this->start_date,
+            'end_date' => $this->end_date,
+            'department_id' => $this->department_id,
+            'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'paper_type.status'=>1,
-            
         ]);
 
-        $query->andFilterWhere(['like', 'paper.name', $this->paper_id]);
-        $query->andFilterWhere(['like', 'type.name', $this->type_id]);
-        $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'faculty_name', $this->faculty_name])
+            ->andFilterWhere(['like', 'student_name', $this->student_name]);
+
         return $dataProvider;
     }
 }

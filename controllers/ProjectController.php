@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\PaperType;
-use app\models\SearchPaperType;
+use app\models\Project;
+use app\models\SearchProject;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * PaperTypeController implements the CRUD actions for PaperType model.
+ * ProjectController implements the CRUD actions for Project model.
  */
-class PaperTypeController extends Controller
+class ProjectController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,13 +30,13 @@ class PaperTypeController extends Controller
     }
 
     /**
-     * Lists all PaperType models.
+     * Lists all Project models.
      * @return mixed
      */
     public function actionIndex()
     {
         if(!Yii::$app->user->isGuest){
-            $searchModel = new SearchPaperType();
+            $searchModel = new SearchProject();
             $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
             return $this->render('index', [
@@ -46,11 +46,10 @@ class PaperTypeController extends Controller
         }else{
             throw new \yii\web\ForbiddenHttpException;
         }
-        
     }
 
     /**
-     * Displays a single PaperType model.
+     * Displays a single Project model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -63,20 +62,20 @@ class PaperTypeController extends Controller
             ]);
         }else{
             throw new \yii\web\ForbiddenHttpException;
-        }    
+        }   
     }
 
     /**
-     * Creates a new PaperType model.
+     * Creates a new Project model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new PaperType();
+        $model = new Project();
         if(!Yii::$app->user->isGuest){
             if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->paper_type_id]);
+                return $this->redirect(['view', 'id' => $model->project_id]);
             }
 
             return $this->render('create', [
@@ -88,7 +87,7 @@ class PaperTypeController extends Controller
     }
 
     /**
-     * Updates an existing PaperType model.
+     * Updates an existing Project model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -99,47 +98,41 @@ class PaperTypeController extends Controller
         $model = $this->findModel($id);
         if(!Yii::$app->user->isGuest){
             if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
-                return $this->redirect(['view', 'id' => $model->paper_type_id]);
+                return $this->redirect(['view', 'id' => $model->project_id]);
             }
 
             return $this->render('update', [
                 'model' => $model,
             ]);
         }else{
-            throw new \yii\web\ForbiddenHttpException;   
-        }
+            throw new \yii\web\ForbiddenHttpException;
+        } 
     }
 
     /**
-     * Deletes an existing PaperType model.
+     * Deletes an existing Project model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-   
     public function actionDelete($id)
     {
-        if(!Yii::$app->user->isGuest){
-            $model =PaperType::findOne($id);
-            $model->status = 0;
-            $model->save(false);
-            return $this->redirect(['index']);
-        }else{
-            throw new \yii\web\ForbiddenHttpException; 
-        }
+        $this->findModel($id)->delete();
+
+        return $this->redirect(['index']);
     }
 
     /**
-     * Finds the PaperType model based on its primary key value.
+     * Finds the Project model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return PaperType the loaded model
+     * @return Project the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = PaperType::findOne($id)) !== null) {
+        if (($model = Project::findOne($id)) !== null) {
             return $model;
         }
 
