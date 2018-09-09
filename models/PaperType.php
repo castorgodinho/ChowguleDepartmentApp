@@ -32,7 +32,6 @@ class PaperType extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            
             [['paper_type_id', 'paper_id', 'type_id', 'academic_year_id'], 'integer'],
             [['paper_type_id'], 'unique'],
             [['academic_year_id'], 'exist', 'skipOnError' => true, 'targetClass' => AcademicYear::className(), 'targetAttribute' => ['academic_year_id' => 'academic_year_id']],
