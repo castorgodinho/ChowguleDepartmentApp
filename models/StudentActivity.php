@@ -62,8 +62,8 @@ class StudentActivity extends \yii\db\ActiveRecord
             'end_date' => 'End Date',
             'faculty_name' => 'Faculty Name',
             'student_name' => 'Student Name',
-            'department_id' => 'Department ID',
-            'academic_year_id' => 'Academic Year ID',
+            'department_id' => 'Department Name',
+            'academic_year_id' => 'Academic Year ',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];
