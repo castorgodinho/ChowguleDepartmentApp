@@ -14,12 +14,14 @@ use app\models\Program;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'name')->textInput(['style'=>'width:50%;']) ?>
 
    <?= $form->field($model, 'program_id')->dropDownList(
         ArrayHelper::map(Program::find()->all(),'program_id','name'),
-        ['prompt'=>'select ']
-    )
+        ['prompt'=>'select ',
+        'contentOptions' => ['style' => 'width:50%; '],]
+   )
+   
     ?>
 
     <div class="form-group">

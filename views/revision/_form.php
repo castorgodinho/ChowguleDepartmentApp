@@ -16,7 +16,7 @@ use dosamigos\datepicker\DatePicker;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'syllabus_file')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'syllabus_file')->textarea(['style'=>'width:50%;']) ?>
     
     <?= $form->field($model, 'syllabus_date')->widget(DatePicker::className(), [
     'model' => $model,
@@ -30,13 +30,15 @@ use dosamigos\datepicker\DatePicker;
 
 	<?=$form->field($model,'paper_id')->dropDownList(
 		ArrayHelper::map(Paper::find()->where(['status'=>1])->all(),'paper_id','name'),
-		['prompt'=>'select']
+		['prompt'=>'select ',
+        'style'=>'width:50%;']
 )?>
 
 
 		<?=$form->field($model,'academic_year_id')->dropDownList(
 		ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
-		['prompt'=>'select']
+		['prompt'=>'select ',
+        'style'=>'width:50%;']
 )?>
 
     <div class="form-group">

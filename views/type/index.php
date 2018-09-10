@@ -1,3 +1,13 @@
+<style>
+    h1{
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+        float:right;
+        margin-top:30px;
+    }
+</style>
 <?php
 
 use yii\helpers\Html;
