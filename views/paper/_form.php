@@ -17,7 +17,7 @@ use app\models\Program;
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
    <?= $form->field($model, 'program_id')->dropDownList(
-        ArrayHelper::map(Program::find()->where(['status'=>1])->all(),'program_id','name'),
+        ArrayHelper::map(Program::find()->all(),'program_id','name'),
         ['prompt'=>'select ']
     )
     ?>

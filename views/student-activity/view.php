@@ -19,8 +19,21 @@ $this->params['breadcrumbs'][] = $this->title;
             //'student_activity_id',
             'name',
             'budget',
-            'start_date',
-            'end_date',
+            [
+                'label'=>'Start Date',
+                'value'=>function($model){
+                    return date('d M Y', strtotime($model->start_date));
+                },
+                'attribute' => 'start_date',
+            ],
+          
+            [
+                'label'=>'End Date',
+                'value'=>function($model){
+                    return date('d M Y', strtotime($model->end_date));
+                },
+                'attribute' => 'end_date',
+            ],
             'faculty_name:ntext',
             'student_name:ntext',
             'department.name',

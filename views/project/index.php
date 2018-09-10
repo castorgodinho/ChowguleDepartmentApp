@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Project', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('+ Add Project', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -28,8 +28,21 @@ $this->params['breadcrumbs'][] = $this->title;
             //'project_id',
             'approval_id',
             'name',
-            'start_date',
-            'end_date',
+            [
+                'label'=>'Start Date',
+                'value'=>function($model){
+                    return date('d M Y', strtotime($model->start_date));
+                },
+                'attribute' => 'start_date',
+            ],
+          
+            [
+                'label'=>'End Date',
+                'value'=>function($model){
+                    return date('d M Y', strtotime($model->end_date));
+                },
+                'attribute' => 'end_date',
+            ],
             //'agency_name',
             //'duration',
             //'amount',
