@@ -26,6 +26,14 @@ use dosamigos\datepicker\DatePicker;
         ['prompt'=>'select ']
     ) ?>
 
+<<<<<<< HEAD
+
+    <?= DatePicker::widget([
+        'model' => $model,
+        'attribute' => 'date_of_joining',
+            'clientOptions' => [
+                'autoclose' => false,
+=======
     <?= $form->field($model, 'date_of_joining')->widget(
     DatePicker::className(), [
             // inline too, not bad
@@ -33,6 +41,7 @@ use dosamigos\datepicker\DatePicker;
             // modify template for custom rendering
             'clientOptions' => [
                 'autoclose' => true,
+>>>>>>> 633e0b7e33baaa1a21dbb2b0d2ace333c6d72e81
                 'format' => 'yyyy-mm-dd'
             ]
     ]);?>

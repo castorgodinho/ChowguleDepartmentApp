@@ -65,6 +65,7 @@ class searchRevision extends Revision
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'academic_year_id' => $this->academic_year_id,
+            'status'=>1,
         ]);
 
         $query->andFilterWhere(['like', 'syllabus_file', $this->syllabus_file])

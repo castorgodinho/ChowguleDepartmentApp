@@ -25,10 +25,28 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'paper_type_id',
-            'paper_id',
-            'type_id',
-            'academic_year_id',
+            //'paper_type_id',
+            
+            [
+                'label' => 'Paper Name',
+                'value' => 'paper.name',
+                'attribute' => 'paper_id',
+            ],
+            
+            [
+                'label' => 'Type Name',
+                'value' => 'type.name',
+                'attribute' => 'type_id',
+            ],
+        
+            [
+                'label' => 'Academic Year Name',
+                'value' => 'academicYear.year',
+                'attribute' => 'academic_year_id',
+            ],
+            // 'created_at',
+          // 'updated_at',
+          // 'status',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

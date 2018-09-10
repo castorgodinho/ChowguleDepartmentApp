@@ -9,3 +9,4 @@ ALTER TABLE `paper` CHANGE `status` `status` TINYINT(1) NULL DEFAULT '1';
 ALTER TABLE `type` CHANGE `status` `status` TINYINT(1) NULL DEFAULT '1';
 ALTER TABLE `revision` CHANGE `status` `status` TINYINT(1) NULL DEFAULT '1';
 
+ALTER TABLE `paper_type` ADD `status` TINYINT(1) NULL DEFAULT '1';

@@ -22,6 +22,10 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'type_id') ?>
 
     <?= $form->field($model, 'academic_year_id') ?>
+    
+
+    <?php // echo $form->field($model, 'status') ?>
+
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

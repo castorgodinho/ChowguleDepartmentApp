@@ -18,7 +18,8 @@ class SearchPaperType extends PaperType
     public function rules()
     {
         return [
-            [['paper_type_id', 'paper_id', 'type_id', 'academic_year_id'], 'integer'],
+            [['paper_type_id'], 'integer'],
+            [[ 'status','paper_id',  'type_id', 'academic_year_id'], 'safe'],
         ];
     }
 
@@ -56,14 +57,20 @@ class SearchPaperType extends PaperType
             return $dataProvider;
         }
 
+        $query->joinWith('paper');
+        $query->joinWith('type');
+        $query->joinWith('academicYear');
         // grid filtering conditions
         $query->andFilterWhere([
             'paper_type_id' => $this->paper_type_id,
-            'paper_id' => $this->paper_id,
-            'type_id' => $this->type_id,
-            'academic_year_id' => $this->academic_year_id,
+            
+            'paper_type.status'=>1,
+            
         ]);
 
+        $query->andFilterWhere(['like', 'paper.name', $this->paper_id]);
+        $query->andFilterWhere(['like', 'type.name', $this->type_id]);
+        $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
         return $dataProvider;
     }
 }

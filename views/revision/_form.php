@@ -5,6 +5,7 @@ use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 use app\models\Paper;
 use app\models\AcademicYear;
+use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Revision */
@@ -16,15 +17,22 @@ use app\models\AcademicYear;
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'syllabus_file')->textarea(['rows' => 6]) ?>
-
-    <?= $form->field($model, 'syllabus_date')->textInput() ?>
+    
+    <?= $form->field($model, 'syllabus_date')->widget(DatePicker::className(), [
+    'model' => $model,
+    'attribute' => 'syllabus_date',
+        'clientOptions' => [
+            'autoclose' => false,
+            'format' => 'yyyy-mm-dd'
+        ]
+]);?>
+    
 
 	<?=$form->field($model,'paper_id')->dropDownList(
 		ArrayHelper::map(Paper::find()->all(),'paper_id','name'),
 		['prompt'=>'select']
 )?>
 
-    <?php $model->status =1; ?>
 
 		<?=$form->field($model,'academic_year_id')->dropDownList(
 		ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
