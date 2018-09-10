@@ -18,8 +18,8 @@ class SearchWorkshop extends Workshop
     public function rules()
     {
         return [
-            [['workshop_id', 'department_id', 'academic_year_id'], 'integer'],
-            [['name', 'inhouse', 'participant', 'faculty_name', 'start_date', 'end_date', 'created_at', 'updated_at'], 'safe'],
+            [['workshop_id'], 'integer'],
+            [['name', 'inhouse', 'participant', 'faculty_name', 'start_date', 'end_date', 'created_at', 'updated_at', 'department_id', 'academic_year_id'], 'safe'],
             [['cost'], 'number'],
         ];
     }
@@ -58,14 +58,15 @@ class SearchWorkshop extends Workshop
             return $dataProvider;
         }
 
+        $query->joinWith('academicYear');
+        $query->joinWith('department');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'workshop_id' => $this->workshop_id,
             'cost' => $this->cost,
             'start_date' => $this->start_date,
             'end_date' => $this->end_date,
-            'department_id' => $this->department_id,
-            'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
@@ -74,6 +75,8 @@ class SearchWorkshop extends Workshop
             ->andFilterWhere(['like', 'inhouse', $this->inhouse])
             ->andFilterWhere(['like', 'participant', $this->participant])
             ->andFilterWhere(['like', 'faculty_name', $this->faculty_name]);
+        $query->andFilterWhere(['like', 'department.name', $this->department_id]);
+        $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
 
         return $dataProvider;
     }

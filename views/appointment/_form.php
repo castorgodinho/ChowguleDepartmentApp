@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 use app\models\Faculty;
+use yii\jui\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Appointment */
@@ -18,7 +19,7 @@ use app\models\Faculty;
     )?>
     <?= $form->field($model, 'date_of_joining')->textInput() ?>
 
-    <?= $form->field($model, 'date_of_leaving')->textInput() ?>
+    <?= $form->field($model,'date_of_leaving')->widget(DatePicker::className(),['clientOptions' => ['defaultDate' => '2014-01-01']]) ?>
    
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

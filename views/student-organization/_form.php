@@ -22,16 +22,26 @@ use dosamigos\datepicker\DatePicker;
     ) ?>
 
     <?= $form->field($model, 'student_id')->dropDownList(
-        ArrayHelper::map(Student::find()->all(),'student_id','name'),
+        ArrayHelper::map(Student::find()->where(['status' => 1])->all(),'student_id','name'),
         ['prompt'=>'select ']
     ) ?>
 
+<<<<<<< HEAD
 
     <?= DatePicker::widget([
         'model' => $model,
         'attribute' => 'date_of_joining',
             'clientOptions' => [
                 'autoclose' => false,
+=======
+    <?= $form->field($model, 'date_of_joining')->widget(
+    DatePicker::className(), [
+            // inline too, not bad
+            'inline' => false, 
+            // modify template for custom rendering
+            'clientOptions' => [
+                'autoclose' => true,
+>>>>>>> 633e0b7e33baaa1a21dbb2b0d2ace333c6d72e81
                 'format' => 'yyyy-mm-dd'
             ]
     ]);?>

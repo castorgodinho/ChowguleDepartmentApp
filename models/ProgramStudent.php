@@ -51,8 +51,8 @@ class ProgramStudent extends \yii\db\ActiveRecord
     {
         return [
             'program_student_id' => 'Program Student ID',
-            'program_id' => 'Program ID',
-            'student_id' => 'Student ID',
+            'program_id' => 'Program ',
+            'student_id' => 'Student ',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'status' => 'Status',

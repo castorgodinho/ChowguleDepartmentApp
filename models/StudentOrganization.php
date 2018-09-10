@@ -50,7 +50,7 @@ class StudentOrganization extends \yii\db\ActiveRecord
         return [
             'student_organization_id' => 'Student Organization ID',
             'organization_id' => 'Organization',
-            'student_id' => 'Student',
+            'student_id' => 'Student Name',
             'date_of_joining' => 'Date Of Joining',
             'position' => 'Position',
             'created_at' => 'Created At',
