@@ -18,8 +18,8 @@ class SearchExaminer extends Examiner
     public function rules()
     {
         return [
-            [['examiner_id', 'department_id', 'academic_year_id'], 'integer'],
-            [['name', 'faculty_name', 'venue', 'start_date', 'end_date', 'created_at', 'updated_at'], 'safe'],
+            [['examiner_id'], 'integer'],
+            [['name', 'faculty_name', 'venue', 'start_date', 'end_date', 'created_at', 'updated_at', 'department_id', 'academic_year_id'], 'safe'],
         ];
     }
 
@@ -57,13 +57,14 @@ class SearchExaminer extends Examiner
             return $dataProvider;
         }
 
+        $query->joinWith('academicYear');
+        $query->joinWith('department');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'examiner_id' => $this->examiner_id,
             'start_date' => $this->start_date,
             'end_date' => $this->end_date,
-            'department_id' => $this->department_id,
-            'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
@@ -71,6 +72,8 @@ class SearchExaminer extends Examiner
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'faculty_name', $this->faculty_name])
             ->andFilterWhere(['like', 'venue', $this->venue]);
+        $query->andFilterWhere(['like', 'department.name', $this->department_id]);
+        $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
 
         return $dataProvider;
     }

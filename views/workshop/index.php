@@ -33,8 +33,16 @@ $this->params['breadcrumbs'][] = $this->title;
             'faculty_name:ntext',
             'start_date',
             'end_date',
-            'department.name',
-            'academicYear.year',
+            [
+                'label' => 'Department Name',
+                'value' => 'department.name',
+                'attribute' => 'department_id',
+                ],
+            [
+                'label' => 'Academic Year',
+                'value' => 'academicYear.year',
+                'attribute' => 'academic_year_id',
+                ],    
             //'created_at',
             //'updated_at',
 
