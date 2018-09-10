@@ -62,8 +62,6 @@ class SearchStudentActivity extends StudentActivity
         $query->andFilterWhere([
             'student_activity_id' => $this->student_activity_id,
             'budget' => $this->budget,
-            'start_date' => $this->start_date,
-            'end_date' => $this->end_date,
             'department_id' => $this->department_id,
             'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
@@ -72,7 +70,9 @@ class SearchStudentActivity extends StudentActivity
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'faculty_name', $this->faculty_name])
-            ->andFilterWhere(['like', 'student_name', $this->student_name]);
+            ->andFilterWhere(['like', 'student_name', $this->student_name])
+            ->andFilterWhere(['like', 'start_date', $this->start_date])
+            ->andFilterWhere(['like', 'end_date', $this->end_date]);
 
         return $dataProvider;
     }

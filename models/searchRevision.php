@@ -60,7 +60,7 @@ class searchRevision extends Revision
         // grid filtering conditions
         $query->andFilterWhere([
             'revision_id' => $this->revision_id,
-            'syllabus_date' => $this->syllabus_date,
+            
             'paper_id' => $this->paper_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
@@ -69,7 +69,9 @@ class searchRevision extends Revision
         ]);
 
         $query->andFilterWhere(['like', 'syllabus_file', $this->syllabus_file])
-            ->andFilterWhere(['like', 'status', $this->status]);
+            ->andFilterWhere(['like', 'status', $this->status])
+            ->andFilterWhere(['like', 'syllabus_date', $this->syllabus_date]);
+
 
         return $dataProvider;
     }

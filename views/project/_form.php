@@ -52,12 +52,12 @@ use dosamigos\datepicker\DatePicker;
     <?= $form->field($model, 'student_name')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'department_id')->dropDownList(
-		ArrayHelper::map(Department::find()->all(),'department_id','name'),
+		ArrayHelper::map(Department::find()->where(['status'=>1])->all(),'department_id','name'),
         ['prompt'=>'select']
     )?>
 
     <?= $form->field($model, 'academic_year_id')->dropDownList(
-		ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
+		ArrayHelper::map(AcademicYear::find()->where(['status'=>1])->all(),'academic_year_id','year'),
 		['prompt'=>'select']
 	) ?>
 

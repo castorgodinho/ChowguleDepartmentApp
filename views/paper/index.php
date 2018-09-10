@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1 style="display: inline-block"><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p style="display: inline-block">
+    <p style="display: inline-block;float:right;margin-top:20px;">
         <?= Html::a('+ Add Paper', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
