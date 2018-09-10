@@ -23,9 +23,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'academic_year_id') ?>
     
-    <?= $form->field($model, 'created_at') ?>
-
-    <?= $form->field($model, 'updated_at') ?>
 
     <?php // echo $form->field($model, 'status') ?>
 

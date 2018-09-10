@@ -19,7 +19,7 @@ class SearchPaperType extends PaperType
     {
         return [
             [['paper_type_id'], 'integer'],
-            [['created_at', 'updated_at', 'status','paper_id',  'type_id', 'academic_year_id'], 'safe'],
+            [[ 'status','paper_id',  'type_id', 'academic_year_id'], 'safe'],
         ];
     }
 
@@ -63,8 +63,7 @@ class SearchPaperType extends PaperType
         // grid filtering conditions
         $query->andFilterWhere([
             'paper_type_id' => $this->paper_type_id,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
+            
             'paper_type.status'=>1,
             
         ]);

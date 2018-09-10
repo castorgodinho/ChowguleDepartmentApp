@@ -20,8 +20,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'paper.name',
             'type.name',
             'academicYear.year',
-            // 'created_at',
-           // 'updated_at',
            // 'status',
         ],
     ]) ?>

@@ -37,7 +37,6 @@ class PaperType extends \yii\db\ActiveRecord
             [['academic_year_id'], 'exist', 'skipOnError' => true, 'targetClass' => AcademicYear::className(), 'targetAttribute' => ['academic_year_id' => 'academic_year_id']],
             [['paper_id'], 'exist', 'skipOnError' => true, 'targetClass' => Paper::className(), 'targetAttribute' => ['paper_id' => 'paper_id']],
             [['type_id'], 'exist', 'skipOnError' => true, 'targetClass' => Type::className(), 'targetAttribute' => ['type_id' => 'type_id']],
-            [['created_at', 'updated_at'], 'safe'],
             [['status'], 'string', 'max' => 1],
         ];
     }
@@ -52,8 +51,6 @@ class PaperType extends \yii\db\ActiveRecord
             'paper_id' => 'Paper Name',
             'type_id' => 'Type Name',
             'academic_year_id' => 'Academic Year ',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
             'status' => 'Status',
         ];
     }
