@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\PaperFaculty;
+use app\models\AuditingMember;
 
 /**
- * SearchPaperFaculty represents the model behind the search form of `app\models\PaperFaculty`.
+ * SearchAuditingMember represents the model behind the search form of `app\models\AuditingMember`.
  */
-class SearchPaperFaculty extends PaperFaculty
+class SearchAuditingMember extends AuditingMember
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class SearchPaperFaculty extends PaperFaculty
     public function rules()
     {
         return [
-            [['paper_faculty_id',], 'integer'],
-            [['paper_id', 'faculty_id', 'academic_year_id','created_at', 'updated_at'], 'safe'],
+            [['auditing_member_id',], 'integer'],
+            [['name', 'start_date', 'end_date', 'college_name', 'program', 'faculty_name', 'department_id', 'academic_year_id', 'created_at', 'updated_at'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class SearchPaperFaculty extends PaperFaculty
      */
     public function search($params)
     {
-        $query = PaperFaculty::find();
+        $query = AuditingMember::find();
 
         // add conditions that should always apply here
 
@@ -59,16 +59,21 @@ class SearchPaperFaculty extends PaperFaculty
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'paper_faculty_id' => $this->paper_faculty_id,
-            //'paper_id' => $this->paper_id,
-            //'faculty_id' => $this->faculty_id,
+            'auditing_member_id' => $this->auditing_member_id,
+            'start_date' => $this->start_date,
+            'end_date' => $this->end_date,
+            'department_id' => $this->department_id,
             //'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
-        $query->andFilterWhere(['like', 'faculty.name', $this->faculty_id])
-              ->andFilterWhere(['like', 'academicYear.year', $this->academic_year_id])
-              ->andFilterWhere(['like', 'paper.name', $this->paper_id]);
+
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'college_name', $this->college_name])
+            ->andFilterWhere(['like', 'program', $this->program])
+            ->andFilterWhere(['like', 'faculty_name', $this->faculty_name])
+            ->andFilterWhere(['like', 'academicYear.year', $this->academic_year_id])
+            ->andFilterWhere(['like', 'department.name', $this->department_id]);
 
         return $dataProvider;
     }

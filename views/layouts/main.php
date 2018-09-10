@@ -44,6 +44,22 @@ AppAsset::register($this);
             ['label' => 'student', 'url' => ['/student/index']],
             ['label' => 'student_organization', 'url' => ['/student-organization/index']],
             ['label' => 'organization', 'url' => ['/organization/index']],
+            ['label' => 'academic year', 'url' => ['/academic-year/index']],
+            ['label' => 'appointment', 'url' => ['/appointment/index']],
+            ['label' => 'auditing_member', 'url' => ['/auditing-member/index']],
+            ['label' => 'bos', 'url' => ['/bos/index']],
+            ['label' => 'department', 'url' => ['/department/index']],
+            ['label' => 'event', 'url' => ['/event/index']],
+            ['label' => 'examinar', 'url' => ['/examinar/index']],
+            ['label' => 'faculty', 'url' => ['/faculty/index']],
+            ['label' => 'paper', 'url' => ['/paper/index']],
+            ['label' => 'paper-faculty', 'url' => ['/paper-faculty/index']],
+            ['label' => 'paper_type', 'url' => ['/paper-type/index']],
+            ['label' => 'revision', 'url' => ['/revision/index']],
+            ['label' => 'seminar', 'url' => ['/seminar/index']],
+            ['label' => 'subject_expert', 'url' => ['/subject-expert/index']],
+            ['label' => 'type', 'url' => ['/type/index']],
+            ['label' => 'workshop', 'url' => ['/workshop/index']],
             
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]

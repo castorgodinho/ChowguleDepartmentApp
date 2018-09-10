@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Appointment;
-use app\models\SearchAppointment;
+use app\models\AuditingMember;
+use app\models\SearchAuditingMember;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * AppointmentController implements the CRUD actions for Appointment model.
+ * AuditingMemberController implements the CRUD actions for AuditingMember model.
  */
-class AppointmentController extends Controller
+class AuditingMemberController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,65 +30,53 @@ class AppointmentController extends Controller
     }
 
     /**
-     * Lists all Appointment models.
+     * Lists all AuditingMember models.
      * @return mixed
      */
     public function actionIndex()
     {
-        if(!Yii::$app->user->isGuest){
-            $searchModel = new SearchAppointment();
-            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $searchModel = new SearchAuditingMember();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-            return $this->render('index', [
-                'searchModel' => $searchModel,
-                'dataProvider' => $dataProvider,
-            ]);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
-        }
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
     /**
-     * Displays a single Appointment model.
+     * Displays a single AuditingMember model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionView($id)
     {
-        if(!Yii::$app->user->isGuest){
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
-        }
     }
 
     /**
-     * Creates a new Appointment model.
+     * Creates a new AuditingMember model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        if(!Yii::$app->user->isGuest){
-        $model = new Appointment();
+        $model = new AuditingMember();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->appointment_id]);
+            return $this->redirect(['view', 'id' => $model->auditing_member_id]);
         }
 
         return $this->render('create', [
             'model' => $model,
         ]);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
-        }
     }
 
     /**
-     * Updates an existing Appointment model.
+     * Updates an existing AuditingMember model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,23 +84,19 @@ class AppointmentController extends Controller
      */
     public function actionUpdate($id)
     {
-        if(!Yii::$app->user->isGuest){
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
-            return $this->redirect(['view', 'id' => $model->appointment_id]);
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->auditing_member_id]);
         }
 
         return $this->render('update', [
             'model' => $model,
         ]);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
-        }
     }
 
     /**
-     * Deletes an existing Appointment model.
+     * Deletes an existing AuditingMember model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -120,27 +104,21 @@ class AppointmentController extends Controller
      */
     public function actionDelete($id)
     {
-        if(!Yii::$app->user->isGuest){
-        $model =Appointment::findOne($id);
-        $model->status = 0;
-        $model->save(false);
+        $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
-        }else{
-            throw new \yii\web\ForbiddenHttpException;
-        }
     }
 
     /**
-     * Finds the Appointment model based on its primary key value.
+     * Finds the AuditingMember model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Appointment the loaded model
+     * @return AuditingMember the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Appointment::findOne($id)) !== null) {
+        if (($model = AuditingMember::findOne($id)) !== null) {
             return $model;
         }
 

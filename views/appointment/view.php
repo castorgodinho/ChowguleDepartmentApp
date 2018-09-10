@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Appointment */
 
-$this->title ='Faculty.name';
+$this->title =$model->faculty->name;
 $this->params['breadcrumbs'][] = ['label' => 'Appointments', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -29,12 +29,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             //'appointment_id',
+            'faculty.name',
             [
-                'label' => 'Faculty Name',
-                'value' => 'faculty.name',
-                'attribute' => 'faculty_id',
+                'label' => 'doj',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->date_of_joining));
+                }
             ],
-            'date_of_joining',
             'date_of_leaving',
             //'created_at',
             //'updated_at',
