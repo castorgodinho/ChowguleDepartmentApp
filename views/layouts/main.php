@@ -25,56 +25,104 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+<?php 
 
+?>
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => 'Department System',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'program', 'url' => ['/program/index']],
-            ['label' => 'program_student', 'url' => ['/program-student/index']],
-            ['label' => 'student', 'url' => ['/student/index']],
-            ['label' => 'student_organization', 'url' => ['/student-organization/index']],
-            ['label' => 'organization', 'url' => ['/organization/index']],
-            ['label' => 'academic year', 'url' => ['/academic-year/index']],
-            ['label' => 'appointment', 'url' => ['/appointment/index']],
-            ['label' => 'auditing_member', 'url' => ['/auditing-member/index']],
-            ['label' => 'bos', 'url' => ['/bos/index']],
-            ['label' => 'department', 'url' => ['/department/index']],
-            ['label' => 'event', 'url' => ['/event/index']],
-            ['label' => 'examinar', 'url' => ['/examinar/index']],
-            ['label' => 'faculty', 'url' => ['/faculty/index']],
-            ['label' => 'paper', 'url' => ['/paper/index']],
-            ['label' => 'paper-faculty', 'url' => ['/paper-faculty/index']],
-            ['label' => 'paper_type', 'url' => ['/paper-type/index']],
-            ['label' => 'revision', 'url' => ['/revision/index']],
-            ['label' => 'seminar', 'url' => ['/seminar/index']],
-            ['label' => 'subject_expert', 'url' => ['/subject-expert/index']],
-            ['label' => 'type', 'url' => ['/type/index']],
-            ['label' => 'workshop', 'url' => ['/workshop/index']],
-            
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
+    if(!Yii::$app->user->isGuest){
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => [
+                /* ['label' => 'Home', 'url' => ['/site/index']], */
+                ['label' => 'Student', 'url' => ['/student/index']],
+                ['label' => 'Admissions', 'url' => ['/program-student/index']],
+                ['label' => 'Alumni', 'url' => ['/student-organization/index']],
+                ['label' => 'Organization', 'url' => ['/organization/index']],
+                [
+                    'label' => 'Settings',
+                    'items' => [
+                        ['label' => 'Program', 'url' => ['/program/index']],
+                        ['label' => 'Academic Year', 'url' => ['/academic-year/index']],
+                        ['label' => 'Department', 'url' => ['/department/index']],
+                        ['label' => 'Assign Papers', 'url' => ['/paper-faculty/index']],
+                        ['label' => 'Revision', 'url' => ['/revision/index']],
+    
+                    ],
+                ],
+                [
+                    'label' => 'Activities',
+                    'items' => [
+                        ['label' => 'Seminar', 'url' => ['/seminar/index']],
+                        ['label' => 'Subject Expert', 'url' => ['/subject-expert/index']],
+                        ['label' => 'Wrokshop', 'url' => ['/workshop/index']],
+                        ['label' => 'Examinar', 'url' => ['/examinar/index']],
+                        ['label' => 'Event', 'url' => ['/event/index']],
+                        ['label' => 'BOS', 'url' => ['/bos/index']],
+                        ['label' => 'Auditing Member', 'url' => ['/auditing-member/index']],
+    
+                    ],
+                ],
+                [
+                    'label' => 'Paper',
+                    'items' => [
+                        ['label' => 'Paper', 'url' => ['/paper/index']],
+                        ['label' => 'Type', 'url' => ['/type/index']],
+                        ['label' => 'Assign Type', 'url' => ['/paper-type/index']],
+    
+                    ],
+                ],
+                [
+                    'label' => 'Faculty',
+                    'items' => [
+                        ['label' => 'faculty', 'url' => ['/faculty/index']],
+                        ['label' => 'Appointments', 'url' => ['/appointment/index']],
+                    ],
+                ],
+                
+                Yii::$app->user->isGuest ? (
+                    ['label' => 'Login', 'url' => ['/site/login']]
+                ) : (
+                    '<li>'
+                    . Html::beginForm(['/site/logout'], 'post')
+                    . Html::submitButton(
+                        'Logout (' . Yii::$app->user->identity->username . ')',
+                        ['class' => 'btn btn-link logout']
+                    )
+                    . Html::endForm()
+                    . '</li>'
                 )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
-    ]);
+            ],
+        ]);
+    }else{
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => [
+              
+                
+                Yii::$app->user->isGuest ? (
+                    ['label' => 'Login', 'url' => ['/site/login']]
+                ) : (
+                    '<li>'
+                    . Html::beginForm(['/site/logout'], 'post')
+                    . Html::submitButton(
+                        'Logout (' . Yii::$app->user->identity->username . ')',
+                        ['class' => 'btn btn-link logout']
+                    )
+                    . Html::endForm()
+                    . '</li>'
+                )
+            ],
+        ]);
+    }
+    
     NavBar::end();
     ?>
 
