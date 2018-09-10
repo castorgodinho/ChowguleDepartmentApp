@@ -17,12 +17,12 @@ use app\models\AcademicYear;
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'program_id')->dropDownList(
-        ArrayHelper::map(Program::find()->all(),'program_id','name'),
+        ArrayHelper::map(Program::find()->where(['status' => 1])->all(),'program_id','name'),
         ['prompt'=>'select ']
     ) ?>
 
     <?= $form->field($model, 'student_id')->dropDownList(
-        ArrayHelper::map(Student::find()->all(),'student_id','name'),
+        ArrayHelper::map(Student::find()->where(['status' => 1])->all(),'student_id','name'),
         ['prompt'=>'select ']
     ) ?>
 

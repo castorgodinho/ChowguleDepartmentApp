@@ -1,0 +1,1367 @@
+2018-09-06 19:55:54 [127.0.0.1][100][a60e327905881eb11e39d6929a2ca806][error][ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC) in /opt/lampp/htdocs/basic/controllers/PaperController.php:119
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(637): class_exists('app\\controllers...')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('paper')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('update')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/update', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-09-06 19:55:54 [127.0.0.1][100][a60e327905881eb11e39d6929a2ca806][info][application] $_GET = [
+    'r' => 'paper/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    'PHPSESSID' => 'a60e327905881eb11e39d6929a2ca806'
+    '_csrf' => '26472ab8817c5d0777f31ad0e4a224464c33275046da43087da7c0dbdb51baf1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6djU_BdddSxSTD4luKDr-XoPT04MJcxQ\";}'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5FqKkET6Hq49TukzBElQgAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; PHPSESSID=a60e327905881eb11e39d6929a2ca806; _csrf=26472ab8817c5d0777f31ad0e4a224464c33275046da43087da7c0dbdb51baf1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226djU_BdddSxSTD4luKDr-XoPT04MJcxQ%22%3B%7D; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '37566'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper%2Fupdate&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536256554.449
+    'REQUEST_TIME' => 1536256554
+]
+2018-09-08 06:09:03 [127.0.0.1][100][72bfa36809efa4c911bf2dd45f553526][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/bvoc in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('bvoc', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/bvoc', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-09-08 06:09:03 [127.0.0.1][100][72bfa36809efa4c911bf2dd45f553526][info][application] $_GET = [
+    'r' => 'site/bvoc'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5NLX1wFhrFMqTVx39L2SgAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '46818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/bvoc'
+    'REQUEST_URI' => '/basic/web/index.php?r=site/bvoc'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536379743.028
+    'REQUEST_TIME' => 1536379743
+]
+2018-09-08 06:09:24 [127.0.0.1][100][72bfa36809efa4c911bf2dd45f553526][error][ParseError] ParseError: syntax error, unexpected '<<' (T_SL), expecting ']' in /opt/lampp/htdocs/basic/models/PaperType.php:35
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Pape...')
+#1 /opt/lampp/htdocs/basic/models/SearchPaperType.php(13): spl_autoload_call('app\\models\\Pape...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(293): include('/opt/lampp/htdo...')
+#3 [internal function]: yii\BaseYii::autoload('app\\models\\Sear...')
+#4 /opt/lampp/htdocs/basic/controllers/PaperTypeController.php(39): spl_autoload_call('app\\models\\Sear...')
+#5 [internal function]: app\controllers\PaperTypeController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper-type', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-09-08 06:09:24 [127.0.0.1][100][72bfa36809efa4c911bf2dd45f553526][info][application] $_GET = [
+    'r' => 'paper-type'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '72bfa36809efa4c911bf2dd45f553526'
+    '_csrf' => 'db5f2be138baf2d7929cc36ad486c8c807b1d6e111c505cfcf0d4af50c860a55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AbYpifEFVLvD9q98ZQSdghg326-EiIVz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5NLdJTNCnhVLUtM@bVHuwAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=72bfa36809efa4c911bf2dd45f553526; _csrf=db5f2be138baf2d7929cc36ad486c8c807b1d6e111c505cfcf0d4af50c860a55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AbYpifEFVLvD9q98ZQSdghg326-EiIVz%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '46838'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper-type'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper-type'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536379764.795
+    'REQUEST_TIME' => 1536379764
+]
+2018-09-08 16:07:28 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/bvoc in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('bvoc', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/bvoc', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-09-08 16:07:28 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][info][application] $_GET = [
+    'r' => 'site/bvoc'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PXnwEdReFv@WXE3EyUxQAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/bvoc'
+    'REQUEST_URI' => '/basic/web/index.php?r=site/bvoc'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536415647.94
+    'REQUEST_TIME' => 1536415647
+]
+2018-09-08 16:18:08 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][error][Error] Error: Class 'app\controllers\Faculty' not found in /opt/lampp/htdocs/basic/controllers/PaperController.php:127
+Stack trace:
+#0 [internal function]: app\controllers\PaperController->actionDelete('3')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/delete', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-09-08 16:18:08 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][info][application] $_GET = [
+    'r' => 'paper/delete'
+    'id' => '3'
+]
+
+$_POST = [
+    '_csrf' => 'GtIas53PyGN5_JlMh83tmvN3WiLO2YPMM2p_rgFXpQctjXuC_6aaLjLK8Sjthd7wmkMCF7uL56ECOkrANwHIUg=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '03d1ecbf6a0f3ab24fbd29b4c406ab30'
+    '_csrf' => '754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PaINrPgPfdVqA7-U138gAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Fview&id=3'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=03d1ecbf6a0f3ab24fbd29b4c406ab30; _csrf=754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36476'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=paper%2Fdelete&id=3'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fdelete&id=3'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536416288.928
+    'REQUEST_TIME' => 1536416288
+]
+2018-09-08 16:30:49 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][error][Error] Error: Class 'app\controllers\Faculty' not found in /opt/lampp/htdocs/basic/controllers/PaperController.php:127
+Stack trace:
+#0 [internal function]: app\controllers\PaperController->actionDelete('3')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('delete', Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/delete', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-09-08 16:30:48 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][info][application] $_GET = [
+    'r' => 'paper/delete'
+    'id' => '3'
+]
+
+$_POST = [
+    '_csrf' => '32y0k5Nsi-FqPEfQ-dKjMw5K6ZjiAqRQNCmuBIPzV-XoM9Wi8QXZrCEKL7STmpBZZ36xrZdQwD0FeZtqtaU6sA=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '03d1ecbf6a0f3ab24fbd29b4c406ab30'
+    '_csrf' => '754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PdGEtS1UhxETYxIwH6DAAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=03d1ecbf6a0f3ab24fbd29b4c406ab30; _csrf=754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36574'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=paper%2Fdelete&id=3'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fdelete&id=3'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536417048.951
+    'REQUEST_TIME' => 1536417048
+]
+2018-09-08 16:47:57 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][error][ParseError] ParseError: syntax error, unexpected ';', expecting ']' in /opt/lampp/htdocs/basic/controllers/PaperController.php:64
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(637): class_exists('app\\controllers...')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('paper')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('index')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/index', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-09-08 16:47:57 [127.0.0.1][100][03d1ecbf6a0f3ab24fbd29b4c406ab30][info][application] $_GET = [
+    'r' => 'paper/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '03d1ecbf6a0f3ab24fbd29b4c406ab30'
+    '_csrf' => '754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PhHQEdReFv@WXE3EyU6wAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=03d1ecbf6a0f3ab24fbd29b4c406ab30; _csrf=754a402ce9f751a80da964ef92d0daa12be68d8c5671350735cbc99c498a418ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227_a1biRMK6hdjH3ji4X5uRdm1P5n6VmU%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36674'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536418077.7
+    'REQUEST_TIME' => 1536418077
+]
+2018-09-08 17:42:32 [::1][-][8b747e5422bb0e519d64849261380649][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException in /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/DepartmentController.php:47
+Stack trace:
+#0 [internal function]: app\controllers\DepartmentController->actionIndex()
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('department/inde...', Array)
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-09-08 17:42:32 [::1][-][8b747e5422bb0e519d64849261380649][info][application] $_GET = [
+    'r' => 'department/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'b23c74182e944d81418cd817a8793cd790f874c829edcdbc16ffc14cdd70068ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Yjczumf2ZCdoN1MWjVPj9H-u6eGDmZi_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5Pt6H8AAQEAAA4OfikAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=b23c74182e944d81418cd817a8793cd790f874c829edcdbc16ffc14cdd70068ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Yjczumf2ZCdoN1MWjVPj9H-u6eGDmZi_%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '35378'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=department/index'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=department/index'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536421352.172
+    'REQUEST_TIME' => 1536421352
+]
+2018-09-08 17:42:41 [::1][100][16d56fe48479487c49229afde6a41602][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProgramStudent::academic_year_id in /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('academic_year_i...')
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/models/SearchProgramStudent.php(74): yii\db\BaseActiveRecord->__get('academic_year_i...')
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/ProgramStudentController.php(40): app\models\SearchProgramStudent->search(Array)
+#3 [internal function]: app\controllers\ProgramStudentController->actionIndex()
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program-student...', Array)
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-09-08 17:42:41 [::1][100][16d56fe48479487c49229afde6a41602][info][application] $_GET = [
+    'r' => 'program-student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '16d56fe48479487c49229afde6a41602'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '8d159686d23200bd94e2d7c23e13e8d2d9204288006233c46067789fe64911a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AEjT_LDHKqZYUyAKWm6Sw-6nJADWd7Bm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5Pt8X8AAQEAAA299joAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=16d56fe48479487c49229afde6a41602; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=8d159686d23200bd94e2d7c23e13e8d2d9204288006233c46067789fe64911a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AEjT_LDHKqZYUyAKWm6Sw-6nJADWd7Bm%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '35384'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536421361.371
+    'REQUEST_TIME' => 1536421361
+]
+2018-09-08 17:44:14 [::1][100][16d56fe48479487c49229afde6a41602][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\StudentOrganization::date in /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('date')
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/helpers/BaseHtml.php(2193): yii\db\BaseActiveRecord->__get('date')
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/helpers/BaseHtml.php(1323): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\StudentOrganization), 'date')
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/helpers/BaseHtml.php(1377): yii\helpers\BaseHtml::activeInput('text', Object(app\models\StudentOrganization), 'date', Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/2amigos/yii2-date-picker-widget/src/DatePicker.php(65): yii\helpers\BaseHtml::activeTextInput(Object(app\models\StudentOrganization), 'date', Array)
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Widget.php(140): dosamigos\datepicker\DatePicker->run()
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/views/student-organization/_form.php(32): yii\base\Widget::widget(Array)
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#9 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#10 /opt/lampp/htdocs/ChowguleDepartmentApp/views/student-organization/create.php(18): yii\base\View->render('_form', Array)
+#11 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#12 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#13 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\StudentOrganizationController))
+#14 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\StudentOrganizationController))
+#15 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/StudentOrganizationController.php(84): yii\base\Controller->render('create', Array)
+#16 [internal function]: app\controllers\StudentOrganizationController->actionCreate()
+#17 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#20 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student-organiz...', Array)
+#21 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#23 {main}
+2018-09-08 17:44:14 [::1][100][16d56fe48479487c49229afde6a41602][info][application] $_GET = [
+    'r' => 'student-organization/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '16d56fe48479487c49229afde6a41602'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '8d159686d23200bd94e2d7c23e13e8d2d9204288006233c46067789fe64911a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AEjT_LDHKqZYUyAKWm6Sw-6nJADWd7Bm\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5PuTn8AAQEAAA5PMHUAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=student-organization%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=16d56fe48479487c49229afde6a41602; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=8d159686d23200bd94e2d7c23e13e8d2d9204288006233c46067789fe64911a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AEjT_LDHKqZYUyAKWm6Sw-6nJADWd7Bm%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '35406'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Fcreate'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=student-organization%2Fcreate'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536421454.341
+    'REQUEST_TIME' => 1536421454
+]
+2018-09-08 14:43:17 [::1][100][sl4qqhh7hnll3kt3191d130ef1][error][yii\base\ErrorException:2] yii\base\ErrorException: Use of undefined constant Faculry - assumed 'Faculry' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\basic\views\appointment\view.php:9
+Stack trace:
+#0 D:\xampp\htdocs\basic\views\appointment\view.php(9): yii\base\ErrorHandler->handleError(2, 'Use of undefine...', 'D:\\xampp\\htdocs...', 9, Array)
+#1 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#3 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\AppointmentController))
+#4 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\AppointmentController))
+#5 D:\xampp\htdocs\basic\controllers\AppointmentController.php(60): yii\base\Controller->render('view', Array)
+#6 [internal function]: app\controllers\AppointmentController->actionView('2')
+#7 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appointment/vie...', Array)
+#11 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2018-09-08 14:43:17 [::1][100][sl4qqhh7hnll3kt3191d130ef1][info][application] $_GET = [
+    'r' => 'appointment/view'
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'sl4qqhh7hnll3kt3191d130ef1'
+    '_csrf' => '3303cfc56a2c94a3ae8b59e67233da29ad3efc82d33e1eef511367bcf33a8bd5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"h0QUZ3XjMB70z263XF-GjL-B5g118zHG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=appointment%2Fupdate&id=2'
+    'HTTP_COOKIE' => '_identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=sl4qqhh7hnll3kt3191d130ef1; _csrf=3303cfc56a2c94a3ae8b59e67233da29ad3efc82d33e1eef511367bcf33a8bd5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22h0QUZ3XjMB70z263XF-GjL-B5g118zHG%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Shubham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Shubham\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Shubham\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '57116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fview&id=2'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Fview&id=2'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536410597.279
+    'REQUEST_TIME' => 1536410597
+]
+2018-09-08 14:44:50 [::1][100][sl4qqhh7hnll3kt3191d130ef1][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Appointment::faxulty_id in D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('faxulty_id')
+#1 D:\xampp\htdocs\basic\views\appointment\view.php(9): yii\db\BaseActiveRecord->__get('faxulty_id')
+#2 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#4 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\AppointmentController))
+#5 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\AppointmentController))
+#6 D:\xampp\htdocs\basic\controllers\AppointmentController.php(60): yii\base\Controller->render('view', Array)
+#7 [internal function]: app\controllers\AppointmentController->actionView('2')
+#8 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#11 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appointment/vie...', Array)
+#12 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2018-09-08 14:44:50 [::1][100][sl4qqhh7hnll3kt3191d130ef1][info][application] $_GET = [
+    'r' => 'appointment/view'
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'sl4qqhh7hnll3kt3191d130ef1'
+    '_csrf' => '3303cfc56a2c94a3ae8b59e67233da29ad3efc82d33e1eef511367bcf33a8bd5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"h0QUZ3XjMB70z263XF-GjL-B5g118zHG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=appointment%2Fupdate&id=2'
+    'HTTP_COOKIE' => '_identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=sl4qqhh7hnll3kt3191d130ef1; _csrf=3303cfc56a2c94a3ae8b59e67233da29ad3efc82d33e1eef511367bcf33a8bd5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22h0QUZ3XjMB70z263XF-GjL-B5g118zHG%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Shubham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Shubham\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Shubham\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '57124'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fview&id=2'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Fview&id=2'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536410690.077
+    'REQUEST_TIME' => 1536410690
+]
+2018-09-08 16:57:11 [::1][100][o000b6e9vep6jjj6a4a6030bp4][error][Error] Error: Class 'DatePicker' not found in D:\xampp\htdocs\basic\views\appointment\_form.php:21
+Stack trace:
+#0 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#2 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, NULL)
+#3 D:\xampp\htdocs\basic\views\appointment\create.php(18): yii\base\View->render('_form', Array)
+#4 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#6 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\AppointmentController))
+#7 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\AppointmentController))
+#8 D:\xampp\htdocs\basic\controllers\AppointmentController.php(78): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\AppointmentController->actionCreate()
+#10 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appointment/cre...', Array)
+#14 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2018-09-08 16:57:11 [::1][100][o000b6e9vep6jjj6a4a6030bp4][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'o000b6e9vep6jjj6a4a6030bp4'
+    '_csrf' => '41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=appointment'
+    'HTTP_COOKIE' => '_identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=o000b6e9vep6jjj6a4a6030bp4; _csrf=41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Shubham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Shubham\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Shubham\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51412'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536418631.003
+    'REQUEST_TIME' => 1536418631
+]
+2018-09-08 17:02:32 [::1][100][o000b6e9vep6jjj6a4a6030bp4][error][Error] Error: Class 'yii\jui\Datepicker' not found in D:\xampp\htdocs\basic\views\appointment\_form.php:22
+Stack trace:
+#0 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#2 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, NULL)
+#3 D:\xampp\htdocs\basic\views\appointment\create.php(18): yii\base\View->render('_form', Array)
+#4 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#6 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\AppointmentController))
+#7 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\AppointmentController))
+#8 D:\xampp\htdocs\basic\controllers\AppointmentController.php(78): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\AppointmentController->actionCreate()
+#10 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appointment/cre...', Array)
+#14 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2018-09-08 17:02:32 [::1][100][o000b6e9vep6jjj6a4a6030bp4][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'o000b6e9vep6jjj6a4a6030bp4'
+    '_csrf' => '41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=appointment'
+    'HTTP_COOKIE' => '_identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=o000b6e9vep6jjj6a4a6030bp4; _csrf=41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Shubham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Shubham\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Shubham\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51623'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536418952.475
+    'REQUEST_TIME' => 1536418952
+]
+2018-09-08 17:03:03 [::1][100][o000b6e9vep6jjj6a4a6030bp4][error][Error] Error: Class 'yii\jui\DatePicker' not found in D:\xampp\htdocs\basic\views\appointment\_form.php:22
+Stack trace:
+#0 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#2 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, NULL)
+#3 D:\xampp\htdocs\basic\views\appointment\create.php(18): yii\base\View->render('_form', Array)
+#4 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#6 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\AppointmentController))
+#7 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\AppointmentController))
+#8 D:\xampp\htdocs\basic\controllers\AppointmentController.php(78): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\AppointmentController->actionCreate()
+#10 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appointment/cre...', Array)
+#14 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2018-09-08 17:03:03 [::1][100][o000b6e9vep6jjj6a4a6030bp4][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'o000b6e9vep6jjj6a4a6030bp4'
+    '_csrf' => '41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=appointment'
+    'HTTP_COOKIE' => '_identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=o000b6e9vep6jjj6a4a6030bp4; _csrf=41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Shubham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Shubham\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Shubham\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51627'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536418983.392
+    'REQUEST_TIME' => 1536418983
+]
+2018-09-08 17:03:04 [::1][100][o000b6e9vep6jjj6a4a6030bp4][error][Error] Error: Class 'yii\jui\DatePicker' not found in D:\xampp\htdocs\basic\views\appointment\_form.php:22
+Stack trace:
+#0 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#2 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, NULL)
+#3 D:\xampp\htdocs\basic\views\appointment\create.php(18): yii\base\View->render('_form', Array)
+#4 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#6 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\AppointmentController))
+#7 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\AppointmentController))
+#8 D:\xampp\htdocs\basic\controllers\AppointmentController.php(78): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\AppointmentController->actionCreate()
+#10 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appointment/cre...', Array)
+#14 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2018-09-08 17:03:04 [::1][100][o000b6e9vep6jjj6a4a6030bp4][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'o000b6e9vep6jjj6a4a6030bp4'
+    '_csrf' => '41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=appointment'
+    'HTTP_COOKIE' => '_identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=o000b6e9vep6jjj6a4a6030bp4; _csrf=41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Shubham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Shubham\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Shubham\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51630'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536418984.747
+    'REQUEST_TIME' => 1536418984
+]
+2018-09-08 17:03:39 [::1][100][o000b6e9vep6jjj6a4a6030bp4][error][Error] Error: Class 'yii\Jui\DatePicker' not found in D:\xampp\htdocs\basic\views\appointment\_form.php:22
+Stack trace:
+#0 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#2 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, NULL)
+#3 D:\xampp\htdocs\basic\views\appointment\create.php(18): yii\base\View->render('_form', Array)
+#4 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#6 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\AppointmentController))
+#7 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\AppointmentController))
+#8 D:\xampp\htdocs\basic\controllers\AppointmentController.php(78): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\AppointmentController->actionCreate()
+#10 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appointment/cre...', Array)
+#14 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2018-09-08 17:03:39 [::1][100][o000b6e9vep6jjj6a4a6030bp4][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'o000b6e9vep6jjj6a4a6030bp4'
+    '_csrf' => '41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=appointment'
+    'HTTP_COOKIE' => '_identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=o000b6e9vep6jjj6a4a6030bp4; _csrf=41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Shubham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Shubham\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Shubham\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51636'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536419019.839
+    'REQUEST_TIME' => 1536419019
+]
+2018-09-08 17:06:13 [::1][100][o000b6e9vep6jjj6a4a6030bp4][error][Error] Error: Class 'yii2\jui\DatePicker' not found in D:\xampp\htdocs\basic\views\appointment\_form.php:22
+Stack trace:
+#0 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#2 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, NULL)
+#3 D:\xampp\htdocs\basic\views\appointment\create.php(18): yii\base\View->render('_form', Array)
+#4 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(336): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\xampp\\htdocs...', Array)
+#6 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\controllers\AppointmentController))
+#7 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\AppointmentController))
+#8 D:\xampp\htdocs\basic\controllers\AppointmentController.php(78): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\AppointmentController->actionCreate()
+#10 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('appointment/cre...', Array)
+#14 D:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2018-09-08 17:06:13 [::1][100][o000b6e9vep6jjj6a4a6030bp4][info][application] $_GET = [
+    'r' => 'appointment/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'o000b6e9vep6jjj6a4a6030bp4'
+    '_csrf' => '41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=appointment'
+    'HTTP_COOKIE' => '_identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=o000b6e9vep6jjj6a4a6030bp4; _csrf=41e86c88eaf379dbdf2b13dac349da1f499fffcd23338fd4cd49d7cb807f3cfaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xWhEb_8VmG7PS-_D2tg7EkxmUMnnxqaa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Shubham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Shubham\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Shubham\\AppData\\Roaming\\npm;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.1.0h PHP/7.2.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '51676'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536419173.233
+    'REQUEST_TIME' => 1536419173
+]

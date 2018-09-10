@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Department;
 use app\models\AcademicYear;
-
+use dosamigos\datepicker\DatePicker;
 /* @var $this yii\web\View */
 /* @var $model app\models\Bos */
 /* @var $form yii\widgets\ActiveForm */
@@ -19,7 +19,16 @@ use app\models\AcademicYear;
 
     <?= $form->field($model, 'minutes')->textarea(['rows' => 1]) ?>
 
-    <?= $form->field($model, 'date')->textInput() ?>
+    <?= $form->field($model, 'date')->widget(
+    DatePicker::className(), [
+            // inline too, not bad
+            'inline' => false, 
+            // modify template for custom rendering
+            'clientOptions' => [
+                'autoclose' => true,
+                'format' => 'yyyy-mm-dd'
+            ]
+    ]);?>
 
     <?= $form->field($model, 'department_id')->dropDownList(
         ArrayHelper::map(Department::find()->all(),'department_id','name'),
