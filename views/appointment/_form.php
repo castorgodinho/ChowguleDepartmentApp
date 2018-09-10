@@ -3,7 +3,7 @@ use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 use app\models\Faculty;
-use yii\jui\DatePicker;
+use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Appointment */
@@ -13,13 +13,36 @@ use yii\jui\DatePicker;
 <div class="appointment-form">
 
     <?php $form = ActiveForm::begin(); ?>
+    <br>
     <?= $form->field($model, 'faculty_id')->dropDownList(
         ArrayHelper::map(Faculty::find()->where(['status'=>1])->all(),'faculty_id','name'),
         ['prompt'=>'select ']
     )?>
-    <?= $form->field($model, 'date_of_joining')->textInput() ?>
+    <br>
+    <?= $form->field($model, 'date_of_joining')->widget(
+    DatePicker::className(), [
+            // inline too, not bad
+            'inline' => false, 
+            // modify template for custom rendering
+            'clientOptions' => [
+                'autoclose' => true,
+                'format' => 'yyyy-mm-dd'
+            ]
+    ]);?>
+    <br>
+    <?= $form->field($model, 'date_of_leaving')->widget(
+    DatePicker::className(), [
+            // inline too, not bad
+            'inline' => false, 
+            // modify template for custom rendering
+            'clientOptions' => [
+                'autoclose' => true,
+                'format' => 'yyyy-mm-dd'
+            ]
+    ]);?>
+    <br>
 
-    <?= $form->field($model,'date_of_leaving')->widget(DatePicker::className(),['clientOptions' => ['defaultDate' => '2014-01-01']]) ?>
+    
    
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>
