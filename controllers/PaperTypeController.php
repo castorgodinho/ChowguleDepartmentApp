@@ -75,7 +75,7 @@ class PaperTypeController extends Controller
     {
         $model = new PaperType();
         if(!Yii::$app->user->isGuest){
-            if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
                 return $this->redirect(['view', 'id' => $model->paper_type_id]);
             }
 
