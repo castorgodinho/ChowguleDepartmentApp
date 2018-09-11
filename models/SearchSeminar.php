@@ -69,6 +69,15 @@ class SearchSeminar extends Seminar
             'updated_at' => $this->updated_at,
         ]);
 
+        if($this->inhouse){
+            if($this->inhouse[0] == "n"){
+                $this->inhouse = 0;
+            }else{
+                $this->inhouse = 1;
+            }
+        }
+
+
         $query->andFilterWhere(['like', 'speaker_name', $this->speaker_name])
             ->andFilterWhere(['like', 'participant', $this->participant])
             ->andFilterWhere(['like', 'venue', $this->venue])

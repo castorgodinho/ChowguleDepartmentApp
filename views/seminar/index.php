@@ -12,12 +12,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="seminar-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+<h1><?= Html::encode($this->title) ?> <a Style="float:right" href="index.php?r=seminar/create" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Add Seminar</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-    <p>
-        <?= Html::a('Create Seminar', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -31,12 +28,26 @@ $this->params['breadcrumbs'][] = $this->title;
             'end_date',
             'participant:ntext',
             'venue',
-            'inhouse',
+            
+            [
+                'label' => 'inhouse',
+                'attribute' => 'inhouse',
+                'value' => function($dataProvider){
+                    if($dataProvider->inhouse == 0){
+                            return 'Not-Inhouse';
+                    }else{
+                        return "In-House";
+                    }
+
+                }
+            ],
+
             [
                 'label' => 'Department Name',
                 'value' => 'department.name',
                 'attribute' => 'department_id',
                 ],
+                
             [
                 'label' => 'Academic Year',
                 'value' => 'academicYear.year',

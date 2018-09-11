@@ -12,12 +12,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="event-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode($this->title) ?> <a Style="float:right" href="index.php?r=event/create" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Add Event</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-    <p>
-        <?= Html::a('Create Event', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -28,7 +25,18 @@ $this->params['breadcrumbs'][] = $this->title;
             //'event_id',
             'name',
             'venue',
-            'inhouse',
+            [
+                'label' => 'inhouse',
+                'attribute' => 'inhouse',
+                'value' => function($dataProvider){
+                    if($dataProvider->inhouse == 0){
+                            return 'Not-Inhouse';
+                    }else{
+                        return "In-House";
+                    }
+
+                }
+            ],
             'cost',
             'participant:ntext',
             'start_date',
