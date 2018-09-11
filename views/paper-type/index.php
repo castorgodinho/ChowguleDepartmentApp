@@ -1,13 +1,4 @@
-<style>
-    h1{
-        display: inline-block;
-    }
-    p{
-        display: inline-block;
-        float:right;
-        margin-top:30px;
-    }
-</style>
+
 <?php
 
 use yii\helpers\Html;
@@ -22,13 +13,11 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="paper-type-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <h1 ><?= Html::encode($this->title) ?>
+        <a style="float:right" href="index.php?r=paper-type/create" class="btn btn-success">
+    <span  class="glyphicon glyphicon-plus"></span>Add Assign Type</a>
 
-    <p>
-        <?= Html::a('+ Add Assign Type', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-
+    </h1>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,

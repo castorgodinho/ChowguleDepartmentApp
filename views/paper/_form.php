@@ -10,16 +10,16 @@ use app\models\Program;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="paper-form">
+<div class="paper-form" style="width:50%">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'name')->textInput(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
    <?= $form->field($model, 'program_id')->dropDownList(
         ArrayHelper::map(Program::find()->all(),'program_id','name'),
-        ['prompt'=>'select ',
-        'contentOptions' => ['style' => 'width:50%; '],]
+        ['prompt'=>'select ']
+        
    )
    
     ?>
