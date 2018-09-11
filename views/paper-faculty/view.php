@@ -6,15 +6,15 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\PaperFaculty */
 
-$this->title = $model->paper_faculty_id;
-$this->params['breadcrumbs'][] = ['label' => 'Paper Faculties', 'url' => ['index']];
+$this->title = $model->faculty->name;
+$this->params['breadcrumbs'][] = ['label' => 'Assign Papers', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="paper-faculty-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
+    <!--<p>
         <?= Html::a('Update', ['update', 'id' => $model->paper_faculty_id], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Delete', ['delete', 'id' => $model->paper_faculty_id], [
             'class' => 'btn btn-danger',
@@ -23,15 +23,15 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-    </p>
+    </p>-->
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
             //'paper_faculty_id',
-            'paper_id',
-            'faculty_id',
-            'academic_year_id',
+            'paper.name',
+            'faculty.name',
+            'academicYear.year',
             //'created_at',
             //'updated_at',
         ],

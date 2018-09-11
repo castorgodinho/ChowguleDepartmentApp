@@ -6,11 +6,11 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\PaperFaculty */
 
-$this->title = 'Create Paper Faculty';
-$this->params['breadcrumbs'][] = ['label' => 'Paper Faculties', 'url' => ['index']];
+$this->title = 'Assign paper';
+$this->params['breadcrumbs'][] = ['label' => 'Assign Papers', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="paper-faculty-create">
+<div class="paper-faculty-create" style="width:50%">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

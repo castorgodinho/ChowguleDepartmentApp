@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Appointments', 'url' => ['index']]
 $this->params['breadcrumbs'][] = ['label' => $model->appointment_id, 'url' => ['view', 'id' => $model->appointment_id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
-<div class="appointment-update">
+<div class="appointment-update" style="width:50%">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
