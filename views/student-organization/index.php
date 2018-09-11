@@ -7,17 +7,15 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\SearchStudentOrganization */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Student Organizations';
+$this->title = 'Alumni';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="student-organization-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode($this->title) ?> <a Style="float:right" href="index.php?r=student-organization/create" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Add Alumni</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Student Organization', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -36,7 +34,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => 'student.name',
                 'attribute' => 'student_id',
                 ],
-            'date_of_joining',
+            [
+                'label' => 'Date Of Joining',
+                'attribute' => 'date_of_joining',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->date_of_joining));
+                }
+            ],
+            
             'position',
             //'created_at',
             //'updated_at',

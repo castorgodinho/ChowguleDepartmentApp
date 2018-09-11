@@ -6,11 +6,11 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Program */
 
-$this->title = 'Create Program';
+$this->title = 'Add Program';
 $this->params['breadcrumbs'][] = ['label' => 'Programs', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="program-create">
+<div style="width:50%;" class="program-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

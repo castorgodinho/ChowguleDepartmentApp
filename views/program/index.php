@@ -12,12 +12,11 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="program-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+   <h1><?= Html::encode($this->title) ?> <a Style="float:right" href="index.php?r=program/create" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Add Program</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Program', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
