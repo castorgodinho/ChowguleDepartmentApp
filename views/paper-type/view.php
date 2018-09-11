@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\PaperType */
 
 
-$this->params['breadcrumbs'][] = ['label' => 'Paper Types', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Assign Paper', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="paper-type-view">
