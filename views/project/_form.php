@@ -13,13 +13,13 @@ use dosamigos\datepicker\DatePicker;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="project-form">
+<div class="project-form" style="width:50%">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'approval_id')->textInput(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'approval_id')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'name')->textInput(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'start_date')->widget(DatePicker::className(), [
         
@@ -28,12 +28,8 @@ use dosamigos\datepicker\DatePicker;
         'clientOptions' => [
             'autoclose' => false,
             'format' => 'yyyy-mm-dd'
-        ],
-    
-        
+        ],  
 ]);?>
-
-    
 
     <?= $form->field($model, 'end_date')->widget(DatePicker::className(), [
     'model' => $model,
@@ -45,27 +41,25 @@ use dosamigos\datepicker\DatePicker;
     
 ]);?>
     
+    <?= $form->field($model, 'agency_name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'agency_name')->textInput(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'duration')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'duration')->textInput(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'amount')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'amount')->textInput(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'faculty_name')->textarea(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'faculty_name')->textarea(['style'=>'width:50%;']) ?>
-
-    <?= $form->field($model, 'student_name')->textarea(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'student_name')->textarea(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'department_id')->dropDownList(
 		ArrayHelper::map(Department::find()->all(),'department_id','name'),
-        ['prompt'=>'select ',
-        'style'=>'width:50%;']
+        ['prompt'=>'select ']
     )?>
 
     <?= $form->field($model, 'academic_year_id')->dropDownList(
-		ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
-		['prompt'=>'select ',
-        'style'=>'width:50%;']
+		ArrayHelper::map(AcademicYear::find()->orderBy(['year'=>SORT_DESC])->all(),'academic_year_id','year')
+		
+        
 	) ?>
 
     

@@ -19,7 +19,13 @@ $this->params['breadcrumbs'][] = ['label' => 'Bos', 'url' => ['index']];
             //'bos_id',
             'program',
             'minutes:ntext',
-            'date',
+            [
+                'label' => 'Date',
+                
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->date));
+                }
+            ],
             'department.name',
             'academicYear.year',
             //'created_at',

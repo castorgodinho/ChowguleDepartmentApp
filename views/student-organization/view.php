@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\StudentOrganization */
 
 $this->title = $model->organization->company_name;
-$this->params['breadcrumbs'][] = ['label' => 'Student Organizations', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Alumni', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="student-organization-view">
@@ -20,7 +20,12 @@ $this->params['breadcrumbs'][] = $this->title;
             //'student_organization_id',
             'organization.company_name',
             'student.name',
-            'date_of_joining',
+            [
+                'label' => 'Date Of Joining',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->date_of_joining));
+                }
+            ],
             'position',
             //'created_at',
            // 'updated_at',

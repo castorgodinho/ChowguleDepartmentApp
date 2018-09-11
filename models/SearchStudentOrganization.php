@@ -61,7 +61,6 @@ class SearchStudentOrganization extends StudentOrganization
         // grid filtering conditions
         $query->andFilterWhere([
             'student_organization_id' => $this->student_organization_id,
-            'date_of_joining' => $this->date_of_joining,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
@@ -69,6 +68,7 @@ class SearchStudentOrganization extends StudentOrganization
         $query->andFilterWhere(['like', 'position', $this->position]);
         $query->andFilterWhere(['like', 'student.name', $this->student_id]);
         $query->andFilterWhere(['like', 'organization.company_name', $this->organization_id]);
+        $query->andFilterWhere(['like', 'date_of_joining', $this->date_of_joining]);
         return $dataProvider;
     }
 }

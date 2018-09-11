@@ -61,15 +61,16 @@ class SearchBos extends Bos
         // grid filtering conditions
         $query->andFilterWhere([
             'bos_id' => $this->bos_id,
-            'date' => $this->date,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
 
         $query->andFilterWhere(['like', 'program', $this->program])
-             ->andFilterWhere(['like', 'minutes', $this->minutes]);
+              ->andFilterWhere(['like', 'minutes', $this->minutes]);
         $query->andFilterWhere(['like', 'department.name', $this->department_id]);
         $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
+        $query->andFilterWhere(['like', 'date', $this->date]);
+
 
         return $dataProvider;
     }

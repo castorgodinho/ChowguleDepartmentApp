@@ -12,26 +12,24 @@ use app\models\AcademicYear;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="paper-type-form">
+<div class="paper-type-form" style="width:50%">
 
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'paper_id')->dropDownList(
 		ArrayHelper::map(Paper::find()->where(['status'=>1])->all(),'paper_id','name'),
-		['prompt'=>'select ',
-        'style'=>'width:50%;']
+		['prompt'=>'select ']
 	) ?>
 
     <?= $form->field($model, 'type_id')->dropDownList(
 		ArrayHelper::map(Type::find()->where(['status'=>1])->all(),'type_id','name'),
-		['prompt'=>'select ',
-        'style'=>'width:50%;']
+		['prompt'=>'select ']
+        
 	) ?>
 
     <?= $form->field($model, 'academic_year_id')->dropDownList(
-		ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
-		['prompt'=>'select ',
-        'style'=>'width:50%;']
+		ArrayHelper::map(AcademicYear::find()->orderBy(['year'=>SORT_DESC])->all(),'academic_year_id','year')
+       
 	) ?>
 
     <div class="form-group">
