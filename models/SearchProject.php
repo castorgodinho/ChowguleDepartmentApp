@@ -61,8 +61,6 @@ class SearchProject extends Project
         // grid filtering conditions
         $query->andFilterWhere([
             'project_id' => $this->project_id,
-            'start_date' => $this->start_date,
-            'end_date' => $this->end_date,
             'amount' => $this->amount,
             'department_id' => $this->department_id,
             'academic_year_id' => $this->academic_year_id,
@@ -75,7 +73,9 @@ class SearchProject extends Project
             ->andFilterWhere(['like', 'agency_name', $this->agency_name])
             ->andFilterWhere(['like', 'duration', $this->duration])
             ->andFilterWhere(['like', 'faculty_name', $this->faculty_name])
-            ->andFilterWhere(['like', 'student_name', $this->student_name]);
+            ->andFilterWhere(['like', 'student_name', $this->student_name])
+            ->andFilterWhere(['like', 'start_date', $this->start_date])
+            ->andFilterWhere(['like', 'end_date', $this->end_date]);
 
         return $dataProvider;
     }

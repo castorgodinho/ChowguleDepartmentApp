@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Department;
 use app\models\AcademicYear;
+use dosamigos\datepicker\DatePicker;
 
 
 /* @var $this yii\web\View */
@@ -18,9 +19,27 @@ use app\models\AcademicYear;
 
     <?= $form->field($model, 'speaker_name')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'start_date')->textInput() ?>
+    <?= $form->field($model, 'start_date')->widget(
+    DatePicker::className(), [
+            // inline too, not bad
+            'inline' => false, 
+            // modify template for custom rendering
+            'clientOptions' => [
+                'autoclose' => true,
+                'format' => 'yyyy-mm-dd'
+            ]
+    ]);?>
 
-    <?= $form->field($model, 'end_date')->textInput() ?>
+    <?= $form->field($model, 'end_date')->widget(
+    DatePicker::className(), [
+            // inline too, not bad
+            'inline' => false, 
+            // modify template for custom rendering
+            'clientOptions' => [
+                'autoclose' => true,
+                'format' => 'yyyy-mm-dd'
+            ]
+    ]);?>
 
     <?= $form->field($model, 'participant')->textarea(['rows' => 6]) ?>
 

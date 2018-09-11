@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\PaperType */
 
-$this->title = 'Create Paper Type';
+$this->title = 'Add Assign Type';
 $this->params['breadcrumbs'][] = ['label' => 'Paper Types', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
