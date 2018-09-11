@@ -62,11 +62,13 @@ AppAsset::register($this);
                     'items' => [
                         ['label' => 'Seminar', 'url' => ['/seminar/index']],
                         ['label' => 'Subject Expert', 'url' => ['/subject-expert/index']],
-                        ['label' => 'Wrokshop', 'url' => ['/workshop/index']],
-                        ['label' => 'Examinar', 'url' => ['/examinar/index']],
+                        ['label' => 'Workshop', 'url' => ['/workshop/index']],
+                        ['label' => 'Examiner', 'url' => ['/examiner/index']],
                         ['label' => 'Event', 'url' => ['/event/index']],
                         ['label' => 'BOS', 'url' => ['/bos/index']],
                         ['label' => 'Auditing Member', 'url' => ['/auditing-member/index']],
+                        ['label' => 'Student Activity', 'url' => ['/student-activity/index']],
+                        ['label' => 'Project', 'url' => ['/project/index']],
     
                     ],
                 ],

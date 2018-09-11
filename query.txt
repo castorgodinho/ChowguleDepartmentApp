@@ -3,7 +3,7 @@ ALTER TABLE `program_student` ADD FOREIGN KEY (`academic_year`) REFERENCES `acad
 ALTER TABLE `program_student` CHANGE `academic_year` `academic_year_id` INT(11) NULL DEFAULT NULL;
 -------------------setting status defualt 1 ----------------------
 ALTER TABLE `program` CHANGE `status` `status` TINYINT(1) NULL DEFAULT '1';
-ALTER TABLE `program_student` CHANGE `academic_year_id` `academic_year_id` INT(11) NULL DEFAULT '1';
+ALTER TABLE `program_student` CHANGE `status` `status` TINYINT(1) NULL DEFAULT '1';
 ALTER TABLE `student` CHANGE `status` `status` TINYINT(1) NULL DEFAULT '1';
 ALTER TABLE `paper` CHANGE `status` `status` TINYINT(1) NULL DEFAULT '1';
 ALTER TABLE `type` CHANGE `status` `status` TINYINT(1) NULL DEFAULT '1';

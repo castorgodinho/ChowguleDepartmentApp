@@ -60,9 +60,9 @@ class SearchAuditingMember extends AuditingMember
         // grid filtering conditions
         $query->andFilterWhere([
             'auditing_member_id' => $this->auditing_member_id,
-            'start_date' => $this->start_date,
-            'end_date' => $this->end_date,
-            'department_id' => $this->department_id,
+            //'start_date' => $this->start_date,
+           // 'end_date' => $this->end_date,
+            //'department_id' => $this->department_id,
             //'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
@@ -73,7 +73,9 @@ class SearchAuditingMember extends AuditingMember
             ->andFilterWhere(['like', 'program', $this->program])
             ->andFilterWhere(['like', 'faculty_name', $this->faculty_name])
             ->andFilterWhere(['like', 'academicYear.year', $this->academic_year_id])
-            ->andFilterWhere(['like', 'department.name', $this->department_id]);
+            ->andFilterWhere(['like', 'department.name', $this->department_id])
+            ->andFilterWhere(['like', 'start_date', $this->start_date])
+            ->andFilterWhere(['like', 'end_date', $this->end_date]);
 
         return $dataProvider;
     }

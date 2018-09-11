@@ -12,12 +12,13 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="appointment-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+     <h1><?= Html::encode($this->title) ?><a style="float:right" href="index.php?r=appointment/create" class="btn btn-success">
+    <span class="glyphicon glyphicon-plus" ></span> Add Appointment</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
+    <!--<p>
         <?= Html::a('Create Appointment', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    </p>-->
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -32,8 +33,20 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'faculty_id',
             ],
             //'faculty.name',
-            'date_of_joining',
-            'date_of_leaving',
+            [
+                'label' => 'Date of joining',
+                'attribute'=>'date_of_joining',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->date_of_joining));
+                }
+            ],
+            [
+                'label' => 'Date of leaving',
+                'attribute'=>'date_of_leaving',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->date_of_leaving));
+                }
+            ],
             //'created_at',
             //'updated_at',
             //'status',

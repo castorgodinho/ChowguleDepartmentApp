@@ -12,12 +12,13 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="auditing-member-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode($this->title) ?><a style="float:right" href="index.php?r=auditing-member/create" class="btn btn-success">
+    <span class="glyphicon glyphicon-plus" ></span>Add Auditing Member</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
+    <!--<p>
         <?= Html::a('Create Auditing Member', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    </p>-->
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -27,8 +28,20 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'auditing_member_id',
             'name',
-            'start_date',
-            'end_date',
+            [
+                'label' => 'Start Date',
+                'attribute'=>'start_date',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->start_date));
+                }
+            ],
+            [
+                'label' => 'End Date',
+                'attribute'=>'end_date',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->end_date));
+                }
+            ],
             'college_name:ntext',
             'program',
             'faculty_name:ntext',
