@@ -12,11 +12,11 @@ use dosamigos\datepicker\DatePicker;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="revision-form">
+<div class="revision-form" style="width:50%">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'syllabus_file')->textarea(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'syllabus_file')->textarea() ?>
     
     <?= $form->field($model, 'syllabus_date')->widget(DatePicker::className(), [
     'model' => $model,
@@ -30,15 +30,12 @@ use dosamigos\datepicker\DatePicker;
 
 	<?=$form->field($model,'paper_id')->dropDownList(
 		ArrayHelper::map(Paper::find()->where(['status'=>1])->all(),'paper_id','name'),
-		['prompt'=>'select ',
-        'style'=>'width:50%;']
+		['prompt'=>'select ']
 )?>
 
 
 		<?=$form->field($model,'academic_year_id')->dropDownList(
-		ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
-		['prompt'=>'select ',
-        'style'=>'width:50%;']
+		ArrayHelper::map(AcademicYear::find()->orderBy(['year'=>SORT_DESC])->all(),'academic_year_id','year')
 )?>
 
     <div class="form-group">

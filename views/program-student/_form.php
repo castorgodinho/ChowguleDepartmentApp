@@ -27,8 +27,8 @@ use app\models\AcademicYear;
     ) ?>
 
     <?= $form->field($model, 'academic_year_id')->dropDownList(
-        ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
-        ['prompt'=>'select ']
+        ArrayHelper::map(AcademicYear::find()->orderBy(['year' => SORT_DESC ])->all(),'academic_year_id','year')
+        
     ) ?>
 
     <div class="form-group">

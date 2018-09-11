@@ -12,13 +12,13 @@ use yii\helpers\ArrayHelper;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="student-activity-form">
+<div class="student-activity-form" style="width:50%">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'name')->textInput(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'budget')->textInput(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'budget')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'start_date')->widget(DatePicker::className(), [
     'model' => $model,
@@ -38,20 +38,17 @@ use yii\helpers\ArrayHelper;
         ]
 ]);?>
 
-    <?= $form->field($model, 'faculty_name')->textarea(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'faculty_name')->textarea() ?>
 
-    <?= $form->field($model, 'student_name')->textarea(['style'=>'width:50%;']) ?>
+    <?= $form->field($model, 'student_name')->textarea() ?>
 
     <?= $form->field($model, 'department_id')->dropDownList(
 		ArrayHelper::map(Department::find()->all(),'department_id','name'),
-        ['prompt'=>'select',
-        'style'=>'width:50%;']
+        ['prompt'=>'select']
     )?>
 
     <?= $form->field($model, 'academic_year_id')->dropDownList(
-		ArrayHelper::map(AcademicYear::find()->all(),'academic_year_id','year'),
-        ['prompt'=>'select',
-        'style'=>'width:50%;']
+		ArrayHelper::map(AcademicYear::find()->orderBy(['year'=>SORT_DESC])->all(),'academic_year_id','year')
 	) ?>
 
     
