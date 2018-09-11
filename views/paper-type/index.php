@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1 ><?= Html::encode($this->title) ?>
         <a style="float:right" href="index.php?r=paper-type/create" class="btn btn-success">
-    <span  class="glyphicon glyphicon-plus"></span>Add Assign Type</a>
+    <span  class="glyphicon glyphicon-plus"></span> Add Assign Type</a>
 
     </h1>
     <?= GridView::widget([

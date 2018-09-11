@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <h1 ><?= Html::encode($this->title) ?>
 <a style="float:right" href="index.php?r=type/create" class="btn btn-success">
-<span  class="glyphicon glyphicon-plus"></span>Add Type</a>
+<span  class="glyphicon glyphicon-plus"></span> Add Type</a>
 
 </h1>
 
