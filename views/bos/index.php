@@ -12,12 +12,11 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="bos-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+   <h1><?= Html::encode($this->title) ?> <a Style="float:right" href="index.php?r=bos/create" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Add BOS</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Bos', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -28,7 +27,13 @@ $this->params['breadcrumbs'][] = $this->title;
             //'bos_id',
             'program',
             'minutes:ntext',
-            'date',
+            [
+                'label' => 'Date',
+                'attribute' => 'date',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->date));
+                }
+            ],
             [
                 'label' => 'Department Name',
                 'value' => 'department.name',

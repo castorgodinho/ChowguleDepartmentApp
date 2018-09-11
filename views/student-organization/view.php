@@ -20,7 +20,12 @@ $this->params['breadcrumbs'][] = $this->title;
             //'student_organization_id',
             'organization.company_name',
             'student.name',
-            'date_of_joining',
+            [
+                'label' => 'Date Of Joining',
+                'value' => function($model){
+                    return date('d M Y', strtotime($model->date_of_joining));
+                }
+            ],
             'position',
             //'created_at',
            // 'updated_at',

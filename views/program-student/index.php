@@ -7,17 +7,14 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\SearchProgramStudent */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Program Students';
+$this->title = 'Admission';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="program-student-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode($this->title) ?> <a Style="float:right" href="index.php?r=program-student/create" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span> Add Admission</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-    <p>
-        <?= Html::a('Create Program Student', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
