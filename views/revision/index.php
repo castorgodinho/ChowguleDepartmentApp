@@ -1,3 +1,13 @@
+<style>
+    h1{
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+        float:right;
+        margin-top:30px;
+    }
+</style>
 <?php
 
 use yii\helpers\Html;
@@ -16,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Revision', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('+ Add Revision', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -27,14 +37,21 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'revision_id',
             'syllabus_file:ntext',
-            'syllabus_date',
+            
+            [
+                'label'=>'Syllabus Date',
+                'value'=>function($model){
+                    return date('d M Y', strtotime($model->syllabus_date));
+                },
+                'attribute' => 'syllabus_date',
+            ],
             //'paper_id',
             //'created_at',
             //'updated_at',
             //'status',
             //'academic_year_id',
-
             ['class' => 'yii\grid\ActionColumn'],
+            
         ],
     ]); ?>
 </div>

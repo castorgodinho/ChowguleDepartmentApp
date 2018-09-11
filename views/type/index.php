@@ -1,3 +1,13 @@
+<style>
+    h1{
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+        float:right;
+        margin-top:30px;
+    }
+</style>
 <?php
 
 use yii\helpers\Html;
@@ -7,7 +17,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\searchType */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Types';
+$this->title = ' Type';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="type-index">
@@ -16,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Type', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('+ Add Type', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

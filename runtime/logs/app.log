@@ -7590,3 +7590,843 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1536586127.154
     'REQUEST_TIME' => 1536586127
 ]
+2018-09-10 21:02:04 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in /opt/lampp/htdocs/basic/views/paper/_form.php:23
+Stack trace:
+#0 /opt/lampp/htdocs/basic/views/paper/_form.php(23): yii\base\ErrorHandler->handleError(8, 'Array to string...', '/opt/lampp/htdo...', 23, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#4 /opt/lampp/htdocs/basic/views/paper/create.php(18): yii\base\View->render('_form', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\PaperController))
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\PaperController))
+#9 /opt/lampp/htdocs/basic/controllers/PaperController.php(88): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\PaperController->actionCreate()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/create', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2018-09-10 21:02:04 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'paper/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5a-rEewXxmFXZ-3PqcD4QAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '43630'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536606124.436
+    'REQUEST_TIME' => 1536606124
+]
+2018-09-10 21:08:11 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::style in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('style', 'width:50%;')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /opt/lampp/htdocs/basic/views/project/_form.php(41): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#12 /opt/lampp/htdocs/basic/views/project/create.php(18): yii\base\View->render('_form', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ProjectController))
+#17 /opt/lampp/htdocs/basic/controllers/ProjectController.php(82): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\ProjectController->actionCreate()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/create', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2018-09-10 21:08:11 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'project/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bBGzGtObOn6xea7nSl2QAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '43716'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536606491.503
+    'REQUEST_TIME' => 1536606491
+]
+2018-09-10 21:11:55 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::contentOptions in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('contentOptions', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /opt/lampp/htdocs/basic/views/project/_form.php(25): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#12 /opt/lampp/htdocs/basic/views/project/create.php(18): yii\base\View->render('_form', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ProjectController))
+#17 /opt/lampp/htdocs/basic/controllers/ProjectController.php(82): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\ProjectController->actionCreate()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/create', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2018-09-10 21:11:55 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'project/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bB@0ewXxmFXZ-3PqcD5AAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '43824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536606715.466
+    'REQUEST_TIME' => 1536606715
+]
+2018-09-10 21:15:00 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::style in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('style', 'width:50%;')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /opt/lampp/htdocs/basic/views/project/_form.php(25): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#12 /opt/lampp/htdocs/basic/views/project/create.php(18): yii\base\View->render('_form', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ProjectController))
+#17 /opt/lampp/htdocs/basic/controllers/ProjectController.php(82): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\ProjectController->actionCreate()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/create', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2018-09-10 21:15:00 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'project/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bCtPsXyZ@L-woS4ko3iQAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '43954'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536606900.604
+    'REQUEST_TIME' => 1536606900
+]
+2018-09-10 21:18:56 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::contentOptions in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('contentOptions', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /opt/lampp/htdocs/basic/views/project/_form.php(25): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#12 /opt/lampp/htdocs/basic/views/project/create.php(18): yii\base\View->render('_form', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ProjectController))
+#17 /opt/lampp/htdocs/basic/controllers/ProjectController.php(82): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\ProjectController->actionCreate()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/create', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2018-09-10 21:18:56 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'project/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bDoPXr@5WLC6--6VlZ6gAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '44072'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536607136.264
+    'REQUEST_TIME' => 1536607136
+]
+2018-09-10 21:21:42 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::contentOptions in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('contentOptions', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /opt/lampp/htdocs/basic/views/project/_form.php(25): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#12 /opt/lampp/htdocs/basic/views/project/create.php(18): yii\base\View->render('_form', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ProjectController))
+#17 /opt/lampp/htdocs/basic/controllers/ProjectController.php(82): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\ProjectController->actionCreate()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/create', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2018-09-10 21:21:42 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'project/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bERvsXyZ@L-woS4ko3igAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '44088'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536607302.491
+    'REQUEST_TIME' => 1536607302
+]
+2018-09-10 21:25:00 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::0 in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('0', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /opt/lampp/htdocs/basic/views/project/_form.php(26): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#12 /opt/lampp/htdocs/basic/views/project/create.php(18): yii\base\View->render('_form', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ProjectController))
+#17 /opt/lampp/htdocs/basic/controllers/ProjectController.php(82): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\ProjectController->actionCreate()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/create', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2018-09-10 21:25:00 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'project/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bFDPXr@5WLC6--6VlZ7gAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '44136'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536607500.282
+    'REQUEST_TIME' => 1536607500
+]
+2018-09-10 21:25:30 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::0 in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('0', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /opt/lampp/htdocs/basic/views/project/_form.php(26): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#12 /opt/lampp/htdocs/basic/views/project/create.php(18): yii\base\View->render('_form', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ProjectController))
+#17 /opt/lampp/htdocs/basic/controllers/ProjectController.php(82): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\ProjectController->actionCreate()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/create', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2018-09-10 21:25:30 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'project/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bFKnttxq2blUVPVhx6JQAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '44142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536607530.534
+    'REQUEST_TIME' => 1536607530
+]
+2018-09-10 21:26:16 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: dosamigos\datepicker\DatePicker::style in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('style', 'width:50%;')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(dosamigos\datepicker\DatePicker), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('dosamigos\\datep...', Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('dosamigos\\datep...', Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /opt/lampp/htdocs/basic/views/project/_form.php(26): yii\widgets\ActiveField->widget('dosamigos\\datep...', Array, Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#12 /opt/lampp/htdocs/basic/views/project/create.php(18): yii\base\View->render('_form', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\ProjectController))
+#17 /opt/lampp/htdocs/basic/controllers/ProjectController.php(82): yii\base\Controller->render('create', Array)
+#18 [internal function]: app\controllers\ProjectController->actionCreate()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/create', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2018-09-10 21:26:16 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'project/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bFWD2FRlAOs@itkqGkCwAAAAo'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '44152'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536607576.844
+    'REQUEST_TIME' => 1536607576
+]
+2018-09-10 21:37:42 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in /opt/lampp/htdocs/basic/views/paper/_form.php:23
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#2 /opt/lampp/htdocs/basic/views/paper/create.php(18): yii\base\View->render('_form', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\PaperController))
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\PaperController))
+#7 /opt/lampp/htdocs/basic/controllers/PaperController.php(88): yii\base\Controller->render('create', Array)
+#8 [internal function]: app\controllers\PaperController->actionCreate()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/create', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#15 {main}
+2018-09-10 21:37:42 [127.0.0.1][100][35f179daf70239cef871a6391f88269c][info][application] $_GET = [
+    'r' => 'paper/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '35f179daf70239cef871a6391f88269c'
+    '_csrf' => 'b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W5bIBvXr@5WLC6--6VlZ-QAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=35f179daf70239cef871a6391f88269c; _csrf=b4e432cf43d3c14e4b8e0b62b99267a38b6c0013e93bf084e9fd63e61b535711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hr7e-fQCEYiI8brtCbdY0vC7wuYZCmk3%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '44378'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1536608262.874
+    'REQUEST_TIME' => 1536608262
+]
