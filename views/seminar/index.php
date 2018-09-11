@@ -31,12 +31,26 @@ $this->params['breadcrumbs'][] = $this->title;
             'end_date',
             'participant:ntext',
             'venue',
-            'inhouse',
+            
+            [
+                'label' => 'inhouse',
+                'attribute' => 'inhouse',
+                'value' => function($dataProvider){
+                    if($dataProvider->inhouse == 0){
+                            return 'Not-Inhouse';
+                    }else{
+                        return "In-House";
+                    }
+
+                }
+            ],
+
             [
                 'label' => 'Department Name',
                 'value' => 'department.name',
                 'attribute' => 'department_id',
                 ],
+                
             [
                 'label' => 'Academic Year',
                 'value' => 'academicYear.year',

@@ -27,7 +27,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'workshop_id',
             'name',
-            'inhouse',
+            [
+                'label' => 'inhouse',
+                'attribute' => 'inhouse',
+                'value' => function($dataProvider){
+                    if($dataProvider->inhouse == 0){
+                            return 'Not-Inhouse';
+                    }else{
+                        return "In-House";
+                    }
+
+                }
+            ],
             'cost',
             'participant:ntext',
             'faculty_name:ntext',
