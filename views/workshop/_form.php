@@ -19,8 +19,8 @@ use dosamigos\datepicker\DatePicker;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'inhouse')->textInput() ?>
-
+    <?= $form->field($model, 'inhouse')->dropDownList(['1' => 'inhouse', '0' => 'not-inhouse'])?>
+    
     <?= $form->field($model, 'cost')->textInput() ?>
 
     <?= $form->field($model, 'participant')->textarea(['rows' => 6]) ?>

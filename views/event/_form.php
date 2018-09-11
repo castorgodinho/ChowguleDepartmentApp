@@ -21,7 +21,7 @@ use dosamigos\datepicker\DatePicker;
 
     <?= $form->field($model, 'venue')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'inhouse')->textInput() ?>
+    <?= $form->field($model, 'inhouse')->dropDownList(['1' => 'inhouse', '0' => 'not-inhouse'])?>
 
     <?= $form->field($model, 'cost')->textInput() ?>
 
