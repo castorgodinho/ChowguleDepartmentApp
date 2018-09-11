@@ -71,6 +71,14 @@ class SearchEvent extends Event
             'updated_at' => $this->updated_at,
         ]);
 
+        if($this->inhouse){
+            if($this->inhouse[0] == "n"){
+                $this->inhouse = 0;
+            }else{
+                $this->inhouse = 1;
+            }
+        }
+
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'venue', $this->venue])
             ->andFilterWhere(['like', 'inhouse', $this->inhouse])
