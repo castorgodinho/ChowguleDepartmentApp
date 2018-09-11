@@ -49,9 +49,9 @@ class PaperFaculty extends \yii\db\ActiveRecord
     {
         return [
             'paper_faculty_id' => 'Paper Faculty ID',
-            'paper_id' => 'Paper ID',
-            'faculty_id' => 'Faculty ID',
-            'academic_year_id' => 'Academic Year ID',
+            'paper_id' => 'Paper ',
+            'faculty_id' => 'Faculty ',
+            'academic_year_id' => 'Academic Year ',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];

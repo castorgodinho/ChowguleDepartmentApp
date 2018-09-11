@@ -60,8 +60,8 @@ class SearchAppointment extends Appointment
         // grid filtering conditions
         $query->andFilterWhere([
             'appointment_id' => $this->appointment_id,
-            'date_of_joining' => $this->date_of_joining,
-            'date_of_leaving' => $this->date_of_leaving,
+            //'date_of_joining' => $this->date_of_joining,
+            //'date_of_leaving' => $this->date_of_leaving,
             //'faculty_id' => $this->faculty_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
@@ -69,7 +69,9 @@ class SearchAppointment extends Appointment
         ]);
 
         $query->andFilterWhere(['like', 'appointment.status', $this->status])
-              ->andFilterWhere(['like', 'Faculty.name', $this->faculty_id]);
+              ->andFilterWhere(['like', 'Faculty.name', $this->faculty_id])
+              ->andFilterWhere(['like', 'appointment.date_of_joining', $this->date_of_joining])
+              ->andFilterWhere(['like', 'appointment.date_of_leaving', $this->date_of_leaving]);
 
         return $dataProvider;
     }
