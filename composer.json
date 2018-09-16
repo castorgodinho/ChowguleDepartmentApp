@@ -20,7 +20,8 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "rackspace/php-opencloud": "dev-master",
         "2amigos/yii2-date-picker-widget": "~1.0",
-        "yiisoft/yii2-jui": "~2.0.0"
+        "yiisoft/yii2-jui": "~2.0.0",
+        "kartik-v/yii2-grid": "@dev"
         
     },
     "require-dev": {
