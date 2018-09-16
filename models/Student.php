@@ -11,6 +11,7 @@ use Yii;
  * @property string $name
  * @property string $roll_no
  * @property string $phone_no
+ * @property string $email
  * @property string $created_at
  * @property string $updated_at
  * @property int $status
@@ -21,7 +22,7 @@ use Yii;
 class Student extends \yii\db\ActiveRecord
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function tableName()
     {
@@ -29,29 +30,31 @@ class Student extends \yii\db\ActiveRecord
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function rules()
     {
         return [
-            [['name', 'roll_no', 'phone_no'], 'required'],
+            [['name', 'roll_no', 'phone_no', 'email'], 'required'],
             [['created_at', 'updated_at'], 'safe'],
+            [['status'], 'integer'],
             [['name', 'roll_no'], 'string', 'max' => 50],
             [['phone_no'], 'string', 'max' => 20],
-            [['status'], 'string', 'max' => 1],
+            [['email'], 'string', 'max' => 254],
         ];
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function attributeLabels()
     {
         return [
             'student_id' => 'Student ID',
-            'name' => 'Name',
+            'name' => 'Student Name',
             'roll_no' => 'Roll No',
             'phone_no' => 'Phone No',
+            'email' => 'Email',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'status' => 'Status',

@@ -1,6 +1,8 @@
 <?php
-use kartik\grid\GridView;
+
 use yii\helpers\Html;
+use kartik\export\ExportMenu;
+use kartik\grid\GridView;
 //use yii\grid\GridView;
 
 /* @var $this yii\web\View */
@@ -18,34 +20,32 @@ $this->params['breadcrumbs'][] = $this->title;
 
     
 
-    <?= GridView::widget([
+    <?=
+        GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
-        'responsive'=>true,
-        'hover'=>true,
-        'autoXlFormat'=>false,
+        'autoXlFormat'=>true,
         'export'=>[
-            'fontAwesome'=>true,
-            'showConfirmAlert'=>false,
-            'target'=>GridView::TARGET_BLANK
+        'label' => 'Export',
+        'fontAwesome'=>true,
+        'showConfirmAlert'=>false,
+        'target'=>GridView::TARGET_BLANK
         ],
-        'pjax'=>true,
-        //'showPageSummary'=>true,
-        'panel'=>[
-            
-            'heading'=> false,
-        ],
-        
         'columns' => [
-            //['class' => 'yii\grid\SerialColumn'],
             ['class' => 'kartik\grid\SerialColumn'],
 
             //'department_id',
             'name',
-
-            //['class' => 'yii\grid\ActionColumn'],
-            ['class' => 'kartik\grid\ActionColumn'],
             
+
+            ['class' => 'kartik\grid\ActionColumn'],
         ],
+        'pjax'=>true,
+        'showPageSummary'=>false,
+        'panel'=>[
+            'type'=>'success',
+            'heading'=> $this->title,
+            'footer'=> false,
+        ]
     ]); ?>
 </div>
