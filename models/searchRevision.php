@@ -18,8 +18,8 @@ class searchRevision extends Revision
     public function rules()
     {
         return [
-            [['revision_id', 'paper_id', 'academic_year_id'], 'integer'],
-            [['syllabus_file', 'syllabus_date', 'created_at', 'updated_at', 'status'], 'safe'],
+            [['revision_id'], 'integer'],
+            [['syllabus_file', 'syllabus_date','paper_id', 'academic_year_id', 'created_at', 'updated_at', 'status'], 'safe'],
         ];
     }
 
@@ -60,18 +60,16 @@ class searchRevision extends Revision
         // grid filtering conditions
         $query->andFilterWhere([
             'revision_id' => $this->revision_id,
-            
-            'paper_id' => $this->paper_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'academic_year_id' => $this->academic_year_id,
             'status'=>1,
         ]);
 
         $query->andFilterWhere(['like', 'syllabus_file', $this->syllabus_file])
             ->andFilterWhere(['like', 'status', $this->status])
-            ->andFilterWhere(['like', 'syllabus_date', $this->syllabus_date]);
-
+            ->andFilterWhere(['like', 'syllabus_date', $this->syllabus_date])
+            ->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id])
+            ->andFilterWhere(['like', 'paper.name', $this->paper_id]);
 
         return $dataProvider;
     }

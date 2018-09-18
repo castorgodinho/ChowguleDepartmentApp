@@ -13378,3 +13378,2599 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1537114547.986
     'REQUEST_TIME' => 1537114547
 ]
+2018-09-18 15:23:50 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Paper::creditmarks in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('creditmarks')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('creditmarks')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\Paper), Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveRecord.php(509): yii\base\Model->validate(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(670): yii\db\ActiveRecord->insert(true, NULL)
+#5 /opt/lampp/htdocs/basic/controllers/PaperController.php(69): yii\db\BaseActiveRecord->save()
+#6 [internal function]: app\controllers\PaperController->actionCreate()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/create', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-09-18 15:23:50 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'paper/create'
+]
+
+$_POST = [
+    '_csrf' => 'EKXmfp4MuhmRPVHIFbijRq30LRszsm23tjl4pXQ7zUFi5JQRrU3feqJ5Jr8g_eotxqVVUHXwOuXxb03cFwmrcQ=='
+    'Paper' => [
+        'name' => 'fcrds'
+        'program_id' => '1'
+        'credit' => '100'
+        'marks' => '100'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6D8ZgF1G5uwpfvxBIcr8gAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Fcreate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '187'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '58530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=paper%2Fcreate'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fcreate'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537277030.012
+    'REQUEST_TIME' => 1537277030
+]
+2018-09-18 15:37:43 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][ParseError] ParseError: syntax error, unexpected '{', expecting function (T_FUNCTION) or const (T_CONST) in /opt/lampp/htdocs/basic/controllers/PaperController.php:77
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(637): class_exists('app\\controllers...')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('paper')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('update')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/update', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-09-18 15:37:43 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'paper/update'
+    'id' => '4'
+]
+
+$_POST = [
+    '_csrf' => 'nnsUTifU2TwJ3hVeE91f6B6GIvBDlUYhB-E0FhzS1HDsOmYhFJW8XzqaYikmmBaDdddauwXXEXNAtwFvf-CyQA=='
+    'Paper' => [
+        'name' => 'DBMS p'
+        'program_id' => '4'
+        'credit' => '4'
+        'marks' => '100'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6D-p@@366FXgnerBhHZLwAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Fupdate&id=4'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '186'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '58626'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=paper%2Fupdate&id=4'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fupdate&id=4'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537277863.458
+    'REQUEST_TIME' => 1537277863
+]
+2018-09-18 15:37:56 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][ParseError] ParseError: syntax error, unexpected '{', expecting function (T_FUNCTION) or const (T_CONST) in /opt/lampp/htdocs/basic/controllers/PaperController.php:77
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(637): class_exists('app\\controllers...')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('paper')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('update')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/update', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-09-18 15:37:56 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'paper/update'
+    'id' => '4'
+]
+
+$_POST = [
+    '_csrf' => 'pabwivVodv0LwX80VDFlwjvUXBnz39DW1wifwlyiRZnX54LlxikTnjiFCENhdCypUIUkUrWdh4SQXqq7P5AjqQ=='
+    'Paper' => [
+        'name' => 'DBMS p'
+        'program_id' => '4'
+        'credit' => '4'
+        'marks' => '100'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6D-tODG0i0iiw@EGklZZAAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper%2Fupdate&id=4'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '186'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '58632'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=paper%2Fupdate&id=4'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Fupdate&id=4'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537277876.071
+    'REQUEST_TIME' => 1537277876
+]
+2018-09-18 15:38:00 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][ParseError] ParseError: syntax error, unexpected '{', expecting function (T_FUNCTION) or const (T_CONST) in /opt/lampp/htdocs/basic/controllers/PaperController.php:77
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(637): class_exists('app\\controllers...')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('paper')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2018-09-18 15:38:00 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'paper'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6D-uC@bSSLKYdBbeGurlAAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '58634'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537277880.305
+    'REQUEST_TIME' => 1537277880
+]
+2018-09-18 16:51:23 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][Error] Error: Class 'Agency' not found in /opt/lampp/htdocs/basic/views/project/_form.php:45
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#3 /opt/lampp/htdocs/basic/views/project/update.php(18): yii\base\View->render('_form', Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\ProjectController))
+#8 /opt/lampp/htdocs/basic/controllers/ProjectController.php(105): yii\base\Controller->render('update', Array)
+#9 [internal function]: app\controllers\ProjectController->actionUpdate('1')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/update', Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2018-09-18 16:51:23 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EQ6-J1-fT1d9UN9hRwSgAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fupdate&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537282283.787
+    'REQUEST_TIME' => 1537282283
+]
+2018-09-18 16:51:55 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(2193): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1792): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Project), 'agency_id')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1630): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(app\models\Project), 'agency_id', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(651): yii\helpers\BaseHtml::activeDropDownList(Object(app\models\Project), 'agency_id', Array, Array)
+#5 /opt/lampp/htdocs/basic/views/project/_form.php(47): yii\widgets\ActiveField->dropDownList(Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#9 /opt/lampp/htdocs/basic/views/project/update.php(18): yii\base\View->render('_form', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\ProjectController))
+#14 /opt/lampp/htdocs/basic/controllers/ProjectController.php(105): yii\base\Controller->render('update', Array)
+#15 [internal function]: app\controllers\ProjectController->actionUpdate('1')
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/update', Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2018-09-18 16:51:55 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ERC7cpmAKeaCR4hWUFrAAAAAo'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59082'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fupdate&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537282315.405
+    'REQUEST_TIME' => 1537282315
+]
+2018-09-18 16:52:38 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(2193): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1792): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Project), 'agency_id')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1630): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(app\models\Project), 'agency_id', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(651): yii\helpers\BaseHtml::activeDropDownList(Object(app\models\Project), 'agency_id', Array, Array)
+#5 /opt/lampp/htdocs/basic/views/project/_form.php(47): yii\widgets\ActiveField->dropDownList(Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#9 /opt/lampp/htdocs/basic/views/project/update.php(18): yii\base\View->render('_form', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\ProjectController))
+#14 /opt/lampp/htdocs/basic/controllers/ProjectController.php(105): yii\base\Controller->render('update', Array)
+#15 [internal function]: app\controllers\ProjectController->actionUpdate('1')
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/update', Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2018-09-18 16:52:38 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ERNuDG0i0iiw@EGklZqwAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59096'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fupdate&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537282358.32
+    'REQUEST_TIME' => 1537282358
+]
+2018-09-18 16:52:41 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(2193): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1792): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Project), 'agency_id')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1630): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(app\models\Project), 'agency_id', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(651): yii\helpers\BaseHtml::activeDropDownList(Object(app\models\Project), 'agency_id', Array, Array)
+#5 /opt/lampp/htdocs/basic/views/project/_form.php(47): yii\widgets\ActiveField->dropDownList(Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#9 /opt/lampp/htdocs/basic/views/project/update.php(18): yii\base\View->render('_form', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\ProjectController))
+#14 /opt/lampp/htdocs/basic/controllers/ProjectController.php(105): yii\base\Controller->render('update', Array)
+#15 [internal function]: app\controllers\ProjectController->actionUpdate('1')
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/update', Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2018-09-18 16:52:41 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EROaIQ8fm6VhtGn6Pb7AAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fupdate&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537282361.491
+    'REQUEST_TIME' => 1537282361
+]
+2018-09-18 16:53:04 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "agencycy". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('agencycy', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-09-18 16:53:04 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'agencycy'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ERTwF1G5uwpfvxBIcsNwAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=agencycy'
+    'REQUEST_URI' => '/basic/web/index.php?r=agencycy'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537282383.997
+    'REQUEST_TIME' => 1537282383
+]
+2018-09-18 16:53:43 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "agencycy". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('agencycy', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-09-18 16:53:43 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'agencycy'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ERd@DG0i0iiw@EGklZswAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59122'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=agencycy'
+    'REQUEST_URI' => '/basic/web/index.php?r=agencycy'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537282423.647
+    'REQUEST_TIME' => 1537282423
+]
+2018-09-18 16:54:13 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(2193): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1792): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Project), 'agency_id')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1630): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(app\models\Project), 'agency_id', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(651): yii\helpers\BaseHtml::activeDropDownList(Object(app\models\Project), 'agency_id', Array, Array)
+#5 /opt/lampp/htdocs/basic/views/project/_form.php(47): yii\widgets\ActiveField->dropDownList(Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#9 /opt/lampp/htdocs/basic/views/project/update.php(18): yii\base\View->render('_form', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\ProjectController))
+#14 /opt/lampp/htdocs/basic/controllers/ProjectController.php(105): yii\base\Controller->render('update', Array)
+#15 [internal function]: app\controllers\ProjectController->actionUpdate('1')
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/update', Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2018-09-18 16:54:13 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ERlYBbmOfvUs5fDFSU5AAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59130'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fupdate&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537282453.09
+    'REQUEST_TIME' => 1537282453
+]
+2018-09-18 16:59:29 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('agency')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(201): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency', NULL)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency.name')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#11 /opt/lampp/htdocs/basic/views/project/view.php(43): yii\base\Widget::widget(Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/controllers/ProjectController.php(61): yii\base\Controller->render('view', Array)
+#17 [internal function]: app\controllers\ProjectController->actionView('1')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/view', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2018-09-18 16:59:29 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ES0aIQ8fm6VhtGn6Pb8gAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Fupdate&id=1'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59170'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fview&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fview&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537282769.3
+    'REQUEST_TIME' => 1537282769
+]
+2018-09-18 17:03:28 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('agency')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(201): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency', NULL)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency.name')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#11 /opt/lampp/htdocs/basic/views/project/view.php(43): yii\base\Widget::widget(Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/controllers/ProjectController.php(61): yii\base\Controller->render('view', Array)
+#17 [internal function]: app\controllers\ProjectController->actionView('1')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/view', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2018-09-18 17:03:28 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ETwLcpmAKeaCR4hWUFrgAAAAo'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Fupdate&id=1'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59190'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fview&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fview&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537283008.695
+    'REQUEST_TIME' => 1537283008
+]
+2018-09-18 17:11:50 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('agency')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(201): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency', NULL)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency.name')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#11 /opt/lampp/htdocs/basic/views/project/view.php(43): yii\base\Widget::widget(Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/controllers/ProjectController.php(61): yii\base\Controller->render('view', Array)
+#17 [internal function]: app\controllers\ProjectController->actionView('1')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/view', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2018-09-18 17:11:50 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EVtvJ1-fT1d9UN9hRwUQAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Fupdate&id=1'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59246'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fview&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fview&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537283510.046
+    'REQUEST_TIME' => 1537283510
+]
+2018-09-18 17:13:59 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('agency')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(201): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency', NULL)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency.name')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#11 /opt/lampp/htdocs/basic/views/project/view.php(43): yii\base\Widget::widget(Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/controllers/ProjectController.php(61): yii\base\Controller->render('view', Array)
+#17 [internal function]: app\controllers\ProjectController->actionView('1')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/view', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2018-09-18 17:13:59 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EWN@DG0i0iiw@EGklZtgAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Fupdate&id=1'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59252'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fview&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fview&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537283639.41
+    'REQUEST_TIME' => 1537283639
+]
+2018-09-18 17:17:36 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('agency')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(201): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency', NULL)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(238): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Project), 'agency.name')
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/DetailView.php(143): yii\widgets\DetailView->normalizeAttributes()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\widgets\DetailView->init()
+#6 [internal function]: yii\base\BaseObject->__construct(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#11 /opt/lampp/htdocs/basic/views/project/view.php(43): yii\base\Widget::widget(Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\ProjectController))
+#16 /opt/lampp/htdocs/basic/controllers/ProjectController.php(61): yii\base\Controller->render('view', Array)
+#17 [internal function]: app\controllers\ProjectController->actionView('1')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/view', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2018-09-18 17:17:36 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/view'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EXEKIQ8fm6VhtGn6Pb9QAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project%2Fupdate&id=1'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59284'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fview&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fview&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537283856.617
+    'REQUEST_TIME' => 1537283856
+]
+2018-09-18 17:27:10 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(2193): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1792): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Project), 'agency_id')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1630): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(app\models\Project), 'agency_id', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(651): yii\helpers\BaseHtml::activeDropDownList(Object(app\models\Project), 'agency_id', Array, Array)
+#5 /opt/lampp/htdocs/basic/views/project/_form.php(47): yii\widgets\ActiveField->dropDownList(Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#9 /opt/lampp/htdocs/basic/views/project/update.php(18): yii\base\View->render('_form', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\ProjectController))
+#14 /opt/lampp/htdocs/basic/controllers/ProjectController.php(105): yii\base\Controller->render('update', Array)
+#15 [internal function]: app\controllers\ProjectController->actionUpdate('1')
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/update', Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2018-09-18 17:27:10 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EZToBbmOfvUs5fDFSU9gAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fupdate&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537284430.188
+    'REQUEST_TIME' => 1537284430
+]
+2018-09-18 17:27:22 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Project::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(2193): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1792): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Project), 'agency_id')
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/helpers/BaseHtml.php(1630): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(app\models\Project), 'agency_id', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(651): yii\helpers\BaseHtml::activeDropDownList(Object(app\models\Project), 'agency_id', Array, Array)
+#5 /opt/lampp/htdocs/basic/views/project/_form.php(47): yii\widgets\ActiveField->dropDownList(Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, NULL)
+#9 /opt/lampp/htdocs/basic/views/project/update.php(18): yii\base\View->render('_form', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\ProjectController))
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\ProjectController))
+#14 /opt/lampp/htdocs/basic/controllers/ProjectController.php(105): yii\base\Controller->render('update', Array)
+#15 [internal function]: app\controllers\ProjectController->actionUpdate('1')
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project/update', Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2018-09-18 17:27:22 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EZWi@bSSLKYdBbeGur3wAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=project'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project%2Fupdate&id=1'
+    'REQUEST_URI' => '/basic/web/index.php?r=project%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537284442.468
+    'REQUEST_TIME' => 1537284442
+]
+2018-09-18 17:27:24 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/models/SearchProject.php(65): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#3 [internal function]: app\controllers\ProjectController->actionIndex()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-09-18 17:27:24 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EZXLcpmAKeaCR4hWUFugAAAAo'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59300'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537284444.61
+    'REQUEST_TIME' => 1537284444
+]
+2018-09-18 17:30:56 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/models/SearchProject.php(65): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#3 [internal function]: app\controllers\ProjectController->actionIndex()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-09-18 17:30:56 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EaMO@366FXgnerBhHZyQAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59316'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537284656.311
+    'REQUEST_TIME' => 1537284656
+]
+2018-09-18 17:35:17 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/models/SearchProject.php(65): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#3 [internal function]: app\controllers\ProjectController->actionIndex()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-09-18 17:35:16 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EbNODG0i0iiw@EGklZtwAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59338'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537284916.967
+    'REQUEST_TIME' => 1537284916
+]
+2018-09-18 17:35:19 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/models/SearchProject.php(65): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#3 [internal function]: app\controllers\ProjectController->actionIndex()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-09-18 17:35:19 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EbN6IQ8fm6VhtGn6Pb9wAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59340'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537284919.884
+    'REQUEST_TIME' => 1537284919
+]
+2018-09-18 17:36:48 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/models/SearchProject.php(65): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#3 [internal function]: app\controllers\ProjectController->actionIndex()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-09-18 17:36:48 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EbkIBbmOfvUs5fDFSU9wAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537285008.503
+    'REQUEST_TIME' => 1537285008
+]
+2018-09-18 17:37:09 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/models/SearchProject.php(65): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#3 [internal function]: app\controllers\ProjectController->actionIndex()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-09-18 17:37:09 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EbpS@bSSLKYdBbeGur4AAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59356'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537285029.131
+    'REQUEST_TIME' => 1537285029
+]
+2018-09-18 17:37:33 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/models/SearchProject.php(65): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#3 [internal function]: app\controllers\ProjectController->actionIndex()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2018-09-18 17:37:33 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EbvSmJaqDFFFnm1OhlbwAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59362'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537285053.73
+    'REQUEST_TIME' => 1537285053
+]
+2018-09-18 17:39:22 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\SearchProject), Array)
+#3 /opt/lampp/htdocs/basic/models/SearchProject.php(55): yii\base\Model->validate()
+#4 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#5 [internal function]: app\controllers\ProjectController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-09-18 17:39:21 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EcKeDG0i0iiw@EGklZuAAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59378'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537285161.951
+    'REQUEST_TIME' => 1537285161
+]
+2018-09-18 17:39:24 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\SearchProject::agency_id in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('agency_id')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('agency_id')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\SearchProject), Array)
+#3 /opt/lampp/htdocs/basic/models/SearchProject.php(55): yii\base\Model->validate()
+#4 /opt/lampp/htdocs/basic/controllers/ProjectController.php(40): app\models\SearchProject->search(Array)
+#5 [internal function]: app\controllers\ProjectController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('project', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-09-18 17:39:24 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EcLKIQ8fm6VhtGn6Pb@QAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59380'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/basic/web/index.php?r=project'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537285164.231
+    'REQUEST_TIME' => 1537285164
+]
+2018-09-18 18:53:42 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][Error] Error: Class 'kartik\grid\GridView' not found in /opt/lampp/htdocs/basic/views/department/index.php:24
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\DepartmentController))
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DepartmentController))
+#4 /opt/lampp/htdocs/basic/controllers/DepartmentController.php(44): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\DepartmentController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('department/inde...', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-09-18 18:53:42 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'r' => 'department/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EtlgF1G5uwpfvxBIcsYwAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59532'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=department%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=department%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537289622.76
+    'REQUEST_TIME' => 1537289622
+]
+2018-09-18 19:04:22 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'academic_year.year' in 'where clause' in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(463): yii\db\Command->queryScalar()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#16 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#20 /opt/lampp/htdocs/basic/views/revision/index.php(22): yii\base\Widget::widget(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', '[<span class="s...')
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\RevisionController))
+#24 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\RevisionController))
+#25 /opt/lampp/htdocs/basic/controllers/RevisionController.php(44): yii\base\Controller->render('index', Array)
+#26 [internal function]: app\controllers\RevisionController->actionIndex()
+#27 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#28 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#29 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#30 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('revision/index', Array)
+#31 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#33 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'academic_year.year' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `revision` WHERE (`status`=1) AND (`syllabus_date` LIKE '%02%') AND (`academic_year`.`year` LIKE '%2018%') in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(463): yii\db\Command->queryScalar()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#16 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#20 /opt/lampp/htdocs/basic/views/revision/index.php(22): yii\base\Widget::widget(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', '[<span class="s...')
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\RevisionController))
+#24 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\RevisionController))
+#25 /opt/lampp/htdocs/basic/controllers/RevisionController.php(44): yii\base\Controller->render('index', Array)
+#26 [internal function]: app\controllers\RevisionController->actionIndex()
+#27 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#28 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#29 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#30 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('revision/index', Array)
+#31 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#33 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'academic_year.year' in 'where clause'
+)
+
+2018-09-18 19:04:22 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'searchRevision' => [
+        'syllabus_file' => ''
+        'syllabus_date' => '02'
+        'paper_id' => ''
+        'academic_year_id' => '2018'
+    ]
+    'r' => 'revision/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6EwFuDG0i0iiw@EGklZzgAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=&searchRevision%5Bacademic_year_id%5D=&r=revision%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=&searchRevision%5Bacademic_year_id%5D=2018&r=revision%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=&searchRevision%5Bacademic_year_id%5D=2018&r=revision%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537290262.14
+    'REQUEST_TIME' => 1537290262
+]
+2018-09-18 19:10:09 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'academic_year.year' in 'where clause' in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(463): yii\db\Command->queryScalar()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#16 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#20 /opt/lampp/htdocs/basic/views/revision/index.php(22): yii\base\Widget::widget(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', '[<span class="s...')
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\RevisionController))
+#24 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\RevisionController))
+#25 /opt/lampp/htdocs/basic/controllers/RevisionController.php(44): yii\base\Controller->render('index', Array)
+#26 [internal function]: app\controllers\RevisionController->actionIndex()
+#27 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#28 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#29 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#30 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('revision/index', Array)
+#31 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#33 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'academic_year.year' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `revision` WHERE (`status`=1) AND (`syllabus_date` LIKE '%02%') AND (`academic_year`.`year` LIKE '%2018-2019%') in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(463): yii\db\Command->queryScalar()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#16 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#20 /opt/lampp/htdocs/basic/views/revision/index.php(22): yii\base\Widget::widget(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', '[<span class="s...')
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\RevisionController))
+#24 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\RevisionController))
+#25 /opt/lampp/htdocs/basic/controllers/RevisionController.php(44): yii\base\Controller->render('index', Array)
+#26 [internal function]: app\controllers\RevisionController->actionIndex()
+#27 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#28 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#29 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#30 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('revision/index', Array)
+#31 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#33 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'academic_year.year' in 'where clause'
+)
+
+2018-09-18 19:10:09 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'searchRevision' => [
+        'syllabus_file' => ''
+        'syllabus_date' => '02'
+        'paper_id' => ''
+        'academic_year_id' => '2018-2019'
+    ]
+    'r' => 'revision/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ExcZxDZ832spRycFj9sAAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=&searchRevision%5Bacademic_year_id%5D=2018-2019&r=revision%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59630'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=&searchRevision%5Bacademic_year_id%5D=2018-2019&r=revision%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=&searchRevision%5Bacademic_year_id%5D=2018-2019&r=revision%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537290609.119
+    'REQUEST_TIME' => 1537290609
+]
+2018-09-18 19:10:17 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paper.name' in 'where clause' in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(463): yii\db\Command->queryScalar()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#16 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#20 /opt/lampp/htdocs/basic/views/revision/index.php(22): yii\base\Widget::widget(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', '[<span class="s...')
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\RevisionController))
+#24 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\RevisionController))
+#25 /opt/lampp/htdocs/basic/controllers/RevisionController.php(44): yii\base\Controller->render('index', Array)
+#26 [internal function]: app\controllers\RevisionController->actionIndex()
+#27 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#28 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#29 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#30 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('revision/index', Array)
+#31 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#33 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'paper.name' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `revision` WHERE (`status`=1) AND (`syllabus_date` LIKE '%02%') AND (`paper`.`name` LIKE '%oop%') in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(463): yii\db\Command->queryScalar()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveQuery.php(340): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(347): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(321): yii\widgets\BaseListView->renderSection('{summary}')
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#16 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/grid/GridView.php(296): yii\widgets\BaseListView->run()
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#20 /opt/lampp/htdocs/basic/views/revision/index.php(22): yii\base\Widget::widget(Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', '[<span class="s...')
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\RevisionController))
+#24 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\RevisionController))
+#25 /opt/lampp/htdocs/basic/controllers/RevisionController.php(44): yii\base\Controller->render('index', Array)
+#26 [internal function]: app\controllers\RevisionController->actionIndex()
+#27 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#28 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#29 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#30 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('revision/index', Array)
+#31 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#33 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'paper.name' in 'where clause'
+)
+
+2018-09-18 19:10:17 [127.0.0.1][100][67a9488474fa143456f91cf67e7e599e][info][application] $_GET = [
+    'searchRevision' => [
+        'syllabus_file' => ''
+        'syllabus_date' => '02'
+        'paper_id' => 'oop'
+        'academic_year_id' => ''
+    ]
+    'r' => 'revision/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'username-localhost-8888' => '\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"'
+    '_xsrf' => '2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689'
+    '_identity' => 'c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '67a9488474fa143456f91cf67e7e599e'
+    '_csrf' => '741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6ExeaIQ8fm6VhtGn6PcHQAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=&searchRevision%5Bacademic_year_id%5D=&r=revision%2Findex'
+    'HTTP_COOKIE' => 'username-localhost-8888=\"2|1:0|10:1535523689|23:username-localhost-8888|44:MjNkMDM0Y2JkOTgwNDU5YmJjZTQ1NzY4MTBlZTBiMDM=|828621a00f2cadbee4933fb6451053dba51bac10554d99b6bc3b8cad81f0b8da\"; _xsrf=2|a28be77d|c71e62f5eeed59492ae2fda0cc61eb4e|1535523689; _identity=c3fa23837de5f54a51111914041fb0e77db4b3f74e0f2c4d092a5c8da10f1b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=67a9488474fa143456f91cf67e7e599e; _csrf=741b4cce67cb53350760754404ab7f25b0666fb442d93702cb19f56f6ace24b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rAro3Aec3Dww5EIkkQxKFBWRGV5yc2f0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '59632'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=oop&searchRevision%5Bacademic_year_id%5D=&r=revision%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?searchRevision%5Bsyllabus_file%5D=&searchRevision%5Bsyllabus_date%5D=02&searchRevision%5Bpaper_id%5D=oop&searchRevision%5Bacademic_year_id%5D=&r=revision%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1537290617.838
+    'REQUEST_TIME' => 1537290617
+]

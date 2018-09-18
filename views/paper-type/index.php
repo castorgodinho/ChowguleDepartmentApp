@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         
             [
-                'label' => 'Academic Year Name',
+                'label' => 'Academic Year',
                 'value' => 'academicYear.year',
                 'attribute' => 'academic_year_id',
             ],

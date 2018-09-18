@@ -10,20 +10,21 @@ use app\models\Program;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="paper-form" style="width:50%">
+<div class="paper-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-   <?= $form->field($model, 'program_id')->dropDownList(
+    <?= $form->field($model, 'program_id')->dropDownList(
         ArrayHelper::map(Program::find()->all(),'program_id','name'),
         ['prompt'=>'select ']       
    )  
     ?>
-    <?= $form->field($model, 'credit')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'credit')->textInput() ?>
+    <?= $form->field($model, 'marks')->textInput() ?>
 
-    <?= $form->field($model, 'marks')->textInput(['maxlength' => true]) ?>
+   
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

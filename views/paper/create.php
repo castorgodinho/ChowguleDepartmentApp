@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Paper */
 
 $this->title = 'Add Course';
-$this->params['breadcrumbs'][] = ['label' => 'Course', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Courses', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="paper-create">

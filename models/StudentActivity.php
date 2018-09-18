@@ -56,7 +56,7 @@ class StudentActivity extends \yii\db\ActiveRecord
     {
         return [
             'student_activity_id' => 'Student Activity ID',
-            'name' => 'Name',
+            'name' => 'Activity Name',
             'budget' => 'Budget',
             'start_date' => 'Start Date',
             'end_date' => 'End Date',

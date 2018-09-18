@@ -36,7 +36,7 @@ class Paper extends \yii\db\ActiveRecord
     {
         return [
             [['name',], 'required'],
-            [['program_id','credit'.'marks'], 'integer'],
+            [['program_id','credit','marks'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
             [['name'], 'string', 'max' => 20],
             [['status'], 'string', 'max' => 1],

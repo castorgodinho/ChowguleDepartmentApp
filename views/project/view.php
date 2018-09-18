@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'attribute' => 'end_date',
             ],
-            'agency_name',
+            'agency.name',
             'duration',
             'amount',
             'faculty_name:ntext',
