@@ -18,7 +18,7 @@ class searchPaper extends Paper
     public function rules()
     {
         return [
-            [['paper_id', 'program_id'], 'integer'],
+            [['paper_id', 'program_id','credit','marks'], 'integer'],
             [['name', 'created_at', 'updated_at', 'status'], 'safe'],
         ];
     }
@@ -61,6 +61,8 @@ class searchPaper extends Paper
         $query->andFilterWhere([
             'paper_id' => $this->paper_id,
             'program_id' => $this->program_id,
+            'credit'=> $this->credit,
+            'marks'=> $this->marks,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'status'=>1,

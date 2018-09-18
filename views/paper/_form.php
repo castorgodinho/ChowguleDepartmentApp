@@ -18,11 +18,12 @@ use app\models\Program;
 
    <?= $form->field($model, 'program_id')->dropDownList(
         ArrayHelper::map(Program::find()->all(),'program_id','name'),
-        ['prompt'=>'select ']
-        
-   )
-   
+        ['prompt'=>'select ']       
+   )  
     ?>
+    <?= $form->field($model, 'credit')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'marks')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

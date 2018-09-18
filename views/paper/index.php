@@ -8,14 +8,14 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\searchPaper */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Papers';
+$this->title = 'Course';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="paper-index">
 
     <h1 ><?= Html::encode($this->title) ?>
         <a style="float:right" href="index.php?r=paper/create" class="btn btn-success">
-        <span  class="glyphicon glyphicon-plus" ></span> Add Paper</a>
+        <span  class="glyphicon glyphicon-plus" ></span> Add Course</a>
         
    </h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -30,7 +30,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
            // 'paper_id',
             'name',
-           //program_id',
+            [
+                'label' => 'Program Name',
+                'value' => 'program.name',
+                'attribute' => 'program_id',
+            ],
+            
+           'credit',
+           'marks',
             //'created_at',
             //'updated_at',
             //'status',

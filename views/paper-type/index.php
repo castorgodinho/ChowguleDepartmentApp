@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'paper_type_id',
             
             [
-                'label' => 'Paper Name',
+                'label' => 'Course Name',
                 'value' => 'paper.name',
                 'attribute' => 'paper_id',
             ],

@@ -63,7 +63,7 @@ class Project extends \yii\db\ActiveRecord
         return [
             'project_id' => 'Project ID',
             'approval_id' => 'Approval ID',
-            'name' => 'Name',
+            'name' => ' Title',
             'start_date' => 'Start Date',
             'end_date' => 'End Date',
             'agency_name' => 'Agency Name',
