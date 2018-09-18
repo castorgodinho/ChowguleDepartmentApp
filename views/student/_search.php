@@ -23,6 +23,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'phone_no') ?>
 
+    <?= $form->field($model, 'email') ?>
+
     <?= $form->field($model, 'created_at') ?>
 
     <?php // echo $form->field($model, 'updated_at') ?>
