@@ -15,6 +15,10 @@ class SearchWorkshop extends Workshop
     /**
      * @inheritdoc
      */
+
+    public $to;
+    public $from;
+
     public function rules()
     {
         return [
@@ -62,6 +66,11 @@ class SearchWorkshop extends Workshop
         $query->joinWith('department');
 
         // grid filtering conditions
+
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'start_date', $this->from, $this->to]);
+        }
+        
         $query->andFilterWhere([
             'workshop_id' => $this->workshop_id,
             'cost' => $this->cost,

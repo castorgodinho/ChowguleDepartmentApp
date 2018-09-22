@@ -37,6 +37,10 @@ class SeminarController extends Controller
     {
         if(!Yii::$app->user->isGuest){
             $searchModel = new SearchSeminar();
+            if(Yii::$app->request->get('from') && Yii::$app->request->get('to')){
+                $searchModel->to = Yii::$app->request->get('to');
+                $searchModel->from = Yii::$app->request->get('from');
+            }
             $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
             return $this->render('index', [

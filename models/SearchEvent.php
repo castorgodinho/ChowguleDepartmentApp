@@ -15,6 +15,9 @@ class SearchEvent extends Event
     /**
      * @inheritdoc
      */
+    public $to;
+    public $from;
+    
     public function rules()
     {
         return [
@@ -62,6 +65,12 @@ class SearchEvent extends Event
         $query->joinWith('department');
 
         // grid filtering conditions
+
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'start_date', $this->from, $this->to]);
+        }
+
+
         $query->andFilterWhere([
             'event_id' => $this->event_id,
             'cost' => $this->cost,
