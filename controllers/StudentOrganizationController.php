@@ -36,13 +36,17 @@ class StudentOrganizationController extends Controller
     public function actionIndex()
     {
         if(!Yii::$app->user->isGuest){
-        $searchModel = new SearchStudentOrganization();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+            $searchModel = new SearchStudentOrganization();
+            if(Yii::$app->request->get('from') && Yii::$app->request->get('to')){
+                $searchModel->to = Yii::$app->request->get('to');
+                $searchModel->from = Yii::$app->request->get('from');
+            }
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
         }else{
             throw new \yii\web\ForbiddenHttpException;
         }
