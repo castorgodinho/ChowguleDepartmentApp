@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Paper */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Papers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Course', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="paper-view">
@@ -17,7 +17,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             //'paper_id',
             'name',
-            //'program_id',
+            'program.name',
+            'credit',
+            'marks',
             //'created_at',
             //'updated_at',
             //'status',

@@ -18,8 +18,8 @@ class SearchProject extends Project
     public function rules()
     {
         return [
-            [['project_id', 'department_id', 'academic_year_id'], 'integer'],
-            [['approval_id', 'name', 'start_date', 'end_date', 'agency_name', 'duration', 'faculty_name', 'student_name', 'created_at', 'updated_at'], 'safe'],
+            [['project_id', 'department_id', 'academic_year_id','agency_id'], 'integer'],
+            [['approval_id', 'name', 'start_date', 'end_date',  'duration', 'faculty_name', 'student_name', 'created_at', 'updated_at'], 'safe'],
             [['amount'], 'number'],
         ];
     }
@@ -62,6 +62,7 @@ class SearchProject extends Project
         $query->andFilterWhere([
             'project_id' => $this->project_id,
             'amount' => $this->amount,
+            'agency_id' => $this->agency_id,
             'department_id' => $this->department_id,
             'academic_year_id' => $this->academic_year_id,
             'created_at' => $this->created_at,
@@ -70,7 +71,7 @@ class SearchProject extends Project
 
         $query->andFilterWhere(['like', 'approval_id', $this->approval_id])
             ->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'agency_name', $this->agency_name])
+                       
             ->andFilterWhere(['like', 'duration', $this->duration])
             ->andFilterWhere(['like', 'faculty_name', $this->faculty_name])
             ->andFilterWhere(['like', 'student_name', $this->student_name])

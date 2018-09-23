@@ -35,8 +35,8 @@ class Paper extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name'], 'required'],
-            [['program_id'], 'integer'],
+            [['name',], 'required'],
+            [['program_id','credit','marks'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
             [['name'], 'string', 'max' => 20],
             [['status'], 'string', 'max' => 1],
@@ -51,8 +51,10 @@ class Paper extends \yii\db\ActiveRecord
     {
         return [
             'paper_id' => 'Paper ID',
-            'name' => 'Name',
+            'name' => ' Course Name',
             'program_id' => 'Program Name',
+            'credit'=>'Credit',
+            'marks'=>'Marks',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'status' => 'Status',

@@ -115,6 +115,7 @@ class PaperController extends Controller
         }
     }
 
+
     /**
      * Deletes an existing Paper model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
@@ -122,7 +123,6 @@ class PaperController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    
     public function actionDelete($id)
     {
         if(!Yii::$app->user->isGuest){

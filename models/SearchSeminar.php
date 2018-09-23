@@ -10,11 +10,15 @@ use app\models\Seminar;
 /**
  * SearchSeminar represents the model behind the search form of `app\models\Seminar`.
  */
+
 class SearchSeminar extends Seminar
 {
     /**
      * @inheritdoc
      */
+    public $to;
+    public $from;
+
     public function rules()
     {
         return [
@@ -61,6 +65,11 @@ class SearchSeminar extends Seminar
         $query->joinWith('department');
 
         // grid filtering conditions
+
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'start_date', $this->from, $this->to]);
+        }
+
         $query->andFilterWhere([
             'seminar_id' => $this->seminar_id,
             'start_date' => $this->start_date,

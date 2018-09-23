@@ -15,6 +15,9 @@ class SearchExaminer extends Examiner
     /**
      * @inheritdoc
      */
+    public $to;
+    public $from;
+
     public function rules()
     {
         return [
@@ -61,6 +64,11 @@ class SearchExaminer extends Examiner
         $query->joinWith('department');
 
         // grid filtering conditions
+
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'start_date', $this->from, $this->to]);
+        }
+        
         $query->andFilterWhere([
             'examiner_id' => $this->examiner_id,
             'start_date' => $this->start_date,

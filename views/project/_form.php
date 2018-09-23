@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use app\models\Department;
 use app\models\AcademicYear;
+use app\models\Agency;
 use yii\helpers\ArrayHelper;
 use dosamigos\datepicker\DatePicker;
 
@@ -41,7 +42,11 @@ use dosamigos\datepicker\DatePicker;
     
 ]);?>
     
-    <?= $form->field($model, 'agency_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'agency_id')->dropDownList(
+        ArrayHelper::map(Agency::find()->all(),'agency_id','name'),
+        ['prompt'=>'select ']       
+   )  
+    ?>
 
     <?= $form->field($model, 'duration')->textInput(['maxlength' => true]) ?>
 

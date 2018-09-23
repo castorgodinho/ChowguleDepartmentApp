@@ -34,11 +34,19 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'attribute' => 'syllabus_date',
             ],
-            //'paper_id',
+            [
+                'label' => 'Course Name',
+                'value' => 'paper.name',
+                'attribute' => 'paper_id',
+            ],
             //'created_at',
             //'updated_at',
             //'status',
-            //'academic_year_id',
+            [
+                'label' => 'Academic Year',
+                'value' => 'academicYear.year',
+                'attribute' => 'academic_year_id',
+            ],
             ['class' => 'yii\grid\ActionColumn'],
             
         ],

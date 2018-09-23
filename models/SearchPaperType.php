@@ -72,5 +72,6 @@ class SearchPaperType extends PaperType
         $query->andFilterWhere(['like', 'type.name', $this->type_id]);
         $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
         return $dataProvider;
+        
     }
 }
