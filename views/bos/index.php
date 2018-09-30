@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <p><b>Search Result: </b>
         <?php 
             if($searchModel->to != "" && $searchModel->from != ""){
-                echo date('Y', strtotime($searchModel->from)) . " - ". date('Y', strtotime($searchModel->to)) ;
+                echo date('d M Y', strtotime($searchModel->from)) . " - ". date('d M Y', strtotime($searchModel->to)) ;
             }else{
                 echo "None";
             }
