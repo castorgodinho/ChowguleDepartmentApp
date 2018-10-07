@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use kartik\export\ExportMenu;
+//use kartik\export\ExportMenu;
 use kartik\grid\GridView;
 //use yii\grid\GridView;
 
@@ -22,6 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?=
         GridView::widget([
+     
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'autoXlFormat'=>true,
@@ -45,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'panel'=>[
             'type'=>'success',
             'heading'=> $this->title,
-            'footer'=> false,
+           
         ]
     ]); ?>
 </div>

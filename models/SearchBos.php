@@ -10,11 +10,15 @@ use app\models\Bos;
 /**
  * SearchBos represents the model behind the search form of `app\models\Bos`.
  */
+
+ 
 class SearchBos extends Bos
 {
     /**
      * @inheritdoc
      */
+    public $to;
+    public $from;
     public function rules()
     {
         return [
@@ -59,6 +63,11 @@ class SearchBos extends Bos
         $query->joinWith('department');
         $query->joinWith('academicYear');
         // grid filtering conditions
+
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'date', $this->from, $this->to]);
+        }
+
         $query->andFilterWhere([
             'bos_id' => $this->bos_id,
             'created_at' => $this->created_at,

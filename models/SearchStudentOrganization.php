@@ -15,6 +15,9 @@ class SearchStudentOrganization extends StudentOrganization
     /**
      * @inheritdoc
      */
+
+    public $to;
+    public $from;
     public function rules()
     {
         return [
@@ -58,6 +61,10 @@ class SearchStudentOrganization extends StudentOrganization
         }
         $query->joinWith('student');
         $query->joinWith('organization');
+
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'date_of_joining', $this->from, $this->to]);
+        }
         // grid filtering conditions
         $query->andFilterWhere([
             'student_organization_id' => $this->student_organization_id,
