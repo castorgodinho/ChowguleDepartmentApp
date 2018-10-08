@@ -298,11 +298,13 @@ Call an Artisan command.
 <?php
 $I->callArtisan('command:name');
 $I->callArtisan('command:name', ['parameter' => 'value']);
-?>
 ```
+Use 3rd parameter to pass in custom `OutputInterface`
 
  * `param string` $command
  * `param array` $parameters
+ * `param OutputInterface` $output
+ * `return` string
 
 
 ### checkOption
@@ -562,7 +564,7 @@ $I->dontSeeFormErrors();
 ?>
 ```
 
- * `return` bool
+ * `return` void
 
 
 ### dontSeeInCurrentUrl
@@ -1070,8 +1072,9 @@ $user = $I->haveRecord('App\User', array('name' => 'Davert')); // returns Eloque
 ```
 
  * `param string` $table
- * `param array` $attributes
- * `return` integer|EloquentModel
+ * `param array`  $attributes
+ * `return` EloquentModel|int
+@throws \RuntimeException
  * `[Part]` orm
 
 
@@ -1320,7 +1323,7 @@ $I->seeFormHasErrors();
 ?>
 ```
 
- * `return` bool
+ * `return` void
 
 
 ### seeInCurrentUrl
@@ -1563,6 +1566,34 @@ $I->seeResponseCodeIs(\Codeception\Util\HttpCode::OK);
 ```
 
  * `param` $code
+
+
+### seeResponseCodeIsBetween
+ 
+Checks that response code is between a certain range. Between actually means [from <= CODE <= to]
+
+ * `param` $from
+ * `param` $to
+
+
+### seeResponseCodeIsClientError
+ 
+Checks that the response code is 4xx
+
+
+### seeResponseCodeIsRedirection
+ 
+Checks that the response code 3xx
+
+
+### seeResponseCodeIsServerError
+ 
+Checks that the response code is 5xx
+
+
+### seeResponseCodeIsSuccessful
+ 
+Checks that the response code 2xx
 
 
 ### seeSessionHasValues

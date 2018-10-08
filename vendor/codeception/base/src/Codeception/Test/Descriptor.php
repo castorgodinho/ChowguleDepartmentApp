@@ -34,7 +34,7 @@ class Descriptor
     {
         $example = null;
 
-        if (is_callable([$testCase, 'getMetadata'])
+        if (method_exists($testCase, 'getMetaData')
             && $example = $testCase->getMetadata()->getCurrent('example')
         ) {
             $example = ':' . substr(sha1(json_encode($example)), 0, 7);
@@ -89,5 +89,19 @@ class Descriptor
             return self::getTestFileName($testCase) . ':' . $testCase->getName(false);
         }
         return self::getTestFileName($testCase) . ':' . $testCase->toString();
+    }
+
+    /**
+     * Provides a test data set index
+     *
+     * @param \PHPUnit\Framework\SelfDescribing $testCase
+     * @return int|null
+     */
+    public static function getTestDataSetIndex(\PHPUnit\Framework\SelfDescribing $testCase)
+    {
+        if ($testCase instanceof Descriptive) {
+            return $testCase->getMetadata()->getIndex();
+        }
+        return null;
     }
 }
