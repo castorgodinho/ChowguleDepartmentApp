@@ -1,7 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+//use yii\grid\GridView;
+use kartik\grid\GridView;
 use yii\widgets\ActiveForm;
 use dosamigos\datepicker\DatePicker;
 
@@ -46,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]
             ]); ?>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" style="padding:29px 0px 0px 20px;">
                 <?= Html::submitButton('Search', ['class' => 'btn btn-success']) ?>
                 
             </div>
@@ -67,8 +68,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'autoXlFormat'=>true,
+        'export'=>[
+        'label' => 'Export',
+        'fontAwesome'=>true,
+        'showConfirmAlert'=>false,
+        'target'=>GridView::TARGET_BLANK
+        ],
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'kartik\grid\SerialColumn'],
 
             //'event_id',
             'name',
@@ -102,7 +110,14 @@ $this->params['breadcrumbs'][] = $this->title;
             //'created_at',
             //'updated_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'kartik\grid\ActionColumn'],
         ],
+        'pjax'=>true,
+        'showPageSummary'=>false,
+        'panel'=>[
+            
+            'heading'=> $this->title,
+           
+        ]
     ]); ?>
 </div>
