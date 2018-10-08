@@ -18246,3 +18246,605 @@ $_SERVER = [
     'REQUEST_TIME' => 1537290617
 >>>>>>> 8e9bc14087975874f3b998ed0ca7322fe0ff0ec9
 ]
+2018-09-27 07:22:58 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 40731 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 98, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-09-27 07:22:57 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6xpMQJtSfu-7jYnqI4XzQAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49736'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538025777.67
+    'REQUEST_TIME' => 1538025777
+]
+2018-09-27 07:22:58 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 40731 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 98, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-09-27 07:22:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6xpMgJtSfu-7jYnqI4XzgAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49736'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538025778.153
+    'REQUEST_TIME' => 1538025778
+]
+2018-09-27 07:23:08 [::1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 40731 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 98, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-09-27 07:23:08 [::1][100][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'YH5vf6GcLG2sFO-Vks0jIIy2dN7LTjcekD1wskvLFTQXHzUV8NdHD8lnnvSlp1Z45OETjqEXc1T1Dhz_Col4RA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '32388c554a0bd089f80aaa5c44d29bed'
+    '_csrf' => 'c39f5a49441a3f873bd1334dfa77bed3dbc32056e0c37af691219df3b9f1a4fca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"waZjQKkbesqa7juXhWgPjYDJe3lMABmp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6xpPM2mg-5iXKqGbAilkQAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=site%2Flogin'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '228'
+    'HTTP_COOKIE' => 'PHPSESSID=32388c554a0bd089f80aaa5c44d29bed; _csrf=c39f5a49441a3f873bd1334dfa77bed3dbc32056e0c37af691219df3b9f1a4fca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22waZjQKkbesqa7juXhWgPjYDJe3lMABmp%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49748'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538025788.009
+    'REQUEST_TIME' => 1538025788
+]
+2018-09-27 07:23:08 [::1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 40731 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 98, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-09-27 07:23:08 [::1][100][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd54c86e4400b9ad302422ca42a1da71a'
+    '_csrf' => 'f9b130b512a43ef1232b0173c968b5d57f6dd78685be4a3a654cd874782f0e68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RD65wnzW3t9y6xwwAk422DaK-xBHtsmn\";}'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6xpPM2mg-5iXKqGbAilkgAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=d54c86e4400b9ad302422ca42a1da71a; _csrf=f9b130b512a43ef1232b0173c968b5d57f6dd78685be4a3a654cd874782f0e68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RD65wnzW3t9y6xwwAk422DaK-xBHtsmn%22%3B%7D; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49748'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538025788.15
+    'REQUEST_TIME' => 1538025788
+]
+2018-09-27 07:23:08 [::1][100][d54c86e4400b9ad302422ca42a1da71a][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'department' in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('student')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('student', 'schema', false)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('student')
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveRecord.php(418): yii\db\ActiveRecord::getTableSchema()
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(492): yii\db\ActiveRecord->attributes()
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('student_id')
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('student_id')
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\SearchStudent), Array)
+#17 /opt/lampp/htdocs/basic/models/SearchStudent.php(54): yii\base\Model->validate()
+#18 /opt/lampp/htdocs/basic/controllers/StudentController.php(40): app\models\SearchStudent->search(Array)
+#19 [internal function]: app\controllers\StudentController->actionIndex()
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#23 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student/index', Array)
+#24 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'department' in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('student')
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('student', 'schema', false)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('student')
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveRecord.php(418): yii\db\ActiveRecord::getTableSchema()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(492): yii\db\ActiveRecord->attributes()
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('student_id')
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('student_id')
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\SearchStudent), Array)
+#15 /opt/lampp/htdocs/basic/models/SearchStudent.php(54): yii\base\Model->validate()
+#16 /opt/lampp/htdocs/basic/controllers/StudentController.php(40): app\models\SearchStudent->search(Array)
+#17 [internal function]: app\controllers\StudentController->actionIndex()
+#18 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#21 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student/index', Array)
+#22 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+
+2018-09-27 07:23:08 [::1][100][d54c86e4400b9ad302422ca42a1da71a][info][application] $_GET = [
+    'r' => 'student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd54c86e4400b9ad302422ca42a1da71a'
+    '_csrf' => 'f9b130b512a43ef1232b0173c968b5d57f6dd78685be4a3a654cd874782f0e68a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RD65wnzW3t9y6xwwAk422DaK-xBHtsmn\";}'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W6xpPM2mg-5iXKqGbAilkwAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=d54c86e4400b9ad302422ca42a1da71a; _csrf=f9b130b512a43ef1232b0173c968b5d57f6dd78685be4a3a654cd874782f0e68a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RD65wnzW3t9y6xwwAk422DaK-xBHtsmn%22%3B%7D; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49748'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=student%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538025788.226
+    'REQUEST_TIME' => 1538025788
+]
+2018-10-09 00:07:50 [::1][100][fd7909e0e6e26391985926822f064560][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\searchPaper::credit in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/BaseActiveRecord.php(296): yii\base\Component->__get('credit')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/validators/Validator.php(264): yii\db\BaseActiveRecord->__get('credit')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(app\models\searchPaper), Array)
+#3 /opt/lampp/htdocs/basic/models/searchPaper.php(54): yii\base\Model->validate()
+#4 /opt/lampp/htdocs/basic/controllers/PaperController.php(40): app\models\searchPaper->search(Array)
+#5 [internal function]: app\controllers\PaperController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper/index', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-10-09 00:07:50 [::1][100][fd7909e0e6e26391985926822f064560][info][application] $_GET = [
+    'r' => 'paper/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'fd7909e0e6e26391985926822f064560'
+    '_csrf' => 'f2de895abbe251f6025dc202b9bfeff3a76d4a5d14558733d01b2f891051d13ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2R4d-QVZtgzOoxMa1Cg57WLMpLVXS0vX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W7vVNjkc-bRBZcU4OwLy5gAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=revision%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=fd7909e0e6e26391985926822f064560; _csrf=f2de895abbe251f6025dc202b9bfeff3a76d4a5d14558733d01b2f891051d13ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222R4d-QVZtgzOoxMa1Cg57WLMpLVXS0vX%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '56660'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539036470.694
+    'REQUEST_TIME' => 1539036470
+]
+2018-10-09 00:24:50 [::1][100][fd7909e0e6e26391985926822f064560][error][yii\base\ErrorException:2] yii\base\ErrorException: count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/basic/vendor/mpdf/mpdf/classes/ttfontsuni.php:613
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/mpdf/mpdf/classes/ttfontsuni.php(613): yii\base\ErrorHandler->handleError(2, 'count(): Parame...', '/opt/lampp/htdo...', 613, Array)
+#1 /opt/lampp/htdocs/basic/vendor/mpdf/mpdf/classes/ttfontsuni.php(202): TTFontFile->extractInfo(false, true, 0)
+#2 /opt/lampp/htdocs/basic/vendor/mpdf/mpdf/mpdf.php(3880): TTFontFile->getMetrics('/opt/lampp/htdo...', 'dejavuserifcond...', 0, false, true, 0)
+#3 /opt/lampp/htdocs/basic/vendor/mpdf/mpdf/mpdf.php(4246): mPDF->AddFont('dejavuserifcond...', '')
+#4 /opt/lampp/htdocs/basic/vendor/mpdf/mpdf/mpdf.php(13621): mPDF->SetFont('dejavuserifcond...')
+#5 /opt/lampp/htdocs/basic/vendor/mpdf/mpdf/mpdf.php(1287): mPDF->SetDefaultFont('serif')
+#6 /opt/lampp/htdocs/basic/vendor/kartik-v/yii2-mpdf/Pdf.php(292): mPDF->__construct('UTF-8', 'A4-L', 11, 'serif', 15, 15, 20, 20, 9, 9, 'L')
+#7 /opt/lampp/htdocs/basic/vendor/kartik-v/yii2-mpdf/Pdf.php(271): kartik\mpdf\Pdf->setApi()
+#8 /opt/lampp/htdocs/basic/vendor/kartik-v/yii2-mpdf/Pdf.php(348): kartik\mpdf\Pdf->getApi()
+#9 /opt/lampp/htdocs/basic/vendor/kartik-v/yii2-mpdf/Pdf.php(254): kartik\mpdf\Pdf->configure(Array)
+#10 /opt/lampp/htdocs/basic/vendor/kartik-v/yii2-grid/src/controllers/ExportController.php(95): kartik\mpdf\Pdf->render()
+#11 /opt/lampp/htdocs/basic/vendor/kartik-v/yii2-grid/src/controllers/ExportController.php(63): kartik\grid\controllers\ExportController->generatePDF('\r\n<table class=...', 'grid-export.pdf', Array)
+#12 [internal function]: kartik\grid\controllers\ExportController->actionDownload()
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('download', Array)
+#16 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gridview/export...', Array)
+#17 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#19 {main}
+2018-10-09 00:24:50 [::1][100][fd7909e0e6e26391985926822f064560][info][application] $_GET = [
+    'r' => 'gridview/export/download'
+]
+
+$_POST = [
+    '_csrf' => 'j3O5t1MvwUV2eor6-xKroynw9IiHetmeXDSAGIm9kLS9IY3Tfn6XHwId8LWUaubCGLOTvbAtldMseNZA2o3m7A=='
+    'module_id' => 'gridview'
+    'export_hash' => 'b59aaa8645f6a10929e3255caaf0796b8bbfa7aac1dfa92d8dc16d4e429262aagridviewgrid-exportapplication/pdfutf-81{\"mode\":\"UTF-8\",\"format\":\"A4-L\",\"destination\":\"D\",\"marginTop\":20,\"marginBottom\":20,\"cssInline\":\".kv-wrap{padding:20px;}.kv-align-center{text-align:center;}.kv-align-left{text-align:left;}.kv-align-right{text-align:right;}.kv-align-top{vertical-align:top!important;}.kv-align-bottom{vertical-align:bottom!important;}.kv-align-middle{vertical-align:middle!important;}.kv-page-summary{border-top:4px double #ddd;font-weight: bold;}.kv-table-footer{border-top:4px double #ddd;font-weight: bold;}.kv-table-caption{font-size:1.5em;padding:8px;border:1px solid #ddd;border-bottom:none;}\",\"methods\":{\"SetHeader\":[{\"odd\":{\"L\":{\"content\":\"Yii2 Grid Export (PDF)\",\"font-size\":8,\"color\":\"#333333\"},\"C\":{\"content\":\"Grid Export\",\"font-size\":16,\"color\":\"#333333\"},\"R\":{\"content\":\"Generated: Tue, 09-Oct-2018\",\"font-size\":8,\"color\":\"#333333\"}},\"even\":{\"L\":{\"content\":\"Yii2 Grid Export (PDF)\",\"font-size\":8,\"color\":\"#333333\"},\"C\":{\"content\":\"Grid Export\",\"font-size\":16,\"color\":\"#333333\"},\"R\":{\"content\":\"Generated: Tue, 09-Oct-2018\",\"font-size\":8,\"color\":\"#333333\"}}}],\"SetFooter\":[{\"odd\":{\"L\":{\"content\":\"© Krajee Yii2 Extensions\",\"font-size\":8,\"font-style\":\"B\",\"color\":\"#999999\"},\"R\":{\"content\":\"[ {PAGENO} ]\",\"font-size\":10,\"font-style\":\"B\",\"font-family\":\"serif\",\"color\":\"#333333\"},\"line\":true},\"even\":{\"L\":{\"content\":\"© Krajee Yii2 Extensions\",\"font-size\":8,\"font-style\":\"B\",\"color\":\"#999999\"},\"R\":{\"content\":\"[ {PAGENO} ]\",\"font-size\":10,\"font-style\":\"B\",\"font-family\":\"serif\",\"color\":\"#333333\"},\"line\":true}}]},\"options\":{\"title\":\"Grid Export\",\"subject\":\"PDF export generated by kartik-v/yii2-grid extension\",\"keywords\":\"krajee, grid, export, yii2-grid, pdf\"},\"contentBefore\":\"\",\"contentAfter\":\"\"}'
+    'export_filetype' => 'pdf'
+    'export_filename' => 'grid-export'
+    'export_mime' => 'application/pdf'
+    'export_config' => '{\"mode\":\"UTF-8\",\"format\":\"A4-L\",\"destination\":\"D\",\"marginTop\":20,\"marginBottom\":20,\"cssInline\":\".kv-wrap{padding:20px;}.kv-align-center{text-align:center;}.kv-align-left{text-align:left;}.kv-align-right{text-align:right;}.kv-align-top{vertical-align:top!important;}.kv-align-bottom{vertical-align:bottom!important;}.kv-align-middle{vertical-align:middle!important;}.kv-page-summary{border-top:4px double #ddd;font-weight: bold;}.kv-table-footer{border-top:4px double #ddd;font-weight: bold;}.kv-table-caption{font-size:1.5em;padding:8px;border:1px solid #ddd;border-bottom:none;}\",\"methods\":{\"SetHeader\":[{\"odd\":{\"L\":{\"content\":\"Yii2 Grid Export (PDF)\",\"font-size\":8,\"color\":\"#333333\"},\"C\":{\"content\":\"Grid Export\",\"font-size\":16,\"color\":\"#333333\"},\"R\":{\"content\":\"Generated: Tue, 09-Oct-2018\",\"font-size\":8,\"color\":\"#333333\"}},\"even\":{\"L\":{\"content\":\"Yii2 Grid Export (PDF)\",\"font-size\":8,\"color\":\"#333333\"},\"C\":{\"content\":\"Grid Export\",\"font-size\":16,\"color\":\"#333333\"},\"R\":{\"content\":\"Generated: Tue, 09-Oct-2018\",\"font-size\":8,\"color\":\"#333333\"}}}],\"SetFooter\":[{\"odd\":{\"L\":{\"content\":\"© Krajee Yii2 Extensions\",\"font-size\":8,\"font-style\":\"B\",\"color\":\"#999999\"},\"R\":{\"content\":\"[ {PAGENO} ]\",\"font-size\":10,\"font-style\":\"B\",\"font-family\":\"serif\",\"color\":\"#333333\"},\"line\":true},\"even\":{\"L\":{\"content\":\"© Krajee Yii2 Extensions\",\"font-size\":8,\"font-style\":\"B\",\"color\":\"#999999\"},\"R\":{\"content\":\"[ {PAGENO} ]\",\"font-size\":10,\"font-style\":\"B\",\"font-family\":\"serif\",\"color\":\"#333333\"},\"line\":true}}]},\"options\":{\"title\":\"Grid Export\",\"subject\":\"PDF export generated by kartik-v/yii2-grid extension\",\"keywords\":\"krajee, grid, export, yii2-grid, pdf\"},\"contentBefore\":\"\",\"contentAfter\":\"\"}'
+    'export_encoding' => 'utf-8'
+    'export_bom' => '1'
+    'export_content' => '
+<table class=\"kv-grid-table table table-bordered table-striped kv-table-wrap\"><thead>
+
+<tr><th class=\"kv-align-center kv-align-middle kv-merged-header\" style=\"width: 4.39%;\" data-col-seq=\"0\">#</th><th data-col-seq=\"1\" style=\"width: 12.69%;\">Speaker Name</th><th data-col-seq=\"2\" style=\"width: 10.72%;\">Start Date</th><th data-col-seq=\"3\" style=\"width: 10.39%;\">End Date</th><th data-col-seq=\"4\" style=\"width: 11.18%;\">Participant</th><th data-col-seq=\"5\" style=\"width: 9.08%;\">Venue</th><th data-col-seq=\"6\" style=\"width: 10%;\">inhouse</th><th data-col-seq=\"7\" style=\"width: 14.27%;\">Department Name</th><th data-col-seq=\"8\" style=\"width: 12.89%;\">Academic Year</th><th class=\"kv-align-center kv-align-middle kv-merged-header\" style=\"width: 4.39%;\" data-col-seq=\"9\">#</th></tr>
+
+</thead>
+<tbody>
+<tr><td colspan=\"10\"><div class=\"empty\">No results found.</div></td></tr>
+</tbody></table>
+'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'fd7909e0e6e26391985926822f064560'
+    '_csrf' => 'f2de895abbe251f6025dc202b9bfeff3a76d4a5d14558733d01b2f891051d13ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2R4d-QVZtgzOoxMa1Cg57WLMpLVXS0vX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W7vZMuC3k30Nv8UHi0LNJgAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=seminar%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '6883'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=fd7909e0e6e26391985926822f064560; _csrf=f2de895abbe251f6025dc202b9bfeff3a76d4a5d14558733d01b2f891051d13ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222R4d-QVZtgzOoxMa1Cg57WLMpLVXS0vX%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '56764'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gridview%2Fexport%2Fdownload'
+    'REQUEST_URI' => '/basic/web/index.php?r=gridview%2Fexport%2Fdownload'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539037490.09
+    'REQUEST_TIME' => 1539037490
+]
+2018-10-09 00:30:40 [::1][100][fd7909e0e6e26391985926822f064560][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use kartik\grid\GridView as GridView because the name is already in use in /opt/lampp/htdocs/basic/views/examiner/index.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-10-09 00:30:39 [::1][100][fd7909e0e6e26391985926822f064560][info][application] $_GET = [
+    'r' => 'examiner/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'fd7909e0e6e26391985926822f064560'
+    '_csrf' => 'f2de895abbe251f6025dc202b9bfeff3a76d4a5d14558733d01b2f891051d13ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2R4d-QVZtgzOoxMa1Cg57WLMpLVXS0vX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W7vaj46bIlwGtWun@HextAAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=seminar%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=fd7909e0e6e26391985926822f064560; _csrf=f2de895abbe251f6025dc202b9bfeff3a76d4a5d14558733d01b2f891051d13ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222R4d-QVZtgzOoxMa1Cg57WLMpLVXS0vX%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2o PHP/7.2.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '56804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=examiner%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=examiner%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539037839.794
+    'REQUEST_TIME' => 1539037839
+]
