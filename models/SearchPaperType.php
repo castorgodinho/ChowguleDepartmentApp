@@ -15,6 +15,8 @@ class SearchPaperType extends PaperType
     /**
      * @inheritdoc
      */
+    public $to;
+    public $from;
     public function rules()
     {
         return [
@@ -60,6 +62,11 @@ class SearchPaperType extends PaperType
         $query->joinWith('paper');
         $query->joinWith('type');
         $query->joinWith('academicYear');
+
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'academic_year.year', $this->from, $this->to]);
+        }
+
         // grid filtering conditions
         $query->andFilterWhere([
             'paper_type_id' => $this->paper_type_id,

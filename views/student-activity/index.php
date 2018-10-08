@@ -2,9 +2,9 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
-use yii\widgets\ActiveForm;
+use kartik\grid\GridView;
 use dosamigos\datepicker\DatePicker;
+use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SearchStudentActivity */
@@ -20,60 +20,68 @@ $this->params['breadcrumbs'][] = $this->title;
 <span  class="glyphicon glyphicon-plus"></span> Add Student Activity</a>
 
 </h1>
+<?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <?php $form = ActiveForm::begin([
-        'method' => 'GET',
-    ]); ?>
-        <div class="row" >
-            <div class="col-md-3">
-                <p>From Date: </p>
-            <?= DatePicker::widget([
-                'name' => 'from',
-                'template' => '{addon}{input}',
+<?php $form = ActiveForm::begin([
+    'method' => 'GET',
+]); ?>
+    <div class="row" >
+        <div class="col-md-3">
+            <p>From Date: </p>
+        <?= DatePicker::widget([
+            'name' => 'from',
+            'template' => '{addon}{input}',
 
-                'clientOptions' => [
-                    'autoclose' => true,
-                    'format' => 'yyyy-mm-dd',
-                ]
-            ]); ?>
-            </div>
-            <div class="col-md-3" >
-            <p>To Date: </p>
-            <?= DatePicker::widget([
-                'name' => 'to',
-                'template' => '{addon}{input}',
-
-                'clientOptions' => [
-                    'autoclose' => true,
-                    'format' => 'yyyy-mm-dd',
-                ]
-            ]); ?>
-            
-            </div>
-            <div class="col-md-3" style="padding:29px 0px 0px 20px;">
-                <?= Html::submitButton('Search', ['class' => 'btn btn-success']) ?>
-                
-            </div>
+            'clientOptions' => [
+                'autoclose' => true,
+                'format' => 'yyyy',
+            ]
+        ]); ?>
         </div>
+        <div class="col-md-3" >
+        <p>To Date: </p>
+        <?= DatePicker::widget([
+            'name' => 'to',
+            'template' => '{addon}{input}',
+
+            'clientOptions' => [
+                'autoclose' => true,
+                'format' => 'yyyy',
+            ]
+        ]); ?>
         
-     <?php ActiveForm::end(); ?>
-    <div class="text-right">
-        <p><b>Search Result: </b>
-        <?php 
-            if($searchModel->to != "" && $searchModel->from != ""){
-                echo date('d M Y', strtotime($searchModel->from)) . " - ". date('d M Y', strtotime($searchModel->to)) ;
-            }else{
-                echo "None";
-            }
-        ?>
-    </p>
+        </div>
+        <div class="col-md-3" style="padding:29px 0px 0px 20px;">
+            <?= Html::submitButton('Search', ['class' => 'btn btn-success']) ?>
+            
+        </div>
     </div>
+    
+ <?php ActiveForm::end(); ?>
+<div class="text-right">
+    <p><b>Search Result: </b>
+    <?php 
+        if($searchModel->to != "" && $searchModel->from != ""){
+            echo date('Y', strtotime($searchModel->from)) . " - ". date('Y', strtotime($searchModel->to)) ;
+        }else{
+            echo "None";
+        }
+    ?>
+</p>
+</div>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'autoXlFormat'=>true,
+        'export'=>[
+        'label' => 'Export',
+        'fontAwesome'=>true,
+        'showConfirmAlert'=>false,
+        'target'=>GridView::TARGET_BLANK
+        ],
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'kartik\grid\SerialColumn'],
 
             //'student_activity_id',
             'name',
@@ -94,14 +102,29 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'attribute' => 'end_date',
             ],
-            //'faculty_name:ntext',
-            //'student_name:ntext',
-            //'department_id',
-            //'academic_year_id',
+            'faculty_name:ntext',
+            'student_name:ntext',
+            [
+                'label' => 'Department Name',
+                'value' => 'department.name',
+                'attribute' => 'department_id',
+            ],
+            [
+                'label' => 'Academic Year',
+                'value' => 'academicYear.year',
+                'attribute' => 'academic_year_id',
+            ],
             //'created_at',
             //'updated_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'kartik\grid\ActionColumn'],
         ],
+        'pjax'=>true,
+        'showPageSummary'=>false,
+        'panel'=>[
+            
+            'heading'=> $this->title,
+           
+        ]
     ]); ?>
 </div>
