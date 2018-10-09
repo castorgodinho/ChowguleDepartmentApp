@@ -44,7 +44,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'pjax'=>true,
         'showPageSummary'=>false,
         'panel'=>[
-            'type'=>'success',
             'heading'=> $this->title,
            
         ]

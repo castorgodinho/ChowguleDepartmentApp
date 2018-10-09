@@ -1,7 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+//use yii\grid\GridView;
+use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SearchAppointment */
@@ -20,38 +21,54 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Appointment', ['create'], ['class' => 'btn btn-success']) ?>
     </p>-->
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+<?=     GridView::widget([
+     
+     'dataProvider' => $dataProvider,
+     'filterModel' => $searchModel,
+     'autoXlFormat'=>true,
+     'export'=>[
+     'label' => 'Export',
+     'fontAwesome'=>true,
+     'showConfirmAlert'=>false,
+     'target'=>GridView::TARGET_BLANK
+     ],
+     'columns' => [
+        ['class' => 'yii\grid\SerialColumn'],
 
-            //'appointment_id',
-            [
-                'label' => 'Faculty Name',
-                'value' => 'faculty.name',
-                'attribute' => 'faculty_id',
-            ],
-            //'faculty.name',
-            [
-                'label' => 'Date of joining',
-                'attribute'=>'date_of_joining',
-                'value' => function($model){
-                    return date('d M Y', strtotime($model->date_of_joining));
-                }
-            ],
-            [
-                'label' => 'Date of leaving',
-                'attribute'=>'date_of_leaving',
-                'value' => function($model){
-                    return date('d M Y', strtotime($model->date_of_leaving));
-                }
-            ],
-            //'created_at',
-            //'updated_at',
-            //'status',
-
-            ['class' => 'yii\grid\ActionColumn'],
+        //'appointment_id',
+        [
+            'label' => 'Faculty Name',
+            'value' => 'faculty.name',
+            'attribute' => 'faculty_id',
         ],
-    ]); ?>
+        //'faculty.name',
+        [
+            'label' => 'Date of joining',
+            'attribute'=>'date_of_joining',
+            'value' => function($model){
+                return date('d M Y', strtotime($model->date_of_joining));
+            }
+        ],
+        [
+            'label' => 'Date of leaving',
+            'attribute'=>'date_of_leaving',
+            'value' => function($model){
+                return date('d M Y', strtotime($model->date_of_leaving));
+            }
+        ],
+        //'created_at',
+        //'updated_at',
+        //'status',
+
+        ['class' => 'yii\grid\ActionColumn'],
+     ],
+     'pjax'=>true,
+     'showPageSummary'=>false,
+     'panel'=>[
+         
+         'heading'=> $this->title,
+        
+     ]
+ ]); ?>
+
 </div>
