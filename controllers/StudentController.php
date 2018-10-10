@@ -3,11 +3,14 @@
 namespace app\controllers;
 
 use Yii;
+
+use app\models\ProgramStudent;
 use app\models\Student;
 use app\models\SearchStudent;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+
 
 /**
  * StudentController implements the CRUD actions for Student model.
@@ -57,9 +60,9 @@ class StudentController extends Controller
     public function actionView($id)
     {
         if(!Yii::$app->user->isGuest){
-
+        $model = ProgramStudent::find()->where(['student_id' => $id])->all();
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $model,
         ]);
         }else {
             throw new \yii\web\ForbiddenHttpException;
@@ -74,15 +77,19 @@ class StudentController extends Controller
     public function actionCreate()
     {
         $model = new Student();
+        $admission = new ProgramStudent();
         if(!Yii::$app->user->isGuest){
 
-        if ($model->load(Yii::$app->request->post())) {
+        if ($model->load(Yii::$app->request->post()) && $admission->load(Yii::$app->request->post())) {
             $model->save();
+            $admission->student_id = $model->student_id;
+            $admission->save(false);
             return $this->redirect(['view', 'id' => $model->student_id]);
         }
 
         return $this->render('create', [
             'model' => $model,
+            'admission' => $admission,
         ]);
         }else {
             throw new \yii\web\ForbiddenHttpException;

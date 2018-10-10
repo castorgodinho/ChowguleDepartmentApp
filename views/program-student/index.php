@@ -15,51 +15,33 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="program-student-index">
 
+    
+
     <h1><?= Html::encode($this->title) ?> <a Style="float:right" href="index.php?r=program-student/create" class="btn btn-success">
         <span class="glyphicon glyphicon-plus"></span> Add Admission</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <?php $form = ActiveForm::begin([
+
+   <?php $form = ActiveForm::begin([
         'method' => 'GET',
     ]); ?>
-        <div class="row" >
+        <div class="row"  >
             <div class="col-md-3">
-                <p>From Year: </p>
-            <?= DatePicker::widget([
-                'name' => 'from',
-                'template' => '{addon}{input}',
-
-                'clientOptions' => [
-                    'autoclose' => true,
-                    'format' => 'yyyy',
-                ]
-            ]); ?>
+                
+                <input type="text" name='roll_no' class='form-control' placeholder="Search Roll No.">
             </div>
-            <div class="col-md-3" >
-            <p>To Year: </p>
-            <?= DatePicker::widget([
-                'name' => 'to',
-                'template' => '{addon}{input}',
-
-                'clientOptions' => [
-                    'autoclose' => true,
-                    'format' => 'yyyy',
-                ]
-            ]); ?>
-            
-            </div>
-            <div class="col-md-3" style="padding:29px 0px 0px 20px;">
+        
+            <div class="col-md-3">
                 <?= Html::submitButton('Search', ['class' => 'btn btn-success']) ?>
                 
             </div>
         </div>
-        
      <?php ActiveForm::end(); ?>
     <div class="text-right">
         <p><b>Search Result: </b>
         <?php 
-            if($searchModel->to != "" && $searchModel->from != ""){
-                echo date('Y', strtotime($searchModel->from)) . " - ". date('Y', strtotime($searchModel->to)) ;
+            if($searchModel->roll_no != ""){
+                echo $searchModel->roll_no ;
             }else{
                 echo "None";
             }
@@ -67,8 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
     </div>
 
-    <?=
-        GridView::widget([
+    <?= GridView::widget([
      
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -96,6 +77,14 @@ $this->params['breadcrumbs'][] = $this->title;
            // 'created_at',
            // 'updated_at',
            // 'status',
+           [
+            'label' => 'Roll No.',
+            'value' => 'student.roll_no',
+            'attribute' => 'roll_no',
+            ],
+          
+            'student.phone_no',
+            'student.email',
            [
              'label' => 'Academic Year',
              'value' => 'academicYear.year',
