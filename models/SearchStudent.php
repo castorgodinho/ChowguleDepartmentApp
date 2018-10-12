@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Student;
+use app\models\ProgramStudent;
 
 /**
  * SearchStudent represents the model behind the search form of `app\models\Student`.
@@ -15,6 +16,8 @@ class SearchStudent extends Student
     /**
      * @inheritdoc
      */
+    public $to;
+    public $from;
     public function rules()
     {
         return [
@@ -57,6 +60,9 @@ class SearchStudent extends Student
             return $dataProvider;
         }
 
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'academic_year.year', $this->from, $this->to]);
+        }
         // grid filtering conditions
         $query->andFilterWhere([
             'student_id' => $this->student_id,
