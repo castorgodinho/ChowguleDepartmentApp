@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 //use yii\grid\GridView;
 use kartik\grid\GridView;
+use yii\widgets\ActiveForm;
+use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SearchAppointment */
@@ -20,6 +22,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <!--<p>
         <?= Html::a('Create Appointment', ['create'], ['class' => 'btn btn-success']) ?>
     </p>-->
+    
+
 
 <?=     GridView::widget([
      
@@ -36,11 +40,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ['class' => 'yii\grid\SerialColumn'],
 
         //'appointment_id',
-        [
-            'label' => 'Faculty Name',
-            'value' => 'faculty.name',
-            'attribute' => 'faculty_id',
-        ],
         //'faculty.name',
         [
             'label' => 'Date of joining',
@@ -56,9 +55,28 @@ $this->params['breadcrumbs'][] = $this->title;
                 return date('d M Y', strtotime($model->date_of_leaving));
             }
         ],
-        //'created_at',
-        //'updated_at',
-        //'status',
+        'Type',
+        [
+            'label' => 'Faculty Name',
+            'value' => 'faculty.name',
+            'attribute' => 'faculty_id',
+            ],
+            
+        [
+            'label' => 'Contact no',
+            'value' => 'faculty.phone_no',
+            'attribute' => 'faculty_id',
+            ],
+        [
+            'label' => 'Email',
+            'value' => 'faculty.email',
+            'attribute' => 'faculty_id',
+            ],
+        [
+            'label' => 'Employee ID',
+            'value' => 'faculty.employee_id',
+            'attribute' => 'faculty_id',
+            ],
 
         ['class' => 'yii\grid\ActionColumn'],
      ],
