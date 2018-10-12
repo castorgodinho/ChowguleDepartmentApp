@@ -18,3 +18,6 @@ create table agency(agency_id int primary key auto_increment not null,name varch
 
 ALTER TABLE `project' DROP `agency_name`;
 ALTER TABLE `project` ADD `agency_id` INT NOT NULL AFTER `end_date`;
+
+
+ALTER TABLE `appointment` ADD `Type` VARCHAR(250) NOT NULL AFTER `appointment_id`;

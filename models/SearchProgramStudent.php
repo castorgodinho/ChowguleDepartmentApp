@@ -63,9 +63,6 @@ class SearchProgramStudent extends ProgramStudent
         $query->joinWith('student');
         $query->joinWith('academicYear');
 
-        if($this->to != "" && $this->from != ""){
-            $query->andFilterWhere(['between', 'academic_year.year', $this->from, $this->to]);
-        }
         // grid filtering conditions
         $query->andFilterWhere([
             'program_student_id' => $this->program_student_id,

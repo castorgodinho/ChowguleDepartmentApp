@@ -30,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             //'appointment_id',
             'faculty.name',
+            'Type',
             [
                 'label' => 'Date of joining',
                 'value' => function($model){
@@ -42,9 +43,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     return date('d M Y', strtotime($model->date_of_leaving));
                 }
             ],
-            //'created_at',
-            //'updated_at',
-            //'status',
+            'faculty.email',
+            'faculty.phone_no',
+            'faculty.address',
+            'faculty.employee_id'
+
+            
+
         ],
     ]) ?>
 

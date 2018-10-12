@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use app\models\Appointment;
+use app\models\Faculty;
 use app\models\SearchAppointment;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -74,13 +75,20 @@ class AppointmentController extends Controller
     {
         if(!Yii::$app->user->isGuest){
         $model = new Appointment();
+        $faculty = new Faculty();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $faculty->load(Yii::$app->request->post()) ) {
+            $faculty->save();
+            $model->faculty_id = $faculty->faculty_id;
+            $model->save();
+           
+
             return $this->redirect(['view', 'id' => $model->appointment_id]);
         }
 
         return $this->render('create', [
             'model' => $model,
+            'faculty'=> $faculty,
         ]);
         }else{
             throw new \yii\web\ForbiddenHttpException;
