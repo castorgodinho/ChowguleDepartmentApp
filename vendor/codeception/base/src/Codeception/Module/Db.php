@@ -9,8 +9,6 @@ use Codeception\Lib\Interfaces\Db as DbInterface;
 use Codeception\Lib\Driver\Db as Driver;
 use Codeception\Lib\DbPopulator;
 use Codeception\TestInterface;
-use Codeception\Lib\Notification;
-use Codeception\Util\ActionSequence;
 
 /**
  * Access a database.
@@ -35,7 +33,7 @@ use Codeception\Util\ActionSequence;
  * * Oracle
  *
  * Connection is done by database Drivers, which are stored in the `Codeception\Lib\Driver` namespace.
- * [Check out the drivers](https://github.com/Codeception/Codeception/tree/2.4/src/Codeception/Lib/Driver)
+ * [Check out the drivers](https://github.com/Codeception/Codeception/tree/2.3/src/Codeception/Lib/Driver)
  * if you run into problems loading dumps and cleaning databases.
  *
  * ## Config
@@ -53,7 +51,6 @@ use Codeception\Util\ActionSequence;
  * * ssl_ca - path to the SSL certificate authority (MySQL specific, @see http://php.net/manual/de/ref.pdo-mysql.php#pdo.constants.mysql-attr-ssl-ca)
  * * ssl_verify_server_cert - disables certificate CN verification (MySQL specific, @see http://php.net/manual/de/ref.pdo-mysql.php)
  * * ssl_cipher - list of one or more permissible ciphers to use for SSL encryption (MySQL specific, @see http://php.net/manual/de/ref.pdo-mysql.php#pdo.constants.mysql-attr-cipher)
- * * databases - include more database configs and switch between them in tests.
  *
  * ## Example
  *
@@ -73,20 +70,6 @@ use Codeception\Util\ActionSequence;
  *              ssl_ca: '/path/to/ca-cert.pem'
  *              ssl_verify_server_cert: false
  *              ssl_cipher: 'AES256-SHA'
- *
- * ## Example with multi-databases
- *
- *     modules:
- *        enabled:
- *           - Db:
- *              dsn: 'mysql:host=localhost;dbname=testdb'
- *              user: 'root'
- *              password: ''
- *              databases:
- *                 db2:
- *                    dsn: 'mysql:host=localhost;dbname=testdb2'
- *                    user: 'userdb2'
- *                    password: ''
  *
  * ## SQL data dump
  *
@@ -179,7 +162,7 @@ use Codeception\Util\ActionSequence;
  * Example:
  * ```php
  * <?php
- * $I->seeInDatabase('users', ['name' => 'Davert', 'email' => 'davert@mail.com']);
+ * $I->seeInDatabase('users', array('name' => 'Davert', 'email' => 'davert@mail.com'));
  *
  * ```
  * Will generate:
@@ -191,7 +174,7 @@ use Codeception\Util\ActionSequence;
  *
  * ```php
  * <?php
- * $I->seeInDatabase('users', ['name' => 'Davert', 'email like' => 'davert%']);
+ * $I->seeInDatabase('users', array('name' => 'Davert', 'email like' => 'davert%'));
  *
  * ```
  * Will generate:
@@ -207,6 +190,17 @@ use Codeception\Util\ActionSequence;
 class Db extends CodeceptionModule implements DbInterface
 {
     /**
+     * @api
+     * @var
+     */
+    public $dbh;
+
+    /**
+     * @var array
+     */
+    protected $sql = [];
+
+    /**
      * @var array
      */
     protected $config = [
@@ -219,359 +213,188 @@ class Db extends CodeceptionModule implements DbInterface
     ];
 
     /**
+     * @var bool
+     */
+    protected $populated = false;
+
+    /**
+     * @var \Codeception\Lib\Driver\Db
+     */
+    public $driver;
+
+    /**
+     * @var array
+     */
+    protected $insertedRows = [];
+
+    /**
      * @var array
      */
     protected $requiredFields = ['dsn', 'user', 'password'];
-    const DEFAULT_DATABASE = 'default';
-
-    public $drivers = [];
-    public $dbhs = [];
-    public $databasesPopulated = [];
-    public $databasesSql = [];
-    protected $insertedRows = [];
-    public $currentDatabase = self::DEFAULT_DATABASE;
-
-    protected function getDatabases()
-    {
-        $databases = [$this->currentDatabase => $this->config];
-
-        if (!empty($this->config['databases'])) {
-            foreach ($this->config['databases'] as $databaseKey => $databaseConfig) {
-                $databases[$databaseKey] = array_merge([
-                    'populate' => false,
-                    'cleanup' => false,
-                    'reconnect' => false,
-                    'waitlock' => 0,
-                    'dump' => null,
-                    'populator' => null,
-                ], $databaseConfig);
-            }
-        }
-        return $databases;
-    }
-    protected function connectToDatabases()
-    {
-        foreach ($this->getDatabases() as $databaseKey => $databaseConfig) {
-            $this->connect($databaseKey, $databaseConfig);
-        }
-    }
-    protected function cleanUpDatabases()
-    {
-        foreach ($this->getDatabases() as $databaseKey => $databaseConfig) {
-            $this->_cleanup($databaseKey, $databaseConfig);
-        }
-    }
-    protected function populateDatabases($configKey)
-    {
-        foreach ($this->getDatabases() as $databaseKey => $databaseConfig) {
-            if ($databaseConfig[$configKey]) {
-                $this->_loadDump($databaseKey, $databaseConfig);
-            }
-        }
-    }
-    protected function readSqlForDatabases()
-    {
-        foreach ($this->getDatabases() as $databaseKey => $databaseConfig) {
-            $this->readSql($databaseKey, $databaseConfig);
-        }
-    }
-    protected function removeInsertedForDatabases()
-    {
-        foreach ($this->getDatabases() as $databaseKey => $databaseConfig) {
-            $this->amConnectedToDatabase($databaseKey);
-            $this->removeInserted($databaseKey, $databaseConfig);
-        }
-    }
-    protected function disconnectDatabases()
-    {
-        foreach ($this->getDatabases() as $databaseKey => $databaseConfig) {
-            $this->disconnect($databaseKey, $databaseConfig);
-        }
-    }
-    protected function reconnectDatabases()
-    {
-        foreach ($this->getDatabases() as $databaseKey => $databaseConfig) {
-            if ($databaseConfig['reconnect']) {
-                $this->disconnect($databaseKey, $databaseConfig);
-                $this->connect($databaseKey, $databaseConfig);
-            }
-        }
-    }
-
-    public function __get($name)
-    {
-        Notification::deprecate("Properties dbh and driver are deprecated in favor of Db::_getDbh and Db::_getDriver", "Db module");
-
-        if ($name == 'driver') {
-            return $this->_getDriver();
-        }
-        if ($name == 'dbh') {
-            return $this->_getDbh();
-        }
-    }
-
-    public function _getDriver()
-    {
-        return $this->drivers[$this->currentDatabase];
-    }
-    public function _getDbh()
-    {
-        return $this->dbhs[$this->currentDatabase];
-    }
-
-    /**
-     * Make sure you are connected to the right database.
-     *
-     * ```php
-     * <?php
-     * $I->seeNumRecords(2, 'users');   //executed on default database
-     * $I->amConnectedToDatabase('db_books');
-     * $I->seeNumRecords(30, 'books');  //executed on db_books database
-     * //All the next queries will be on db_books
-     * ```
-     * @param $databaseKey
-     * @throws ModuleConfigException
-     */
-    public function amConnectedToDatabase($databaseKey)
-    {
-        if (empty($this->getDatabases()[$databaseKey]) && $databaseKey != self::DEFAULT_DATABASE) {
-            throw new ModuleConfigException(
-                __CLASS__,
-                "\nNo database $databaseKey in the key databases.\n"
-            );
-        }
-        $this->currentDatabase = $databaseKey;
-    }
-
-    /**
-     * Can be used with a callback if you don't want to change the current database in your test.
-     *
-     * ```php
-     * <?php
-     * $I->seeNumRecords(2, 'users');   //executed on default database
-     * $I->performInDatabase('db_books', function($I) {
-     *     $I->seeNumRecords(30, 'books');  //executed on db_books database
-     * });
-     * $I->seeNumRecords(2, 'users');  //executed on default database
-     * ```
-     * List of actions can be pragmatically built using `Codeception\Util\ActionSequence`:
-     *
-     * ```php
-     * <?php
-     * $I->performInDatabase('db_books', ActionSequence::build()
-     *     ->seeNumRecords(30, 'books')
-     * );
-     * ```
-     * Alternatively an array can be used:
-     *
-     * ```php
-     * $I->performInDatabase('db_books', ['seeNumRecords' => [30, 'books']]);
-     * ```
-     *
-     * Choose the syntax you like the most and use it,
-     *
-     * Actions executed from array or ActionSequence will print debug output for actions, and adds an action name to
-     * exception on failure.
-     *
-     * @param $databaseKey
-     * @param actions $actions
-     * @throws ModuleConfigException
-     */
-    public function performInDatabase($databaseKey, $actions)
-    {
-        $backupDatabase = $this->currentDatabase;
-        $this->amConnectedToDatabase($databaseKey);
-
-        if (is_callable($actions)) {
-            $actions($this);
-            $this->amConnectedToDatabase($backupDatabase);
-            return;
-        }
-        if (is_array($actions)) {
-            $actions = ActionSequence::build()->fromArray($actions);
-        }
-
-        if (!$actions instanceof ActionSequence) {
-            throw new \InvalidArgumentException("2nd parameter, actions should be callback, ActionSequence or array");
-        }
-
-        $actions->run($this);
-        $this->amConnectedToDatabase($backupDatabase);
-    }
 
     public function _initialize()
     {
-        $this->connectToDatabases();
+        $this->connect();
     }
 
     public function __destruct()
     {
-        $this->disconnectDatabases();
+        $this->disconnect();
     }
 
     public function _beforeSuite($settings = [])
     {
-        $this->readSqlForDatabases();
-        $this->connectToDatabases();
-        $this->cleanUpDatabases();
-        $this->populateDatabases('populate');
+        if (!$this->config['populator']
+            && $this->config['dump']
+            &&  ($this->config['cleanup'] || ($this->config['populate']))
+        ) {
+            $this->readSql();
+        }
+
+        $this->connect();
+
+        // starting with loading dump
+        if ($this->config['populate']) {
+            if ($this->config['cleanup']) {
+                $this->_cleanup();
+            }
+            $this->_loadDump();
+        }
+
+        if ($this->config['reconnect']) {
+            $this->disconnect();
+        }
     }
 
-    private function readSql($databaseKey = null, $databaseConfig = null)
+    private function readSql()
     {
-        if ($databaseConfig['populator']) {
-            return;
-        }
-        if (!$databaseConfig['cleanup'] && !$databaseConfig['populate']) {
-            return;
-        }
-        if (empty($databaseConfig['dump'])) {
-            return;
-        }
-
-        if (!file_exists(Configuration::projectDir() . $databaseConfig['dump'])) {
+        if (!file_exists(Configuration::projectDir() . $this->config['dump'])) {
             throw new ModuleConfigException(
                 __CLASS__,
                 "\nFile with dump doesn't exist.\n"
                 . "Please, check path for sql file: "
-                . $databaseConfig['dump']
+                . $this->config['dump']
             );
         }
 
-        $sql = file_get_contents(Configuration::projectDir() . $databaseConfig['dump']);
+        $sql = file_get_contents(Configuration::projectDir() . $this->config['dump']);
 
         // remove C-style comments (except MySQL directives)
         $sql = preg_replace('%/\*(?!!\d+).*?\*/%s', '', $sql);
 
         if (!empty($sql)) {
             // split SQL dump into lines
-            $this->databasesSql[$databaseKey] = preg_split('/\r\n|\n|\r/', $sql, -1, PREG_SPLIT_NO_EMPTY);
+            $this->sql = preg_split('/\r\n|\n|\r/', $sql, -1, PREG_SPLIT_NO_EMPTY);
         }
     }
 
-    private function connect($databaseKey, $databaseConfig)
+    private function connect()
     {
-        if (!empty($this->drivers[$databaseKey]) && !empty($this->dbhs[$databaseKey])) {
-            return;
-        }
         $options = [];
 
         /**
          * @see http://php.net/manual/en/pdo.construct.php
          * @see http://php.net/manual/de/ref.pdo-mysql.php#pdo-mysql.constants
          */
-        if (array_key_exists('ssl_key', $databaseConfig)
-            && !empty($databaseConfig['ssl_key'])
+        if (array_key_exists('ssl_key', $this->config)
+            && !empty($this->config['ssl_key'])
             && defined('\PDO::MYSQL_ATTR_SSL_KEY')
         ) {
-            $options[\PDO::MYSQL_ATTR_SSL_KEY] = (string) $databaseConfig['ssl_key'];
+            $options[\PDO::MYSQL_ATTR_SSL_KEY] = (string) $this->config['ssl_key'];
         }
 
-        if (array_key_exists('ssl_cert', $databaseConfig)
-            && !empty($databaseConfig['ssl_cert'])
+        if (array_key_exists('ssl_cert', $this->config)
+            && !empty($this->config['ssl_cert'])
             && defined('\PDO::MYSQL_ATTR_SSL_CERT')
         ) {
-            $options[\PDO::MYSQL_ATTR_SSL_CERT] = (string) $databaseConfig['ssl_cert'];
+            $options[\PDO::MYSQL_ATTR_SSL_CERT] = (string) $this->config['ssl_cert'];
         }
 
-        if (array_key_exists('ssl_ca', $databaseConfig)
-            && !empty($databaseConfig['ssl_ca'])
+        if (array_key_exists('ssl_ca', $this->config)
+            && !empty($this->config['ssl_ca'])
             && defined('\PDO::MYSQL_ATTR_SSL_CA')
         ) {
-            $options[\PDO::MYSQL_ATTR_SSL_CA] = (string) $databaseConfig['ssl_ca'];
+            $options[\PDO::MYSQL_ATTR_SSL_CA] = (string) $this->config['ssl_ca'];
         }
 
-        if (array_key_exists('ssl_cipher', $databaseConfig)
-            && !empty($databaseConfig['ssl_cipher'])
+        if (array_key_exists('ssl_cipher', $this->config)
+            && !empty($this->config['ssl_cipher'])
             && defined('\PDO::MYSQL_ATTR_SSL_CIPHER')
         ) {
-            $options[\PDO::MYSQL_ATTR_SSL_CIPHER] = (string) $databaseConfig['ssl_cipher'];
+            $options[\PDO::MYSQL_ATTR_SSL_CIPHER] = (string) $this->config['ssl_cipher'];
         }
 
-        if (array_key_exists('ssl_verify_server_cert', $databaseConfig)
+        if (array_key_exists('ssl_verify_server_cert', $this->config)
             && defined('\PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT')
         ) {
-            $options[\PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = (boolean) $databaseConfig[ 'ssl_verify_server_cert' ];
+            $options[\PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = (boolean) $this->config[ 'ssl_verify_server_cert' ];
         }
 
         try {
-            $this->drivers[$databaseKey] = Driver::create($databaseConfig['dsn'], $databaseConfig['user'], $databaseConfig['password'], $options);
+            $this->driver = Driver::create($this->config['dsn'], $this->config['user'], $this->config['password'], $options);
         } catch (\PDOException $e) {
             $message = $e->getMessage();
             if ($message === 'could not find driver') {
-                list ($missingDriver, ) = explode(':', $databaseConfig['dsn'], 2);
+                list ($missingDriver, ) = explode(':', $this->config['dsn'], 2);
                 $message = "could not find $missingDriver driver";
             }
 
             throw new ModuleException(__CLASS__, $message . ' while creating PDO connection');
         }
 
-        if ($databaseConfig['waitlock']) {
-            $this->__getDriver()->setWaitLock($databaseConfig['waitlock']);
+        if ($this->config['waitlock']) {
+            $this->driver->setWaitLock($this->config['waitlock']);
         }
 
-        $this->debugSection('Db', 'Connected to ' . $databaseKey . ' ' . $this->drivers[$databaseKey]->getDb());
-        $this->dbhs[$databaseKey] = $this->drivers[$databaseKey]->getDbh();
+        $this->debugSection('Db', 'Connected to ' . $this->driver->getDb());
+        $this->dbh = $this->driver->getDbh();
     }
 
-    private function disconnect($databaseKey)
+    private function disconnect()
     {
-        $this->debugSection('Db', 'Disconnected from ' . $databaseKey);
-        $this->dbhs[$databaseKey] = null;
-        $this->drivers[$databaseKey] = null;
+        $this->driver = null;
+        $this->dbh = null;
+        $this->debugSection('Db', 'Disconnected');
     }
 
     public function _before(TestInterface $test)
     {
-        $this->reconnectDatabases();
-        $this->amConnectedToDatabase(self::DEFAULT_DATABASE);
-
-        $this->cleanUpDatabases();
-
-        $this->populateDatabases('cleanup');
-
+        if ($this->config['reconnect']) {
+            $this->disconnect();
+            $this->connect();
+        }
+        if ($this->config['cleanup'] && !$this->populated) {
+            $this->_cleanup();
+            $this->_loadDump();
+        }
         parent::_before($test);
     }
 
     public function _after(TestInterface $test)
     {
-        $this->removeInsertedForDatabases();
+        $this->removeInserted();
+        if ($this->config['reconnect']) {
+            $this->disconnect();
+        }
         parent::_after($test);
     }
 
-    protected function removeInserted($databaseKey = null)
+    protected function removeInserted()
     {
-        $databaseKey = empty($databaseKey) ?  self::DEFAULT_DATABASE : $databaseKey;
-
-        if (empty($this->insertedRows[$databaseKey])) {
-            return;
-        }
-
-        foreach (array_reverse($this->insertedRows[$databaseKey]) as $row) {
+        foreach (array_reverse($this->insertedRows) as $row) {
             try {
-                $this->_getDriver()->deleteQueryByCriteria($row['table'], $row['primary']);
+                $this->driver->deleteQueryByCriteria($row['table'], $row['primary']);
             } catch (\Exception $e) {
-                $this->debug("Couldn't delete record " . json_encode($row['primary']) ." from {$row['table']}");
+                $this->debug("couldn't delete record " . json_encode($row['primary']) ." from {$row['table']}");
             }
         }
-        $this->insertedRows[$databaseKey] = [];
+        $this->insertedRows = [];
+        $this->populated = false;
     }
 
-    public function _cleanup($databaseKey = null, $databaseConfig = null)
+    public function _cleanup()
     {
-        $databaseKey = empty($databaseKey) ?  self::DEFAULT_DATABASE : $databaseKey;
-        $databaseConfig = empty($databaseConfig) ?  $this->config : $databaseConfig;
-
-        if (!$databaseConfig['populate']) {
-            return;
-        }
-        if (!$databaseConfig['cleanup']) {
-            return;
-        }
-        if (isset($this->databasesPopulated[$databaseKey]) && !$this->databasesPopulated[$databaseKey]) {
-            return;
-        }
-        $dbh = $this->dbhs[$databaseKey];
+        $dbh = $this->driver->getDbh();
         if (!$dbh) {
             throw new ModuleConfigException(
                 __CLASS__,
@@ -580,11 +403,11 @@ class Db extends CodeceptionModule implements DbInterface
         }
         try {
             // don't clear database for empty dump
-            if (isset($this->databasesSql[$databaseKey]) && !count($this->databasesSql[$databaseKey])) {
+            if (!count($this->sql)) {
                 return;
             }
-            $this->drivers[$databaseKey]->cleanup();
-            $this->databasesPopulated[$databaseKey] = false;
+            $this->driver->cleanup();
+            $this->populated = false;
         } catch (\Exception $e) {
             throw new ModuleException(__CLASS__, $e->getMessage());
         }
@@ -592,46 +415,32 @@ class Db extends CodeceptionModule implements DbInterface
 
     public function isPopulated()
     {
-        return $this->databasesPopulated[$this->currentDatabase];
+        return $this->populated;
     }
 
-    public function _loadDump($databaseKey = null, $databaseConfig = null)
+    public function _loadDump()
     {
-        $databaseKey = empty($databaseKey) ?  self::DEFAULT_DATABASE : $databaseKey;
-        $databaseConfig = empty($databaseConfig) ?  $this->config : $databaseConfig;
-
-        if (!$databaseConfig['populate']) {
+        if ($this->config['populator']) {
+            $this->loadDumpUsingPopulator();
             return;
         }
-
-        if (isset($this->databasesPopulated[$databaseKey]) && $this->databasesPopulated[$databaseKey]) {
-            return;
-        }
-
-        if ($databaseConfig['populator']) {
-            $this->loadDumpUsingPopulator($databaseKey, $databaseConfig);
-            return;
-        }
-        $this->loadDumpUsingDriver($databaseKey, $databaseConfig);
+        $this->loadDumpUsingDriver();
     }
 
-    protected function loadDumpUsingPopulator($databaseKey, $databaseConfig)
+    protected function loadDumpUsingPopulator()
     {
-        $populator = new DbPopulator($databaseConfig);
-        $this->databasesPopulated[$databaseKey] = $populator->run();
+        $populator = new DbPopulator($this->config);
+        $this->populated = $populator->run();
     }
 
-    protected function loadDumpUsingDriver($databaseKey)
+    protected function loadDumpUsingDriver()
     {
-        if (!isset($this->databasesSql[$databaseKey])) {
-            return;
-        }
-        if (!$this->databasesSql[$databaseKey]) {
+        if (!$this->sql) {
             $this->debugSection('Db', 'No SQL loaded, loading dump skipped');
             return;
         }
-        $this->drivers[$databaseKey]->load($this->databasesSql[$databaseKey]);
-        $this->databasesPopulated[$databaseKey] = true;
+        $this->driver->load($this->sql);
+        $this->populated = true;
     }
 
     /**
@@ -659,14 +468,14 @@ class Db extends CodeceptionModule implements DbInterface
 
     public function _insertInDatabase($table, array $data)
     {
-        $query = $this->_getDriver()->insert($table, $data);
+        $query = $this->driver->insert($table, $data);
         $parameters = array_values($data);
         $this->debugSection('Query', $query);
         $this->debugSection('Parameters', $parameters);
-        $this->_getDriver()->executeQuery($query, $parameters);
+        $this->driver->executeQuery($query, $parameters);
 
         try {
-            $lastInsertId = (int)$this->_getDriver()->lastInsertId($table);
+            $lastInsertId = (int)$this->driver->lastInsertId($table);
         } catch (\PDOException $e) {
             // ignore errors due to uncommon DB structure,
             // such as tables without _id_seq in PGSQL
@@ -677,7 +486,7 @@ class Db extends CodeceptionModule implements DbInterface
 
     private function addInsertedRow($table, array $row, $id)
     {
-        $primaryKey = $this->_getDriver()->getPrimaryKey($table);
+        $primaryKey = $this->driver->getPrimaryKey($table);
         $primary = [];
         if ($primaryKey) {
             if ($id && count($primaryKey) === 1) {
@@ -697,7 +506,7 @@ class Db extends CodeceptionModule implements DbInterface
             $primary = $row;
         }
 
-        $this->insertedRows[$this->currentDatabase][] = [
+        $this->insertedRows[] = [
             'table' => $table,
             'primary' => $primary,
         ];
@@ -777,13 +586,13 @@ class Db extends CodeceptionModule implements DbInterface
      */
     protected function proceedSeeInDatabase($table, $column, $criteria)
     {
-        $query = $this->_getDriver()->select($column, $table, $criteria);
+        $query = $this->driver->select($column, $table, $criteria);
         $parameters = array_values($criteria);
         $this->debugSection('Query', $query);
         if (!empty($parameters)) {
             $this->debugSection('Parameters', $parameters);
         }
-        $sth = $this->_getDriver()->executeQuery($query, $parameters);
+        $sth = $this->driver->executeQuery($query, $parameters);
 
         return $sth->fetchColumn();
     }
@@ -805,11 +614,11 @@ class Db extends CodeceptionModule implements DbInterface
      */
     public function grabColumnFromDatabase($table, $column, array $criteria = [])
     {
-        $query      = $this->_getDriver()->select($column, $table, $criteria);
+        $query      = $this->driver->select($column, $table, $criteria);
         $parameters = array_values($criteria);
         $this->debugSection('Query', $query);
         $this->debugSection('Parameters', $parameters);
-        $sth = $this->_getDriver()->executeQuery($query, $parameters);
+        $sth = $this->driver->executeQuery($query, $parameters);
 
         return $sth->fetchAll(\PDO::FETCH_COLUMN, 0);
     }
@@ -862,12 +671,12 @@ class Db extends CodeceptionModule implements DbInterface
      */
     public function updateInDatabase($table, array $data, array $criteria = [])
     {
-        $query = $this->_getDriver()->update($table, $data, $criteria);
+        $query = $this->driver->update($table, $data, $criteria);
         $parameters = array_merge(array_values($data), array_values($criteria));
         $this->debugSection('Query', $query);
         if (!empty($parameters)) {
             $this->debugSection('Parameters', $parameters);
         }
-        $this->_getDriver()->executeQuery($query, $parameters);
+        $this->driver->executeQuery($query, $parameters);
     }
 }

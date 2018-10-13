@@ -19,8 +19,8 @@ $this->params['breadcrumbs'][] = $this->title;
             //'paper_type_id',
             'paper.name',
             'paper.program.name',
-           
-         
+            'paper.marks',
+            'paper.credit',
             'type.name',
             'academicYear.year',
            // 'status',

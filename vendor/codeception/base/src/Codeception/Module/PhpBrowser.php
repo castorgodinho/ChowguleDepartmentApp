@@ -172,9 +172,7 @@ class PhpBrowser extends InnerBrowser implements Remote, MultiSession, RequiresP
     public function amOnUrl($url)
     {
         $host = Uri::retrieveHost($url);
-        $config = $this->config;
-        $config['url'] = $host;
-        $this->_reconfigure($config);
+        $this->_reconfigure(['url' => $host]);
         $page = substr($url, strlen($host));
         if ($page === '') {
             $page = '/';
@@ -188,9 +186,7 @@ class PhpBrowser extends InnerBrowser implements Remote, MultiSession, RequiresP
         $url = $this->config['url'];
         $url = preg_replace('~(https?:\/\/)(.*\.)(.*\.)~', "$1$3", $url); // removing current subdomain
         $url = preg_replace('~(https?:\/\/)(.*)~', "$1$subdomain.$2", $url); // inserting new
-        $config = $this->config;
-        $config['url'] = $url;
-        $this->_reconfigure($config);
+        $this->_reconfigure(['url' => $url]);
     }
 
     protected function onReconfigure()

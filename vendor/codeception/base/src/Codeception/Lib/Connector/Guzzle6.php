@@ -333,16 +333,13 @@ class Guzzle6 extends Client
 
     public static function createHandler($handler)
     {
-        if ($handler instanceof HandlerStack) {
-            return $handler;
-        }
         if ($handler === 'curl') {
             return HandlerStack::create(new CurlHandler());
         }
         if ($handler === 'stream') {
             return HandlerStack::create(new StreamHandler());
         }
-        if (is_string($handler) && class_exists($handler)) {
+        if (class_exists($handler)) {
             return HandlerStack::create(new $handler);
         }
         if (is_callable($handler)) {

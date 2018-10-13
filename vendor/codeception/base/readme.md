@@ -24,6 +24,11 @@ Describe what you test and how you test it. Use PHP to write descriptions faster
 
 Run tests and see what actions were taken and what results were seen.
 
+#### Requirements
+
+* PHP 5.6+
+* `curl` and `mbstring` extensions
+
 #### Sample test
 
 ``` php

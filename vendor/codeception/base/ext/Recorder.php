@@ -245,8 +245,6 @@ EOF;
         }
         $this->seed = uniqid();
         $this->webDriverModule = $this->getModule($this->config['module']);
-        $this->errors = [];
-        $this->errorMessages = [];
         if (!$this->webDriverModule instanceof ScreenshotSaver) {
             throw new ExtensionException(
                 $this,
@@ -262,7 +260,7 @@ EOF;
 
     public function afterSuite()
     {
-        if (!$this->webDriverModule) {
+        if (!$this->webDriverModule or !$this->dir) {
             return;
         }
         $links = '';
@@ -299,6 +297,8 @@ EOF;
         $this->dir = null;
         $this->stepNum = 0;
         $this->slides = [];
+        $this->errors = [];
+        $this->errorMessages = [];
 
         $testName = preg_replace('~\W~', '_', Descriptor::getTestAsString($e->getTest()));
         $this->dir = codecept_output_dir() . "record_{$this->seed}_$testName";
@@ -331,9 +331,10 @@ EOF;
         $testPath = codecept_relative_path(Descriptor::getTestFullName($e->getTest()));
         $dir = codecept_output_dir() . "record_{$this->seed}_$testName";
 
-        if (strcasecmp($this->dir, $dir) != 0) {
+        if ($this->dir !== $dir) {
             $screenshotPath = "{$dir}/error.png";
             @mkdir($dir);
+            $this->errors = [];
             $this->recordedTests = [];
             $this->slides = [];
             $this->errorMessages[$testPath] = [

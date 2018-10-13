@@ -5,22 +5,28 @@ use yii\mail\BaseMailer;
 
 class TestMailer extends BaseMailer
 {
-    public $messageClass = \yii\swiftmailer\Message::class;
+    public $messageClass = 'yii\swiftmailer\Message';
 
-    /**
-     * @var \Closure
-     */
-    public $callback;
+    private $sentMessages = [];
 
     protected function sendMessage($message)
     {
-        call_user_func($this->callback, $message);
+        $this->sentMessages[] = $message;
         return true;
     }
     
     protected function saveMessage($message)
     {
-        call_user_func($this->callback, $message);
-        return true;
+        return $this->sendMessage($message);
+    }
+
+    public function getSentMessages()
+    {
+        return $this->sentMessages;
+    }
+
+    public function reset()
+    {
+        $this->sentMessages = [];
     }
 }

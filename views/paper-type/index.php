@@ -91,7 +91,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => 'paper.name',
                 'attribute' => 'paper_id',
             ],
-           
+            'paper.credit',
+            'paper.marks',
             [
                 'label' => 'Type Name',
                 'value' => 'type.name',

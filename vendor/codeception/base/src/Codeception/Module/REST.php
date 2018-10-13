@@ -1163,9 +1163,6 @@ EOF;
 
     /**
      * Checks that the response code is 2xx
-     *
-     * @part json
-     * @part xml
      */
     public function seeResponseCodeIsSuccessful()
     {
@@ -1174,9 +1171,6 @@ EOF;
 
     /**
      * Checks that the response code 3xx
-     *
-     * @part json
-     * @part xml
      */
     public function seeResponseCodeIsRedirection()
     {
@@ -1185,9 +1179,6 @@ EOF;
 
     /**
      * Checks that the response code is 4xx
-     *
-     * @part json
-     * @part xml
      */
     public function seeResponseCodeIsClientError()
     {
@@ -1196,9 +1187,6 @@ EOF;
 
     /**
      * Checks that the response code is 5xx
-     *
-     * @part json
-     * @part xml
      */
     public function seeResponseCodeIsServerError()
     {
