@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\PaperType */
 
-$this->title = 'Add Assign Type';
-$this->params['breadcrumbs'][] = ['label' => 'Assign Type', 'url' => ['index']];
+$this->title = 'Add Course';
+$this->params['breadcrumbs'][] = ['label' => 'Course', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="paper-type-create">
@@ -16,6 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $this->render('_form', [
         'model' => $model,
+        'paper' => $paper,
     ]) ?>
 
 </div>

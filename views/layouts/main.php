@@ -42,8 +42,8 @@ AppAsset::register($this);
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
                 /* ['label' => 'Home', 'url' => ['/site/index']], */
-                ['label' => 'Student', 'url' => ['/student/index']],
-                ['label' => 'Admissions', 'url' => ['/program-student/index']],
+                
+                ['label' => 'Student', 'url' => ['/program-student/index']],
                 ['label' => 'Alumni', 'url' => ['/student-organization/index']],
                 ['label' => 'Organization', 'url' => ['/organization/index']],
                 [
@@ -54,6 +54,7 @@ AppAsset::register($this);
                         ['label' => 'Department', 'url' => ['/department/index']],
                         ['label' => 'Assign Papers', 'url' => ['/paper-faculty/index']],
                         ['label' => 'Revision', 'url' => ['/revision/index']],
+                        ['label' => 'Agency', 'url' => ['/agency/index']],
     
                     ],
                 ],
@@ -73,11 +74,11 @@ AppAsset::register($this);
                     ],
                 ],
                 [
-                    'label' => 'Paper',
+                    'label' => 'Course',
                     'items' => [
-                        ['label' => 'Paper', 'url' => ['/paper/index']],
+                        
                         ['label' => 'Type', 'url' => ['/type/index']],
-                        ['label' => 'Assign Type', 'url' => ['/paper-type/index']],
+                        ['label' => 'Course', 'url' => ['/paper-type/index']],
     
                     ],
                 ],

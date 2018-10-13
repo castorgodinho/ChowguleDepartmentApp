@@ -8,7 +8,7 @@ use app\models\searchRevision;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\web\UploadedFile;
 /**
  * RevisionController implements the CRUD actions for Revision model.
  */
@@ -78,7 +78,11 @@ class RevisionController extends Controller
         $model = new Revision();
         if(!Yii::$app->user->isGuest){
             if ($model->load(Yii::$app->request->post()) ){
-	
+                $model->syllabus_file = UploadedFile::getInstance($model, 'syllabus_file');
+                if ($model->syllabus_file ) {                
+                    $model->syllabus_file->saveAs('uploads/' . $model->syllabus_file ->baseName . '.' . $model->syllabus_file ->extension);
+                }
+                $model->syllabus_file= 'uploads/' . $model->syllabus_file ->baseName . '.' . $model->syllabus_file ->extension;
 	            $model->save();
                 return $this->redirect(['view', 'id' => $model->revision_id]);
                 }

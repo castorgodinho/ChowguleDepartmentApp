@@ -64,7 +64,7 @@ class Student extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getProgramStudents()
+    public function getAdmission()
     {
         return $this->hasMany(ProgramStudent::className(), ['student_id' => 'student_id']);
     }

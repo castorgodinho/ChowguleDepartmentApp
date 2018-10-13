@@ -14,9 +14,9 @@ use dosamigos\datepicker\DatePicker;
 
 <div class="revision-form" style="width:50%">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
-    <?= $form->field($model, 'syllabus_file')->textarea() ?>
+    <?= $form->field($model, 'syllabus_file')->fileInput() ?>
     
     <?= $form->field($model, 'syllabus_date')->widget(DatePicker::className(), [
     'model' => $model,

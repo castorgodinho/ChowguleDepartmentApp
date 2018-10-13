@@ -1,7 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+//use yii\grid\GridView;
+use kartik\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SearchProgram */
@@ -16,11 +17,18 @@ $this->params['breadcrumbs'][] = $this->title;
         <span class="glyphicon glyphicon-plus"></span> Add Program</a></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    
-
-    <?= GridView::widget([
+    <?=
+        GridView::widget([
+     
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'autoXlFormat'=>true,
+        'export'=>[
+        'label' => 'Export',
+        'fontAwesome'=>true,
+        'showConfirmAlert'=>false,
+        'target'=>GridView::TARGET_BLANK
+        ],
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
@@ -37,5 +45,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
-    ]); ?>
+        'pjax'=>true,
+        'showPageSummary'=>false,
+        'panel'=>[
+            'heading'=> $this->title,
+           
+        ]
+    ]); ?>   
+
+
 </div>

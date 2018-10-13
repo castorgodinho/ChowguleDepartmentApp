@@ -8,6 +8,7 @@ use app\models\SearchProgramStudent;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\models\Student;
 
 /**
  * ProgramStudentController implements the CRUD actions for ProgramStudent model.
@@ -37,9 +38,8 @@ class ProgramStudentController extends Controller
     {
         if(!Yii::$app->user->isGuest){
             $searchModel = new SearchProgramStudent();
-            if(Yii::$app->request->get('from') && Yii::$app->request->get('to')){
-                $searchModel->to = Yii::$app->request->get('to');
-                $searchModel->from = Yii::$app->request->get('from');
+            if(Yii::$app->request->get('roll_no')){
+                $searchModel->roll_no = Yii::$app->request->get('roll_no');
             }
             $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -78,14 +78,20 @@ class ProgramStudentController extends Controller
     public function actionCreate()
     {
         $model = new ProgramStudent();
+        $student = new Student();
         if(!Yii::$app->user->isGuest){
-        if ($model->load(Yii::$app->request->post())) {
+        if ($model->load(Yii::$app->request->post()) && $student->load(Yii::$app->request->post())) {
+            $student->save(false);
+            $model->student_id = $student->student_id;
             $model->save();
+           
+         
             return $this->redirect(['view', 'id' => $model->program_student_id]);
         }
 
         return $this->render('create', [
             'model' => $model,
+            'student' => $student,
         ]);
         }else {
             throw new \yii\web\ForbiddenHttpException;

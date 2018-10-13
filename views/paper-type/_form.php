@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 use app\models\Paper;
+use app\models\Program;
 use app\models\Type;
 use app\models\AcademicYear;
 
@@ -15,11 +16,16 @@ use app\models\AcademicYear;
 <div class="paper-type-form" style="width:50%">
 
     <?php $form = ActiveForm::begin(); ?>
+    <?= $form->field($paper, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'paper_id')->dropDownList(
-		ArrayHelper::map(Paper::find()->where(['status'=>1])->all(),'paper_id','name'),
-		['prompt'=>'select ']
-	) ?>
+    <?= $form->field($paper, 'program_id')->dropDownList(
+        ArrayHelper::map(Program::find()->all(),'program_id','name'),
+        ['prompt'=>'select ']       
+   )  
+    ?>
+    <?= $form->field($paper, 'credit')->textInput() ?>
+    <?= $form->field($paper, 'marks')->textInput() ?>
+   
 
     <?= $form->field($model, 'type_id')->dropDownList(
 		ArrayHelper::map(Type::find()->where(['status'=>1])->all(),'type_id','name'),
