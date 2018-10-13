@@ -36,7 +36,7 @@ class Revision extends \yii\db\ActiveRecord
     {
         return [
             [['syllabus_file', 'syllabus_date', 'paper_id'], 'required'],
-            [['syllabus_file'], 'string'],
+            [['syllabus_file'], 'file'],
             [['syllabus_date', 'created_at', 'updated_at'], 'safe'],
             [['paper_id', 'academic_year_id'], 'integer'],
             [['status'], 'string', 'max' => 1],

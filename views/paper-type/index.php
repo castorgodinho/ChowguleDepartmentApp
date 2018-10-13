@@ -6,18 +6,19 @@ use kartik\grid\GridView;
 use dosamigos\datepicker\DatePicker;
 use yii\widgets\ActiveForm;
 
+
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SearchPaperType */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Assign Type';
+$this->title = 'Course';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="paper-type-index">
 
     <h1 ><?= Html::encode($this->title) ?>
         <a style="float:right" href="index.php?r=paper-type/create" class="btn btn-success">
-    <span  class="glyphicon glyphicon-plus"></span> Add Assign Type</a>
+    <span  class="glyphicon glyphicon-plus"></span> Add Course</a>
 
     </h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -90,7 +91,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => 'paper.name',
                 'attribute' => 'paper_id',
             ],
-            
+            'paper.credit',
+            'paper.marks',
             [
                 'label' => 'Type Name',
                 'value' => 'type.name',

@@ -23723,6 +23723,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1539360565.541
     'REQUEST_TIME' => 1539360565
 ]
+<<<<<<< HEAD
 2018-10-13 06:13:22 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /opt/lampp/htdocs/department/views/student/index.php:99
 Stack trace:
 #0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
@@ -23739,6 +23740,24 @@ Stack trace:
 #11 {main}
 2018-10-13 06:13:21 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
     'r' => 'student/index'
+=======
+<<<<<<< HEAD
+2018-10-13 06:05:11 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:05:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/bvoc'
 ]
 
 $_POST = []
@@ -23747,28 +23766,22 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
-    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
-]
-
-$_SESSION = [
-    '__flash' => []
-    '__id' => '100'
 ]
 
 $_SERVER = [
-    'UNIQUE_ID' => 'W8Fw4TdM5rGhGGboqNOW2wAAAAk'
+    'UNIQUE_ID' => 'W8Fu9rRr9NT7idv3Hn7ExwAAAAA'
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
-    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -23778,6 +23791,1088 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39172'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/bvoc'
+    'REQUEST_URI' => '/basic/web/index.php?r=site/bvoc'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539403510.96
+    'REQUEST_TIME' => 1539403510
+]
+2018-10-13 06:05:21 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:05:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'paper'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8FvARukJn4vh-C3kHnCMwAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39174'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539403521.886
+    'REQUEST_TIME' => 1539403521
+]
+2018-10-13 06:09:03 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:09:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'paper-type'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8Fv38LbQEUhCBw4SoJWjwAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39176'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper-type'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper-type'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539403743.842
+    'REQUEST_TIME' => 1539403743
+]
+2018-10-13 06:09:50 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:09:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'type'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8FwDrtFVsiBYJMyK6QSpwAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39182'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type'
+    'REQUEST_URI' => '/basic/web/index.php?r=type'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539403790.65
+    'REQUEST_TIME' => 1539403790
+]
+2018-10-13 06:11:36 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:11:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'type'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8FweNqy8UrCcgDLVzO-LQAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39190'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type'
+    'REQUEST_URI' => '/basic/web/index.php?r=type'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539403896.035
+    'REQUEST_TIME' => 1539403896
+]
+=======
+>>>>>>> 9b0e442860330269f270adb1be207e28357ef972
+2018-10-13 06:37:00 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:37:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F2bLRr9NT7idv3Hn7EyQAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39246'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type/index'
+    'REQUEST_URI' => '/basic/web/index.php?r=type/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405420.581
+    'REQUEST_TIME' => 1539405420
+]
+2018-10-13 06:37:01 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:37:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F2bRukJn4vh-C3kHnCNQAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39248'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type/index'
+    'REQUEST_URI' => '/basic/web/index.php?r=type/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405421.563
+    'REQUEST_TIME' => 1539405421
+]
+2018-10-13 06:37:30 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:37:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F2isLbQEUhCBw4SoJWkAAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type/index'
+    'REQUEST_URI' => '/basic/web/index.php?r=type/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405450.652
+    'REQUEST_TIME' => 1539405450
+]
+2018-10-13 06:40:49 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:40:49 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'type/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F3UbtFVsiBYJMyK6QSqQAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39628'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type/index'
+    'REQUEST_URI' => '/basic/web/index.php?r=type/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405649.287
+    'REQUEST_TIME' => 1539405649
+]
+2018-10-13 06:40:56 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:40:56 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'organization/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F3WMLbQEUhCBw4SoJWkQAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=type/index'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39640'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405656.483
+    'REQUEST_TIME' => 1539405656
+]
+2018-10-13 06:40:58 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:40:58 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'student-organization/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F3Wt5pLNKhPquQxihmfAAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39644'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=student-organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405658.438
+    'REQUEST_TIME' => 1539405658
+]
+2018-10-13 06:40:59 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:40:59 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'program-student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F3W7tFVsiBYJMyK6QSqwAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=student-organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39642'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405659.742
+    'REQUEST_TIME' => 1539405659
+]
+2018-10-13 06:41:02 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:02 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'student-organization/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F3XlRN1Spa1385odrfFQAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39646'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=student-organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405662.115
+    'REQUEST_TIME' => 1539405662
+]
+2018-10-13 06:41:04 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:04 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => '0IlsrDE_3p6A9hcMZl1yt8_3C8F4LBcvZ3j1zY9N4tGiyiPGQgqO5NDPVno-CDr2qJ9ThgtETWBWH6ye5yyY5w=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F3YLRr9NT7idv3Hn7EygAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=student-organization%2Findex'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405664.104
+    'REQUEST_TIME' => 1539405664
+]
+2018-10-13 06:41:05 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:05 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'Axg5Tnze9s3-5MhbvmZQCJlRyOMMmqcnfNdXbeRjCNFxW3YkD-umt67diS3mMxhJ_jmQpH_y_WhNsA4-jAJy5w=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F3YRukJn4vh-C3kHnCNgAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=site%2Flogout'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39650'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405665.537
+    'REQUEST_TIME' => 1539405665
+]
+2018-10-13 06:41:07 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:07 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => '8ghbscjcnNbdjyfB06-l_Z2PnP9dwTBu0Jx6qIkeiIKASxTbu-nMrI22ZreL-u28-ufEuC6paiHh-yP74X_ytA=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8F3Y9qy8UrCcgDLVzO-MwAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=site%2Flogout'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '98'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39652'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/basic/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405667.669
+    'REQUEST_TIME' => 1539405667
+]
+2018-10-13 06:41:12 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:12 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'organization/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+=======
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8Fw4TdM5rGhGGboqNOW2wAAAAk'
+=======
+    'UNIQUE_ID' => 'W8F3aMLbQEUhCBw4SoJWkgAAAAI'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8'
+=======
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=site%2Flogout'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
     'REMOTE_PORT' => '55540'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -23804,6 +24899,35 @@ Stack trace:
 #2 {main}
 2018-10-13 06:13:45 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
     'r' => 'admission/index'
+=======
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405672.575
+    'REQUEST_TIME' => 1539405672
+]
+2018-10-13 06:41:14 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:13 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'student-organization/index'
 ]
 
 $_POST = []
@@ -23812,7 +24936,8 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
-    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
 ]
 
 $_SESSION = [
@@ -23821,19 +24946,20 @@ $_SESSION = [
 ]
 
 $_SERVER = [
-    'UNIQUE_ID' => 'W8Fw@XumtR1OsqR@IiszoQAAAAU'
+    'UNIQUE_ID' => 'W8F3ad5pLNKhPquQxihmfQAAAAY'
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
-    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -23843,6 +24969,93 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39656'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=student-organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405673.982
+    'REQUEST_TIME' => 1539405673
+]
+2018-10-13 06:41:15 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:15 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'program-student/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+=======
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8Fw@XumtR1OsqR@IiszoQAAAAU'
+=======
+    'UNIQUE_ID' => 'W8F3a7tFVsiBYJMyK6QSrAAAAAM'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8'
+=======
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=student-organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
     'REMOTE_PORT' => '55550'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -23869,6 +25082,35 @@ Stack trace:
 #2 {main}
 2018-10-13 06:13:51 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
     'r' => 'Admission/index'
+=======
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39658'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405675.12
+    'REQUEST_TIME' => 1539405675
+]
+2018-10-13 06:41:17 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:17 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'student-organization/index'
 ]
 
 $_POST = []
@@ -23877,8 +25119,8 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
-    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
-    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
 ]
 
 $_SESSION = [
@@ -23887,19 +25129,20 @@ $_SESSION = [
 ]
 
 $_SERVER = [
-    'UNIQUE_ID' => 'W8Fw-xONlbZZmAAUGdmfAQAAAAc'
+    'UNIQUE_ID' => 'W8F3bVRN1Spa1385odrfFgAAAAQ'
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
-    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -23909,6 +25152,97 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39660'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=student-organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405677.485
+    'REQUEST_TIME' => 1539405677
+]
+2018-10-13 06:41:30 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:30 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'student-organization/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8Fw-xONlbZZmAAUGdmfAQAAAAc'
+=======
+    'UNIQUE_ID' => 'W8F3et5pLNKhPquQxihmfgAAAAY'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
     'REMOTE_PORT' => '55558'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -23937,6 +25271,36 @@ Stack trace:
 #11 {main}
 2018-10-13 06:14:00 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
     'r' => 'student/index'
+=======
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39670'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=student-organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405690.555
+    'REQUEST_TIME' => 1539405690
+]
+2018-10-13 06:41:32 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:41:32 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'program-student/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -23945,8 +25309,13 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
     'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
     '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -23955,20 +25324,33 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
     'UNIQUE_ID' => 'W8FxCBONlbZZmAAUGdmfBAAAAAc'
+=======
+    'UNIQUE_ID' => 'W8F3fLtFVsiBYJMyK6QSsgAAAAM'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
     'HTTP_REFERER' => 'http://localhost/department/web/index.php?r=program-student%2Findex'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+=======
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=student-organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
     'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -23978,6 +25360,7 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
     'REMOTE_PORT' => '55558'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -24006,6 +25389,36 @@ Stack trace:
 #11 {main}
 2018-10-13 06:14:13 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
     'r' => 'student/index'
+=======
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39672'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539405692.719
+    'REQUEST_TIME' => 1539405692
+]
+2018-10-13 06:49:11 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:49:11 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'paper-type/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -24014,8 +25427,13 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
     'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
     '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -24024,20 +25442,33 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
     'UNIQUE_ID' => 'W8FxFTdM5rGhGGboqNOW7QAAAAk'
+=======
+    'UNIQUE_ID' => 'W8F5R9qy8UrCcgDLVzO-NAAAAAU'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
     'HTTP_REFERER' => 'http://localhost/department/web/index.php?r=organization%2Findex'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+=======
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
     'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -24047,6 +25478,7 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
     'REMOTE_PORT' => '55564'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -24075,6 +25507,35 @@ Stack trace:
 #11 {main}
 2018-10-13 08:28:04 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
     'r' => 'student/index'
+=======
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39688'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper-type%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper-type%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539406151.497
+    'REQUEST_TIME' => 1539406151
+]
+2018-10-13 06:49:15 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:49:15 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'type/index'
 ]
 
 $_POST = []
@@ -24083,8 +25544,8 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
-    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
-    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
 ]
 
 $_SESSION = [
@@ -24093,21 +25554,20 @@ $_SESSION = [
 ]
 
 $_SERVER = [
-    'UNIQUE_ID' => 'W8GQdHumtR1OsqR@IiszpQAAAAU'
+    'UNIQUE_ID' => 'W8F5S8LbQEUhCBw4SoJWkwAAAAI'
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_REFERER' => 'http://localhost/department/web/index.php?r=organization%2Findex'
-    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper-type%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
-    'HTTP_CACHE_CONTROL' => 'max-age=0'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
-    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -24117,6 +25577,96 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39690'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=type%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539406155.125
+    'REQUEST_TIME' => 1539406155
+]
+2018-10-13 06:49:34 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:49:34 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'type/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8GQdHumtR1OsqR@IiszpQAAAAU'
+=======
+    'UNIQUE_ID' => 'W8F5XrtFVsiBYJMyK6QSswAAAAM'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_REFERER' => 'http://localhost/department/web/index.php?r=organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+=======
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper-type%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
     'REMOTE_PORT' => '57156'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -24143,6 +25693,35 @@ Stack trace:
 #2 {main}
 2018-10-13 08:28:41 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
     'r' => 'admission/index'
+=======
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39694'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=type%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539406174.346
+    'REQUEST_TIME' => 1539406174
+]
+2018-10-13 06:52:30 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:52:30 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'type/index'
 ]
 
 $_POST = []
@@ -24151,8 +25730,8 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
-    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
-    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
 ]
 
 $_SESSION = [
@@ -24161,19 +25740,21 @@ $_SESSION = [
 ]
 
 $_SERVER = [
-    'UNIQUE_ID' => 'W8GQmTmxMSJzMpLmodc0OQAAAAI'
+    'UNIQUE_ID' => 'W8F6DsLbQEUhCBw4SoJWnAAAAAI'
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper-type%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
-    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -24183,6 +25764,94 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=type%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=type%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539406350.186
+    'REQUEST_TIME' => 1539406350
+]
+2018-10-13 06:52:39 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-13 06:52:39 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
+    'r' => 'appointment/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
+    'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
+    '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8GQmTmxMSJzMpLmodc0OQAAAAI'
+=======
+    'UNIQUE_ID' => 'W8F6FoJoGLxY3N-VIcVQvwAAAAs'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+=======
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=type%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
     'REMOTE_PORT' => '57166'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -24194,4 +25863,17 @@ $_SERVER = [
     'PHP_SELF' => '/department/web/index.php'
     'REQUEST_TIME_FLOAT' => 1539412121.975
     'REQUEST_TIME' => 1539412121
+=======
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39796'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=appointment%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=appointment%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539406358.986
+    'REQUEST_TIME' => 1539406358
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]

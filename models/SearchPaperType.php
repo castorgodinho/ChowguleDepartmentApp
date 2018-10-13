@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\PaperType;
+use app\models\Paper;
 
 /**
  * SearchPaperType represents the model behind the search form of `app\models\PaperType`.
@@ -44,11 +45,12 @@ class SearchPaperType extends PaperType
     public function search($params)
     {
         $query = PaperType::find();
-
+     
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            
         ]);
 
         $this->load($params);
@@ -62,6 +64,7 @@ class SearchPaperType extends PaperType
         $query->joinWith('paper');
         $query->joinWith('type');
         $query->joinWith('academicYear');
+       
 
         if($this->to != "" && $this->from != ""){
             $query->andFilterWhere(['between', 'academic_year.year', $this->from, $this->to]);
@@ -78,6 +81,7 @@ class SearchPaperType extends PaperType
         $query->andFilterWhere(['like', 'paper.name', $this->paper_id]);
         $query->andFilterWhere(['like', 'type.name', $this->type_id]);
         $query->andFilterWhere(['like', 'academic_year.year', $this->academic_year_id]);
+       
         return $dataProvider;
         
     }
