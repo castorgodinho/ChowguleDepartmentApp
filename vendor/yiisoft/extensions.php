@@ -60,10 +60,10 @@ return array (
   'kartik-v/yii2-mpdf' => 
   array (
     'name' => 'kartik-v/yii2-mpdf',
-    'version' => '1.0.5.0',
+    'version' => '1.0.1.0',
     'alias' => 
     array (
-      '@kartik/mpdf' => $vendorDir . '/kartik-v/yii2-mpdf/src',
+      '@kartik/mpdf' => $vendorDir . '/kartik-v/yii2-mpdf',
     ),
   ),
   'kartik-v/yii2-krajee-base' => 
@@ -132,10 +132,10 @@ return array (
   'kartik-v/yii2-export' => 
   array (
     'name' => 'kartik-v/yii2-export',
-    'version' => '1.3.6.0',
+    'version' => '1.2.8.0',
     'alias' => 
     array (
-      '@kartik/export' => $vendorDir . '/kartik-v/yii2-export/src',
+      '@kartik/export' => $vendorDir . '/kartik-v/yii2-export',
     ),
   ),
   'yiisoft/yii2-jui' => 
