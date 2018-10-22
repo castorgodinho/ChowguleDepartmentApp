@@ -106,16 +106,27 @@ class ProgramStudentController extends Controller
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionUpdate($id)
-    {
+    {   
         $model = $this->findModel($id);
+        $student = Student::find()->where(['student_id'=>$model->student_id])->one();
+       // $student = $this->findModel($id);
+       
+        
         if(!Yii::$app->user->isGuest){
 
-        if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
+        if ($model->load(Yii::$app->request->post()) && $student->load(Yii::$app->request->post())) {
+            $student->save(false);
+            $model->student_id = $student->student_id;
+            $model->save(false);
+            
+            
             return $this->redirect(['view', 'id' => $model->program_student_id]);
+            
         }
 
         return $this->render('update', [
             'model' => $model,
+            'student' => $student,
         ]);
         }else {
             throw new \yii\web\ForbiddenHttpException;

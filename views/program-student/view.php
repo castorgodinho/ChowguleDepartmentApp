@@ -14,6 +14,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Admission', 'url' => ['index']];
 
     <?= DetailView::widget([
         'model' => $model,
+        
         'attributes' => [
            // 'program_student_id',
             'program.name',
