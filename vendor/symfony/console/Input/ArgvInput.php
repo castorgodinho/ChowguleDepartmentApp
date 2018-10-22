@@ -121,7 +121,8 @@ class ArgvInput extends Input
         $len = \strlen($name);
         for ($i = 0; $i < $len; ++$i) {
             if (!$this->definition->hasShortcut($name[$i])) {
-                throw new RuntimeException(sprintf('The "-%s" option does not exist.', $name[$i]));
+                $encoding = mb_detect_encoding($name, null, true);
+                throw new RuntimeException(sprintf('The "-%s" option does not exist.', false === $encoding ? $name[$i] : mb_substr($name, $i, 1, $encoding)));
             }
 
             $option = $this->definition->getOptionForShortcut($name[$i]);
@@ -146,11 +147,6 @@ class ArgvInput extends Input
 
         if (false !== $pos = strpos($name, '=')) {
             if (0 === \strlen($value = substr($name, $pos + 1))) {
-                // if no value after "=" then substr() returns "" since php7 only, false before
-                // see http://php.net/manual/fr/migration70.incompatible.php#119151
-                if (\PHP_VERSION_ID < 70000 && false === $value) {
-                    $value = '';
-                }
                 array_unshift($this->parsed, $value);
             }
             $this->addLongOption(substr($name, 0, $pos), $value);
