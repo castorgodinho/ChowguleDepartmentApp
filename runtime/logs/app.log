@@ -28662,3 +28662,1339 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1540186374.054
     'REQUEST_TIME' => 1540186374
 ]
+2018-10-22 07:23:26 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /opt/lampp/htdocs/ChowguleDepartmentApp/views/student/index.php:99
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\StudentController))
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\StudentController))
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/StudentController.php(47): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\StudentController->actionIndex()
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-22 07:23:25 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][info][application] $_GET = [
+    'r' => 'student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd878193bbeb79da8864c9b4f5c5fd621'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'permissions' => [
+        0 => 'consumptionReport'
+        1 => 'contractReport'
+        2 => 'createBuyer'
+        3 => 'createContract'
+        4 => 'createDispatch'
+        5 => 'createFurnace'
+        6 => 'createInventry'
+        7 => 'createMaintenance'
+        8 => 'createMetal'
+        9 => 'createProduct'
+        10 => 'createProduction'
+        11 => 'createSupplier'
+        12 => 'createSupply'
+        13 => 'createTapping'
+        14 => 'daleteSupply'
+        15 => 'deleteBuyer'
+        16 => 'deleteContract'
+        17 => 'deleteDispatch'
+        18 => 'deleteFurnace'
+        19 => 'deleteInventry'
+        20 => 'deleteLog'
+        21 => 'deleteMaintenance'
+        22 => 'deleteMetal'
+        23 => 'deleteProduct'
+        24 => 'deleteProduction'
+        25 => 'deleteSupplier'
+        26 => 'deleteTapping'
+        27 => 'inventryReport'
+        28 => 'notification'
+        29 => 'productionReport'
+        30 => 'reportMaintenance'
+        31 => 'stockReport'
+        32 => 'tappingEmail'
+        33 => 'tappingReport'
+        34 => 'updateBuyer'
+        35 => 'updateContract'
+        36 => 'updateDispatch'
+        37 => 'updateFurnace'
+        38 => 'updateInventry'
+        39 => 'updateLog'
+        40 => 'updateMaintenance'
+        41 => 'updateMetal'
+        42 => 'updateProduct'
+        43 => 'updateProduction'
+        44 => 'updateSupplier'
+        45 => 'updateSupply'
+        46 => 'updateTapping'
+        47 => 'users'
+        48 => 'viewBuyer'
+        49 => 'viewContract'
+        50 => 'viewDispatch'
+        51 => 'viewFurnace'
+        52 => 'viewInventry'
+        53 => 'viewLog'
+        54 => 'viewMaintenance'
+        55 => 'viewMetal'
+        56 => 'viewProduct'
+        57 => 'viewProduction'
+        58 => 'viewSupplier'
+        59 => 'viewSupply'
+        60 => 'viewTapping'
+    ]
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81ezX8AAQEAAAk4wlUAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=d878193bbeb79da8864c9b4f5c5fd621; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '54980'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=student%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540185805.902
+    'REQUEST_TIME' => 1540185805
+]
+2018-10-22 07:37:32 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in /opt/lampp/htdocs/ChowguleDepartmentApp/views/layouts/main.php:130
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\RevisionController))
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="rev...')
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/RevisionController.php(91): yii\base\Controller->render('create', Array)
+#4 [internal function]: app\controllers\RevisionController->actionCreate()
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('revision/create', Array)
+#9 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-22 07:37:32 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][info][application] $_GET = [
+    'r' => 'revision/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd878193bbeb79da8864c9b4f5c5fd621'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'permissions' => [
+        0 => 'consumptionReport'
+        1 => 'contractReport'
+        2 => 'createBuyer'
+        3 => 'createContract'
+        4 => 'createDispatch'
+        5 => 'createFurnace'
+        6 => 'createInventry'
+        7 => 'createMaintenance'
+        8 => 'createMetal'
+        9 => 'createProduct'
+        10 => 'createProduction'
+        11 => 'createSupplier'
+        12 => 'createSupply'
+        13 => 'createTapping'
+        14 => 'daleteSupply'
+        15 => 'deleteBuyer'
+        16 => 'deleteContract'
+        17 => 'deleteDispatch'
+        18 => 'deleteFurnace'
+        19 => 'deleteInventry'
+        20 => 'deleteLog'
+        21 => 'deleteMaintenance'
+        22 => 'deleteMetal'
+        23 => 'deleteProduct'
+        24 => 'deleteProduction'
+        25 => 'deleteSupplier'
+        26 => 'deleteTapping'
+        27 => 'inventryReport'
+        28 => 'notification'
+        29 => 'productionReport'
+        30 => 'reportMaintenance'
+        31 => 'stockReport'
+        32 => 'tappingEmail'
+        33 => 'tappingReport'
+        34 => 'updateBuyer'
+        35 => 'updateContract'
+        36 => 'updateDispatch'
+        37 => 'updateFurnace'
+        38 => 'updateInventry'
+        39 => 'updateLog'
+        40 => 'updateMaintenance'
+        41 => 'updateMetal'
+        42 => 'updateProduct'
+        43 => 'updateProduction'
+        44 => 'updateSupplier'
+        45 => 'updateSupply'
+        46 => 'updateTapping'
+        47 => 'users'
+        48 => 'viewBuyer'
+        49 => 'viewContract'
+        50 => 'viewDispatch'
+        51 => 'viewFurnace'
+        52 => 'viewInventry'
+        53 => 'viewLog'
+        54 => 'viewMaintenance'
+        55 => 'viewMetal'
+        56 => 'viewProduct'
+        57 => 'viewProduction'
+        58 => 'viewSupplier'
+        59 => 'viewSupply'
+        60 => 'viewTapping'
+    ]
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81iHH8AAQEAAA899-MAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=revision%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=d878193bbeb79da8864c9b4f5c5fd621; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55272'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=revision/create'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=revision/create'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540186652.61
+    'REQUEST_TIME' => 1540186652
+]
+2018-10-22 07:39:50 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][error][yii\base\ErrorException:2] yii\base\ErrorException: Illegal string offset 'label' in /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/widgets/Menu.php:264
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/widgets/Menu.php(264): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/opt/lampp/htdo...', 264, Array)
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/widgets/Menu.php(180): yii\widgets\Menu->normalizeItems(Array, '<span class="ke...')
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Widget.php(140): yii\widgets\Menu->run()
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/views/layouts/main.php(188): yii\base\Widget::widget(Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\RevisionController))
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="rev...')
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/RevisionController.php(91): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\RevisionController->actionCreate()
+#10 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('revision/create', Array)
+#14 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2018-10-22 07:39:50 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][info][application] $_GET = [
+    'r' => 'revision/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd878193bbeb79da8864c9b4f5c5fd621'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'permissions' => [
+        0 => 'consumptionReport'
+        1 => 'contractReport'
+        2 => 'createBuyer'
+        3 => 'createContract'
+        4 => 'createDispatch'
+        5 => 'createFurnace'
+        6 => 'createInventry'
+        7 => 'createMaintenance'
+        8 => 'createMetal'
+        9 => 'createProduct'
+        10 => 'createProduction'
+        11 => 'createSupplier'
+        12 => 'createSupply'
+        13 => 'createTapping'
+        14 => 'daleteSupply'
+        15 => 'deleteBuyer'
+        16 => 'deleteContract'
+        17 => 'deleteDispatch'
+        18 => 'deleteFurnace'
+        19 => 'deleteInventry'
+        20 => 'deleteLog'
+        21 => 'deleteMaintenance'
+        22 => 'deleteMetal'
+        23 => 'deleteProduct'
+        24 => 'deleteProduction'
+        25 => 'deleteSupplier'
+        26 => 'deleteTapping'
+        27 => 'inventryReport'
+        28 => 'notification'
+        29 => 'productionReport'
+        30 => 'reportMaintenance'
+        31 => 'stockReport'
+        32 => 'tappingEmail'
+        33 => 'tappingReport'
+        34 => 'updateBuyer'
+        35 => 'updateContract'
+        36 => 'updateDispatch'
+        37 => 'updateFurnace'
+        38 => 'updateInventry'
+        39 => 'updateLog'
+        40 => 'updateMaintenance'
+        41 => 'updateMetal'
+        42 => 'updateProduct'
+        43 => 'updateProduction'
+        44 => 'updateSupplier'
+        45 => 'updateSupply'
+        46 => 'updateTapping'
+        47 => 'users'
+        48 => 'viewBuyer'
+        49 => 'viewContract'
+        50 => 'viewDispatch'
+        51 => 'viewFurnace'
+        52 => 'viewInventry'
+        53 => 'viewLog'
+        54 => 'viewMaintenance'
+        55 => 'viewMetal'
+        56 => 'viewProduct'
+        57 => 'viewProduction'
+        58 => 'viewSupplier'
+        59 => 'viewSupply'
+        60 => 'viewTapping'
+    ]
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81ipn8AAQEAAAhIUywAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=revision%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=d878193bbeb79da8864c9b4f5c5fd621; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=revision/create'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=revision/create'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540186790.507
+    'REQUEST_TIME' => 1540186790
+]
+2018-10-22 07:51:30 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('logout', Array)
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2018-10-22 07:51:30 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd878193bbeb79da8864c9b4f5c5fd621'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'permissions' => [
+        0 => 'consumptionReport'
+        1 => 'contractReport'
+        2 => 'createBuyer'
+        3 => 'createContract'
+        4 => 'createDispatch'
+        5 => 'createFurnace'
+        6 => 'createInventry'
+        7 => 'createMaintenance'
+        8 => 'createMetal'
+        9 => 'createProduct'
+        10 => 'createProduction'
+        11 => 'createSupplier'
+        12 => 'createSupply'
+        13 => 'createTapping'
+        14 => 'daleteSupply'
+        15 => 'deleteBuyer'
+        16 => 'deleteContract'
+        17 => 'deleteDispatch'
+        18 => 'deleteFurnace'
+        19 => 'deleteInventry'
+        20 => 'deleteLog'
+        21 => 'deleteMaintenance'
+        22 => 'deleteMetal'
+        23 => 'deleteProduct'
+        24 => 'deleteProduction'
+        25 => 'deleteSupplier'
+        26 => 'deleteTapping'
+        27 => 'inventryReport'
+        28 => 'notification'
+        29 => 'productionReport'
+        30 => 'reportMaintenance'
+        31 => 'stockReport'
+        32 => 'tappingEmail'
+        33 => 'tappingReport'
+        34 => 'updateBuyer'
+        35 => 'updateContract'
+        36 => 'updateDispatch'
+        37 => 'updateFurnace'
+        38 => 'updateInventry'
+        39 => 'updateLog'
+        40 => 'updateMaintenance'
+        41 => 'updateMetal'
+        42 => 'updateProduct'
+        43 => 'updateProduction'
+        44 => 'updateSupplier'
+        45 => 'updateSupply'
+        46 => 'updateTapping'
+        47 => 'users'
+        48 => 'viewBuyer'
+        49 => 'viewContract'
+        50 => 'viewDispatch'
+        51 => 'viewFurnace'
+        52 => 'viewInventry'
+        53 => 'viewLog'
+        54 => 'viewMaintenance'
+        55 => 'viewMetal'
+        56 => 'viewProduct'
+        57 => 'viewProduction'
+        58 => 'viewSupplier'
+        59 => 'viewSupply'
+        60 => 'viewTapping'
+    ]
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lYn8AAQEAAA9ElLEAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=organization%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=d878193bbeb79da8864c9b4f5c5fd621; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/logout'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=site/logout'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187490.088
+    'REQUEST_TIME' => 1540187490
+]
+2018-10-22 07:51:57 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: POST. in /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('logout', Array)
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/logout', Array)
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2018-10-22 07:51:57 [::1][100][d878193bbeb79da8864c9b4f5c5fd621][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd878193bbeb79da8864c9b4f5c5fd621'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'permissions' => [
+        0 => 'consumptionReport'
+        1 => 'contractReport'
+        2 => 'createBuyer'
+        3 => 'createContract'
+        4 => 'createDispatch'
+        5 => 'createFurnace'
+        6 => 'createInventry'
+        7 => 'createMaintenance'
+        8 => 'createMetal'
+        9 => 'createProduct'
+        10 => 'createProduction'
+        11 => 'createSupplier'
+        12 => 'createSupply'
+        13 => 'createTapping'
+        14 => 'daleteSupply'
+        15 => 'deleteBuyer'
+        16 => 'deleteContract'
+        17 => 'deleteDispatch'
+        18 => 'deleteFurnace'
+        19 => 'deleteInventry'
+        20 => 'deleteLog'
+        21 => 'deleteMaintenance'
+        22 => 'deleteMetal'
+        23 => 'deleteProduct'
+        24 => 'deleteProduction'
+        25 => 'deleteSupplier'
+        26 => 'deleteTapping'
+        27 => 'inventryReport'
+        28 => 'notification'
+        29 => 'productionReport'
+        30 => 'reportMaintenance'
+        31 => 'stockReport'
+        32 => 'tappingEmail'
+        33 => 'tappingReport'
+        34 => 'updateBuyer'
+        35 => 'updateContract'
+        36 => 'updateDispatch'
+        37 => 'updateFurnace'
+        38 => 'updateInventry'
+        39 => 'updateLog'
+        40 => 'updateMaintenance'
+        41 => 'updateMetal'
+        42 => 'updateProduct'
+        43 => 'updateProduction'
+        44 => 'updateSupplier'
+        45 => 'updateSupply'
+        46 => 'updateTapping'
+        47 => 'users'
+        48 => 'viewBuyer'
+        49 => 'viewContract'
+        50 => 'viewDispatch'
+        51 => 'viewFurnace'
+        52 => 'viewInventry'
+        53 => 'viewLog'
+        54 => 'viewMaintenance'
+        55 => 'viewMetal'
+        56 => 'viewProduct'
+        57 => 'viewProduction'
+        58 => 'viewSupplier'
+        59 => 'viewSupply'
+        60 => 'viewTapping'
+    ]
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lfX8AAQEAAA9DKFoAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=organization%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=d878193bbeb79da8864c9b4f5c5fd621; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55528'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/logout'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=site/logout'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187517.203
+    'REQUEST_TIME' => 1540187517
+]
+2018-10-22 07:52:03 [::1][-][526d84368ea996c015c58bbc019c7c12][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException in /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/OrganizationController.php:48
+Stack trace:
+#0 [internal function]: app\controllers\OrganizationController->actionIndex()
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('organization/in...', Array)
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-10-22 07:52:03 [::1][-][526d84368ea996c015c58bbc019c7c12][info][application] $_GET = [
+    'r' => 'organization/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '526d84368ea996c015c58bbc019c7c12'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lg38AAQEAAAmv2qEAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false; PHPSESSID=526d84368ea996c015c58bbc019c7c12'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55536'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=organization%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=organization%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187523.109
+    'REQUEST_TIME' => 1540187523
+]
+2018-10-22 07:52:04 [::1][-][526d84368ea996c015c58bbc019c7c12][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException in /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/StudentOrganizationController.php:51
+Stack trace:
+#0 [internal function]: app\controllers\StudentOrganizationController->actionIndex()
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student-organiz...', Array)
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-10-22 07:52:04 [::1][-][526d84368ea996c015c58bbc019c7c12][info][application] $_GET = [
+    'r' => 'student-organization/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '526d84368ea996c015c58bbc019c7c12'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lg38AAQEAAAmv2qIAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=organization%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false; PHPSESSID=526d84368ea996c015c58bbc019c7c12'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55536'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=student-organization%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187523.986
+    'REQUEST_TIME' => 1540187523
+]
+2018-10-22 07:52:04 [::1][-][526d84368ea996c015c58bbc019c7c12][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException in /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/ProgramStudentController.php:51
+Stack trace:
+#0 [internal function]: app\controllers\ProgramStudentController->actionIndex()
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program-student...', Array)
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-10-22 07:52:04 [::1][-][526d84368ea996c015c58bbc019c7c12][info][application] $_GET = [
+    'r' => 'program-student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '526d84368ea996c015c58bbc019c7c12'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lhH8AAQEAAAmv2qMAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=student-organization%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false; PHPSESSID=526d84368ea996c015c58bbc019c7c12'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55536'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187524.665
+    'REQUEST_TIME' => 1540187524
+]
+2018-10-22 07:52:27 [::1][-][-][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException in /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/ProgramStudentController.php:51
+Stack trace:
+#0 [internal function]: app\controllers\ProgramStudentController->actionIndex()
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program-student...', Array)
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-10-22 07:52:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'program-student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '526d84368ea996c015c58bbc019c7c12'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lm38AAQEAAAlOXV0AAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=student-organization%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false; PHPSESSID=526d84368ea996c015c58bbc019c7c12'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55542'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187547.128
+    'REQUEST_TIME' => 1540187547
+]
+2018-10-22 07:52:34 [::1][-][526d84368ea996c015c58bbc019c7c12][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException in /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/ProgramStudentController.php:51
+Stack trace:
+#0 [internal function]: app\controllers\ProgramStudentController->actionIndex()
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program-student...', Array)
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2018-10-22 07:52:34 [::1][-][526d84368ea996c015c58bbc019c7c12][info][application] $_GET = [
+    'r' => 'program-student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '526d84368ea996c015c58bbc019c7c12'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lon8AAQEAABB@LIAAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=student-organization%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false; PHPSESSID=526d84368ea996c015c58bbc019c7c12'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55554'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187554.918
+    'REQUEST_TIME' => 1540187554
+]
+2018-10-22 07:52:38 [::1][-][526d84368ea996c015c58bbc019c7c12][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/ChowguleDepartmentApp/views/layouts/main.php:219
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/views/layouts/main.php(219): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 219, Array)
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\SiteController))
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/SiteController.php(88): yii\base\Controller->render('login', Array)
+#6 [internal function]: app\controllers\SiteController->actionLogin()
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#10 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#11 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-22 07:52:38 [::1][-][526d84368ea996c015c58bbc019c7c12][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '526d84368ea996c015c58bbc019c7c12'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lpn8AAQEAABB@LIMAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=program-student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false; PHPSESSID=526d84368ea996c015c58bbc019c7c12'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55554'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187558.222
+    'REQUEST_TIME' => 1540187558
+]
+2018-10-22 07:52:49 [::1][-][526d84368ea996c015c58bbc019c7c12][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::identity in /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/di/ServiceLocator.php(77): yii\base\Component->__get('identity')
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/views/layouts/main.php(219): yii\di\ServiceLocator->__get('identity')
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\SiteController))
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/SiteController.php(88): yii\base\Controller->render('login', Array)
+#7 [internal function]: app\controllers\SiteController->actionLogin()
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#11 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#12 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2018-10-22 07:52:49 [::1][-][526d84368ea996c015c58bbc019c7c12][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '526d84368ea996c015c58bbc019c7c12'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lsX8AAQEAAAk4wl8AAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=program-student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false; PHPSESSID=526d84368ea996c015c58bbc019c7c12'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55562'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187569.265
+    'REQUEST_TIME' => 1540187569
+]
+2018-10-22 07:53:03 [::1][-][526d84368ea996c015c58bbc019c7c12][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/ChowguleDepartmentApp/views/layouts/main.php:219
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/views/layouts/main.php(219): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 219, Array)
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\SiteController))
+#4 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/SiteController.php(88): yii\base\Controller->render('login', Array)
+#6 [internal function]: app\controllers\SiteController->actionLogin()
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('login', Array)
+#10 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/login', Array)
+#11 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2018-10-22 07:53:03 [::1][-][526d84368ea996c015c58bbc019c7c12][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"2KKBPNj_vm8SZKpo24QguUl1VfqLrRgP\";}'
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '526d84368ea996c015c58bbc019c7c12'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81lv38AAQEAAAhIUz0AAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=program-student%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=91c239ae023f2ac84a2c6c0a2330d520ad3fa42c65a62bb3735102b564d985d1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222KKBPNj_vm8SZKpo24QguUl1VfqLrRgP%22%3B%7D; menuIsCollapsed=false; PHPSESSID=526d84368ea996c015c58bbc019c7c12'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55568'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540187583.338
+    'REQUEST_TIME' => 1540187583
+]
+2018-10-22 08:01:10 [::1][100][31a8c6dcd7d007b0f2e8feb59fb6d28f][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /opt/lampp/htdocs/ChowguleDepartmentApp/views/student/index.php:99
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\StudentController))
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\StudentController))
+#3 /opt/lampp/htdocs/ChowguleDepartmentApp/controllers/StudentController.php(47): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\StudentController->actionIndex()
+#5 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-22 08:01:10 [::1][100][31a8c6dcd7d007b0f2e8feb59fb6d28f][info][application] $_GET = [
+    'r' => 'student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '31a8c6dcd7d007b0f2e8feb59fb6d28f'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '3be3895c9c2159582499aaacf08976bde5594d6b584a49895d84cc7ce2314240a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ixQ0-7k7DGo04tJdQpHT3789udDzqw4Z\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81npn8AAQEAAAlOXWAAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ChowguleDepartmentApp/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'menuIsCollapsed=false; PHPSESSID=31a8c6dcd7d007b0f2e8feb59fb6d28f; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=3be3895c9c2159582499aaacf08976bde5594d6b584a49895d84cc7ce2314240a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ixQ0-7k7DGo04tJdQpHT3789udDzqw4Z%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=student%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540188070.869
+    'REQUEST_TIME' => 1540188070
+]
+2018-10-22 08:01:20 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "student-program/index". in /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student-program...', Array)
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/ChowguleDepartmentApp/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-22 08:01:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'student-program/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'menuIsCollapsed' => 'false'
+    'PHPSESSID' => '31a8c6dcd7d007b0f2e8feb59fb6d28f'
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '3be3895c9c2159582499aaacf08976bde5594d6b584a49895d84cc7ce2314240a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ixQ0-7k7DGo04tJdQpHT3789udDzqw4Z\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81nsH8AAQEAABB@LIQAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'menuIsCollapsed=false; PHPSESSID=31a8c6dcd7d007b0f2e8feb59fb6d28f; _identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=3be3895c9c2159582499aaacf08976bde5594d6b584a49895d84cc7ce2314240a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ixQ0-7k7DGo04tJdQpHT3789udDzqw4Z%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) OpenSSL/1.0.2l PHP/7.1.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/ChowguleDepartmentApp/web/index.php'
+    'REMOTE_PORT' => '55614'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-program%2Findex'
+    'REQUEST_URI' => '/ChowguleDepartmentApp/web/index.php?r=student-program%2Findex'
+    'SCRIPT_NAME' => '/ChowguleDepartmentApp/web/index.php'
+    'PHP_SELF' => '/ChowguleDepartmentApp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540188080.926
+    'REQUEST_TIME' => 1540188080
+]
