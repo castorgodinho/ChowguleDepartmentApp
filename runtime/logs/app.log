@@ -23724,6 +23724,24 @@ $_SERVER = [
     'REQUEST_TIME' => 1539360565
 ]
 <<<<<<< HEAD
+2018-10-13 06:13:22 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /opt/lampp/htdocs/department/views/student/index.php:99
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\StudentController))
+#2 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\StudentController))
+#3 /opt/lampp/htdocs/department/controllers/StudentController.php(47): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\StudentController->actionIndex()
+#5 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-13 06:13:21 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
+    'r' => 'student/index'
+=======
+<<<<<<< HEAD
 2018-10-13 06:05:11 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\debug\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
 Stack trace:
 #0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\debug\\Modul...')
@@ -24796,6 +24814,7 @@ Stack trace:
 #11 {main}
 2018-10-13 06:41:12 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
     'r' => 'organization/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -24804,8 +24823,12 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+=======
     'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
     '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -24814,20 +24837,32 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8Fw4TdM5rGhGGboqNOW2wAAAAk'
+=======
     'UNIQUE_ID' => 'W8F3aMLbQEUhCBw4SoJWkgAAAAI'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8'
+=======
     'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=site%2Flogout'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
     'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -24837,6 +24872,34 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
+    'REMOTE_PORT' => '55540'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex'
+    'REQUEST_URI' => '/department/web/index.php?r=student%2Findex'
+    'SCRIPT_NAME' => '/department/web/index.php'
+    'PHP_SELF' => '/department/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539404001.796
+    'REQUEST_TIME' => 1539404001
+]
+2018-10-13 06:13:46 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admission/index". in /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admission/index', Array)
+#1 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-13 06:13:45 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
+    'r' => 'admission/index'
+=======
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
     'REMOTE_PORT' => '39654'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -24934,6 +24997,7 @@ Stack trace:
 #11 {main}
 2018-10-13 06:41:15 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
     'r' => 'program-student/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -24942,8 +25006,12 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+=======
     'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
     '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -24952,20 +25020,32 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8Fw@XumtR1OsqR@IiszoQAAAAU'
+=======
     'UNIQUE_ID' => 'W8F3a7tFVsiBYJMyK6QSrAAAAAM'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8'
+=======
     'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=student-organization%2Findex'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
     'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -24975,6 +25055,34 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
+    'REMOTE_PORT' => '55550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admission%2Findex'
+    'REQUEST_URI' => '/department/web/index.php?r=admission%2Findex'
+    'SCRIPT_NAME' => '/department/web/index.php'
+    'PHP_SELF' => '/department/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539404025.884
+    'REQUEST_TIME' => 1539404025
+]
+2018-10-13 06:13:52 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "Admission/index". in /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('Admission/index', Array)
+#1 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-13 06:13:51 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
+    'r' => 'Admission/index'
+=======
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
     'REMOTE_PORT' => '39658'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -25072,6 +25180,7 @@ Stack trace:
 #11 {main}
 2018-10-13 06:41:30 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
     'r' => 'student-organization/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -25080,8 +25189,13 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
     'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
     '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -25090,12 +25204,25 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8Fw-xONlbZZmAAUGdmfAQAAAAc'
+=======
     'UNIQUE_ID' => 'W8F3et5pLNKhPquQxihmfgAAAAY'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
     'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
     'HTTP_CONNECTION' => 'keep-alive'
@@ -25105,6 +25232,7 @@ $_SERVER = [
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
     'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -25114,6 +25242,36 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
+    'REMOTE_PORT' => '55558'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Admission%2Findex'
+    'REQUEST_URI' => '/department/web/index.php?r=Admission%2Findex'
+    'SCRIPT_NAME' => '/department/web/index.php'
+    'PHP_SELF' => '/department/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539404031.942
+    'REQUEST_TIME' => 1539404031
+]
+2018-10-13 06:14:00 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /opt/lampp/htdocs/department/views/student/index.php:99
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\StudentController))
+#2 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\StudentController))
+#3 /opt/lampp/htdocs/department/controllers/StudentController.php(47): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\StudentController->actionIndex()
+#5 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-13 06:14:00 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
+    'r' => 'student/index'
+=======
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
     'REMOTE_PORT' => '39670'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -25142,6 +25300,7 @@ Stack trace:
 #11 {main}
 2018-10-13 06:41:32 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
     'r' => 'program-student/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -25150,8 +25309,13 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
     'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
     '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -25160,20 +25324,33 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8FxCBONlbZZmAAUGdmfBAAAAAc'
+=======
     'UNIQUE_ID' => 'W8F3fLtFVsiBYJMyK6QSsgAAAAM'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_REFERER' => 'http://localhost/department/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+=======
     'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=student-organization%2Findex'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
     'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -25183,6 +25360,36 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
+    'REMOTE_PORT' => '55558'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex'
+    'REQUEST_URI' => '/department/web/index.php?r=student%2Findex'
+    'SCRIPT_NAME' => '/department/web/index.php'
+    'PHP_SELF' => '/department/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539404040.241
+    'REQUEST_TIME' => 1539404040
+]
+2018-10-13 06:14:13 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /opt/lampp/htdocs/department/views/student/index.php:99
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\StudentController))
+#2 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\StudentController))
+#3 /opt/lampp/htdocs/department/controllers/StudentController.php(47): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\StudentController->actionIndex()
+#5 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-13 06:14:13 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
+    'r' => 'student/index'
+=======
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
     'REMOTE_PORT' => '39672'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -25211,6 +25418,7 @@ Stack trace:
 #11 {main}
 2018-10-13 06:49:11 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
     'r' => 'paper-type/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -25219,8 +25427,13 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
     'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
     '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -25229,20 +25442,33 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8FxFTdM5rGhGGboqNOW7QAAAAk'
+=======
     'UNIQUE_ID' => 'W8F5R9qy8UrCcgDLVzO-NAAAAAU'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_REFERER' => 'http://localhost/department/web/index.php?r=organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+=======
     'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
     'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -25252,6 +25478,36 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
+    'REMOTE_PORT' => '55564'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex'
+    'REQUEST_URI' => '/department/web/index.php?r=student%2Findex'
+    'SCRIPT_NAME' => '/department/web/index.php'
+    'PHP_SELF' => '/department/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539404053.745
+    'REQUEST_TIME' => 1539404053
+]
+2018-10-13 08:28:04 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /opt/lampp/htdocs/department/views/student/index.php:101
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\StudentController))
+#2 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\StudentController))
+#3 /opt/lampp/htdocs/department/controllers/StudentController.php(47): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\StudentController->actionIndex()
+#5 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('student/index', Array)
+#9 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2018-10-13 08:28:04 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
+    'r' => 'student/index'
+=======
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
     'REMOTE_PORT' => '39688'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -25349,6 +25605,7 @@ Stack trace:
 #11 {main}
 2018-10-13 06:49:34 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
     'r' => 'type/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -25357,8 +25614,13 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
     'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
     '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -25367,21 +25629,34 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8GQdHumtR1OsqR@IiszpQAAAAU'
+=======
     'UNIQUE_ID' => 'W8F5XrtFVsiBYJMyK6QSswAAAAM'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_REFERER' => 'http://localhost/department/web/index.php?r=organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+=======
     'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper-type%2Findex'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
     'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -25391,6 +25666,34 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
+    'REMOTE_PORT' => '57156'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student%2Findex'
+    'REQUEST_URI' => '/department/web/index.php?r=student%2Findex'
+    'SCRIPT_NAME' => '/department/web/index.php'
+    'PHP_SELF' => '/department/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539412084.294
+    'REQUEST_TIME' => 1539412084
+]
+2018-10-13 08:28:42 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "admission/index". in /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admission/index', Array)
+#1 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/department/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/department/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/department/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-13 08:28:41 [127.0.0.1][100][53589e556f6a38bb8d020b9a09b20ce8][info][application] $_GET = [
+    'r' => 'admission/index'
+=======
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
     'REMOTE_PORT' => '39694'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -25489,6 +25792,7 @@ Stack trace:
 #11 {main}
 2018-10-13 06:52:39 [127.0.0.1][100][c3be19915a76f2cc1156e09e824f26c7][info][application] $_GET = [
     'r' => 'appointment/index'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_POST = []
@@ -25497,8 +25801,13 @@ $_FILES = []
 
 $_COOKIE = [
     '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+<<<<<<< HEAD
+    'PHPSESSID' => '53589e556f6a38bb8d020b9a09b20ce8'
+    '_csrf' => '54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-\";}'
+=======
     'PHPSESSID' => 'c3be19915a76f2cc1156e09e824f26c7'
     '_csrf' => '7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6\";}'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 
 $_SESSION = [
@@ -25507,20 +25816,32 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
+    'UNIQUE_ID' => 'W8GQmTmxMSJzMpLmodc0OQAAAAI'
+=======
     'UNIQUE_ID' => 'W8F6FoJoGLxY3N-VIcVQvwAAAAs'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_HOST' => 'localhost'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+<<<<<<< HEAD
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=53589e556f6a38bb8d020b9a09b20ce8; _csrf=54942d1d0df5b9604f7d14be6fb230659390a8d30d423d39a86319a027b87455a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_RgaZmWtkPCKQunhgEEZ5e3607jzCZQ-%22%3B%7D'
+=======
     'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=type%2Findex'
     'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
     'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
     'SERVER_SIGNATURE' => ''
+<<<<<<< HEAD
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3'
+=======
     'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
     'SERVER_NAME' => 'localhost'
     'SERVER_ADDR' => '127.0.0.1'
     'SERVER_PORT' => '80'
@@ -25530,6 +25851,19 @@ $_SERVER = [
     'CONTEXT_PREFIX' => ''
     'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
     'SERVER_ADMIN' => 'you@example.com'
+<<<<<<< HEAD
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/department/web/index.php'
+    'REMOTE_PORT' => '57166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admission%2Findex'
+    'REQUEST_URI' => '/department/web/index.php?r=admission%2Findex'
+    'SCRIPT_NAME' => '/department/web/index.php'
+    'PHP_SELF' => '/department/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539412121.975
+    'REQUEST_TIME' => 1539412121
+=======
     'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
     'REMOTE_PORT' => '39796'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
@@ -25541,6 +25875,7 @@ $_SERVER = [
     'PHP_SELF' => '/basic/web/index.php'
     'REQUEST_TIME_FLOAT' => 1539406358.986
     'REQUEST_TIME' => 1539406358
+>>>>>>> f751aac54d3646083347cca480f1c26105aaaa3e
 ]
 2018-10-13 09:23:16 [127.0.0.1][100][ebfb1d0542cb55138258aa06ef56c0a2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/bvoc in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php:128
 Stack trace:
@@ -25606,4 +25941,547 @@ $_SERVER = [
     'PHP_SELF' => '/basic/web/index.php'
     'REQUEST_TIME_FLOAT' => 1539415396.26
     'REQUEST_TIME' => 1539415396
+]
+2018-10-13 09:46:37 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 55064 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php:95
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 95, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(95): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(70): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(125): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-10-13 09:46:37 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'program-student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'ebfb1d0542cb55138258aa06ef56c0a2'
+    '_csrf' => 'ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8Gi3Rt@Fd1OLEtTdGYxegAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=ebfb1d0542cb55138258aa06ef56c0a2; _csrf=ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36224'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539416797.37
+    'REQUEST_TIME' => 1539416797
+]
+2018-10-13 09:46:49 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 55064 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php:95
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 95, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(95): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(70): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(125): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-10-13 09:46:49 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'student-organization/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'ebfb1d0542cb55138258aa06ef56c0a2'
+    '_csrf' => 'ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8Gi6cU0LOaZ-SCFrtkbiAAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=ebfb1d0542cb55138258aa06ef56c0a2; _csrf=ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36236'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=student-organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539416809.147
+    'REQUEST_TIME' => 1539416809
+]
+2018-10-13 09:46:49 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 55064 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php:95
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 95, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(95): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(70): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(125): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-10-13 09:46:49 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'student-organization/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'ebfb1d0542cb55138258aa06ef56c0a2'
+    '_csrf' => 'ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8Gi6Zwv5o6rExboXqbURwAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=ebfb1d0542cb55138258aa06ef56c0a2; _csrf=ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=student-organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=student-organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539416809.431
+    'REQUEST_TIME' => 1539416809
+]
+2018-10-13 09:46:51 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 55064 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php:95
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 95, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(95): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(70): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(125): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-10-13 09:46:51 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'organization/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'ebfb1d0542cb55138258aa06ef56c0a2'
+    '_csrf' => 'ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8Gi65wv5o6rExboXqbUSwAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=student-organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=ebfb1d0542cb55138258aa06ef56c0a2; _csrf=ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=organization%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=organization%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539416811.349
+    'REQUEST_TIME' => 1539416811
+]
+2018-10-13 09:46:53 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 55064 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php:95
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 95, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(95): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(70): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(125): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-10-13 09:46:53 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'program-student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'ebfb1d0542cb55138258aa06ef56c0a2'
+    '_csrf' => 'ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8Gi7Zwv5o6rExboXqbUTQAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=organization%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=ebfb1d0542cb55138258aa06ef56c0a2; _csrf=ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539416813.125
+    'REQUEST_TIME' => 1539416813
+]
+2018-10-13 09:46:53 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 55064 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php:95
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 95, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(95): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(70): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(125): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-10-13 09:46:53 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'program-student/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'ebfb1d0542cb55138258aa06ef56c0a2'
+    '_csrf' => 'ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8Gi7Zwv5o6rExboXqbUTwAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=ebfb1d0542cb55138258aa06ef56c0a2; _csrf=ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=program-student%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=program-student%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539416813.464
+    'REQUEST_TIME' => 1539416813
+]
+2018-10-13 09:46:59 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 55064 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php:95
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 95, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(95): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(70): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(125): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-10-13 09:46:59 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'paper-type/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'ebfb1d0542cb55138258aa06ef56c0a2'
+    '_csrf' => 'ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W8Gi8wiH7mgatk0FycQ8SQAAAAo'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=program-student%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=ebfb1d0542cb55138258aa06ef56c0a2; _csrf=ef148a7964adcef90760a8c3f10d544e6b8216ef82526f6da1abdfaf7f71cb1ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ixb4VuO_2tMNODHOWL2QVSTVm14LmuJS%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '36248'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper-type%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper-type%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1539416819.389
+    'REQUEST_TIME' => 1539416819
+]
+2018-10-22 06:52:24 [127.0.0.1][100][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 55064 bytes' 
+
+in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php:95
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/opt/lampp/htdo...', 95, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(95): unserialize('<<<<<<< HEAD\na:...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(70): yii\debug\LogTarget->updateIndexFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug/LogTarget.php(125): yii\debug\LogTarget->export()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-10-22 06:52:22 [127.0.0.1][100][-][info][application] $_GET = [
+    'r' => 'paper'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81XhsL6vgUz9Ixs6pRznwAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '53932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540183942.799
+    'REQUEST_TIME' => 1540183942
 ]

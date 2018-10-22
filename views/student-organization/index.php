@@ -95,7 +95,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'date_of_joining',
                 'value' => function($model){
                     return date('d M Y', strtotime($model->date_of_joining));
-                }
+                },
             ],
             
             'position',
