@@ -7,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace SebastianBergmann\CodeCoverage\Report;
 
 use SebastianBergmann\CodeCoverage\CodeCoverage;
@@ -57,7 +56,7 @@ class Text
      */
     public function process(CodeCoverage $coverage, $showColors = false)
     {
-        $output = PHP_EOL . PHP_EOL;
+        $output = \PHP_EOL . \PHP_EOL;
         $report = $coverage->getReport();
         unset($coverage);
 
@@ -67,7 +66,7 @@ class Text
             'methods' => '',
             'lines'   => '',
             'reset'   => '',
-            'eol'     => ''
+            'eol'     => '',
         ];
 
         if ($showColors) {
@@ -143,7 +142,7 @@ class Text
         $output .= $this->format($colors['lines'], $padding, $lines);
 
         if ($this->showOnlySummary) {
-            return $output . PHP_EOL;
+            return $output . \PHP_EOL;
         }
 
         $classCoverage = [];
@@ -208,14 +207,13 @@ class Text
                     $resetColor  = $colors['reset'];
                 }
 
-                $output .= PHP_EOL . $fullQualifiedPath . PHP_EOL
+                $output .= \PHP_EOL . $fullQualifiedPath . \PHP_EOL
                     . '  ' . $methodColor . 'Methods: ' . $this->printCoverageCounts($classInfo['methodsCovered'], $classInfo['methodCount'], 2) . $resetColor . ' '
-                    . '  ' . $linesColor . 'Lines: ' . $this->printCoverageCounts($classInfo['statementsCovered'], $classInfo['statementCount'], 3) . $resetColor
-                ;
+                    . '  ' . $linesColor . 'Lines: ' . $this->printCoverageCounts($classInfo['statementsCovered'], $classInfo['statementCount'], 3) . $resetColor;
             }
         }
 
-        return $output . PHP_EOL;
+        return $output . \PHP_EOL;
     }
 
     protected function getCoverageColor($numberOfCoveredElements, $totalNumberOfElements)
@@ -252,6 +250,6 @@ class Text
     {
         $reset = $color ? $this->colors['reset'] : '';
 
-        return $color . \str_pad($string, $padding) . $reset . PHP_EOL;
+        return $color . \str_pad($string, $padding) . $reset . \PHP_EOL;
     }
 }

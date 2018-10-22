@@ -7,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace SebastianBergmann\CodeCoverage\Report;
 
 use SebastianBergmann\CodeCoverage\CodeCoverage;
@@ -19,10 +18,14 @@ use SebastianBergmann\CodeCoverage\RuntimeException;
 class PHP
 {
     /**
+<<<<<<< HEAD
      * @param CodeCoverage $coverage
      * @param string       $target
      *
      * @return string
+=======
+     * @throws \SebastianBergmann\CodeCoverage\RuntimeException
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
      */
     public function process(CodeCoverage $coverage, $target = null)
     {
@@ -44,6 +47,10 @@ return $coverage;',
         );
 
         if ($target !== null) {
+            if (!$this->createDirectory(\dirname($target))) {
+                throw new \RuntimeException(\sprintf('Directory "%s" was not created', \dirname($target)));
+            }
+
             if (@\file_put_contents($target, $buffer) === false) {
                 throw new RuntimeException(
                     \sprintf(
@@ -55,5 +62,10 @@ return $coverage;',
         }
 
         return $buffer;
+    }
+
+    private function createDirectory(string $directory): bool
+    {
+        return !(!\is_dir($directory) && !@\mkdir($directory, 0777, true) && !\is_dir($directory));
     }
 }

@@ -7,9 +7,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace SebastianBergmann\CodeCoverage\Driver;
 
+use SebastianBergmann\CodeCoverage\Filter;
 use SebastianBergmann\CodeCoverage\RuntimeException;
 
 /**
@@ -27,9 +27,18 @@ class Xdebug implements Driver
     private $cacheNumLines = [];
 
     /**
+<<<<<<< HEAD
      * Constructor.
+=======
+     * @var Filter
      */
-    public function __construct()
+    private $filter;
+
+    /**
+     * @throws RuntimeException
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
+     */
+    public function __construct(Filter $filter = null)
     {
         if (!\extension_loaded('xdebug')) {
             throw new RuntimeException('This driver requires Xdebug');
@@ -41,6 +50,12 @@ class Xdebug implements Driver
                 'xdebug.coverage_enable=On has to be set in php.ini'
             );
         }
+
+        if ($filter === null) {
+            $filter = new Filter;
+        }
+
+        $this->filter = $filter;
     }
 
     /**
@@ -80,13 +95,15 @@ class Xdebug implements Driver
         foreach (\array_keys($data) as $file) {
             unset($data[$file][0]);
 
-            if (\strpos($file, 'xdebug://debug-eval') !== 0 && \file_exists($file)) {
-                $numLines = $this->getNumberOfLinesInFile($file);
+            if (!$this->filter->isFile($file)) {
+                continue;
+            }
 
-                foreach (\array_keys($data[$file]) as $line) {
-                    if ($line > $numLines) {
-                        unset($data[$file][$line]);
-                    }
+            $numLines = $this->getNumberOfLinesInFile($file);
+
+            foreach (\array_keys($data[$file]) as $line) {
+                if ($line > $numLines) {
+                    unset($data[$file][$line]);
                 }
             }
         }

@@ -340,9 +340,12 @@ class Table
      * Example:
      *
      *     | 9971-5-0210-0 | A Tale of Two Cities  | Charles Dickens  |
+<<<<<<< HEAD
      *
      * @param array  $row
      * @param string $cellFormat
+=======
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
      */
     private function renderRow(array $row, $cellFormat)
     {
@@ -623,7 +626,11 @@ class Table
      */
     private function getColumnSeparatorWidth()
     {
+<<<<<<< HEAD
         return Helper::strlen(sprintf($this->style->getBorderFormat(), $this->style->getVerticalBorderChar()));
+=======
+        return Helper::strlen(sprintf($this->style->getBorderFormat(), $this->style->getBorderChars()[3]));
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     }
 
     /**

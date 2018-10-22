@@ -6,12 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CGIF' => $vendorDir . '/mpdf/mpdf/classes/gif.php',
-    'CGIFCOLORTABLE' => $vendorDir . '/mpdf/mpdf/classes/gif.php',
-    'CGIFFILEHEADER' => $vendorDir . '/mpdf/mpdf/classes/gif.php',
-    'CGIFIMAGE' => $vendorDir . '/mpdf/mpdf/classes/gif.php',
-    'CGIFIMAGEHEADER' => $vendorDir . '/mpdf/mpdf/classes/gif.php',
-    'CGIFLZW' => $vendorDir . '/mpdf/mpdf/classes/gif.php',
     'FPDF_TPL' => $vendorDir . '/setasign/fpdi/fpdf_tpl.php',
     'FPDI' => $vendorDir . '/setasign/fpdi/fpdi.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
@@ -20,10 +14,6 @@ return array(
     'FilterASCII85' => $vendorDir . '/setasign/fpdi/filters/FilterASCII85.php',
     'FilterASCIIHexDecode' => $vendorDir . '/setasign/fpdi/filters/FilterASCIIHexDecode.php',
     'FilterLZW' => $vendorDir . '/setasign/fpdi/filters/FilterLZW.php',
-    'INDIC' => $vendorDir . '/mpdf/mpdf/classes/indic.php',
-    'MYANMAR' => $vendorDir . '/mpdf/mpdf/classes/myanmar.php',
-    'OTLdump' => $vendorDir . '/mpdf/mpdf/classes/otl_dump.php',
-    'PDFBarcode' => $vendorDir . '/mpdf/mpdf/classes/barcode.php',
     'PHPUnit\\Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert.php',
     'PHPUnit\\Framework\\AssertionFailedError' => $vendorDir . '/phpunit/phpunit/src/Framework/AssertionFailedError.php',
@@ -90,6 +80,7 @@ return array(
     'PHPUnit\\Framework\\IncompleteTestError' => $vendorDir . '/phpunit/phpunit/src/Framework/IncompleteTestError.php',
     'PHPUnit\\Framework\\InvalidCoversTargetException' => $vendorDir . '/phpunit/phpunit/src/Framework/InvalidCoversTargetException.php',
     'PHPUnit\\Framework\\MissingCoversAnnotationException' => $vendorDir . '/phpunit/phpunit/src/Framework/MissingCoversAnnotationException.php',
+<<<<<<< HEAD
     'PHPUnit\\Framework\\MockObject\\BadMethodCallException' => $vendorDir . '/phpunit/phpunit-mock-objects/src/Exception/BadMethodCallException.php',
     'PHPUnit\\Framework\\MockObject\\Builder\\Identity' => $vendorDir . '/phpunit/phpunit-mock-objects/src/Builder/Identity.php',
     'PHPUnit\\Framework\\MockObject\\Builder\\InvocationMocker' => $vendorDir . '/phpunit/phpunit-mock-objects/src/Builder/InvocationMocker.php',
@@ -133,6 +124,8 @@ return array(
     'PHPUnit\\Framework\\MockObject\\Stub\\ReturnStub' => $vendorDir . '/phpunit/phpunit-mock-objects/src/Stub/ReturnStub.php',
     'PHPUnit\\Framework\\MockObject\\Stub\\ReturnValueMap' => $vendorDir . '/phpunit/phpunit-mock-objects/src/Stub/ReturnValueMap.php',
     'PHPUnit\\Framework\\MockObject\\Verifiable' => $vendorDir . '/phpunit/phpunit-mock-objects/src/Verifiable.php',
+=======
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     'PHPUnit\\Framework\\OutputError' => $vendorDir . '/phpunit/phpunit/src/Framework/OutputError.php',
     'PHPUnit\\Framework\\RiskyTest' => $vendorDir . '/phpunit/phpunit/src/Framework/RiskyTest.php',
     'PHPUnit\\Framework\\RiskyTestError' => $vendorDir . '/phpunit/phpunit/src/Framework/RiskyTestError.php',
@@ -171,7 +164,10 @@ return array(
     'PHPUnit\\Util\\Configuration' => $vendorDir . '/phpunit/phpunit/src/Util/Configuration.php',
     'PHPUnit\\Util\\ConfigurationGenerator' => $vendorDir . '/phpunit/phpunit/src/Util/ConfigurationGenerator.php',
     'PHPUnit\\Util\\ErrorHandler' => $vendorDir . '/phpunit/phpunit/src/Util/ErrorHandler.php',
+<<<<<<< HEAD
     'PHPUnit\\Util\\Fileloader' => $vendorDir . '/phpunit/phpunit/src/Util/Fileloader.php',
+=======
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     'PHPUnit\\Util\\Filesystem' => $vendorDir . '/phpunit/phpunit/src/Util/Filesystem.php',
     'PHPUnit\\Util\\Filter' => $vendorDir . '/phpunit/phpunit/src/Util/Filter.php',
     'PHPUnit\\Util\\Getopt' => $vendorDir . '/phpunit/phpunit/src/Util/Getopt.php',
@@ -195,8 +191,11 @@ return array(
     'PHPUnit\\Util\\Type' => $vendorDir . '/phpunit/phpunit/src/Util/Type.php',
     'PHPUnit\\Util\\Xml' => $vendorDir . '/phpunit/phpunit/src/Util/Xml.php',
     'PHPUnit\\Util\\XmlTestListRenderer' => $vendorDir . '/phpunit/phpunit/src/Util/XmlTestListRenderer.php',
+<<<<<<< HEAD
     'PHPUnit_Framework_MockObject_MockObject' => $vendorDir . '/phpunit/phpunit-mock-objects/src/MockObject.php',
     'PHP_Timer' => $vendorDir . '/phpunit/php-timer/src/Timer.php',
+=======
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     'PHP_Token' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_TokenWithScope' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_TokenWithScopeAndVisibility' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
@@ -445,6 +444,7 @@ return array(
     'PharIo\\Manifest\\RequiresElement' => $vendorDir . '/phar-io/manifest/src/xml/RequiresElement.php',
     'PharIo\\Manifest\\Type' => $vendorDir . '/phar-io/manifest/src/values/Type.php',
     'PharIo\\Manifest\\Url' => $vendorDir . '/phar-io/manifest/src/values/Url.php',
+<<<<<<< HEAD
     'PharIo\\Version\\AbstractVersionConstraint' => $vendorDir . '/phar-io/version/src/AbstractVersionConstraint.php',
     'PharIo\\Version\\AndVersionConstraintGroup' => $vendorDir . '/phar-io/version/src/AndVersionConstraintGroup.php',
     'PharIo\\Version\\AnyVersionConstraint' => $vendorDir . '/phar-io/version/src/AnyVersionConstraint.php',
@@ -459,11 +459,13 @@ return array(
     'PharIo\\Version\\UnsupportedVersionConstraintException' => $vendorDir . '/phar-io/version/src/UnsupportedVersionConstraintException.php',
     'PharIo\\Version\\Version' => $vendorDir . '/phar-io/version/src/Version.php',
     'PharIo\\Version\\VersionConstraint' => $vendorDir . '/phar-io/version/src/VersionConstraint.php',
+=======
+    'PharIo\\Version\\PreReleaseSuffix' => $vendorDir . '/phar-io/version/src/PreReleaseSuffix.php',
+    'PharIo\\Version\\Version' => $vendorDir . '/phar-io/version/src/Version.php',
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     'PharIo\\Version\\VersionConstraintParser' => $vendorDir . '/phar-io/version/src/VersionConstraintParser.php',
     'PharIo\\Version\\VersionConstraintValue' => $vendorDir . '/phar-io/version/src/VersionConstraintValue.php',
     'PharIo\\Version\\VersionNumber' => $vendorDir . '/phar-io/version/src/VersionNumber.php',
-    'SEA' => $vendorDir . '/mpdf/mpdf/classes/sea.php',
-    'SVG' => $vendorDir . '/mpdf/mpdf/classes/svg.php',
     'SebastianBergmann\\CodeCoverage\\CodeCoverage' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage.php',
     'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => $vendorDir . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
     'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => $vendorDir . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -555,9 +557,11 @@ return array(
     'SebastianBergmann\\RecursionContext\\Exception' => $vendorDir . '/sebastian/recursion-context/src/Exception.php',
     'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => $vendorDir . '/sebastian/recursion-context/src/InvalidArgumentException.php',
     'SebastianBergmann\\ResourceOperations\\ResourceOperations' => $vendorDir . '/sebastian/resource-operations/src/ResourceOperations.php',
+<<<<<<< HEAD
+=======
+    'SebastianBergmann\\Timer\\Timer' => $vendorDir . '/phpunit/php-timer/src/Timer.php',
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
-    'TTFontFile' => $vendorDir . '/mpdf/mpdf/classes/ttfontsuni.php',
-    'TTFontFile_Analysis' => $vendorDir . '/mpdf/mpdf/classes/ttfontsuni_analysis.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
     'TheSeer\\Tokenizer\\Exception' => $vendorDir . '/theseer/tokenizer/src/Exception.php',
     'TheSeer\\Tokenizer\\NamespaceUri' => $vendorDir . '/theseer/tokenizer/src/NamespaceUri.php',
@@ -567,17 +571,6 @@ return array(
     'TheSeer\\Tokenizer\\TokenCollectionException' => $vendorDir . '/theseer/tokenizer/src/TokenCollectionException.php',
     'TheSeer\\Tokenizer\\Tokenizer' => $vendorDir . '/theseer/tokenizer/src/Tokenizer.php',
     'TheSeer\\Tokenizer\\XMLSerializer' => $vendorDir . '/theseer/tokenizer/src/XMLSerializer.php',
-    'UCDN' => $vendorDir . '/mpdf/mpdf/classes/ucdn.php',
-    'bmp' => $vendorDir . '/mpdf/mpdf/classes/bmp.php',
-    'cssmgr' => $vendorDir . '/mpdf/mpdf/classes/cssmgr.php',
-    'directw' => $vendorDir . '/mpdf/mpdf/classes/directw.php',
     'fpdi_pdf_parser' => $vendorDir . '/setasign/fpdi/fpdi_pdf_parser.php',
-    'grad' => $vendorDir . '/mpdf/mpdf/classes/grad.php',
-    'mPDF' => $vendorDir . '/mpdf/mpdf/mpdf.php',
-    'meter' => $vendorDir . '/mpdf/mpdf/classes/meter.php',
-    'mpdfform' => $vendorDir . '/mpdf/mpdf/classes/mpdfform.php',
-    'otl' => $vendorDir . '/mpdf/mpdf/classes/otl.php',
     'pdf_context' => $vendorDir . '/setasign/fpdi/pdf_context.php',
-    'tocontents' => $vendorDir . '/mpdf/mpdf/classes/tocontents.php',
-    'wmf' => $vendorDir . '/mpdf/mpdf/classes/wmf.php',
 );

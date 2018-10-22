@@ -7,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace SebastianBergmann\CodeCoverage\Node;
 
 use SebastianBergmann\CodeCoverage\InvalidArgumentException;
@@ -614,7 +613,7 @@ class File extends AbstractNode
                 'coverage'        => 0,
                 'crap'            => 0,
                 'package'         => $class['package'],
-                'link'            => $link . $class['startLine']
+                'link'            => $link . $class['startLine'],
             ];
 
             $this->startLines[$class['startLine']] = &$this->classes[$className];
@@ -623,8 +622,17 @@ class File extends AbstractNode
             foreach ($class['methods'] as $methodName => $method) {
                 $this->classes[$className]['methods'][$methodName] = $this->newMethod($methodName, $method, $link);
 
+<<<<<<< HEAD
                 $this->startLines[$method['startLine']] = &$this->classes[$className]['methods'][$methodName];
                 $this->endLines[$method['endLine']]     = &$this->classes[$className]['methods'][$methodName];
+=======
+                foreach (\range($method['startLine'], $method['endLine']) as $lineNumber) {
+                    $this->codeUnitsByLine[$lineNumber] = [
+                        &$this->classes[$className],
+                        &$this->classes[$className]['methods'][$methodName],
+                    ];
+                }
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
             }
         }
     }
@@ -650,7 +658,7 @@ class File extends AbstractNode
                 'coverage'        => 0,
                 'crap'            => 0,
                 'package'         => $trait['package'],
-                'link'            => $link . $trait['startLine']
+                'link'            => $link . $trait['startLine'],
             ];
 
             $this->startLines[$trait['startLine']] = &$this->traits[$traitName];
@@ -659,8 +667,17 @@ class File extends AbstractNode
             foreach ($trait['methods'] as $methodName => $method) {
                 $this->traits[$traitName]['methods'][$methodName] = $this->newMethod($methodName, $method, $link);
 
+<<<<<<< HEAD
                 $this->startLines[$method['startLine']] = &$this->traits[$traitName]['methods'][$methodName];
                 $this->endLines[$method['endLine']]     = &$this->traits[$traitName]['methods'][$methodName];
+=======
+                foreach (\range($method['startLine'], $method['endLine']) as $lineNumber) {
+                    $this->codeUnitsByLine[$lineNumber] = [
+                        &$this->traits[$traitName],
+                        &$this->traits[$traitName]['methods'][$methodName],
+                    ];
+                }
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
             }
         }
     }
@@ -685,7 +702,7 @@ class File extends AbstractNode
                 'ccn'             => $function['ccn'],
                 'coverage'        => 0,
                 'crap'            => 0,
-                'link'            => $link . $function['startLine']
+                'link'            => $link . $function['startLine'],
             ];
 
             $this->startLines[$function['startLine']] = &$this->functions[$functionName];

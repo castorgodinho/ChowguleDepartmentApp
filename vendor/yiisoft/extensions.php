@@ -57,6 +57,18 @@ return array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii/src',
     ),
   ),
+<<<<<<< HEAD
+=======
+  'kartik-v/yii2-mpdf' => 
+  array (
+    'name' => 'kartik-v/yii2-mpdf',
+    'version' => '1.0.5.0',
+    'alias' => 
+    array (
+      '@kartik/mpdf' => $vendorDir . '/kartik-v/yii2-mpdf/src',
+    ),
+  ),
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
   'kartik-v/yii2-krajee-base' => 
   array (
     'name' => 'kartik-v/yii2-krajee-base',
@@ -122,11 +134,19 @@ return array (
   ),
   'yiisoft/yii2-jui' => 
   array (
+<<<<<<< HEAD
     'name' => 'yiisoft/yii2-jui',
     'version' => '2.0.7.0',
     'alias' => 
     array (
       '@yii/jui' => $vendorDir . '/yiisoft/yii2-jui',
+=======
+    'name' => 'kartik-v/yii2-export',
+    'version' => '1.3.6.0',
+    'alias' => 
+    array (
+      '@kartik/export' => $vendorDir . '/kartik-v/yii2-export/src',
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     ),
   ),
   'kartik-v/yii2-mpdf' => 
@@ -145,6 +165,24 @@ return array (
     'alias' => 
     array (
       '@kartik/export' => $vendorDir . '/kartik-v/yii2-export',
+    ),
+  ),
+  'rmrevin/yii2-fontawesome' => 
+  array (
+    'name' => 'rmrevin/yii2-fontawesome',
+    'version' => '2.17.1.0',
+    'alias' => 
+    array (
+      '@rmrevin/yii/fontawesome' => $vendorDir . '/rmrevin/yii2-fontawesome',
+    ),
+  ),
+  'yiister/yii2-gentelella' => 
+  array (
+    'name' => 'yiister/yii2-gentelella',
+    'version' => '1.3.1.0',
+    'alias' => 
+    array (
+      '@yiister/gentelella' => $vendorDir . '/yiister/yii2-gentelella',
     ),
   ),
 );

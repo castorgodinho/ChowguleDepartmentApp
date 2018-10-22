@@ -7,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace SebastianBergmann\CodeCoverage;
 
 /**
@@ -21,6 +20,13 @@ class Filter
      * @var array
      */
     private $whitelistedFiles = [];
+
+    /**
+     * Remembers the result of the `is_file()` calls.
+     *
+     * @var bool[]
+     */
+    private $isFileCallsCache = [];
 
     /**
      * Adds a directory to the whitelist (recursively).
@@ -99,18 +105,31 @@ class Filter
      */
     public function isFile($filename)
     {
+<<<<<<< HEAD
         if ($filename == '-' ||
+=======
+        if (isset($this->isFileCallsCache[$filename])) {
+            return $this->isFileCallsCache[$filename];
+        }
+
+        if ($filename === '-' ||
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
             \strpos($filename, 'vfs://') === 0 ||
             \strpos($filename, 'xdebug://debug-eval') !== false ||
             \strpos($filename, 'eval()\'d code') !== false ||
             \strpos($filename, 'runtime-created function') !== false ||
             \strpos($filename, 'runkit created function') !== false ||
             \strpos($filename, 'assert code') !== false ||
-            \strpos($filename, 'regexp code') !== false) {
-            return false;
+            \strpos($filename, 'regexp code') !== false ||
+            \strpos($filename, 'Standard input code') !== false) {
+            $isFile = false;
+        } else {
+            $isFile = \file_exists($filename);
         }
 
-        return \file_exists($filename);
+        $this->isFileCallsCache[$filename] = $isFile;
+
+        return $isFile;
     }
 
     /**
@@ -125,8 +144,6 @@ class Filter
         if (!$this->isFile($filename)) {
             return true;
         }
-
-        $filename = \realpath($filename);
 
         return !isset($this->whitelistedFiles[$filename]);
     }
