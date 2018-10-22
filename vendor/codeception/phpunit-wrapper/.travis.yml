@@ -4,6 +4,7 @@ env:
   CODECEPTION_VERSION: '2.4.x-dev'
 
 php:
+  - 7.0
   - 7.1
   - 7.2
 
