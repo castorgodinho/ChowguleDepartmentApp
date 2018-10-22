@@ -1,11 +1,10 @@
 <?php
-use kartik\export\ExportMenu;
+
 use yii\helpers\Html;
 use kartik\grid\GridView;
 //use yii\grid\GridView;
 use yii\widgets\ActiveForm;
 use dosamigos\datepicker\DatePicker;
-
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SearchStudentOrganization */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -67,6 +66,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?=
         GridView::widget([
+     
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'autoXlFormat'=>true,

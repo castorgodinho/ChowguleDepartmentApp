@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Workshop */
 
-//$this->title = $model->name;
+$this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Workshops', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -19,37 +19,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             //'workshop_id',
             'name',
-            [
-                'label' => 'inhouse',
-                'attribute' => 'inhouse',
-                'value' => function($model){
-                    if($model->inhouse == 0){
-                            return 'Not-Inhouse';
-                    }else{
-                        return "In-House";
-                    }
-
-                }
-            ],
+            'inhouse',
             'cost',
             'participant:ntext',
             'faculty_name:ntext',
-            [   
-                'label' => 'Start Date',
-                'attribute' => 'start_date',
-                'value' => function ($model) { 
-                    return date("d M Y", strtotime($model->start_date));
-                },
-            ],
-            [   
-                'label' => 'End Date',
-                'attribute' => 'end_date',
-                'value' => function ($model) { 
-                    return date("d M Y", strtotime($model->end_date));
-                },
-            ],
+            'start_date',
+            'end_date',
             'department.name',
-            //'academicYear.year',
+            'academicYear.year',
             //'created_at',
             //'updated_at',
         ],

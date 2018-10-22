@@ -83,7 +83,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'kartik\grid\SerialColumn'],
 
             //'revision_id',
-            'syllabus_file:ntext',
+            //'syllabus_file:ntext',
             
             [
                 'label'=>'Syllabus Date',
