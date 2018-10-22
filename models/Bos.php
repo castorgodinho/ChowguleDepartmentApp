@@ -36,7 +36,7 @@ class Bos extends \yii\db\ActiveRecord
     {
         return [
             [['program', 'minutes', 'date', 'department_id', 'academic_year_id'], 'required'],
-            [['minutes'], 'string'],
+            [['minutes'], 'file'],
             [['date', 'created_at', 'updated_at'], 'safe'],
             [['department_id', 'academic_year_id'], 'integer'],
             [['program'], 'string', 'max' => 100],
