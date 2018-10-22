@@ -31,6 +31,118 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 <?php $this->beginBody(); ?>
 <div class="container body">
 
+<<<<<<< HEAD
+?>
+<div class="wrap">
+    <?php
+    NavBar::begin([
+        'brandLabel' => 'Department System',
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'class' => 'navbar-inverse navbar-fixed-top',
+        ],
+    ]);
+    if(!Yii::$app->user->isGuest){
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => [
+                /* ['label' => 'Home', 'url' => ['/site/index']], */
+                
+                ['label' => 'Student', 'url' => ['/program-student/index']],
+                ['label' => 'Alumni', 'url' => ['/student-organization/index']],
+                ['label' => 'Organization', 'url' => ['/organization/index']],
+                [
+                    'label' => 'Settings',
+                    'items' => [
+                        ['label' => 'Program', 'url' => ['/program/index']],
+                        ['label' => 'Academic Year', 'url' => ['/academic-year/index']],
+                        ['label' => 'Department', 'url' => ['/department/index']],
+                        ['label' => 'Assign Papers', 'url' => ['/paper-faculty/index']],
+                        ['label' => 'Revision', 'url' => ['/revision/index']],
+                        ['label' => 'Agency', 'url' => ['/agency/index']],
+    
+                    ],
+                ],
+                [
+                    'label' => 'Activities',
+                    'items' => [
+                        ['label' => 'Seminar', 'url' => ['/seminar/index']],
+                        ['label' => 'Subject Expert', 'url' => ['/subject-expert/index']],
+                        ['label' => 'Workshop', 'url' => ['/workshop/index']],
+                        ['label' => 'Examiner', 'url' => ['/examiner/index']],
+                        ['label' => 'Event', 'url' => ['/event/index']],
+                        ['label' => 'BOS', 'url' => ['/bos/index']],
+                        ['label' => 'Auditing Member', 'url' => ['/auditing-member/index']],
+                        ['label' => 'Student Activity', 'url' => ['/student-activity/index']],
+                        ['label' => 'Project', 'url' => ['/project/index']],
+    
+                    ],
+                ],
+                [
+                    'label' => 'Course',
+                    'items' => [
+                        
+                        ['label' => 'Type', 'url' => ['/type/index']],
+                        ['label' => 'Course', 'url' => ['/paper-type/index']],
+    
+                    ],
+                ],
+                [
+                    'label' => 'Faculty',
+                    'items' => [
+                        ['label' => 'faculty', 'url' => ['/faculty/index']],
+                        ['label' => 'Appointments', 'url' => ['/appointment/index']],
+                    ],
+                ],
+                
+                Yii::$app->user->isGuest ? (
+                    ['label' => 'Login', 'url' => ['/site/login']]
+                ) : (
+                    '<li>'
+                    . Html::beginForm(['/site/logout'], 'post')
+                    . Html::submitButton(
+                        'Logout (' . Yii::$app->user->identity->username . ')',
+                        ['class' => 'btn btn-link logout']
+                    )
+                    . Html::endForm()
+                    . '</li>'
+                )
+            ],
+        ]);
+    }else{
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => [
+              
+                
+                Yii::$app->user->isGuest ? (
+                    ['label' => 'Login', 'url' => ['/site/login']]
+                ) : (
+                    '<li>'
+                    . Html::beginForm(['/site/logout'], 'post')
+                    . Html::submitButton(
+                        'Logout (' . Yii::$app->user->identity->username . ')',
+                        ['class' => 'btn btn-link logout']
+                    )
+                    . Html::endForm()
+                    . '</li>'
+                )
+            ],
+        ]);
+    }
+    
+    NavBar::end();
+    ?>
+
+    <div class="container">
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
+        <?= Alert::widget() ?>
+        <?= $content ?>
+    </div>
+</div>
+=======
     <div class="main_container">
 
         <div class="col-md-3 left_col">
@@ -184,6 +296,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
 
                 </div>
                 <!-- /sidebar menu -->
+>>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
 
                 <!-- /menu footer buttons -->
                 <div class="sidebar-footer hidden-small">

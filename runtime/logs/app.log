@@ -29010,6 +29010,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1540190952.519
     'REQUEST_TIME' => 1540190952
 ]
+<<<<<<< HEAD
 2018-10-22 08:54:30 [127.0.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: count(): Parameter must be an array or an object that implements Countable in /opt/lampp/htdocs/basic/vendor/kartik-v/mpdf/classes/ttfontsuni.php:549
 Stack trace:
 #0 /opt/lampp/htdocs/basic/vendor/kartik-v/mpdf/classes/ttfontsuni.php(549): yii\base\ErrorHandler->handleError(2, 'count(): Parame...', '/opt/lampp/htdo...', 549, Array)
@@ -29566,3 +29567,5 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1540193093.563
     'REQUEST_TIME' => 1540193093
 ]
+=======
+>>>>>>> fa600b5963a85fdc3677c45528ddb6779b59c3cc
