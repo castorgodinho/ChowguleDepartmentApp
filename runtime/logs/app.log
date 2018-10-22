@@ -29998,3 +29998,394 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1540188080.926
     'REQUEST_TIME' => 1540188080
 ]
+2018-10-22 08:22:28 [127.0.0.1][100][f8241c9366f3122b400849aab6d90f09][error][Error] Error: Class 'yiister\gentelella\assets\Asset' not found in /opt/lampp/htdocs/basic/views/layouts/main.php:10
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\PaperTypeController))
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="pap...')
+#4 /opt/lampp/htdocs/basic/controllers/PaperTypeController.php(126): yii\base\Controller->render('update', Array)
+#5 [internal function]: app\controllers\PaperTypeController->actionUpdate('17')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper-type/upda...', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-10-22 08:22:28 [127.0.0.1][100][f8241c9366f3122b400849aab6d90f09][info][application] $_GET = [
+    'r' => 'paper-type/update'
+    'id' => '17'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'f8241c9366f3122b400849aab6d90f09'
+    '_csrf' => 'befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gACkHCQOAMt8XF2td9XbRYddSpAnfW5q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81spFEWFiQJQ8GYoGrFnwAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper-type%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=f8241c9366f3122b400849aab6d90f09; _csrf=befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gACkHCQOAMt8XF2td9XbRYddSpAnfW5q%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '54646'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper-type%2Fupdate&id=17'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper-type%2Fupdate&id=17'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540189348.456
+    'REQUEST_TIME' => 1540189348
+]
+2018-10-22 08:29:35 [127.0.0.1][100][f8241c9366f3122b400849aab6d90f09][error][Error] Error: Class 'yiister\gentelella\assets\Asset' not found in /opt/lampp/htdocs/basic/views/layouts/main.php:10
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\controllers\PaperTypeController))
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="pap...')
+#4 /opt/lampp/htdocs/basic/controllers/PaperTypeController.php(126): yii\base\Controller->render('update', Array)
+#5 [internal function]: app\controllers\PaperTypeController->actionUpdate('17')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('paper-type/upda...', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2018-10-22 08:29:34 [127.0.0.1][100][f8241c9366f3122b400849aab6d90f09][info][application] $_GET = [
+    'r' => 'paper-type/update'
+    'id' => '17'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'f8241c9366f3122b400849aab6d90f09'
+    '_csrf' => 'befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gACkHCQOAMt8XF2td9XbRYddSpAnfW5q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W81uTmqzP5v@9Nn-2gURvwAAAAo'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=paper-type%2Findex'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=f8241c9366f3122b400849aab6d90f09; _csrf=befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gACkHCQOAMt8XF2td9XbRYddSpAnfW5q%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '54894'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper-type%2Fupdate&id=17'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper-type%2Fupdate&id=17'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540189774.965
+    'REQUEST_TIME' => 1540189774
+]
+2018-10-22 09:10:58 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-22 09:10:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'f8241c9366f3122b400849aab6d90f09'
+    '_csrf' => 'befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gACkHCQOAMt8XF2td9XbRYddSpAnfW5q\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W814ArLMtD73BER9zUKaMgAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=f8241c9366f3122b400849aab6d90f09; _csrf=befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gACkHCQOAMt8XF2td9XbRYddSpAnfW5q%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '57706'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540192258.97
+    'REQUEST_TIME' => 1540192258
+]
+2018-10-22 09:25:27 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-22 09:25:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'f8241c9366f3122b400849aab6d90f09'
+    '_csrf' => 'befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gACkHCQOAMt8XF2td9XbRYddSpAnfW5q\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W817Z1VTDAy7aW0qbAc5vwAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=f8241c9366f3122b400849aab6d90f09; _csrf=befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gACkHCQOAMt8XF2td9XbRYddSpAnfW5q%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '57788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540193127.017
+    'REQUEST_TIME' => 1540193127
+]
+2018-10-22 09:25:40 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2018-10-22 09:25:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'f8241c9366f3122b400849aab6d90f09'
+    '_csrf' => 'befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gACkHCQOAMt8XF2td9XbRYddSpAnfW5q\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W817dCfuKepZU9PRSGQtTAAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=f8241c9366f3122b400849aab6d90f09; _csrf=befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gACkHCQOAMt8XF2td9XbRYddSpAnfW5q%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '57790'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540193140.215
+    'REQUEST_TIME' => 1540193140
+]
+2018-10-22 09:49:25 [127.0.0.1][-][-][error][ReflectionException] ReflectionException: Class yii\gii\Module does not exist in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php:428
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('yii\\gii\\Module')
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\Module', Array, Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('gii')
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->__construct(Array)
+#11 {main}
+2018-10-22 09:49:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'paper-type/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'd5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => 'f8241c9366f3122b400849aab6d90f09'
+    '_csrf' => 'befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gACkHCQOAMt8XF2td9XbRYddSpAnfW5q\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'W82BBSfuKepZU9PRSGQtTQAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=f8241c9366f3122b400849aab6d90f09; _csrf=befa0748ba1ea3e19e6fe0813f0b2941b5a68416237b4fcb2cc93b18170a934ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gACkHCQOAMt8XF2td9XbRYddSpAnfW5q%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '57900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=paper-type%2Findex'
+    'REQUEST_URI' => '/basic/web/index.php?r=paper-type%2Findex'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1540194565.369
+    'REQUEST_TIME' => 1540194565
+]
