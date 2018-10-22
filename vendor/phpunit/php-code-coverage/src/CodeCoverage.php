@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianBergmann\CodeCoverage;
 
 use PHPUnit\Framework\TestCase;
@@ -143,12 +144,12 @@ class CodeCoverage
      */
     public function __construct(Driver $driver = null, Filter $filter = null)
     {
-        if ($filter === null) {
-            $filter = new Filter;
+        if ($driver === null) {
+            $driver = $this->selectDriver();
         }
 
-        if ($driver === null) {
-            $driver = $this->selectDriver($filter);
+        if ($filter === null) {
+            $filter = new Filter;
         }
 
         $this->driver = $driver;
@@ -197,14 +198,11 @@ class CodeCoverage
 
     /**
      * Returns the collected code coverage data.
-<<<<<<< HEAD
      * Set $raw = true to bypass all filters.
      *
      * @param bool $raw
      *
      * @return array
-=======
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
      */
     public function getData($raw = false)
     {
@@ -249,12 +247,8 @@ class CodeCoverage
     /**
      * Start collection of code coverage information.
      *
-<<<<<<< HEAD
      * @param mixed $id
      * @param bool  $clear
-=======
-     * @param PhptTestCase|string|TestCase $id
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
      *
      * @throws InvalidArgumentException
      */
@@ -1056,11 +1050,7 @@ class CodeCoverage
      *
      * @throws RuntimeException
      */
-<<<<<<< HEAD
     private function selectDriver()
-=======
-    private function selectDriver(Filter $filter): Driver
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     {
         $runtime = new Runtime;
 
@@ -1072,13 +1062,8 @@ class CodeCoverage
             return new HHVM;
         }
 
-<<<<<<< HEAD
         if ($runtime->isPHPDBG()) {
             return new PHPDBG;
-=======
-        if ($runtime->hasXdebug()) {
-            return new Xdebug($filter);
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
         }
 
         return new Xdebug;

@@ -828,15 +828,9 @@ TABLE;
     {
         $boxed = new TableStyle();
         $boxed
-<<<<<<< HEAD
             ->setHorizontalBorderChar('─')
             ->setVerticalBorderChar('│')
             ->setCrossingChar('┼')
-=======
-            ->setHorizontalBorderChars('─')
-            ->setVerticalBorderChars('│')
-            ->setCrossingChars('┼', '┌', '┬', '┐', '┤', '┘', '┴', '└', '├')
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
         ;
 
         $table = new Table($output = $this->getOutputStream());
@@ -853,7 +847,6 @@ TABLE;
 
         $expected =
             <<<TABLE
-<<<<<<< HEAD
 ┼───────────────┼───────────────┼─────────────────┼
 │ ISBN          │ Title         │ Author          │
 ┼───────────────┼───────────────┼─────────────────┼
@@ -861,15 +854,6 @@ TABLE;
 ┼───────────────┼───────────────┼─────────────────┼
 │ This value spans 3 columns.                     │
 ┼───────────────┼───────────────┼─────────────────┼
-=======
-┌───────────────┬───────────────┬─────────────────┐
-│ ISBN          │ Title         │ Author          │
-├───────────────┼───────────────┼─────────────────┤
-│ 99921-58-10-7 │ Divine Comedy │ Dante Alighieri │
-├───────────────┼───────────────┼─────────────────┤
-│ This value spans 3 columns.                     │
-└───────────────┴───────────────┴─────────────────┘
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
 
 TABLE;
 

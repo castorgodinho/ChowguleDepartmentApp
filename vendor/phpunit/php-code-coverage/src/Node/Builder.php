@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianBergmann\CodeCoverage\Node;
 
 use SebastianBergmann\CodeCoverage\CodeCoverage;
@@ -49,7 +50,7 @@ class Builder
             if (\substr($key, -2) == '/f') {
                 $key = \substr($key, 0, -2);
 
-                if (\file_exists($root->getPath() . \DIRECTORY_SEPARATOR . $key)) {
+                if (\file_exists($root->getPath() . DIRECTORY_SEPARATOR . $key)) {
                     $root->addFile($key, $value, $tests, $cacheTokens);
                 }
             } else {
@@ -193,16 +194,12 @@ class Builder
             // strip phar:// prefixes
             if (\strpos($paths[$i], 'phar://') === 0) {
                 $paths[$i] = \substr($paths[$i], 7);
-<<<<<<< HEAD
                 $paths[$i] = \strtr($paths[$i], '/', DIRECTORY_SEPARATOR);
-=======
-                $paths[$i] = \str_replace('/', \DIRECTORY_SEPARATOR, $paths[$i]);
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
             }
-            $paths[$i] = \explode(\DIRECTORY_SEPARATOR, $paths[$i]);
+            $paths[$i] = \explode(DIRECTORY_SEPARATOR, $paths[$i]);
 
             if (empty($paths[$i][0])) {
-                $paths[$i][0] = \DIRECTORY_SEPARATOR;
+                $paths[$i][0] = DIRECTORY_SEPARATOR;
             }
         }
 
@@ -223,8 +220,8 @@ class Builder
             if (!$done) {
                 $commonPath .= $paths[0][0];
 
-                if ($paths[0][0] != \DIRECTORY_SEPARATOR) {
-                    $commonPath .= \DIRECTORY_SEPARATOR;
+                if ($paths[0][0] != DIRECTORY_SEPARATOR) {
+                    $commonPath .= DIRECTORY_SEPARATOR;
                 }
 
                 for ($i = 0; $i < $max; $i++) {

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianBergmann\CodeCoverage\Report\Html;
 
 use SebastianBergmann\CodeCoverage\Node\AbstractNode;
@@ -143,7 +144,7 @@ abstract class Renderer
                 'classes_bar'            => $classesBar,
                 'classes_tested_percent' => isset($data['testedClassesPercentAsString']) ? $data['testedClassesPercentAsString'] : '',
                 'classes_level'          => $classesLevel,
-                'classes_number'         => $classesNumber,
+                'classes_number'         => $classesNumber
             ]
         );
 
@@ -167,7 +168,7 @@ abstract class Renderer
                 'runtime'          => $this->getRuntimeString(),
                 'generator'        => $this->generator,
                 'low_upper_bound'  => $this->lowUpperBound,
-                'high_lower_bound' => $this->highLowerBound,
+                'high_lower_bound' => $this->highLowerBound
             ]
         );
     }
@@ -204,12 +205,12 @@ abstract class Renderer
     protected function getActiveBreadcrumb(AbstractNode $node)
     {
         $buffer = \sprintf(
-            '         <li class="breadcrumb-item active">%s</li>' . "\n",
+            '        <li class="active">%s</li>' . "\n",
             $node->getName()
         );
 
         if ($node instanceof DirectoryNode) {
-            $buffer .= '         <li class="breadcrumb-item">(<a href="dashboard.html">Dashboard</a>)</li>' . "\n";
+            $buffer .= '        <li>(<a href="dashboard.html">Dashboard</a>)</li>' . "\n";
         }
 
         return $buffer;
@@ -218,7 +219,7 @@ abstract class Renderer
     protected function getInactiveBreadcrumb(AbstractNode $node, $pathToRoot)
     {
         return \sprintf(
-            '         <li class="breadcrumb-item"><a href="%sindex.html">%s</a></li>' . "\n",
+            '        <li><a href="%sindex.html">%s</a></li>' . "\n",
             $pathToRoot,
             $node->getName()
         );

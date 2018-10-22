@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianBergmann\CodeCoverage\Report;
 
 use SebastianBergmann\CodeCoverage\CodeCoverage;
@@ -97,7 +98,7 @@ class Clover
                         'crap'        => $method['crap'],
                         'type'        => 'method',
                         'visibility'  => $method['visibility'],
-                        'name'        => $methodName,
+                        'name'        => $methodName
                     ];
                 }
 
@@ -158,7 +159,7 @@ class Clover
                 }
 
                 $lines[$line] = [
-                    'count' => \count($data), 'type' => 'stmt',
+                    'count' => \count($data), 'type' => 'stmt'
                 ];
             }
 

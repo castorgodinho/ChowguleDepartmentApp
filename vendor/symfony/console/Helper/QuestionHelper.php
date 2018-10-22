@@ -18,7 +18,6 @@ use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\StreamableInputInterface;
 use Symfony\Component\Console\Output\ConsoleOutputInterface;
-use Symfony\Component\Console\Output\ConsoleSectionOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\Question;
@@ -163,10 +162,6 @@ class QuestionHelper extends Helper
             }
         } else {
             $ret = trim($this->autocomplete($output, $question, $inputStream, \is_array($autocomplete) ? $autocomplete : iterator_to_array($autocomplete, false)));
-        }
-
-        if ($output instanceof ConsoleSectionOutput) {
-            $output->addContent($ret);
         }
 
         $ret = \strlen($ret) > 0 ? $ret : $question->getDefault();

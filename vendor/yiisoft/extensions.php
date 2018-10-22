@@ -57,18 +57,6 @@ return array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii/src',
     ),
   ),
-<<<<<<< HEAD
-=======
-  'kartik-v/yii2-mpdf' => 
-  array (
-    'name' => 'kartik-v/yii2-mpdf',
-    'version' => '1.0.5.0',
-    'alias' => 
-    array (
-      '@kartik/mpdf' => $vendorDir . '/kartik-v/yii2-mpdf/src',
-    ),
-  ),
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
   'kartik-v/yii2-krajee-base' => 
   array (
     'name' => 'kartik-v/yii2-krajee-base',
@@ -134,19 +122,11 @@ return array (
   ),
   'yiisoft/yii2-jui' => 
   array (
-<<<<<<< HEAD
     'name' => 'yiisoft/yii2-jui',
     'version' => '2.0.7.0',
     'alias' => 
     array (
       '@yii/jui' => $vendorDir . '/yiisoft/yii2-jui',
-=======
-    'name' => 'kartik-v/yii2-export',
-    'version' => '1.3.6.0',
-    'alias' => 
-    array (
-      '@kartik/export' => $vendorDir . '/kartik-v/yii2-export/src',
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     ),
   ),
   'kartik-v/yii2-mpdf' => 

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianBergmann\CodeCoverage\Report\Html;
 
 use SebastianBergmann\CodeCoverage\Node\AbstractNode;
@@ -23,11 +24,7 @@ class Dashboard extends Renderer
      *
      * @throws \InvalidArgumentException
      */
-<<<<<<< HEAD
     public function render(DirectoryNode $node, $file)
-=======
-    public function render(DirectoryNode $node, string $file): void
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     {
         $classes  = $node->getClassesAndTraits();
         $template = new \Text_Template(
@@ -53,7 +50,7 @@ class Dashboard extends Renderer
                 'complexity_class'              => $complexity['class'],
                 'complexity_method'             => $complexity['method'],
                 'class_coverage_distribution'   => $coverageDistribution['class'],
-                'method_coverage_distribution'  => $coverageDistribution['method'],
+                'method_coverage_distribution'  => $coverageDistribution['method']
             ]
         );
 
@@ -85,7 +82,7 @@ class Dashboard extends Renderer
                         '<a href="%s">%s</a>',
                         \str_replace($baseLink, '', $method['link']),
                         $methodName
-                    ),
+                    )
                 ];
             }
 
@@ -96,13 +93,13 @@ class Dashboard extends Renderer
                     '<a href="%s">%s</a>',
                     \str_replace($baseLink, '', $class['link']),
                     $className
-                ),
+                )
             ];
         }
 
         return [
             'class'  => \json_encode($result['class']),
-            'method' => \json_encode($result['method']),
+            'method' => \json_encode($result['method'])
         ];
     }
 
@@ -128,7 +125,7 @@ class Dashboard extends Renderer
                 '70-80%'  => 0,
                 '80-90%'  => 0,
                 '90-100%' => 0,
-                '100%'    => 0,
+                '100%'    => 0
             ],
             'method' => [
                 '0%'      => 0,
@@ -142,8 +139,8 @@ class Dashboard extends Renderer
                 '70-80%'  => 0,
                 '80-90%'  => 0,
                 '90-100%' => 0,
-                '100%'    => 0,
-            ],
+                '100%'    => 0
+            ]
         ];
 
         foreach ($classes as $class) {
@@ -172,7 +169,7 @@ class Dashboard extends Renderer
 
         return [
             'class'  => \json_encode(\array_values($result['class'])),
-            'method' => \json_encode(\array_values($result['method'])),
+            'method' => \json_encode(\array_values($result['method']))
         ];
     }
 
@@ -299,8 +296,8 @@ class Dashboard extends Renderer
     protected function getActiveBreadcrumb(AbstractNode $node)
     {
         return \sprintf(
-            '         <li class="breadcrumb-item"><a href="index.html">%s</a></li>' . "\n" .
-            '         <li class="breadcrumb-item active">(Dashboard)</li>' . "\n",
+            '        <li><a href="index.html">%s</a></li>' . "\n" .
+            '        <li class="active">(Dashboard)</li>' . "\n",
             $node->getName()
         );
     }

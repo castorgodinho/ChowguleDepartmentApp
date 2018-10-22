@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianBergmann\CodeCoverage\Report\Xml;
 
 use SebastianBergmann\CodeCoverage\CodeCoverage;
@@ -50,13 +51,8 @@ class Facade
      */
     public function process(CodeCoverage $coverage, $target)
     {
-<<<<<<< HEAD
         if (\substr($target, -1, 1) != DIRECTORY_SEPARATOR) {
             $target .= DIRECTORY_SEPARATOR;
-=======
-        if (\substr($target, -1, 1) !== \DIRECTORY_SEPARATOR) {
-            $target .= \DIRECTORY_SEPARATOR;
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
         }
 
         $this->target = $target;

@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianBergmann\CodeCoverage;
 
 /**
@@ -19,6 +20,9 @@ class UnintentionallyCoveredCodeException extends RuntimeException
      */
     private $unintentionallyCoveredUnits = [];
 
+    /**
+     * @param array $unintentionallyCoveredUnits
+     */
     public function __construct(array $unintentionallyCoveredUnits)
     {
         $this->unintentionallyCoveredUnits = $unintentionallyCoveredUnits;
@@ -26,26 +30,18 @@ class UnintentionallyCoveredCodeException extends RuntimeException
         parent::__construct($this->toString());
     }
 
-<<<<<<< HEAD
     /**
      * @return array
      */
     public function getUnintentionallyCoveredUnits()
-=======
-    public function getUnintentionallyCoveredUnits(): array
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     {
         return $this->unintentionallyCoveredUnits;
     }
 
-<<<<<<< HEAD
     /**
      * @return string
      */
     private function toString()
-=======
-    private function toString(): string
->>>>>>> 73afd074c7d7331c5955fbcccf9425080eb84f34
     {
         $message = '';
 
