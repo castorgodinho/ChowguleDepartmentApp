@@ -23,7 +23,8 @@
         "yiisoft/yii2-jui": "~2.0.0",
         "kartik-v/yii2-grid": "@dev",
         "kartik-v/yii2-export": "*",
-        "yiister/yii2-gentelella": "~1.0"        
+        "yiister/yii2-gentelella": "~1.0",
+        "kartik-v/mpdf": "^1.0"        
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

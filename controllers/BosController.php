@@ -81,6 +81,15 @@ class BosController extends Controller
         if(!Yii::$app->user->isGuest){
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            if (Yii::$app->request->isPost) {
+                $model->minutes = UploadedFile::getInstances($model, 'minutes');
+    
+                if ($model->minutes && $model->validate()) {
+                    foreach ($model->minutes as $minutes) {
+                        $minutes->saveAs('uploads/' . $minutes->baseName . '.' . $minutes->extension);
+                    }
+                }
+            }
             return $this->redirect(['view', 'id' => $model->bos_id]);
         }
 
