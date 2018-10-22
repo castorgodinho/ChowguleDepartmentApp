@@ -21,16 +21,17 @@ use app\models\AcademicYear;
         ['prompt'=>'select ']
     ) ?>
 
-    <?= $form->field($model, 'student_id')->dropDownList(
-        ArrayHelper::map(Student::find()->where(['status' => 1])->all(),'student_id','name'),
-        ['prompt'=>'select ']
-    ) ?>
-
     <?= $form->field($model, 'academic_year_id')->dropDownList(
         ArrayHelper::map(AcademicYear::find()->orderBy(['year' => SORT_DESC ])->all(),'academic_year_id','year')
         
     ) ?>
+        <?= $form->field($student, 'name')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($student, 'roll_no')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($student, 'phone_no')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($student, 'email')->textInput(['maxlength' => true]) ?> 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

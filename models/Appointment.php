@@ -33,7 +33,7 @@ class Appointment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['date_of_joining'], 'required'],
+            [['date_of_joining','Type'], 'required'],
             [['date_of_joining', 'date_of_leaving', 'created_at', 'updated_at'], 'safe'],
             [['faculty_id'], 'integer'],
             [['status'], 'string', 'max' => 1],
@@ -51,6 +51,7 @@ class Appointment extends \yii\db\ActiveRecord
             'date_of_joining' => 'Date Of Joining',
             'date_of_leaving' => 'Date Of Leaving',
             'faculty_id' => 'Faculty',
+            'Type'=>'Type',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'status' => 'Status',

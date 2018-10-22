@@ -17,14 +17,16 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             //'revision_id',
-            'syllabus_file:ntext',
+            //'syllabus_file:ntext',
             'syllabus_date',
             'paper.name',
             //'created_at',
             //'updated_at',
             //'status',
             'academicYear.year',
+           
         ],
     ]) ?>
+    <a class="btn btn-default" href='<?= $model->syllabus_file ?>'>Download Syllabus</a>
 
 </div>

@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use app\models\PaperType;
+use app\models\Paper;
 use app\models\SearchPaperType;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -37,6 +38,10 @@ class PaperTypeController extends Controller
     {
         if(!Yii::$app->user->isGuest){
             $searchModel = new SearchPaperType();
+            if(Yii::$app->request->get('from') && Yii::$app->request->get('to')){
+                $searchModel->to = Yii::$app->request->get('to');
+                $searchModel->from = Yii::$app->request->get('from');
+            }
             $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
             return $this->render('index', [
@@ -74,13 +79,21 @@ class PaperTypeController extends Controller
     public function actionCreate()
     {
         $model = new PaperType();
+        $paper = new Paper();
         if(!Yii::$app->user->isGuest){
-            if ($model->load(Yii::$app->request->post()) && $model->save(false)) {
+            if ($model->load(Yii::$app->request->post()) && $paper->load(Yii::$app->request->post())){
+                $paper->save(false) ;
+                $model->paper_id =  $paper->paper_id;
+            
+                $model->save(false) ;
+                
+               
                 return $this->redirect(['view', 'id' => $model->paper_type_id]);
             }
 
             return $this->render('create', [
                 'model' => $model,
+                'paper' => $paper,
             ]);
         }else{
             throw new \yii\web\ForbiddenHttpException;

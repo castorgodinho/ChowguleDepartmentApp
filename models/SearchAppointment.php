@@ -19,7 +19,7 @@ class SearchAppointment extends Appointment
     {
         return [
             [['appointment_id', ], 'integer'],
-            [['date_of_joining', 'date_of_leaving','faculty_id', 'created_at', 'updated_at', 'status'], 'safe'],
+            [['date_of_joining', 'date_of_leaving','faculty_id','Type', 'created_at', 'updated_at', 'status'], 'safe'],
         ];
     }
 
@@ -56,6 +56,7 @@ class SearchAppointment extends Appointment
             return $dataProvider;
         }
         $query->joinwith('faculty');
+       
 
         // grid filtering conditions
         $query->andFilterWhere([
@@ -63,6 +64,7 @@ class SearchAppointment extends Appointment
             //'date_of_joining' => $this->date_of_joining,
             //'date_of_leaving' => $this->date_of_leaving,
             //'faculty_id' => $this->faculty_id,
+            'Type'=>$this->Type,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'appointment.status'=>1,

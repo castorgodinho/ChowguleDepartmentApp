@@ -1,0 +1,351 @@
+a:12:{s:6:"config";s:3753:"a:5:{s:10:"phpVersion";s:5:"7.2.7";s:10:"yiiVersion";s:8:"2.0.15.1";s:11:"application";a:8:{s:3:"yii";s:8:"2.0.15.1";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:0;}s:3:"php";a:5:{s:7:"version";s:5:"7.2.7";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:16:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:55:"/opt/lampp/htdocs/basic/vendor/yiisoft/yii2-swiftmailer";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.8.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:57:"/opt/lampp/htdocs/basic/vendor/yiisoft/yii2-bootstrap/src";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.0.13.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:49:"/opt/lampp/htdocs/basic/vendor/yiisoft/yii2-debug";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:49:"/opt/lampp/htdocs/basic/vendor/yiisoft/yii2-faker";}}s:31:"2amigos/yii2-date-picker-widget";a:3:{s:4:"name";s:31:"2amigos/yii2-date-picker-widget";s:7:"version";s:7:"1.0.7.0";s:5:"alias";a:1:{s:21:"@dosamigos/datepicker";s:66:"/opt/lampp/htdocs/basic/vendor/2amigos/yii2-date-picker-widget/src";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:51:"/opt/lampp/htdocs/basic/vendor/yiisoft/yii2-gii/src";}}s:16:"yiisoft/yii2-jui";a:3:{s:4:"name";s:16:"yiisoft/yii2-jui";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:8:"@yii/jui";s:47:"/opt/lampp/htdocs/basic/vendor/yiisoft/yii2-jui";}}s:25:"kartik-v/yii2-krajee-base";a:3:{s:4:"name";s:25:"kartik-v/yii2-krajee-base";s:7:"version";s:7:"1.9.4.0";s:5:"alias";a:1:{s:12:"@kartik/base";s:60:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-krajee-base/src";}}s:20:"kartik-v/yii2-dialog";a:3:{s:4:"name";s:20:"kartik-v/yii2-dialog";s:7:"version";s:7:"1.0.4.0";s:5:"alias";a:1:{s:14:"@kartik/dialog";s:55:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-dialog/src";}}s:18:"kartik-v/yii2-grid";a:3:{s:4:"name";s:18:"kartik-v/yii2-grid";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:12:"@kartik/grid";s:53:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-grid/src";}}s:18:"kartik-v/yii2-mpdf";a:3:{s:4:"name";s:18:"kartik-v/yii2-mpdf";s:7:"version";s:7:"1.0.1.0";s:5:"alias";a:1:{s:12:"@kartik/mpdf";s:49:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-mpdf";}}s:28:"kartik-v/yii2-widget-select2";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-select2";s:7:"version";s:7:"2.1.3.0";s:5:"alias";a:1:{s:15:"@kartik/select2";s:63:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-widget-select2/src";}}s:31:"kartik-v/yii2-widget-activeform";a:3:{s:4:"name";s:31:"kartik-v/yii2-widget-activeform";s:7:"version";s:7:"1.5.2.0";s:5:"alias";a:1:{s:12:"@kartik/form";s:66:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-widget-activeform/src";}}s:22:"kartik-v/yii2-sortable";a:3:{s:4:"name";s:22:"kartik-v/yii2-sortable";s:7:"version";s:7:"1.2.1.0";s:5:"alias";a:1:{s:16:"@kartik/sortable";s:57:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-sortable/src";}}s:22:"kartik-v/yii2-dynagrid";a:3:{s:4:"name";s:22:"kartik-v/yii2-dynagrid";s:7:"version";s:7:"1.5.0.0";s:5:"alias";a:1:{s:16:"@kartik/dynagrid";s:57:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-dynagrid/src";}}s:20:"kartik-v/yii2-export";a:3:{s:4:"name";s:20:"kartik-v/yii2-export";s:7:"version";s:7:"1.2.8.0";s:5:"alias";a:1:{s:14:"@kartik/export";s:51:"/opt/lampp/htdocs/basic/vendor/kartik-v/yii2-export";}}}}";s:7:"request";s:4673:"a:15:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:9:{s:4:"host";s:9:"localhost";s:10:"user-agent";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0";s:6:"accept";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:15:"accept-language";s:14:"en-US,en;q=0.5";s:15:"accept-encoding";s:13:"gzip, deflate";s:7:"referer";s:57:"http://localhost/basic/web/index.php?r=paper-type%2Findex";s:6:"cookie";s:410:"_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D";s:10:"connection";s:10:"keep-alive";s:25:"upgrade-insecure-requests";s:1:"1";}s:15:"responseHeaders";a:9:{s:12:"X-Powered-By";s:9:"PHP/7.2.7";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:35:"no-store, no-cache, must-revalidate";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";s:11:"X-Debug-Tag";s:13:"5bc18584f3833";s:16:"X-Debug-Duration";s:3:"111";s:12:"X-Debug-Link";s:63:"/basic/web/index.php?r=debug%2Fdefault%2Fview&tag=5bc18584f3833";s:10:"Set-Cookie";s:266:"_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; expires=Mon, 12-Nov-2018 05:41:24 GMT; Max-Age=2591999; path=/; HttpOnly";}s:5:"route";s:15:"paper-type/view";s:6:"action";s:49:"app\controllers\PaperTypeController::actionView()";s:12:"actionParams";a:1:{i:0;s:1:"7";}s:7:"general";a:5:{s:6:"method";s:3:"GET";s:6:"isAjax";b:0;s:6:"isPjax";b:0;s:7:"isFlash";b:0;s:18:"isSecureConnection";b:0;}s:11:"requestBody";a:0:{}s:6:"SERVER";a:34:{s:9:"UNIQUE_ID";s:27:"W8GFhIckFKMSjVkw4j79-AAAAAw";s:9:"HTTP_HOST";s:9:"localhost";s:15:"HTTP_USER_AGENT";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.5";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:12:"HTTP_REFERER";s:57:"http://localhost/basic/web/index.php?r=paper-type%2Findex";s:11:"HTTP_COOKIE";s:410:"_identity=d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=c3be19915a76f2cc1156e09e824f26c7; _csrf=7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rCOjs5PzP9AvXUHAghXGshZO1gYShaz6%22%3B%7D";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:4:"PATH";s:70:"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin";s:15:"LD_LIBRARY_PATH";s:29:"/opt/lampp/lib:/opt/lampp/lib";s:16:"SERVER_SIGNATURE";s:0:"";s:15:"SERVER_SOFTWARE";s:77:"Apache/2.4.33 (Unix) OpenSSL/1.0.2o PHP/7.2.7 mod_perl/2.0.8-dev Perl/v5.16.3";s:11:"SERVER_NAME";s:9:"localhost";s:11:"SERVER_ADDR";s:9:"127.0.0.1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:13:"DOCUMENT_ROOT";s:17:"/opt/lampp/htdocs";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:17:"/opt/lampp/htdocs";s:12:"SERVER_ADMIN";s:15:"you@example.com";s:15:"SCRIPT_FILENAME";s:37:"/opt/lampp/htdocs/basic/web/index.php";s:11:"REMOTE_PORT";s:5:"40392";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:24:"r=paper-type%2Fview&id=7";s:11:"REQUEST_URI";s:45:"/basic/web/index.php?r=paper-type%2Fview&id=7";s:11:"SCRIPT_NAME";s:20:"/basic/web/index.php";s:8:"PHP_SELF";s:20:"/basic/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1539409284.9630000591278076171875;s:12:"REQUEST_TIME";i:1539409284;}s:3:"GET";a:2:{s:1:"r";s:15:"paper-type/view";s:2:"id";s:1:"7";}s:4:"POST";a:0:{}s:6:"COOKIE";a:3:{s:9:"_identity";s:130:"d5645bbfcab49175617edb191d7e3ea6a1fc959aa5ff60336aeb34ce4b2c7b68a:2:{i:0;s:9:"_identity";i:1;s:28:"["100","test100key",2592000]";}";s:9:"PHPSESSID";s:32:"c3be19915a76f2cc1156e09e824f26c7";s:5:"_csrf";s:130:"7f8cb792efe5878a1b2801d398baa7c4dda38daefecdf7ed8b00363a863036a6a:2:{i:0;s:5:"_csrf";i:1;s:32:"rCOjs5PzP9AvXUHAghXGshZO1gYShaz6";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:2:{s:7:"__flash";a:0:{}s:4:"__id";s:3:"100";}}";s:3:"log";s:5672:"a:1:{s:8:"messages";a:17:{i:0;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1539409284.9900228977203369140625;i:4;a:0:{}i:5;i:3071328;}i:1;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `paper_type`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0064690113067626953125;i:4;a:0:{}i:5;i:5197776;}i:2;a:6:{i:0;s:61:"Opening DB connection: mysql:host=localhost;dbname=department";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1539409285.0064849853515625;i:4;a:0:{}i:5;i:5198328;}i:7;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper_type' AND kcu.table_name = 'paper_type'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0084209442138671875;i:4;a:0:{}i:5;i:5244128;}i:10;a:6:{i:0;s:52:"SELECT * FROM `paper_type` WHERE `paper_type_id`='7'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0113179683685302734375;i:4;a:0:{}i:5;i:5568520;}i:13;a:6:{i:0;s:40:"SELECT * FROM `paper` WHERE `paper_id`=3";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.054399013519287109375;i:4;a:0:{}i:5;i:6081824;}i:16;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `paper`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0551049709320068359375;i:4;a:0:{}i:5;i:6083512;}i:19;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper' AND kcu.table_name = 'paper'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0568370819091796875;i:4;a:0:{}i:5;i:6099112;}i:22;a:6:{i:0;s:44:"SELECT * FROM `program` WHERE `program_id`=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0584499835968017578125;i:4;a:0:{}i:5;i:6128856;}i:25;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `program`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0591270923614501953125;i:4;a:0:{}i:5;i:6130392;}i:28;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'program' AND kcu.table_name = 'program'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.060472965240478515625;i:4;a:0:{}i:5;i:6140624;}i:31;a:6:{i:0;s:38:"SELECT * FROM `type` WHERE `type_id`=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0620250701904296875;i:4;a:0:{}i:5;i:6229128;}i:34;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `type`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0626409053802490234375;i:4;a:0:{}i:5;i:6231712;}i:37;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'type' AND kcu.table_name = 'type'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.063930988311767578125;i:4;a:0:{}i:5;i:6240456;}i:40;a:6:{i:0;s:56:"SELECT * FROM `academic_year` WHERE `academic_year_id`=2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0655229091644287109375;i:4;a:0:{}i:5;i:6275120;}i:43;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `academic_year`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0661580562591552734375;i:4;a:0:{}i:5;i:6276376;}i:46;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'academic_year' AND kcu.table_name = 'academic_year'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0674049854278564453125;i:4;a:0:{}i:5;i:6284712;}}}";s:9:"profiling";s:11129:"a:3:{s:6:"memory";i:6959656;s:4:"time";d:0.1116580963134765625;s:8:"messages";a:32:{i:3;a:6:{i:0;s:61:"Opening DB connection: mysql:host=localhost;dbname=department";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1539409285.0064868927001953125;i:4;a:0:{}i:5;i:5198704;}i:4;a:6:{i:0;s:61:"Opening DB connection: mysql:host=localhost;dbname=department";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1539409285.007236957550048828125;i:4;a:0:{}i:5;i:5214168;}i:5;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `paper_type`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.00724697113037109375;i:4;a:0:{}i:5;i:5215160;}i:6;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `paper_type`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0079610347747802734375;i:4;a:0:{}i:5;i:5221328;}i:8;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper_type' AND kcu.table_name = 'paper_type'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0084350109100341796875;i:4;a:0:{}i:5;i:5246104;}i:9;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper_type' AND kcu.table_name = 'paper_type'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0088870525360107421875;i:4;a:0:{}i:5;i:5249816;}i:11;a:6:{i:0;s:52:"SELECT * FROM `paper_type` WHERE `paper_type_id`='7'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.011332035064697265625;i:4;a:0:{}i:5;i:5569632;}i:12;a:6:{i:0;s:52:"SELECT * FROM `paper_type` WHERE `paper_type_id`='7'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0115649700164794921875;i:4;a:0:{}i:5;i:5570960;}i:14;a:6:{i:0;s:40:"SELECT * FROM `paper` WHERE `paper_id`=3";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0544300079345703125;i:4;a:0:{}i:5;i:6082896;}i:15;a:6:{i:0;s:40:"SELECT * FROM `paper` WHERE `paper_id`=3";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0549919605255126953125;i:4;a:0:{}i:5;i:6084528;}i:17;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `paper`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0551249980926513671875;i:4;a:0:{}i:5;i:6085128;}i:18;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `paper`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.056274890899658203125;i:4;a:0:{}i:5;i:6094328;}i:20;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper' AND kcu.table_name = 'paper'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0568640232086181640625;i:4;a:0:{}i:5;i:6101088;}i:21;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper' AND kcu.table_name = 'paper'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0576360225677490234375;i:4;a:0:{}i:5;i:6103304;}i:23;a:6:{i:0;s:44:"SELECT * FROM `program` WHERE `program_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0584781169891357421875;i:4;a:0:{}i:5;i:6129928;}i:24;a:6:{i:0;s:44:"SELECT * FROM `program` WHERE `program_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.05902099609375;i:4;a:0:{}i:5;i:6131344;}i:26;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `program`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.05914592742919921875;i:4;a:0:{}i:5;i:6131384;}i:27;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `program`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.060245037078857421875;i:4;a:0:{}i:5;i:6138696;}i:29;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'program' AND kcu.table_name = 'program'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.060513019561767578125;i:4;a:0:{}i:5;i:6142600;}i:30;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'program' AND kcu.table_name = 'program'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.061274051666259765625;i:4;a:0:{}i:5;i:6144824;}i:32;a:6:{i:0;s:38:"SELECT * FROM `type` WHERE `type_id`=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0620529651641845703125;i:4;a:0:{}i:5;i:6230200;}i:33;a:6:{i:0;s:38:"SELECT * FROM `type` WHERE `type_id`=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0625350475311279296875;i:4;a:0:{}i:5;i:6232568;}i:35;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `type`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0626599788665771484375;i:4;a:0:{}i:5;i:6232688;}i:36;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `type`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.063746929168701171875;i:4;a:0:{}i:5;i:6237000;}i:38;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'type' AND kcu.table_name = 'type'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0639560222625732421875;i:4;a:0:{}i:5;i:6242432;}i:39;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'type' AND kcu.table_name = 'type'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.064670085906982421875;i:4;a:0:{}i:5;i:6243808;}i:41;a:6:{i:0;s:56:"SELECT * FROM `academic_year` WHERE `academic_year_id`=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0655500888824462890625;i:4;a:0:{}i:5;i:6276224;}i:42;a:6:{i:0;s:56:"SELECT * FROM `academic_year` WHERE `academic_year_id`=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.066051006317138671875;i:4;a:0:{}i:5;i:6277256;}i:44;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `academic_year`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0661780834197998046875;i:4;a:0:{}i:5;i:6277368;}i:45;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `academic_year`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0672409534454345703125;i:4;a:0:{}i:5;i:6280712;}i:47;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'academic_year' AND kcu.table_name = 'academic_year'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.067430019378662109375;i:4;a:0:{}i:5;i:6286688;}i:48;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'academic_year' AND kcu.table_name = 'academic_year'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.068130970001220703125;i:4;a:0:{}i:5;i:6288064;}}}";s:2:"db";s:10693:"a:1:{s:8:"messages";a:30:{i:5;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `paper_type`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.00724697113037109375;i:4;a:0:{}i:5;i:5215160;}i:6;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `paper_type`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0079610347747802734375;i:4;a:0:{}i:5;i:5221328;}i:8;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper_type' AND kcu.table_name = 'paper_type'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0084350109100341796875;i:4;a:0:{}i:5;i:5246104;}i:9;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper_type' AND kcu.table_name = 'paper_type'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0088870525360107421875;i:4;a:0:{}i:5;i:5249816;}i:11;a:6:{i:0;s:52:"SELECT * FROM `paper_type` WHERE `paper_type_id`='7'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.011332035064697265625;i:4;a:0:{}i:5;i:5569632;}i:12;a:6:{i:0;s:52:"SELECT * FROM `paper_type` WHERE `paper_type_id`='7'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0115649700164794921875;i:4;a:0:{}i:5;i:5570960;}i:14;a:6:{i:0;s:40:"SELECT * FROM `paper` WHERE `paper_id`=3";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0544300079345703125;i:4;a:0:{}i:5;i:6082896;}i:15;a:6:{i:0;s:40:"SELECT * FROM `paper` WHERE `paper_id`=3";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0549919605255126953125;i:4;a:0:{}i:5;i:6084528;}i:17;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `paper`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0551249980926513671875;i:4;a:0:{}i:5;i:6085128;}i:18;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `paper`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.056274890899658203125;i:4;a:0:{}i:5;i:6094328;}i:20;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper' AND kcu.table_name = 'paper'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0568640232086181640625;i:4;a:0:{}i:5;i:6101088;}i:21;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'paper' AND kcu.table_name = 'paper'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0576360225677490234375;i:4;a:0:{}i:5;i:6103304;}i:23;a:6:{i:0;s:44:"SELECT * FROM `program` WHERE `program_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0584781169891357421875;i:4;a:0:{}i:5;i:6129928;}i:24;a:6:{i:0;s:44:"SELECT * FROM `program` WHERE `program_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.05902099609375;i:4;a:0:{}i:5;i:6131344;}i:26;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `program`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.05914592742919921875;i:4;a:0:{}i:5;i:6131384;}i:27;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `program`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.060245037078857421875;i:4;a:0:{}i:5;i:6138696;}i:29;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'program' AND kcu.table_name = 'program'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.060513019561767578125;i:4;a:0:{}i:5;i:6142600;}i:30;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'program' AND kcu.table_name = 'program'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.061274051666259765625;i:4;a:0:{}i:5;i:6144824;}i:32;a:6:{i:0;s:38:"SELECT * FROM `type` WHERE `type_id`=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0620529651641845703125;i:4;a:0:{}i:5;i:6230200;}i:33;a:6:{i:0;s:38:"SELECT * FROM `type` WHERE `type_id`=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0625350475311279296875;i:4;a:0:{}i:5;i:6232568;}i:35;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `type`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0626599788665771484375;i:4;a:0:{}i:5;i:6232688;}i:36;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `type`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.063746929168701171875;i:4;a:0:{}i:5;i:6237000;}i:38;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'type' AND kcu.table_name = 'type'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0639560222625732421875;i:4;a:0:{}i:5;i:6242432;}i:39;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'type' AND kcu.table_name = 'type'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.064670085906982421875;i:4;a:0:{}i:5;i:6243808;}i:41;a:6:{i:0;s:56:"SELECT * FROM `academic_year` WHERE `academic_year_id`=2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0655500888824462890625;i:4;a:0:{}i:5;i:6276224;}i:42;a:6:{i:0;s:56:"SELECT * FROM `academic_year` WHERE `academic_year_id`=2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.066051006317138671875;i:4;a:0:{}i:5;i:6277256;}i:44;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `academic_year`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0661780834197998046875;i:4;a:0:{}i:5;i:6277368;}i:45;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `academic_year`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.0672409534454345703125;i:4;a:0:{}i:5;i:6280712;}i:47;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'academic_year' AND kcu.table_name = 'academic_year'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.067430019378662109375;i:4;a:0:{}i:5;i:6286688;}i:48;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'academic_year' AND kcu.table_name = 'academic_year'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1539409285.068130970001220703125;i:4;a:0:{}i:5;i:6288064;}}}";s:6:"assets";s:1984:"a:5:{s:19:"app\assets\AppAsset";a:9:{s:8:"basePath";s:27:"/opt/lampp/htdocs/basic/web";s:7:"baseUrl";s:10:"/basic/web";s:3:"css";a:1:{i:0;s:12:"css/site.css";}s:2:"js";a:0:{}s:7:"depends";a:2:{i:0;s:16:"yii\web\YiiAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";}s:10:"sourcePath";N;s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\web\YiiAsset";a:9:{s:10:"sourcePath";s:50:"/opt/lampp/htdocs/basic/vendor/yiisoft/yii2/assets";s:2:"js";a:1:{i:0;s:6:"yii.js";}s:7:"depends";a:1:{i:0;s:19:"yii\web\JqueryAsset";}s:8:"basePath";s:43:"/opt/lampp/htdocs/basic/web/assets/86abf999";s:7:"baseUrl";s:26:"/basic/web/assets/86abf999";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:19:"yii\web\JqueryAsset";a:9:{s:10:"sourcePath";s:54:"/opt/lampp/htdocs/basic/vendor/bower-asset/jquery/dist";s:2:"js";a:1:{i:0;s:9:"jquery.js";}s:8:"basePath";s:43:"/opt/lampp/htdocs/basic/web/assets/47542ec2";s:7:"baseUrl";s:26:"/basic/web/assets/47542ec2";s:7:"depends";a:0:{}s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:28:"yii\bootstrap\BootstrapAsset";a:9:{s:10:"sourcePath";s:57:"/opt/lampp/htdocs/basic/vendor/bower-asset/bootstrap/dist";s:3:"css";a:1:{i:0;s:17:"css/bootstrap.css";}s:8:"basePath";s:43:"/opt/lampp/htdocs/basic/web/assets/e5cff6f0";s:7:"baseUrl";s:26:"/basic/web/assets/e5cff6f0";s:7:"depends";a:0:{}s:2:"js";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:34:"yii\bootstrap\BootstrapPluginAsset";a:9:{s:10:"sourcePath";s:57:"/opt/lampp/htdocs/basic/vendor/bower-asset/bootstrap/dist";s:2:"js";a:1:{i:0;s:15:"js/bootstrap.js";}s:7:"depends";a:2:{i:0;s:19:"yii\web\JqueryAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";}s:8:"basePath";s:43:"/opt/lampp/htdocs/basic/web/assets/e5cff6f0";s:7:"baseUrl";s:26:"/basic/web/assets/e5cff6f0";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:122:"a:3:{s:5:"start";d:1539409284.972261905670166015625;s:3:"end";d:1539409285.0842249393463134765625;s:6:"memory";i:6959656;}";s:4:"user";s:269:"a:5:{s:2:"id";s:3:"100";s:8:"identity";a:5:{s:2:"id";s:5:"'100'";s:8:"username";s:7:"'admin'";s:8:"password";s:7:"'admin'";s:7:"authKey";s:12:"'test100key'";s:11:"accessToken";s:11:"'100-token'";}s:10:"attributes";N;s:13:"rolesProvider";N;s:19:"permissionsProvider";N;}";s:6:"router";s:27:"a:1:{s:8:"messages";a:0:{}}";s:7:"summary";a:9:{s:3:"tag";s:13:"5bc18584f3833";s:3:"url";s:61:"http://localhost/basic/web/index.php?r=paper-type%2Fview&id=7";s:4:"ajax";i:0;s:6:"method";s:3:"GET";s:2:"ip";s:9:"127.0.0.1";s:4:"time";d:1539409284.9630000591278076171875;s:10:"statusCode";i:200;s:8:"sqlCount";i:15;s:9:"mailCount";i:0;}s:10:"exceptions";a:0:{}}

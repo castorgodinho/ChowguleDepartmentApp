@@ -14,11 +14,9 @@ use dosamigos\datepicker\DatePicker;
 
     <?php $form = ActiveForm::begin(); ?>
     <br>
-    <?= $form->field($model, 'faculty_id')->dropDownList(
-        ArrayHelper::map(Faculty::find()->where(['status'=>1])->all(),'faculty_id','name'),
-        ['prompt'=>'select ']
-    )?>
-    <br>
+    <?= $form->field($faculty, 'name')->textInput(['maxlength' => true]) ?>
+
+    
     <?= $form->field($model, 'date_of_joining')->widget(
     DatePicker::className(), [
             // inline too, not bad
@@ -40,6 +38,18 @@ use dosamigos\datepicker\DatePicker;
                 'format' => 'yyyy-mm-dd'
             ]
     ]);?>
+    <br>
+    
+    <?= $form->field($faculty, 'email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($faculty, 'phone_no')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($faculty, 'address')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($faculty, 'employee_id')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Type')->dropDownList(
+            [ 'lecture bases'=>'Lecture bases', 'contract bases'=>'Contract bases'])
+        ?>
     <br>
 
     

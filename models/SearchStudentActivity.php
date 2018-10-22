@@ -15,6 +15,8 @@ class SearchStudentActivity extends StudentActivity
     /**
      * @inheritdoc
      */
+    public $to;
+    public $from;
     public function rules()
     {
         return [
@@ -56,6 +58,9 @@ class SearchStudentActivity extends StudentActivity
             // uncomment the following line if you do not want to return any records when validation fails
             // $query->where('0=1');
             return $dataProvider;
+        }
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'academic_year.year', $this->from, $this->to]);
         }
 
         // grid filtering conditions

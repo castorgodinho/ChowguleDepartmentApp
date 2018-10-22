@@ -15,6 +15,8 @@ class SearchProject extends Project
     /**
      * @inheritdoc
      */
+    public $to;
+    public $from;
     public function rules()
     {
         return [
@@ -57,7 +59,9 @@ class SearchProject extends Project
             // $query->where('0=1');
             return $dataProvider;
         }
-
+        if($this->to != "" && $this->from != ""){
+            $query->andFilterWhere(['between', 'academic_year.year', $this->from, $this->to]);
+        }
         // grid filtering conditions
         $query->andFilterWhere([
             'project_id' => $this->project_id,

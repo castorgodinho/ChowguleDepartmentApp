@@ -82,8 +82,20 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'faculty_name:ntext',
             'venue',
-            'start_date',
-            'end_date',
+            [   
+                'label' => 'Start Date',
+                'attribute' => 'start_date',
+                'value' => function ($model) { 
+                    return date("d M Y", strtotime($model->start_date));
+                },
+            ],
+            [   
+                'label' => 'End Date',
+                'attribute' => 'end_date',
+                'value' => function ($model) { 
+                    return date("d M Y", strtotime($model->end_date));
+                },
+            ],
             [
                 'label' => 'Department Name',
                 'value' => 'department.name',
