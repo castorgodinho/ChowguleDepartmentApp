@@ -47,6 +47,11 @@ class searchType extends Type
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=>[
+                'defaultOrder' => [
+                    'type_id'=>'SORT_DESC'
+                ]
+            ]
         ]);
 
         $this->load($params);

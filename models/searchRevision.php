@@ -49,6 +49,11 @@ class searchRevision extends Revision
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=>[
+                'defaultOrder' => [
+                    'revision_id'=>'SORT_DESC'
+                ]
+            ]
         ]);
 
         $this->load($params);
@@ -69,7 +74,7 @@ class searchRevision extends Revision
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'status'=>1,
-            
+
         ]);
 
         $query->andFilterWhere(['like', 'syllabus_file', $this->syllabus_file])

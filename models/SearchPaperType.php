@@ -50,6 +50,11 @@ class SearchPaperType extends PaperType
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=>[
+                'defaultOrder' => [
+                    'paper_type_id'=>'SORT_DESC'
+                ]
+            ]
             
         ]);
 

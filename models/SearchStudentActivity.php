@@ -50,6 +50,11 @@ class SearchStudentActivity extends StudentActivity
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=>[
+                'defaultOrder' => [
+                    'student_activity_id'=>'SORT_DESC'
+                ]
+            ]
         ]);
 
         $this->load($params);
